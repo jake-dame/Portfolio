@@ -1,0 +1,127 @@
+\doxysection{Var Class Reference}
+\hypertarget{class_var}{}\label{class_var}\index{Var@{Var}}
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Var\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_var}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_var_afab4e8a4c51caf066de99168b9f6d96e}{Var}} (std\+::string str)
+\item 
+bool \mbox{\hyperlink{class_var_af0889cd60f10a3b3c7712f53023e7f5b}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_var_a812952c640782878dfcf345641ac50fe}{interp}} () override
+\item 
+bool \mbox{\hyperlink{class_var_a8fdfa306660b048eff151d156b923dd6}{has\+\_\+variable}} () override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_var_a677c74db8fa8830d821aa665ec351bbb}{subst}} (std\+::string str, \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}e) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_expr}{Expr}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_expr_abe130f37bd185ec13c5113de16fc7bf7}{to\+\_\+string}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_expr_a6ad7c18234f22d96d6917089b5bd7caa}{to\+\_\+pretty\+\_\+string}} ()
+\item 
+virtual void \mbox{\hyperlink{class_expr_aaec6172fa839cafad124775b0a43965b}{pretty\+\_\+print}} (std\+::ostream \&stream)
+\item 
+virtual void \mbox{\hyperlink{class_expr_ab5b1d850f98bb650ef199bb6e90133b7}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&stream, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} p, std\+::streampos \&pos, bool paren)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_var_aef2b96f0b4587bed5290ea7d03aa06ca}{str\+\_\+m}}
+\begin{DoxyCompactList}\small\item\em The string value of the \doxylink{class_var}{Var} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_var_a2650f2c1b3d57cfec9eb8903ce1dee7f}{print}} (std\+::ostream \&stream) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_var_afab4e8a4c51caf066de99168b9f6d96e}\label{class_var_afab4e8a4c51caf066de99168b9f6d96e} 
+\index{Var@{Var}!Var@{Var}}
+\index{Var@{Var}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{Var()}{Var()}}
+{\footnotesize\ttfamily Var\+::\+Var (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_var_af0889cd60f10a3b3c7712f53023e7f5b}\label{class_var_af0889cd60f10a3b3c7712f53023e7f5b} 
+\index{Var@{Var}!equals@{equals}}
+\index{equals@{equals}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Var\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{Expr}}.
+
+\Hypertarget{class_var_a8fdfa306660b048eff151d156b923dd6}\label{class_var_a8fdfa306660b048eff151d156b923dd6} 
+\index{Var@{Var}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool Var\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{Expr}}.
+
+\Hypertarget{class_var_a812952c640782878dfcf345641ac50fe}\label{class_var_a812952c640782878dfcf345641ac50fe} 
+\index{Var@{Var}!interp@{interp}}
+\index{interp@{interp}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Var\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{Expr}}.
+
+\Hypertarget{class_var_a2650f2c1b3d57cfec9eb8903ce1dee7f}\label{class_var_a2650f2c1b3d57cfec9eb8903ce1dee7f} 
+\index{Var@{Var}!print@{print}}
+\index{print@{print}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Var\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a8e34377af275f60532d1ba76e6feaceb}{Expr}}.
+
+\Hypertarget{class_var_a677c74db8fa8830d821aa665ec351bbb}\label{class_var_a677c74db8fa8830d821aa665ec351bbb} 
+\index{Var@{Var}!subst@{subst}}
+\index{subst@{subst}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} Var\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_aa91f56b56e078594565aeba32c520b7a}{Expr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_var_aef2b96f0b4587bed5290ea7d03aa06ca}\label{class_var_aef2b96f0b4587bed5290ea7d03aa06ca} 
+\index{Var@{Var}!str\_m@{str\_m}}
+\index{str\_m@{str\_m}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{str\_m}{str\_m}}
+{\footnotesize\ttfamily std\+::string Var\+::str\+\_\+m}
+
+
+
+The string value of the \doxylink{class_var}{Var} object. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\doxysection{Catch\+::Detail Namespace Reference}
+\hypertarget{namespace_catch_1_1_detail}{}\label{namespace_catch_1_1_detail}\index{Catch::Detail@{Catch::Detail}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_catch_1_1_detail_1_1_approx}{Approx}}
+\item 
+struct \mbox{\hyperlink{struct_catch_1_1_detail_1_1_enum_info}{Enum\+Info}}
+\item 
+class \mbox{\hyperlink{class_catch_1_1_detail_1_1_is_stream_insertable}{Is\+Stream\+Insertable}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespace_catch_1_1_detail_ac5d6c510e565ee5bddcc2236194ce29e}{raw\+Memory\+To\+String}} (\mbox{\hyperlink{struct_catch_1_1true__given}{const}} \mbox{\hyperlink{struct_catch_1_1true__given}{void}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{struct_catch_1_1true__given}{object}}, std\+::size\+\_\+t size)
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ }\\std\+::string \mbox{\hyperlink{namespace_catch_1_1_detail_a371620ed524abfcae5c3772bf49b563a}{raw\+Memory\+To\+String}} (\mbox{\hyperlink{struct_catch_1_1true__given}{const}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} \&\mbox{\hyperlink{struct_catch_1_1true__given}{object}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{E}} $>$ }\\std\+::string \mbox{\hyperlink{namespace_catch_1_1_detail_a242396de537c5176710d680cc9ca6b93}{convert\+Unknown\+Enum\+To\+String}} (\mbox{\hyperlink{struct_catch_1_1true__given}{E}} \mbox{\hyperlink{struct_catch_1_1true__given}{e}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ }\\std\+::enable\+\_\+if$<$!std\+::is\+\_\+enum$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value \&\&!std\+::is\+\_\+base\+\_\+of$<$ std\+::exception, \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value, std\+::string $>$\+::type \mbox{\hyperlink{namespace_catch_1_1_detail_aa4fbd846029625d08378606ffe9ebc3b}{convert\+Unstreamable}} (\mbox{\hyperlink{struct_catch_1_1true__given}{T}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \&)
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ }\\std\+::enable\+\_\+if$<$!std\+::is\+\_\+enum$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value \&\&std\+::is\+\_\+base\+\_\+of$<$ std\+::exception, \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value, std\+::string $>$\+::type \mbox{\hyperlink{namespace_catch_1_1_detail_a669969ab020f5a314d6fa97749a99f56}{convert\+Unstreamable}} (\mbox{\hyperlink{struct_catch_1_1true__given}{T}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \&\mbox{\hyperlink{struct_catch_1_1true__given}{ex}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+enum$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value, std\+::string $>$\+::type \mbox{\hyperlink{namespace_catch_1_1_detail_af5310e4687d8c000e7911b91164756e6}{convert\+Unstreamable}} (\mbox{\hyperlink{struct_catch_1_1true__given}{T}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \&value)
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ }\\std\+::string \mbox{\hyperlink{namespace_catch_1_1_detail_af0ad48344ffd3f92f3568465248a9880}{stringify}} (\mbox{\hyperlink{struct_catch_1_1true__given}{const}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} \&\mbox{\hyperlink{struct_catch_1_1true__given}{e}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Iterator}} , \mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Sentinel}}  = Input\+Iterator$>$ }\\std\+::string \mbox{\hyperlink{namespace_catch_1_1_detail_ac954cf158347a76a5b0c3f4fa9a9fa52}{range\+To\+String}} (\mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Iterator}} \mbox{\hyperlink{struct_catch_1_1true__given}{first}}, \mbox{\hyperlink{struct_catch_1_1true__given}{Sentinel}} \mbox{\hyperlink{struct_catch_1_1true__given}{last}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{const}} std\+::string \mbox{\hyperlink{namespace_catch_1_1_detail_a466775f4eec29ffef29ab334cd885136}{unprintable\+String}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_catch_1_1_detail_a242396de537c5176710d680cc9ca6b93}\label{namespace_catch_1_1_detail_a242396de537c5176710d680cc9ca6b93} 
+\index{Catch::Detail@{Catch::Detail}!convertUnknownEnumToString@{convertUnknownEnumToString}}
+\index{convertUnknownEnumToString@{convertUnknownEnumToString}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{convertUnknownEnumToString()}{convertUnknownEnumToString()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{E}} $>$ \\
+std\+::string Catch\+::\+Detail\+::convert\+Unknown\+Enum\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{E}}}]{e }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_catch_1_1_detail_aa4fbd846029625d08378606ffe9ebc3b}\label{namespace_catch_1_1_detail_aa4fbd846029625d08378606ffe9ebc3b} 
+\index{Catch::Detail@{Catch::Detail}!convertUnstreamable@{convertUnstreamable}}
+\index{convertUnstreamable@{convertUnstreamable}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{convertUnstreamable()}{convertUnstreamable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+std\+::enable\+\_\+if$<$!std\+::is\+\_\+enum$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value \&\&!std\+::is\+\_\+base\+\_\+of$<$ std\+::exception, \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value, std\+::string $>$\+::type Catch\+::\+Detail\+::convert\+Unstreamable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{T}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_catch_1_1_detail_a669969ab020f5a314d6fa97749a99f56}\label{namespace_catch_1_1_detail_a669969ab020f5a314d6fa97749a99f56} 
+\index{Catch::Detail@{Catch::Detail}!convertUnstreamable@{convertUnstreamable}}
+\index{convertUnstreamable@{convertUnstreamable}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{convertUnstreamable()}{convertUnstreamable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+std\+::enable\+\_\+if$<$!std\+::is\+\_\+enum$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value \&\&std\+::is\+\_\+base\+\_\+of$<$ std\+::exception, \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value, std\+::string $>$\+::type Catch\+::\+Detail\+::convert\+Unstreamable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{T}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \&}]{ex }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_catch_1_1_detail_af5310e4687d8c000e7911b91164756e6}\label{namespace_catch_1_1_detail_af5310e4687d8c000e7911b91164756e6} 
+\index{Catch::Detail@{Catch::Detail}!convertUnstreamable@{convertUnstreamable}}
+\index{convertUnstreamable@{convertUnstreamable}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{convertUnstreamable()}{convertUnstreamable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+std\+::enable\+\_\+if$<$ std\+::is\+\_\+enum$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::value, std\+::string $>$\+::type Catch\+::\+Detail\+::convert\+Unstreamable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{T}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \&}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_catch_1_1_detail_ac954cf158347a76a5b0c3f4fa9a9fa52}\label{namespace_catch_1_1_detail_ac954cf158347a76a5b0c3f4fa9a9fa52} 
+\index{Catch::Detail@{Catch::Detail}!rangeToString@{rangeToString}}
+\index{rangeToString@{rangeToString}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{rangeToString()}{rangeToString()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Iterator}} , \mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Sentinel}}  = Input\+Iterator$>$ \\
+std\+::string Catch\+::\+Detail\+::range\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Iterator}}}]{first,  }\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{Sentinel}}}]{last }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_catch_1_1_detail_a371620ed524abfcae5c3772bf49b563a}\label{namespace_catch_1_1_detail_a371620ed524abfcae5c3772bf49b563a} 
+\index{Catch::Detail@{Catch::Detail}!rawMemoryToString@{rawMemoryToString}}
+\index{rawMemoryToString@{rawMemoryToString}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{rawMemoryToString()}{rawMemoryToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+std\+::string Catch\+::\+Detail\+::raw\+Memory\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{const}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} \&}]{object }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_catch_1_1_detail_ac5d6c510e565ee5bddcc2236194ce29e}\label{namespace_catch_1_1_detail_ac5d6c510e565ee5bddcc2236194ce29e} 
+\index{Catch::Detail@{Catch::Detail}!rawMemoryToString@{rawMemoryToString}}
+\index{rawMemoryToString@{rawMemoryToString}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{rawMemoryToString()}{rawMemoryToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Catch\+::\+Detail\+::raw\+Memory\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{const}} \mbox{\hyperlink{struct_catch_1_1true__given}{void}} \texorpdfstring{$\ast$}{*}}]{object,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_catch_1_1_detail_af0ad48344ffd3f92f3568465248a9880}\label{namespace_catch_1_1_detail_af0ad48344ffd3f92f3568465248a9880} 
+\index{Catch::Detail@{Catch::Detail}!stringify@{stringify}}
+\index{stringify@{stringify}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{stringify()}{stringify()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+std\+::string Catch\+::\+Detail\+::stringify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{const}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} \&}]{e }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_catch_1_1_detail_a466775f4eec29ffef29ab334cd885136}\label{namespace_catch_1_1_detail_a466775f4eec29ffef29ab334cd885136} 
+\index{Catch::Detail@{Catch::Detail}!unprintableString@{unprintableString}}
+\index{unprintableString@{unprintableString}!Catch::Detail@{Catch::Detail}}
+\doxysubsubsection{\texorpdfstring{unprintableString}{unprintableString}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_catch_1_1true__given}{const}} std\+::string Catch\+::\+Detail\+::unprintable\+String\hspace{0.3cm}{\ttfamily [extern]}}
+

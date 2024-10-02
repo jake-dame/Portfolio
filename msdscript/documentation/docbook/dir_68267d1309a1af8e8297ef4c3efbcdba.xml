@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_68267d1309a1af8e8297ef4c3efbcdba" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/src Directory Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/src Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_cmdline_8cpp">cmdline.cpp</link></para>
+
+<para>Command line functions implementations. All cout and cin is handled here. </para>
+</listitem>
+            <listitem><para>file <link linkend="_cmdline_8h">cmdline.h</link></para>
+
+<para>Command line function declarations. </para>
+</listitem>
+            <listitem><para>file <link linkend="__expr_8cpp">Expr.cpp</link></para>
+
+<para>Expression bass class and derived class implementations. </para>
+</listitem>
+            <listitem><para>file <link linkend="__expr_8h">Expr.h</link></para>
+
+<para>Expression bass class and derived class declarations. </para>
+</listitem>
+            <listitem><para>file <link linkend="_main_8cpp">main.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_parse_8cpp">parse_expr.cpp</link></para>
+
+<para>Parsing functions implementations. </para>
+</listitem>
+            <listitem><para>file <link linkend="_parse_8h">parse_expr.h</link></para>
+
+<para>Parsing functions declarations. </para>
+</listitem>
+            <listitem><para>file <link linkend="__tests_8cpp">Tests.cpp</link></para>
+
+<para>Catch2 tests for msdscript (<link linkend="_class_expr">Expr</link> classes; parsing functions). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

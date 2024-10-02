@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_match_expr" xml:lang="en-US">
+<title>Catch::MatchExpr&lt; ArgT, MatcherT &gt; Class Template Reference</title>
+<indexterm><primary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::MatchExpr&lt; ArgT, MatcherT &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_match_expr.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_match_expr_1ae55ee9bf46c8676c65e9df291a98c345">MatchExpr</link> (<link linkend="_struct_catch_1_1true__given">ArgT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">arg</link>, <link linkend="_struct_catch_1_1true__given">MatcherT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">matcher</link>, <link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">matcherString</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_match_expr_1ad3e41adb597750b2219bb37e51185629">streamReconstructedExpression</link> (std::ostream &amp;<link linkend="_struct_catch_1_1true__given">os</link>) <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_i_transient_expression">Catch::ITransientExpression</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22">isBinaryExpression</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a101c7db86c87eff93a8ff496720e6320">getResult</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_i_transient_expression_1aafe69572b7ed884e63ec81f58d4afd8c">ITransientExpression</link> (<link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22">isBinaryExpression</link>, <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">result</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_transient_expression_1aeadf426de589938c4964fe4068eeee77">~ITransientExpression</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">ArgT</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_match_expr_1afb77e2fbf49f956d27f8617a70cf7118">m_arg</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">MatcherT</link> <link linkend="_class_catch_1_1_match_expr_1a4dea78586dd2b3268b4a186e7c0adbe2">m_matcher</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_class_catch_1_1_match_expr_1a33ec706994f744ff1f4a549177ec08f9">m_matcherString</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Attributes inherited from <link linkend="_struct_catch_1_1_i_transient_expression">Catch::ITransientExpression</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a75ce48da824d514d08152d396abb28d8">m_isBinaryExpression</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a4646e2b5e0156e913653ec3b9b60c942">m_result</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_match_expr_1ae55ee9bf46c8676c65e9df291a98c345"/><section>
+    <title>MatchExpr()</title>
+<indexterm><primary>MatchExpr</primary><secondary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</primary><secondary>MatchExpr</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">ArgT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_match_expr">Catch::MatchExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">ArgT</link>, <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt;::MatchExpr (<link linkend="_struct_catch_1_1true__given">ArgT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; arg, <link linkend="_struct_catch_1_1true__given">MatcherT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; matcher, <link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; matcherString)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_match_expr_1ad3e41adb597750b2219bb37e51185629"/><section>
+    <title>streamReconstructedExpression()</title>
+<indexterm><primary>streamReconstructedExpression</primary><secondary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</primary><secondary>streamReconstructedExpression</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">ArgT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_match_expr">Catch::MatchExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">ArgT</link>, <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt;::streamReconstructedExpression (std::ostream &amp; os) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_i_transient_expression_1aabe1889df9c6e639a24afb08d8a0fe9e">Catch::ITransientExpression</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_match_expr_1afb77e2fbf49f956d27f8617a70cf7118"/><section>
+    <title>m_arg</title>
+<indexterm><primary>m_arg</primary><secondary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</primary><secondary>m_arg</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">ArgT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">ArgT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp; <link linkend="_class_catch_1_1_match_expr">Catch::MatchExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">ArgT</link>, <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt;::m_arg<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_match_expr_1a4dea78586dd2b3268b4a186e7c0adbe2"/><section>
+    <title>m_matcher</title>
+<indexterm><primary>m_matcher</primary><secondary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</primary><secondary>m_matcher</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">ArgT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">MatcherT</link> <link linkend="_class_catch_1_1_match_expr">Catch::MatchExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">ArgT</link>, <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt;::m_matcher<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_match_expr_1a33ec706994f744ff1f4a549177ec08f9"/><section>
+    <title>m_matcherString</title>
+<indexterm><primary>m_matcherString</primary><secondary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::MatchExpr&lt; ArgT, MatcherT &gt;</primary><secondary>m_matcherString</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">ArgT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_class_catch_1_1_match_expr">Catch::MatchExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">ArgT</link>, <link linkend="_struct_catch_1_1true__given">MatcherT</link> &gt;::m_matcherString<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

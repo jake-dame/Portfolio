@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_catch_1_1literals" xml:lang="en-US">
+<title>Catch::literals Namespace Reference</title>
+<indexterm><primary>Catch::literals</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_detail_1_1_approx">Detail::Approx</link> <link linkend="_namespace_catch_1_1literals_1aed9bf4d544c60a074440a055a54ea6c3">operator&quot;&quot;_a</link> (<link linkend="_struct_catch_1_1true__given">long</link> <link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1true__given">val</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_detail_1_1_approx">Detail::Approx</link> <link linkend="_namespace_catch_1_1literals_1aded81112b3a271a8b9538dff17acd093">operator&quot;&quot;_a</link> (<link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">long</link> <link linkend="_struct_catch_1_1true__given">long</link> <link linkend="_struct_catch_1_1true__given">val</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_catch_1_1literals_1aed9bf4d544c60a074440a055a54ea6c3"/><section>
+    <title>operator&quot;&quot;_a()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator&quot;&quot;_a</primary><secondary>Catch::literals</secondary></indexterm>
+<indexterm><primary>Catch::literals</primary><secondary>operator&quot;&quot;_a</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catch_1_1_detail_1_1_approx">Detail::Approx</link> Catch::literals::operator&quot;&quot;_a (<link linkend="_struct_catch_1_1true__given">long</link> <link linkend="_struct_catch_1_1true__given">double</link> val)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1literals_1aded81112b3a271a8b9538dff17acd093"/><section>
+    <title>operator&quot;&quot;_a()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator&quot;&quot;_a</primary><secondary>Catch::literals</secondary></indexterm>
+<indexterm><primary>Catch::literals</primary><secondary>operator&quot;&quot;_a</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catch_1_1_detail_1_1_approx">Detail::Approx</link> Catch::literals::operator&quot;&quot;_a (<link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">long</link> <link linkend="_struct_catch_1_1true__given">long</link> val)</computeroutput></para></section>
+</section>
+</section>

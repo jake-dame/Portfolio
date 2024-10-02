@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_exec_8h" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/test_msdscript/src/exec.h File Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/test_msdscript/src/exec.h</primary></indexterm>
+<para>
+
+<para>Exec and piping functions declarations for test_msdscript. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;unistd.h&gt;<?linebreak?>#include &lt;fcntl.h&gt;<?linebreak?>#include &lt;poll.h&gt;<?linebreak?>#include &lt;cerrno&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;cassert&gt;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_exec_result">ExecResult</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_exec_result">ExecResult</link> <link linkend="_exec_8h_1ad56af6b3c76af4d38d15f8875e02ff25">exec_program</link> (int argc, const char *const *argv, std::string input)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Exec and piping functions declarations for test_msdscript. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>Nabil Makarem </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_exec_8h_1ad56af6b3c76af4d38d15f8875e02ff25"/><section>
+    <title>exec_program()</title>
+<indexterm><primary>exec_program</primary><secondary>exec.h</secondary></indexterm>
+<indexterm><primary>exec.h</primary><secondary>exec_program</secondary></indexterm>
+<para><computeroutput><link linkend="_class_exec_result">ExecResult</link> exec_program (int argc, const char *const * argv, std::string input)<computeroutput>[extern]</computeroutput></computeroutput></para></section>
+</section>
+</section>

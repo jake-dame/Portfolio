@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_assertion_handler" xml:lang="en-US">
+<title>Catch::AssertionHandler Class Reference</title>
+<indexterm><primary>Catch::AssertionHandler</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_assertion_handler_1a32efbb1b56b71d758d4c2094bac1f1a9">AssertionHandler</link> (<link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;macroName, <link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;lineInfo, <link linkend="_class_catch_1_1_string_ref">StringRef</link> capturedExpression, <link linkend="_struct_catch_1_1_result_disposition_1a3396cad6e2259af326b3aae93e23e9d8">ResultDisposition::Flags</link> resultDisposition)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_assertion_handler_1a1e839d810f6ac0fa6d127fe8350175ed">~AssertionHandler</link> ()</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1a2ef387e567bad90ec6e4b5bf5c367388">handleExpr</link> (<link linkend="_class_catch_1_1_expr_lhs">ExprLhs</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">expr</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1afe14d9cf1b1c7f70dae439fbdb51d0c4">handleExpr</link> (<link linkend="_struct_catch_1_1_i_transient_expression">ITransientExpression</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">expr</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1abdb4c180ed83ec2858b2fb87712c516d">handleMessage</link> (<link linkend="_struct_catch_1_1_result_was_1a624e1ee3661fcf6094ceef1f654601ef">ResultWas::OfType</link> <link linkend="_struct_catch_1_1true__given">resultType</link>, <link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;message)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1ab6caf765764a4064e90fce829eec201d">handleExceptionThrownAsExpected</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1a7764d0adb6ed5eeb10964f6abc02fab1">handleUnexpectedExceptionNotThrown</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1a51e4936e3af43b74690cedae6d2e297a">handleExceptionNotThrownAsExpected</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1a67a194d5518f307c4a16faa03a7f7442">handleThrowingCallSkipped</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1aa2504dad6a91f3645e5f52c932c11270">handleUnexpectedInflightException</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1a878a9eb828d8a1863c8dcb6575f6f40e">complete</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_assertion_handler_1a6756bd5395c0ddd28764a9fb4612d5e4">setCompleted</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_assertion_handler_1a193bb3999494c46457f3059184c6b251">allowThrows</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1_assertion_info">AssertionInfo</link> <link linkend="_class_catch_1_1_assertion_handler_1ad171e8724bb771d97949b7270f400303">m_assertionInfo</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_assertion_reaction">AssertionReaction</link> <link linkend="_class_catch_1_1_assertion_handler_1a8203c08a43a3761b5f400ee6587fad55">m_reaction</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_assertion_handler_1a5a756818dff781c155e8eb970d1d4c68">m_completed</link> = <link linkend="_struct_catch_1_1true__given">false</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_i_result_capture">IResultCapture</link> &amp; <link linkend="_class_catch_1_1_assertion_handler_1aea5283ee36124ce5c51dc2a697b22a39">m_resultCapture</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a32efbb1b56b71d758d4c2094bac1f1a9"/><section>
+    <title>AssertionHandler()</title>
+<indexterm><primary>AssertionHandler</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>AssertionHandler</secondary></indexterm>
+<para><computeroutput>Catch::AssertionHandler::AssertionHandler (<link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; macroName, <link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lineInfo, <link linkend="_class_catch_1_1_string_ref">StringRef</link> capturedExpression, <link linkend="_struct_catch_1_1_result_disposition_1a3396cad6e2259af326b3aae93e23e9d8">ResultDisposition::Flags</link> resultDisposition)</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a1e839d810f6ac0fa6d127fe8350175ed"/><section>
+    <title>~AssertionHandler()</title>
+<indexterm><primary>~AssertionHandler</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>~AssertionHandler</secondary></indexterm>
+<para><computeroutput>Catch::AssertionHandler::~AssertionHandler ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a193bb3999494c46457f3059184c6b251"/><section>
+    <title>allowThrows()</title>
+<indexterm><primary>allowThrows</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>allowThrows</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> Catch::AssertionHandler::allowThrows ( ) const -&gt;  <link linkend="_struct_catch_1_1true__given">bool</link></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a878a9eb828d8a1863c8dcb6575f6f40e"/><section>
+    <title>complete()</title>
+<indexterm><primary>complete</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>complete</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::complete ( )</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a51e4936e3af43b74690cedae6d2e297a"/><section>
+    <title>handleExceptionNotThrownAsExpected()</title>
+<indexterm><primary>handleExceptionNotThrownAsExpected</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>handleExceptionNotThrownAsExpected</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::handleExceptionNotThrownAsExpected ( )</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1ab6caf765764a4064e90fce829eec201d"/><section>
+    <title>handleExceptionThrownAsExpected()</title>
+<indexterm><primary>handleExceptionThrownAsExpected</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>handleExceptionThrownAsExpected</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::handleExceptionThrownAsExpected ( )</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a2ef387e567bad90ec6e4b5bf5c367388"/><section>
+    <title>handleExpr()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>handleExpr</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>handleExpr</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::handleExpr (<link linkend="_class_catch_1_1_expr_lhs">ExprLhs</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; expr)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1afe14d9cf1b1c7f70dae439fbdb51d0c4"/><section>
+    <title>handleExpr()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>handleExpr</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>handleExpr</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::handleExpr (<link linkend="_struct_catch_1_1_i_transient_expression">ITransientExpression</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; expr)</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1abdb4c180ed83ec2858b2fb87712c516d"/><section>
+    <title>handleMessage()</title>
+<indexterm><primary>handleMessage</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>handleMessage</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::handleMessage (<link linkend="_struct_catch_1_1_result_was_1a624e1ee3661fcf6094ceef1f654601ef">ResultWas::OfType</link> resultType, <link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; message)</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a67a194d5518f307c4a16faa03a7f7442"/><section>
+    <title>handleThrowingCallSkipped()</title>
+<indexterm><primary>handleThrowingCallSkipped</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>handleThrowingCallSkipped</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::handleThrowingCallSkipped ( )</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a7764d0adb6ed5eeb10964f6abc02fab1"/><section>
+    <title>handleUnexpectedExceptionNotThrown()</title>
+<indexterm><primary>handleUnexpectedExceptionNotThrown</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>handleUnexpectedExceptionNotThrown</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::handleUnexpectedExceptionNotThrown ( )</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1aa2504dad6a91f3645e5f52c932c11270"/><section>
+    <title>handleUnexpectedInflightException()</title>
+<indexterm><primary>handleUnexpectedInflightException</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>handleUnexpectedInflightException</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::handleUnexpectedInflightException ( )</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a6756bd5395c0ddd28764a9fb4612d5e4"/><section>
+    <title>setCompleted()</title>
+<indexterm><primary>setCompleted</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>setCompleted</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::AssertionHandler::setCompleted ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1ad171e8724bb771d97949b7270f400303"/><section>
+    <title>m_assertionInfo</title>
+<indexterm><primary>m_assertionInfo</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>m_assertionInfo</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_assertion_info">AssertionInfo</link> Catch::AssertionHandler::m_assertionInfo<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a5a756818dff781c155e8eb970d1d4c68"/><section>
+    <title>m_completed</title>
+<indexterm><primary>m_completed</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>m_completed</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> Catch::AssertionHandler::m_completed = <link linkend="_struct_catch_1_1true__given">false</link><computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1a8203c08a43a3761b5f400ee6587fad55"/><section>
+    <title>m_reaction</title>
+<indexterm><primary>m_reaction</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>m_reaction</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_assertion_reaction">AssertionReaction</link> Catch::AssertionHandler::m_reaction<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_assertion_handler_1aea5283ee36124ce5c51dc2a697b22a39"/><section>
+    <title>m_resultCapture</title>
+<indexterm><primary>m_resultCapture</primary><secondary>Catch::AssertionHandler</secondary></indexterm>
+<indexterm><primary>Catch::AssertionHandler</primary><secondary>m_resultCapture</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_i_result_capture">IResultCapture</link>&amp; Catch::AssertionHandler::m_resultCapture<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

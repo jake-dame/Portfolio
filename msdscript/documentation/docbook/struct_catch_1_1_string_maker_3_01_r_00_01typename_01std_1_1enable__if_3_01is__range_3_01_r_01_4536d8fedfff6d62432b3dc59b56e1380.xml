@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_string_maker_3_01_r_00_01typename_01std_1_1enable__if_3_01is__range_3_01_r_01_4536d8fedfff6d62432b3dc59b56e1380" xml:lang="en-US">
+<title>Catch::StringMaker&lt; R, typename std::enable_if&lt; is_range&lt; R &gt;::value &amp;&amp;!::Catch::Detail::IsStreamInsertable&lt; R &gt;::value &gt;::type &gt; Struct Template Reference</title>
+<indexterm><primary>Catch::StringMaker&lt; R, typename std::enable_if&lt; is_range&lt; R &gt;::value &amp;&amp;!::Catch::Detail::IsStreamInsertable&lt; R &gt;::value &gt;::type &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">static</link> std::string <link linkend="_struct_catch_1_1_string_maker_3_01_r_00_01typename_01std_1_1enable__if_3_01is__range_3_01_r_01_4536d8fedfff6d62432b3dc59b56e1380_1ac6088db00103a7482fb9bc04b1603362">convert</link> (<link linkend="_struct_catch_1_1true__given">R</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;range)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_string_maker_3_01_r_00_01typename_01std_1_1enable__if_3_01is__range_3_01_r_01_4536d8fedfff6d62432b3dc59b56e1380_1ac6088db00103a7482fb9bc04b1603362"/><section>
+    <title>convert()</title>
+<indexterm><primary>convert</primary><secondary>Catch::StringMaker&lt; R, typename std::enable_if&lt; is_range&lt; R &gt;::value &amp;&amp;!::Catch::Detail::IsStreamInsertable&lt; R &gt;::value &gt;::type &gt;</secondary></indexterm>
+<indexterm><primary>Catch::StringMaker&lt; R, typename std::enable_if&lt; is_range&lt; R &gt;::value &amp;&amp;!::Catch::Detail::IsStreamInsertable&lt; R &gt;::value &gt;::type &gt;</primary><secondary>convert</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">R</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">static</link> std::string <link linkend="_struct_catch_1_1_string_maker">Catch::StringMaker</link>&lt; <link linkend="_struct_catch_1_1true__given">R</link>, <link linkend="_struct_catch_1_1true__given">typename</link> std::enable_if&lt; <link linkend="_struct_catch_1_1is__range">is_range</link>&lt; <link linkend="_struct_catch_1_1true__given">R</link> &gt;::value &amp;&amp;!<link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable">::Catch::Detail::IsStreamInsertable</link>&lt; <link linkend="_struct_catch_1_1true__given">R</link> &gt;::value &gt;::type &gt;::convert (<link linkend="_struct_catch_1_1true__given">R</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; range)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

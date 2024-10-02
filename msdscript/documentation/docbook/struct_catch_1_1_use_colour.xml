@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_use_colour" xml:lang="en-US">
+<title>Catch::UseColour Struct Reference</title>
+<indexterm><primary>Catch::UseColour</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1">YesOrNo</link> { <link linkend="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1a5c7fa9f5f5536187e8f47df35b892bb7">Auto</link>
+, <link linkend="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1ad7bb64e0fe49ba51aafbd3e14f06e98d">Yes</link>
+, <link linkend="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1af80533ce38685131ea8d7a6360ce9e57">No</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1"/><section>
+    <title>YesOrNo</title>
+<indexterm><primary>YesOrNo</primary><secondary>Catch::UseColour</secondary></indexterm>
+<indexterm><primary>Catch::UseColour</primary><secondary>YesOrNo</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">enum</link> <link linkend="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1">Catch::UseColour::YesOrNo</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Auto</primary><secondary>Catch::UseColour</secondary></indexterm>
+<indexterm><primary>Catch::UseColour</primary><secondary>Auto</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1a5c7fa9f5f5536187e8f47df35b892bb7"/>Auto</entry><entry></entry></row><row><entry><indexterm><primary>Yes</primary><secondary>Catch::UseColour</secondary></indexterm>
+<indexterm><primary>Catch::UseColour</primary><secondary>Yes</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1ad7bb64e0fe49ba51aafbd3e14f06e98d"/>Yes</entry><entry></entry></row><row><entry><indexterm><primary>No</primary><secondary>Catch::UseColour</secondary></indexterm>
+<indexterm><primary>Catch::UseColour</primary><secondary>No</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1af80533ce38685131ea8d7a6360ce9e57"/>No</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

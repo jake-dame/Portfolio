@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method" xml:lang="en-US">
+<title>Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt; Struct Template Reference</title>
+<indexterm><primary>Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method_1ae0920ff9e817acf08e1bb0cbcb044e30">match</link> (<link linkend="_struct_catch_1_1true__given">ObjectT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">arg</link>) <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method_1ae0920ff9e817acf08e1bb0cbcb044e30"/><section>
+    <title>match()</title>
+<indexterm><primary>match</primary><secondary>Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt;</primary><secondary>match</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">ObjectT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method">Catch::Matchers::Impl::MatcherMethod</link>&lt; <link linkend="_struct_catch_1_1true__given">ObjectT</link> &gt;::match (<link linkend="_struct_catch_1_1true__given">ObjectT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; arg) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_catch_1_1_matchers_1_1_generic_1_1_predicate_matcher_1a2ec0e8ec19c4c5e26271d59a06a62b52">Catch::Matchers::Generic::PredicateMatcher&lt; T &gt;</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

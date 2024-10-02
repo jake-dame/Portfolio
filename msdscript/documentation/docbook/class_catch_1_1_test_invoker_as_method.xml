@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_test_invoker_as_method" xml:lang="en-US">
+<title>Catch::TestInvokerAsMethod&lt; C &gt; Class Template Reference</title>
+<indexterm><primary>Catch::TestInvokerAsMethod&lt; C &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::TestInvokerAsMethod&lt; C &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_test_invoker_as_method.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_test_invoker_as_method_1a119c4bdbbdd95c42859c18541987a1a4">TestInvokerAsMethod</link> (<link linkend="_struct_catch_1_1true__given">void</link>(C::*<link linkend="_struct_catch_1_1true__given">testAsMethod</link>)()) <link linkend="_struct_catch_1_1true__given">noexcept</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_test_invoker_as_method_1a8115a06efe273f4112ec0b5452c1b5f2">invoke</link> () <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_i_test_invoker">Catch::ITestInvoker</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_test_invoker_1a2c89f3eece5b1b677243766e409bd831">~ITestInvoker</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link>(C::* <link linkend="_class_catch_1_1_test_invoker_as_method_1a4851e50d6b43c022c41d5de776a27ed7">m_testAsMethod</link> )()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_test_invoker_as_method_1a119c4bdbbdd95c42859c18541987a1a4"/><section>
+    <title>TestInvokerAsMethod()</title>
+<indexterm><primary>TestInvokerAsMethod</primary><secondary>Catch::TestInvokerAsMethod&lt; C &gt;</secondary></indexterm>
+<indexterm><primary>Catch::TestInvokerAsMethod&lt; C &gt;</primary><secondary>TestInvokerAsMethod</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">C</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_test_invoker_as_method">Catch::TestInvokerAsMethod</link>&lt; <link linkend="_struct_catch_1_1true__given">C</link> &gt;::TestInvokerAsMethod (<link linkend="_struct_catch_1_1true__given">void</link>(C::*)() testAsMethod)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_test_invoker_as_method_1a8115a06efe273f4112ec0b5452c1b5f2"/><section>
+    <title>invoke()</title>
+<indexterm><primary>invoke</primary><secondary>Catch::TestInvokerAsMethod&lt; C &gt;</secondary></indexterm>
+<indexterm><primary>Catch::TestInvokerAsMethod&lt; C &gt;</primary><secondary>invoke</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">C</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_test_invoker_as_method">Catch::TestInvokerAsMethod</link>&lt; <link linkend="_struct_catch_1_1true__given">C</link> &gt;::invoke ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_i_test_invoker_1a6fcd5c5b67d6d5ade6491ff33411ca7f">Catch::ITestInvoker</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_test_invoker_as_method_1a4851e50d6b43c022c41d5de776a27ed7"/><section>
+    <title>m_testAsMethod</title>
+<indexterm><primary>m_testAsMethod</primary><secondary>Catch::TestInvokerAsMethod&lt; C &gt;</secondary></indexterm>
+<indexterm><primary>Catch::TestInvokerAsMethod&lt; C &gt;</primary><secondary>m_testAsMethod</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">C</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link>(C::* <link linkend="_class_catch_1_1_test_invoker_as_method">Catch::TestInvokerAsMethod</link>&lt; <link linkend="_struct_catch_1_1true__given">C</link> &gt;::m_testAsMethod) ()<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

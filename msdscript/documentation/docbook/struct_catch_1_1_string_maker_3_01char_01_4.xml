@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_string_maker_3_01char_01_4" xml:lang="en-US">
+<title>Catch::StringMaker&lt; char &gt; Struct Reference</title>
+<indexterm><primary>Catch::StringMaker&lt; char &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">static</link> std::string <link linkend="_struct_catch_1_1_string_maker_3_01char_01_4_1a4e3db69a12bb83f3ef89251893e65da5">convert</link> (<link linkend="_struct_catch_1_1true__given">char</link> <link linkend="_struct_catch_1_1true__given">c</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_string_maker_3_01char_01_4_1a4e3db69a12bb83f3ef89251893e65da5"/><section>
+    <title>convert()</title>
+<indexterm><primary>convert</primary><secondary>Catch::StringMaker&lt; char &gt;</secondary></indexterm>
+<indexterm><primary>Catch::StringMaker&lt; char &gt;</primary><secondary>convert</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">static</link> std::string <link linkend="_struct_catch_1_1_string_maker">Catch::StringMaker</link>&lt; <link linkend="_struct_catch_1_1true__given">char</link> &gt;::convert (<link linkend="_struct_catch_1_1true__given">char</link> c)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

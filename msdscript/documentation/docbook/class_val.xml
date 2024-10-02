@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_val" xml:lang="en-US">
+<title>Val Class Reference</title>
+<indexterm><primary>Val</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Val.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Val:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_val.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_val_1abcff5ad6415a7ead83933e45cc3dc9c0">to_string</link> ()</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_expr">Expr</link> * <link linkend="_class_val_1ac26c69f7a71d9c18627864f62bd83dbc">to_expr</link> ()=0</para>
+</listitem>
+            <listitem><para>virtual bool <link linkend="_class_val_1a949ca9ba5c9a030f58126aad5bf684c5">equals</link> (<link linkend="_class_val">Val</link> *v)=0</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_val">Val</link> * <link linkend="_class_val_1a55dae19b209f6e1050a62d8c26d904f3">add_to</link> (<link linkend="_class_val">Val</link> *v)=0</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_val">Val</link> * <link linkend="_class_val_1ac959b56947108cda7d9feafa6e251009">mult_with</link> (<link linkend="_class_val">Val</link> *v)=0</para>
+</listitem>
+            <listitem><para>virtual bool <link linkend="_class_val_1ad10185dc7531f869c7197ba89479ff95">is_true</link> ()=0</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_val_1a76adc288ffce52cd26f9355f22251c02">print</link> (std::ostream &amp;stream)=0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_val_1a55dae19b209f6e1050a62d8c26d904f3"/><section>
+    <title>add_to()</title>
+<indexterm><primary>add_to</primary><secondary>Val</secondary></indexterm>
+<indexterm><primary>Val</primary><secondary>add_to</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_val">Val</link> * Val::add_to (<link linkend="_class_val">Val</link> * v)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_val_1ac37beaeded5991a03982ed2d1e7fefab">NumVal</link>, and <link linkend="_class_bool_val_1aa3b132054e0d38500a6400b046a84b45">BoolVal</link>.</para>
+</section>
+<anchor xml:id="_class_val_1a949ca9ba5c9a030f58126aad5bf684c5"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>Val</secondary></indexterm>
+<indexterm><primary>Val</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>virtual bool Val::equals (<link linkend="_class_val">Val</link> * v)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_val_1aec5e08c5b63d5750b3cfc5afe563947d">NumVal</link>, and <link linkend="_class_bool_val_1a971b3ffa2421a771aab4a99124f2ab14">BoolVal</link>.</para>
+</section>
+<anchor xml:id="_class_val_1ad10185dc7531f869c7197ba89479ff95"/><section>
+    <title>is_true()</title>
+<indexterm><primary>is_true</primary><secondary>Val</secondary></indexterm>
+<indexterm><primary>Val</primary><secondary>is_true</secondary></indexterm>
+<para><computeroutput>virtual bool Val::is_true ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_val_1a8b0f735f85b123a4c7eb88e13b36a237">NumVal</link>, and <link linkend="_class_bool_val_1aaa2514063aaf2048b41880df72e0c14f">BoolVal</link>.</para>
+</section>
+<anchor xml:id="_class_val_1ac959b56947108cda7d9feafa6e251009"/><section>
+    <title>mult_with()</title>
+<indexterm><primary>mult_with</primary><secondary>Val</secondary></indexterm>
+<indexterm><primary>Val</primary><secondary>mult_with</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_val">Val</link> * Val::mult_with (<link linkend="_class_val">Val</link> * v)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_val_1aca2485ce085c0733d521c408007352ac">NumVal</link>, and <link linkend="_class_bool_val_1a52ecb2ddf864f96556830ba9f1316daf">BoolVal</link>.</para>
+</section>
+<anchor xml:id="_class_val_1a76adc288ffce52cd26f9355f22251c02"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>Val</secondary></indexterm>
+<indexterm><primary>Val</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>virtual void Val::print (std::ostream &amp; stream)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_val_1a0c2c08ff34c952b88273bc7e8f5425a4">NumVal</link>, and <link linkend="_class_bool_val_1a32564a9b69559ae902c7534b125d333d">BoolVal</link>.</para>
+</section>
+<anchor xml:id="_class_val_1ac26c69f7a71d9c18627864f62bd83dbc"/><section>
+    <title>to_expr()</title>
+<indexterm><primary>to_expr</primary><secondary>Val</secondary></indexterm>
+<indexterm><primary>Val</primary><secondary>to_expr</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_expr">Expr</link> * Val::to_expr ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_val_1ae60543bf69d4f50bf0a1adea68f6a680">NumVal</link>, and <link linkend="_class_bool_val_1a47f9d7553e7ad883ebf4a5b44b7e1932">BoolVal</link>.</para>
+</section>
+<anchor xml:id="_class_val_1abcff5ad6415a7ead83933e45cc3dc9c0"/><section>
+    <title>to_string()</title>
+<indexterm><primary>to_string</primary><secondary>Val</secondary></indexterm>
+<indexterm><primary>Val</primary><secondary>to_string</secondary></indexterm>
+<para><computeroutput>std::string Val::to_string ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__val_8h">Val.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__val_8cpp">Val.cpp</link></section>
+</section>

@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_i_config" xml:lang="en-US">
+<title>Catch::IConfig Struct Reference</title>
+<indexterm><primary>Catch::IConfig</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::IConfig:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_catch_1_1_i_config.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_config_1adadf7c57478e4b0c83bea5b38d2dbc87">~IConfig</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_config_1aadb95f849359de1e6eb915aab063e542">allowThrows</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> std::ostream &amp; <link linkend="_struct_catch_1_1_i_config_1a4e4714e479596394d5e129e8763f7853">stream</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> std::string <link linkend="_struct_catch_1_1_i_config_1aa2315800a05c19db71518b1edc39d43b">name</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_config_1a2f1b0391019b9ce69921527a684eab23">includeSuccessfulResults</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_config_1a5b886c5aad9001e90f63a7cf0726af63">shouldDebugBreak</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_config_1a75d970c495a28e46b8e9b04a1d32149f">warnAboutMissingAssertions</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_config_1a30590623e3918825f2896c2262bf6fe3">warnAboutNoTests</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">int</link> <link linkend="_struct_catch_1_1_i_config_1a363f3388a439d02217f37198eff96744">abortAfter</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_config_1aa288bf92ccd0aafd85409d8aefdf738c">showInvisibles</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1">ShowDurations::OrNot</link> <link linkend="_struct_catch_1_1_i_config_1abaa97d281484278291f0d3db6d404aeb">showDurations</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1_i_config_1a160c6f6e19ed6ae946f7a9e737099189">minDuration</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">TestSpec</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_config_1a6c021a1bf5cae58cb6c4b754af6cd4b5">testSpec</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_config_1a49a475bbeb3180c06799d6d958914649">hasTestFilters</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> std::vector&lt; std::string &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_config_1a439d37638d37248d8a7f3f39ad5dc6f2">getTestsOrTags</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_run_tests_1ab56bd851b1dd085869992d1a9d73dc5d">RunTests::InWhatOrder</link> <link linkend="_struct_catch_1_1_i_config_1a0fc59c9aba1d4018538d5526daa5eb78">runOrder</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link> <link linkend="_struct_catch_1_1_i_config_1ae049eb45979d841073fa65d1094c7f14">rngSeed</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1">UseColour::YesOrNo</link> <link linkend="_struct_catch_1_1_i_config_1a87ec19a6b486eb5b5015cf7738fee026">useColour</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> std::vector&lt; std::string &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_config_1aeb282b2b74d01c0d95ef1a4dbd2d12df">getSectionsToRun</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_namespace_catch_1af85c0d46dfe687d923a157362fd07737">Verbosity</link> <link linkend="_struct_catch_1_1_i_config_1a55aff5924bdbb3f558775821b1eb4b3d">verbosity</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_config_1aa9aa1eafdbe510e27bf319233969ee2c">benchmarkNoAnalysis</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">int</link> <link linkend="_struct_catch_1_1_i_config_1a583734a61796b495b80779a6540eb6cc">benchmarkSamples</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1_i_config_1ae1ec73d460a2b58c7c9b022a430a34dd">benchmarkConfidenceInterval</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link> <link linkend="_struct_catch_1_1_i_config_1a3b8e5581be01f4773593f8b85eb7db98">benchmarkResamples</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> std::chrono::milliseconds <link linkend="_struct_catch_1_1_i_config_1a516879e39f2e46f69bb4ef1f1fe7023c">benchmarkWarmupTime</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Member Functions inherited from <link linkend="_class_catch_1_1_non_copyable">Catch::NonCopyable</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_non_copyable_1a4b492dd5753f9952350fb64dc6cb9fe2">NonCopyable</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_non_copyable_1a81254677280fef337eb4a676e91e3293">~NonCopyable</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_config_1adadf7c57478e4b0c83bea5b38d2dbc87"/><section>
+    <title>~IConfig()</title>
+<indexterm><primary>~IConfig</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>~IConfig</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::IConfig::~IConfig ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_config_1a363f3388a439d02217f37198eff96744"/><section>
+    <title>abortAfter()</title>
+<indexterm><primary>abortAfter</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>abortAfter</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">int</link> Catch::IConfig::abortAfter ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1aadb95f849359de1e6eb915aab063e542"/><section>
+    <title>allowThrows()</title>
+<indexterm><primary>allowThrows</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>allowThrows</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IConfig::allowThrows ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1ae1ec73d460a2b58c7c9b022a430a34dd"/><section>
+    <title>benchmarkConfidenceInterval()</title>
+<indexterm><primary>benchmarkConfidenceInterval</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>benchmarkConfidenceInterval</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">double</link> Catch::IConfig::benchmarkConfidenceInterval ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1aa9aa1eafdbe510e27bf319233969ee2c"/><section>
+    <title>benchmarkNoAnalysis()</title>
+<indexterm><primary>benchmarkNoAnalysis</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>benchmarkNoAnalysis</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IConfig::benchmarkNoAnalysis ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a3b8e5581be01f4773593f8b85eb7db98"/><section>
+    <title>benchmarkResamples()</title>
+<indexterm><primary>benchmarkResamples</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>benchmarkResamples</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link> Catch::IConfig::benchmarkResamples ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a583734a61796b495b80779a6540eb6cc"/><section>
+    <title>benchmarkSamples()</title>
+<indexterm><primary>benchmarkSamples</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>benchmarkSamples</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">int</link> Catch::IConfig::benchmarkSamples ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a516879e39f2e46f69bb4ef1f1fe7023c"/><section>
+    <title>benchmarkWarmupTime()</title>
+<indexterm><primary>benchmarkWarmupTime</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>benchmarkWarmupTime</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> std::chrono::milliseconds Catch::IConfig::benchmarkWarmupTime ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1aeb282b2b74d01c0d95ef1a4dbd2d12df"/><section>
+    <title>getSectionsToRun()</title>
+<indexterm><primary>getSectionsToRun</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>getSectionsToRun</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> std::vector&lt; std::string &gt; <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IConfig::getSectionsToRun ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a439d37638d37248d8a7f3f39ad5dc6f2"/><section>
+    <title>getTestsOrTags()</title>
+<indexterm><primary>getTestsOrTags</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>getTestsOrTags</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> std::vector&lt; std::string &gt; <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IConfig::getTestsOrTags ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a49a475bbeb3180c06799d6d958914649"/><section>
+    <title>hasTestFilters()</title>
+<indexterm><primary>hasTestFilters</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>hasTestFilters</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IConfig::hasTestFilters ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a2f1b0391019b9ce69921527a684eab23"/><section>
+    <title>includeSuccessfulResults()</title>
+<indexterm><primary>includeSuccessfulResults</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>includeSuccessfulResults</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IConfig::includeSuccessfulResults ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a160c6f6e19ed6ae946f7a9e737099189"/><section>
+    <title>minDuration()</title>
+<indexterm><primary>minDuration</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>minDuration</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">double</link> Catch::IConfig::minDuration ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1aa2315800a05c19db71518b1edc39d43b"/><section>
+    <title>name()</title>
+<indexterm><primary>name</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>name</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> std::string Catch::IConfig::name ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1ae049eb45979d841073fa65d1094c7f14"/><section>
+    <title>rngSeed()</title>
+<indexterm><primary>rngSeed</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>rngSeed</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link> Catch::IConfig::rngSeed ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a0fc59c9aba1d4018538d5526daa5eb78"/><section>
+    <title>runOrder()</title>
+<indexterm><primary>runOrder</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>runOrder</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_run_tests_1ab56bd851b1dd085869992d1a9d73dc5d">RunTests::InWhatOrder</link> Catch::IConfig::runOrder ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a5b886c5aad9001e90f63a7cf0726af63"/><section>
+    <title>shouldDebugBreak()</title>
+<indexterm><primary>shouldDebugBreak</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>shouldDebugBreak</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IConfig::shouldDebugBreak ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1abaa97d281484278291f0d3db6d404aeb"/><section>
+    <title>showDurations()</title>
+<indexterm><primary>showDurations</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>showDurations</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1">ShowDurations::OrNot</link> Catch::IConfig::showDurations ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1aa288bf92ccd0aafd85409d8aefdf738c"/><section>
+    <title>showInvisibles()</title>
+<indexterm><primary>showInvisibles</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>showInvisibles</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IConfig::showInvisibles ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a4e4714e479596394d5e129e8763f7853"/><section>
+    <title>stream()</title>
+<indexterm><primary>stream</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>stream</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> std::ostream &amp; Catch::IConfig::stream ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a6c021a1bf5cae58cb6c4b754af6cd4b5"/><section>
+    <title>testSpec()</title>
+<indexterm><primary>testSpec</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>testSpec</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">TestSpec</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IConfig::testSpec ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a87ec19a6b486eb5b5015cf7738fee026"/><section>
+    <title>useColour()</title>
+<indexterm><primary>useColour</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>useColour</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_use_colour_1a6aa78da0c2de7539bb9e3757e204a3f1">UseColour::YesOrNo</link> Catch::IConfig::useColour ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a55aff5924bdbb3f558775821b1eb4b3d"/><section>
+    <title>verbosity()</title>
+<indexterm><primary>verbosity</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>verbosity</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_namespace_catch_1af85c0d46dfe687d923a157362fd07737">Verbosity</link> Catch::IConfig::verbosity ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a75d970c495a28e46b8e9b04a1d32149f"/><section>
+    <title>warnAboutMissingAssertions()</title>
+<indexterm><primary>warnAboutMissingAssertions</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>warnAboutMissingAssertions</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IConfig::warnAboutMissingAssertions ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_config_1a30590623e3918825f2896c2262bf6fe3"/><section>
+    <title>warnAboutNoTests()</title>
+<indexterm><primary>warnAboutNoTests</primary><secondary>Catch::IConfig</secondary></indexterm>
+<indexterm><primary>Catch::IConfig</primary><secondary>warnAboutNoTests</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IConfig::warnAboutNoTests ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

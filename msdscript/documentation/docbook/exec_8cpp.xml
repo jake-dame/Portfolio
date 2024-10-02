@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_exec_8cpp" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/test_msdscript/src/exec.cpp File Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/test_msdscript/src/exec.cpp</primary></indexterm>
+<para>
+
+<para>Exec and piping functions definitions for test_msdscript. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;exec.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_exec_result">ExecResult</link> <link linkend="_exec_8cpp_1ad56af6b3c76af4d38d15f8875e02ff25">exec_program</link> (int argc, const char *const *argv, std::string input)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Exec and piping functions definitions for test_msdscript. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>Nabil Makarem </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_exec_8cpp_1ad56af6b3c76af4d38d15f8875e02ff25"/><section>
+    <title>exec_program()</title>
+<indexterm><primary>exec_program</primary><secondary>exec.cpp</secondary></indexterm>
+<indexterm><primary>exec.cpp</primary><secondary>exec_program</secondary></indexterm>
+<para><computeroutput><link linkend="_class_exec_result">ExecResult</link> exec_program (int argc, const char *const * argv, std::string input)</computeroutput></para></section>
+</section>
+</section>

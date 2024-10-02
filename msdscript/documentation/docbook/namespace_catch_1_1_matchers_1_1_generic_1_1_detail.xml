@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_catch_1_1_matchers_1_1_generic_1_1_detail" xml:lang="en-US">
+<title>Catch::Matchers::Generic::Detail Namespace Reference</title>
+<indexterm><primary>Catch::Matchers::Generic::Detail</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_namespace_catch_1_1_matchers_1_1_generic_1_1_detail_1a79ef1103073f7a8d31735436d2012835">finalizeDescription</link> (<link linkend="_struct_catch_1_1true__given">const</link> std::string &amp;<link linkend="_struct_catch_1_1true__given">desc</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_catch_1_1_matchers_1_1_generic_1_1_detail_1a79ef1103073f7a8d31735436d2012835"/><section>
+    <title>finalizeDescription()</title>
+<indexterm><primary>finalizeDescription</primary><secondary>Catch::Matchers::Generic::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Matchers::Generic::Detail</primary><secondary>finalizeDescription</secondary></indexterm>
+<para><computeroutput>std::string Catch::Matchers::Generic::Detail::finalizeDescription (<link linkend="_struct_catch_1_1true__given">const</link> std::string &amp; desc)</computeroutput></para></section>
+</section>
+</section>

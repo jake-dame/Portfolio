@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_message_info" xml:lang="en-US">
+<title>Catch::MessageInfo Struct Reference</title>
+<indexterm><primary>Catch::MessageInfo</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1_message_info_1afac7a84a9e8655428035a3c5418044f0">MessageInfo</link> (<link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">_macroName</link>, <link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">_lineInfo</link>, <link linkend="_struct_catch_1_1_result_was_1a624e1ee3661fcf6094ceef1f654601ef">ResultWas::OfType</link> <link linkend="_struct_catch_1_1true__given">_type</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_message_info_1af4b37f2172ba55395813b4bb6bbbde1a">operator==</link> (<link linkend="_struct_catch_1_1_message_info">MessageInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">other</link>) <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_message_info_1a8254cb8fca2da02a29a9843cdcb79df1">operator&lt;</link> (<link linkend="_struct_catch_1_1_message_info">MessageInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">other</link>) <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1_message_info_1a3ee7cd41def0989d2193bad7101436a0">macroName</link></para>
+</listitem>
+            <listitem><para>std::string <link linkend="_struct_catch_1_1_message_info_1ab6cd06e050bf426c6577502a5c50e256">message</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1_message_info_1a985165328723e599696ebd8e43195cc5">lineInfo</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_result_was_1a624e1ee3661fcf6094ceef1f654601ef">ResultWas::OfType</link> <link linkend="_struct_catch_1_1_message_info_1ae928b9117465c696e45951d9d0284e78">type</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link> <link linkend="_struct_catch_1_1_message_info_1a7f4f57ea21e50160adefce7b68a781d6">sequence</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link> <link linkend="_struct_catch_1_1_message_info_1a250459555d236f9510a5afd78a6c1979">globalCount</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_message_info_1afac7a84a9e8655428035a3c5418044f0"/><section>
+    <title>MessageInfo()</title>
+<indexterm><primary>MessageInfo</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>MessageInfo</secondary></indexterm>
+<para><computeroutput>Catch::MessageInfo::MessageInfo (<link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; _macroName, <link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; _lineInfo, <link linkend="_struct_catch_1_1_result_was_1a624e1ee3661fcf6094ceef1f654601ef">ResultWas::OfType</link> _type)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_message_info_1a8254cb8fca2da02a29a9843cdcb79df1"/><section>
+    <title>operator&lt;()</title>
+<indexterm><primary>operator&lt;</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>operator&lt;</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> Catch::MessageInfo::operator&lt; (<link linkend="_struct_catch_1_1_message_info">MessageInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; other) const</computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_message_info_1af4b37f2172ba55395813b4bb6bbbde1a"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> Catch::MessageInfo::operator== (<link linkend="_struct_catch_1_1_message_info">MessageInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; other) const</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_catch_1_1_message_info_1a250459555d236f9510a5afd78a6c1979"/><section>
+    <title>globalCount</title>
+<indexterm><primary>globalCount</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>globalCount</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link> Catch::MessageInfo::globalCount<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_message_info_1a985165328723e599696ebd8e43195cc5"/><section>
+    <title>lineInfo</title>
+<indexterm><primary>lineInfo</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>lineInfo</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> Catch::MessageInfo::lineInfo</computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_message_info_1a3ee7cd41def0989d2193bad7101436a0"/><section>
+    <title>macroName</title>
+<indexterm><primary>macroName</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>macroName</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catch_1_1_string_ref">StringRef</link> Catch::MessageInfo::macroName</computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_message_info_1ab6cd06e050bf426c6577502a5c50e256"/><section>
+    <title>message</title>
+<indexterm><primary>message</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>message</secondary></indexterm>
+<para><computeroutput>std::string Catch::MessageInfo::message</computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_message_info_1a7f4f57ea21e50160adefce7b68a781d6"/><section>
+    <title>sequence</title>
+<indexterm><primary>sequence</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>sequence</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link> Catch::MessageInfo::sequence</computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_message_info_1ae928b9117465c696e45951d9d0284e78"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>Catch::MessageInfo</secondary></indexterm>
+<indexterm><primary>Catch::MessageInfo</primary><secondary>type</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_result_was_1a624e1ee3661fcf6094ceef1f654601ef">ResultWas::OfType</link> Catch::MessageInfo::type</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

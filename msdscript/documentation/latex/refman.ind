@@ -1,0 +1,427 @@
+\begin{theindex}
+
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/Expr.cpp}, 
+		\hyperpage{37}
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/Expr.h}, 
+		\hyperpage{37, 38}
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/Val.cpp}, 
+		\hyperpage{46}
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/Val.h}, 
+		\hyperpage{46}
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/cmdline.cpp}, 
+		\hyperpage{35}
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/cmdline.h}, 
+		\hyperpage{36, 37}
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/main.cpp}, 
+		\hyperpage{42}
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/parse.cpp}, 
+		\hyperpage{43}
+  \item {/Users/u0858882/Desktop/msdscript/msdscript/src/parse.h}, 
+		\hyperpage{45, 46}
+  \item {/Users/u0858882/Desktop/msdscript/test\_msdscript/src/test\_msdscript.cpp}, 
+		\hyperpage{47}
+
+  \indexspace
+
+  \item {Add}, \hyperpage{7}
+    \subitem {Add}, \hyperpage{8}
+    \subitem {equals}, \hyperpage{8}
+    \subitem {has\_variable}, \hyperpage{8}
+    \subitem {interp}, \hyperpage{8}
+    \subitem {lhs\_m}, \hyperpage{9}
+    \subitem {pretty\_print}, \hyperpage{8}
+    \subitem {pretty\_print\_at}, \hyperpage{8}
+    \subitem {print}, \hyperpage{9}
+    \subitem {rhs\_m}, \hyperpage{9}
+    \subitem {subst}, \hyperpage{9}
+  \item {add\_to}
+    \subitem {BoolVal}, \hyperpage{12}
+    \subitem {NumVal}, \hyperpage{29}
+    \subitem {Val}, \hyperpage{31}
+
+  \indexspace
+
+  \item {body\_m}
+    \subitem {Let}, \hyperpage{23}
+  \item {Bool}, \hyperpage{10}
+    \subitem {Bool}, \hyperpage{10}
+    \subitem {bool\_m}, \hyperpage{11}
+    \subitem {equals}, \hyperpage{11}
+    \subitem {has\_variable}, \hyperpage{11}
+    \subitem {interp}, \hyperpage{11}
+    \subitem {print}, \hyperpage{11}
+    \subitem {subst}, \hyperpage{11}
+  \item {bool\_m}
+    \subitem {Bool}, \hyperpage{11}
+    \subitem {BoolVal}, \hyperpage{13}
+  \item {BoolVal}, \hyperpage{12}
+    \subitem {add\_to}, \hyperpage{12}
+    \subitem {bool\_m}, \hyperpage{13}
+    \subitem {BoolVal}, \hyperpage{12}
+    \subitem {equals}, \hyperpage{12}
+    \subitem {is\_true}, \hyperpage{13}
+    \subitem {mult\_with}, \hyperpage{13}
+    \subitem {print}, \hyperpage{13}
+    \subitem {to\_expr}, \hyperpage{13}
+  \item {build\_number}
+    \subitem {parse.cpp}, \hyperpage{43}
+
+  \indexspace
+
+  \item {CATCH\_CONFIG\_RUNNER}
+    \subitem {cmdline.cpp}, \hyperpage{35}
+  \item {cmdline.cpp}
+    \subitem {CATCH\_CONFIG\_RUNNER}, \hyperpage{35}
+    \subitem {handle\_cin}, \hyperpage{35}
+    \subitem {if\_help}, \hyperpage{35}
+    \subitem {if\_interp}, \hyperpage{36}
+    \subitem {if\_pretty\_print}, \hyperpage{36}
+    \subitem {if\_print}, \hyperpage{36}
+    \subitem {if\_test}, \hyperpage{36}
+    \subitem {use\_arguments}, \hyperpage{36}
+  \item {cmdline.h}
+    \subitem {use\_arguments}, \hyperpage{37}
+  \item {compare\_IO}
+    \subitem {test\_msdscript.cpp}, \hyperpage{48}
+  \item {compare\_programs}
+    \subitem {test\_msdscript.cpp}, \hyperpage{48}
+  \item {consume}
+    \subitem {parse.cpp}, \hyperpage{43}
+  \item {consume\_whitespace}
+    \subitem {parse.cpp}, \hyperpage{43}
+
+  \indexspace
+
+  \item {else\_m}
+    \subitem {If}, \hyperpage{20}
+  \item {Eq}, \hyperpage{14}
+    \subitem {Eq}, \hyperpage{14}
+    \subitem {equals}, \hyperpage{15}
+    \subitem {has\_variable}, \hyperpage{15}
+    \subitem {interp}, \hyperpage{15}
+    \subitem {lhs\_m}, \hyperpage{16}
+    \subitem {pretty\_print}, \hyperpage{15}
+    \subitem {pretty\_print\_at}, \hyperpage{15}
+    \subitem {print}, \hyperpage{15}
+    \subitem {rhs\_m}, \hyperpage{16}
+    \subitem {subst}, \hyperpage{15}
+  \item {equals}
+    \subitem {Add}, \hyperpage{8}
+    \subitem {Bool}, \hyperpage{11}
+    \subitem {BoolVal}, \hyperpage{12}
+    \subitem {Eq}, \hyperpage{15}
+    \subitem {Expr}, \hyperpage{17}
+    \subitem {If}, \hyperpage{19}
+    \subitem {Let}, \hyperpage{22}
+    \subitem {Mult}, \hyperpage{25}
+    \subitem {Num}, \hyperpage{27}
+    \subitem {NumVal}, \hyperpage{29}
+    \subitem {Val}, \hyperpage{31}
+    \subitem {Var}, \hyperpage{33}
+  \item {EXECS\_DIR}
+    \subitem {test\_msdscript.cpp}, \hyperpage{49}
+  \item {Expr}, \hyperpage{16}
+    \subitem {equals}, \hyperpage{17}
+    \subitem {has\_variable}, \hyperpage{17}
+    \subitem {interp}, \hyperpage{17}
+    \subitem {pretty\_print}, \hyperpage{17}
+    \subitem {pretty\_print\_at}, \hyperpage{17}
+    \subitem {print}, \hyperpage{17}
+    \subitem {subst}, \hyperpage{18}
+    \subitem {to\_pretty\_string}, \hyperpage{18}
+    \subitem {to\_string}, \hyperpage{18}
+  \item {Expr.h}
+    \subitem {prec\_A}, \hyperpage{38}
+    \subitem {prec\_M}, \hyperpage{38}
+    \subitem {prec\_none}, \hyperpage{38}
+    \subitem {precedence\_t}, \hyperpage{38}
+
+  \indexspace
+
+  \item {handle\_cin}
+    \subitem {cmdline.cpp}, \hyperpage{35}
+  \item {has\_variable}
+    \subitem {Add}, \hyperpage{8}
+    \subitem {Bool}, \hyperpage{11}
+    \subitem {Eq}, \hyperpage{15}
+    \subitem {Expr}, \hyperpage{17}
+    \subitem {If}, \hyperpage{19}
+    \subitem {Let}, \hyperpage{22}
+    \subitem {Mult}, \hyperpage{25}
+    \subitem {Num}, \hyperpage{27}
+    \subitem {Var}, \hyperpage{33}
+
+  \indexspace
+
+  \item {If}, \hyperpage{18}
+    \subitem {else\_m}, \hyperpage{20}
+    \subitem {equals}, \hyperpage{19}
+    \subitem {has\_variable}, \hyperpage{19}
+    \subitem {If}, \hyperpage{19}
+    \subitem {interp}, \hyperpage{19}
+    \subitem {pretty\_print}, \hyperpage{20}
+    \subitem {pretty\_print\_at}, \hyperpage{20}
+    \subitem {print}, \hyperpage{20}
+    \subitem {subst}, \hyperpage{20}
+    \subitem {test\_m}, \hyperpage{20}
+    \subitem {then\_m}, \hyperpage{21}
+  \item {if\_help}
+    \subitem {cmdline.cpp}, \hyperpage{35}
+  \item {if\_interp}
+    \subitem {cmdline.cpp}, \hyperpage{36}
+  \item {if\_pretty\_print}
+    \subitem {cmdline.cpp}, \hyperpage{36}
+  \item {if\_print}
+    \subitem {cmdline.cpp}, \hyperpage{36}
+  \item {if\_test}
+    \subitem {cmdline.cpp}, \hyperpage{36}
+  \item {int\_m}
+    \subitem {Num}, \hyperpage{28}
+    \subitem {NumVal}, \hyperpage{30}
+  \item {interp}
+    \subitem {Add}, \hyperpage{8}
+    \subitem {Bool}, \hyperpage{11}
+    \subitem {Eq}, \hyperpage{15}
+    \subitem {Expr}, \hyperpage{17}
+    \subitem {If}, \hyperpage{19}
+    \subitem {Let}, \hyperpage{22}
+    \subitem {Mult}, \hyperpage{25}
+    \subitem {Num}, \hyperpage{27}
+    \subitem {Var}, \hyperpage{33}
+  \item {is\_true}
+    \subitem {BoolVal}, \hyperpage{13}
+    \subitem {NumVal}, \hyperpage{29}
+    \subitem {Val}, \hyperpage{31}
+
+  \indexspace
+
+  \item {Let}, \hyperpage{21}
+    \subitem {body\_m}, \hyperpage{23}
+    \subitem {equals}, \hyperpage{22}
+    \subitem {has\_variable}, \hyperpage{22}
+    \subitem {interp}, \hyperpage{22}
+    \subitem {Let}, \hyperpage{22}
+    \subitem {lhs\_m}, \hyperpage{23}
+    \subitem {pretty\_print}, \hyperpage{22}
+    \subitem {pretty\_print\_at}, \hyperpage{22}
+    \subitem {print}, \hyperpage{23}
+    \subitem {rhs\_m}, \hyperpage{23}
+    \subitem {subst}, \hyperpage{23}
+  \item {lhs\_m}
+    \subitem {Add}, \hyperpage{9}
+    \subitem {Eq}, \hyperpage{16}
+    \subitem {Let}, \hyperpage{23}
+    \subitem {Mult}, \hyperpage{26}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{42}
+    \subitem {test\_msdscript.cpp}, \hyperpage{48}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{42}
+  \item {Mult}, \hyperpage{24}
+    \subitem {equals}, \hyperpage{25}
+    \subitem {has\_variable}, \hyperpage{25}
+    \subitem {interp}, \hyperpage{25}
+    \subitem {lhs\_m}, \hyperpage{26}
+    \subitem {Mult}, \hyperpage{24}
+    \subitem {pretty\_print}, \hyperpage{25}
+    \subitem {pretty\_print\_at}, \hyperpage{25}
+    \subitem {print}, \hyperpage{25}
+    \subitem {rhs\_m}, \hyperpage{26}
+    \subitem {subst}, \hyperpage{25}
+  \item {mult\_with}
+    \subitem {BoolVal}, \hyperpage{13}
+    \subitem {NumVal}, \hyperpage{29}
+    \subitem {Val}, \hyperpage{31}
+
+  \indexspace
+
+  \item {Num}, \hyperpage{26}
+    \subitem {equals}, \hyperpage{27}
+    \subitem {has\_variable}, \hyperpage{27}
+    \subitem {int\_m}, \hyperpage{28}
+    \subitem {interp}, \hyperpage{27}
+    \subitem {Num}, \hyperpage{27}
+    \subitem {print}, \hyperpage{27}
+    \subitem {subst}, \hyperpage{28}
+  \item {NumVal}, \hyperpage{28}
+    \subitem {add\_to}, \hyperpage{29}
+    \subitem {equals}, \hyperpage{29}
+    \subitem {int\_m}, \hyperpage{30}
+    \subitem {is\_true}, \hyperpage{29}
+    \subitem {mult\_with}, \hyperpage{29}
+    \subitem {NumVal}, \hyperpage{29}
+    \subitem {print}, \hyperpage{29}
+    \subitem {to\_expr}, \hyperpage{30}
+
+  \indexspace
+
+  \item {OUTPUT\_DIR}
+    \subitem {test\_msdscript.cpp}, \hyperpage{49}
+
+  \indexspace
+
+  \item {parse.cpp}
+    \subitem {build\_number}, \hyperpage{43}
+    \subitem {consume}, \hyperpage{43}
+    \subitem {consume\_whitespace}, \hyperpage{43}
+    \subitem {parse\_adds}, \hyperpage{43}
+    \subitem {parse\_bool}, \hyperpage{44}
+    \subitem {parse\_eqs}, \hyperpage{44}
+    \subitem {parse\_expr}, \hyperpage{44}
+    \subitem {parse\_if}, \hyperpage{44}
+    \subitem {parse\_let}, \hyperpage{44}
+    \subitem {parse\_mults}, \hyperpage{44}
+    \subitem {parse\_num}, \hyperpage{44}
+    \subitem {parse\_paren}, \hyperpage{44}
+    \subitem {parse\_unary\_and\_ternary\_exprs}, \hyperpage{45}
+    \subitem {parse\_var}, \hyperpage{45}
+    \subitem {peek\_keyword}, \hyperpage{45}
+  \item {parse.h}
+    \subitem {parse\_expr}, \hyperpage{45}
+  \item {parse\_adds}
+    \subitem {parse.cpp}, \hyperpage{43}
+  \item {parse\_bool}
+    \subitem {parse.cpp}, \hyperpage{44}
+  \item {parse\_eqs}
+    \subitem {parse.cpp}, \hyperpage{44}
+  \item {parse\_expr}
+    \subitem {parse.cpp}, \hyperpage{44}
+    \subitem {parse.h}, \hyperpage{45}
+  \item {parse\_if}
+    \subitem {parse.cpp}, \hyperpage{44}
+  \item {parse\_let}
+    \subitem {parse.cpp}, \hyperpage{44}
+  \item {parse\_mults}
+    \subitem {parse.cpp}, \hyperpage{44}
+  \item {parse\_num}
+    \subitem {parse.cpp}, \hyperpage{44}
+  \item {parse\_paren}
+    \subitem {parse.cpp}, \hyperpage{44}
+  \item {parse\_unary\_and\_ternary\_exprs}
+    \subitem {parse.cpp}, \hyperpage{45}
+  \item {parse\_var}
+    \subitem {parse.cpp}, \hyperpage{45}
+  \item {peek\_keyword}
+    \subitem {parse.cpp}, \hyperpage{45}
+  \item {prec\_A}
+    \subitem {Expr.h}, \hyperpage{38}
+  \item {prec\_M}
+    \subitem {Expr.h}, \hyperpage{38}
+  \item {prec\_none}
+    \subitem {Expr.h}, \hyperpage{38}
+  \item {precedence\_t}
+    \subitem {Expr.h}, \hyperpage{38}
+  \item {pretty\_print}
+    \subitem {Add}, \hyperpage{8}
+    \subitem {Eq}, \hyperpage{15}
+    \subitem {Expr}, \hyperpage{17}
+    \subitem {If}, \hyperpage{20}
+    \subitem {Let}, \hyperpage{22}
+    \subitem {Mult}, \hyperpage{25}
+  \item {pretty\_print\_at}
+    \subitem {Add}, \hyperpage{8}
+    \subitem {Eq}, \hyperpage{15}
+    \subitem {Expr}, \hyperpage{17}
+    \subitem {If}, \hyperpage{20}
+    \subitem {Let}, \hyperpage{22}
+    \subitem {Mult}, \hyperpage{25}
+  \item {print}
+    \subitem {Add}, \hyperpage{9}
+    \subitem {Bool}, \hyperpage{11}
+    \subitem {BoolVal}, \hyperpage{13}
+    \subitem {Eq}, \hyperpage{15}
+    \subitem {Expr}, \hyperpage{17}
+    \subitem {If}, \hyperpage{20}
+    \subitem {Let}, \hyperpage{23}
+    \subitem {Mult}, \hyperpage{25}
+    \subitem {Num}, \hyperpage{27}
+    \subitem {NumVal}, \hyperpage{29}
+    \subitem {Val}, \hyperpage{31}
+    \subitem {Var}, \hyperpage{33}
+
+  \indexspace
+
+  \item {rhs\_m}
+    \subitem {Add}, \hyperpage{9}
+    \subitem {Eq}, \hyperpage{16}
+    \subitem {Let}, \hyperpage{23}
+    \subitem {Mult}, \hyperpage{26}
+
+  \indexspace
+
+  \item {str\_m}
+    \subitem {Var}, \hyperpage{33}
+  \item {subst}
+    \subitem {Add}, \hyperpage{9}
+    \subitem {Bool}, \hyperpage{11}
+    \subitem {Eq}, \hyperpage{15}
+    \subitem {Expr}, \hyperpage{18}
+    \subitem {If}, \hyperpage{20}
+    \subitem {Let}, \hyperpage{23}
+    \subitem {Mult}, \hyperpage{25}
+    \subitem {Num}, \hyperpage{28}
+    \subitem {Var}, \hyperpage{33}
+
+  \indexspace
+
+  \item {TEST\_ITER}
+    \subitem {test\_msdscript.cpp}, \hyperpage{49}
+  \item {test\_m}
+    \subitem {If}, \hyperpage{20}
+  \item {test\_msdscript.cpp}
+    \subitem {compare\_IO}, \hyperpage{48}
+    \subitem {compare\_programs}, \hyperpage{48}
+    \subitem {EXECS\_DIR}, \hyperpage{49}
+    \subitem {main}, \hyperpage{48}
+    \subitem {OUTPUT\_DIR}, \hyperpage{49}
+    \subitem {TEST\_ITER}, \hyperpage{49}
+    \subitem {write\_report\_header}, \hyperpage{48}
+    \subitem {write\_results}, \hyperpage{48, 49}
+  \item {then\_m}
+    \subitem {If}, \hyperpage{21}
+  \item {to\_expr}
+    \subitem {BoolVal}, \hyperpage{13}
+    \subitem {NumVal}, \hyperpage{30}
+    \subitem {Val}, \hyperpage{31}
+  \item {to\_pretty\_string}
+    \subitem {Expr}, \hyperpage{18}
+  \item {to\_string}
+    \subitem {Expr}, \hyperpage{18}
+    \subitem {Val}, \hyperpage{31}
+
+  \indexspace
+
+  \item {use\_arguments}
+    \subitem {cmdline.cpp}, \hyperpage{36}
+    \subitem {cmdline.h}, \hyperpage{37}
+
+  \indexspace
+
+  \item {Val}, \hyperpage{30}
+    \subitem {add\_to}, \hyperpage{31}
+    \subitem {equals}, \hyperpage{31}
+    \subitem {is\_true}, \hyperpage{31}
+    \subitem {mult\_with}, \hyperpage{31}
+    \subitem {print}, \hyperpage{31}
+    \subitem {to\_expr}, \hyperpage{31}
+    \subitem {to\_string}, \hyperpage{31}
+  \item {Var}, \hyperpage{32}
+    \subitem {equals}, \hyperpage{33}
+    \subitem {has\_variable}, \hyperpage{33}
+    \subitem {interp}, \hyperpage{33}
+    \subitem {print}, \hyperpage{33}
+    \subitem {str\_m}, \hyperpage{33}
+    \subitem {subst}, \hyperpage{33}
+    \subitem {Var}, \hyperpage{32}
+
+  \indexspace
+
+  \item {write\_report\_header}
+    \subitem {test\_msdscript.cpp}, \hyperpage{48}
+  \item {write\_results}
+    \subitem {test\_msdscript.cpp}, \hyperpage{48, 49}
+
+\end{theindex}

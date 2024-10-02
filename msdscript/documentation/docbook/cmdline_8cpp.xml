@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cmdline_8cpp" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/msdscript/src/cmdline.cpp File Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/msdscript/src/cmdline.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;catch.h&quot;<?linebreak?>#include &quot;cmdline.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_cmdline_8cpp_1a34b4c3eca7342fbc4cba090d02139902">CATCH_CONFIG_RUNNER</link>&#160;&#160;&#160;/* Don&apos;t move either of these */</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_cmdline_8cpp_1a9fd6b444726b7192a88a7fff273a92ce">if_help</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_cmdline_8cpp_1a60a69759c7addd412b30b216ae1e02c7">if_test</link> (char **argv)</para>
+</listitem>
+            <listitem><para>void <link linkend="_cmdline_8cpp_1a2afc177f4085b6a4badeac502cace318">if_interp</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_cmdline_8cpp_1a8c7e61571a5819ce4828eefef71140ff">if_print</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_cmdline_8cpp_1af407a3e5c5999d11935dbc1e29e49a56">if_pretty_print</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_cmdline_8cpp_1a6be4cdb0b4563c03f2b883d68723d330">handle_cin</link> (<link linkend="_class_expr">Expr</link> *&amp;e)</para>
+</listitem>
+            <listitem><para>int <link linkend="_cmdline_8cpp_1a9cf2e946c286f6a2363ae0a511173991">use_arguments</link> (int argc, char **argv)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_cmdline_8cpp_1a34b4c3eca7342fbc4cba090d02139902"/><section>
+    <title>CATCH_CONFIG_RUNNER</title>
+<indexterm><primary>CATCH_CONFIG_RUNNER</primary><secondary>cmdline.cpp</secondary></indexterm>
+<indexterm><primary>cmdline.cpp</primary><secondary>CATCH_CONFIG_RUNNER</secondary></indexterm>
+<para><computeroutput>#define CATCH_CONFIG_RUNNER&#160;&#160;&#160;/* Don&apos;t move either of these */</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_cmdline_8cpp_1a6be4cdb0b4563c03f2b883d68723d330"/><section>
+    <title>handle_cin()</title>
+<indexterm><primary>handle_cin</primary><secondary>cmdline.cpp</secondary></indexterm>
+<indexterm><primary>cmdline.cpp</primary><secondary>handle_cin</secondary></indexterm>
+<para><computeroutput>void handle_cin (<link linkend="_class_expr">Expr</link> *&amp; e)</computeroutput></para>
+<para>std::cin helper </para>
+</section>
+<anchor xml:id="_cmdline_8cpp_1a9fd6b444726b7192a88a7fff273a92ce"/><section>
+    <title>if_help()</title>
+<indexterm><primary>if_help</primary><secondary>cmdline.cpp</secondary></indexterm>
+<indexterm><primary>cmdline.cpp</primary><secondary>if_help</secondary></indexterm>
+<para><computeroutput>void if_help ( )</computeroutput></para>
+<para>Argument handling functions </para>
+</section>
+<anchor xml:id="_cmdline_8cpp_1a2afc177f4085b6a4badeac502cace318"/><section>
+    <title>if_interp()</title>
+<indexterm><primary>if_interp</primary><secondary>cmdline.cpp</secondary></indexterm>
+<indexterm><primary>cmdline.cpp</primary><secondary>if_interp</secondary></indexterm>
+<para><computeroutput>void if_interp ( )</computeroutput></para></section>
+<anchor xml:id="_cmdline_8cpp_1af407a3e5c5999d11935dbc1e29e49a56"/><section>
+    <title>if_pretty_print()</title>
+<indexterm><primary>if_pretty_print</primary><secondary>cmdline.cpp</secondary></indexterm>
+<indexterm><primary>cmdline.cpp</primary><secondary>if_pretty_print</secondary></indexterm>
+<para><computeroutput>void if_pretty_print ( )</computeroutput></para></section>
+<anchor xml:id="_cmdline_8cpp_1a8c7e61571a5819ce4828eefef71140ff"/><section>
+    <title>if_print()</title>
+<indexterm><primary>if_print</primary><secondary>cmdline.cpp</secondary></indexterm>
+<indexterm><primary>cmdline.cpp</primary><secondary>if_print</secondary></indexterm>
+<para><computeroutput>void if_print ( )</computeroutput></para></section>
+<anchor xml:id="_cmdline_8cpp_1a60a69759c7addd412b30b216ae1e02c7"/><section>
+    <title>if_test()</title>
+<indexterm><primary>if_test</primary><secondary>cmdline.cpp</secondary></indexterm>
+<indexterm><primary>cmdline.cpp</primary><secondary>if_test</secondary></indexterm>
+<para><computeroutput>void if_test (char ** argv)</computeroutput></para></section>
+<anchor xml:id="_cmdline_8cpp_1a9cf2e946c286f6a2363ae0a511173991"/><section>
+    <title>use_arguments()</title>
+<indexterm><primary>use_arguments</primary><secondary>cmdline.cpp</secondary></indexterm>
+<indexterm><primary>cmdline.cpp</primary><secondary>use_arguments</secondary></indexterm>
+<para><computeroutput>static int use_arguments (int argc, char ** argv)</computeroutput></para></section>
+</section>
+</section>

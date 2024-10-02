@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_if" xml:lang="en-US">
+<title>If Class Reference</title>
+<indexterm><primary>If</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Expr.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for If:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_if.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_if_1a4ec7756a0ff7f4200bf058ec150a81c5">If</link> (<link linkend="_class_expr">Expr</link> *condition, <link linkend="_class_expr">Expr</link> *first_branch, <link linkend="_class_expr">Expr</link> *second_branch)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_if_1af6ca55f18459dffb3590aa7f739223fc">equals</link> (<link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_if_1a241d12b7b9edc08f0f56032608d4a515">interp</link> () override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_if_1acbabb88c712501e24689fe66109b2b6c">has_variable</link> () override</para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_if_1a5596376cf345f210936d736d981aa03a">subst</link> (std::string str, <link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_expr">Expr</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7">to_string</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa">to_pretty_string</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_if_1aa431b392976fd2b4b2605df4abe41af5">test_m</link></para>
+
+<para>The condition operand of an <link linkend="_class_if">If</link> expression. </para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_if_1aae11f0c57ef5a6d5ccf7adc436f8c923">then_m</link></para>
+
+<para>Branch 1 operand of an <link linkend="_class_if">If</link> expression. </para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_if_1af5bfb0ba1e76309068f6af3cfa97b7e2">else_m</link></para>
+
+<para>Branch 2 operand of an <link linkend="_class_if">If</link> expression. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_if_1ab7b4831b6cd1da04bc6f483f0a761509">print</link> (std::ostream &amp;stream) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_if_1a0e60c6ac879cccb40bd974cf7fbbdb36">pretty_print</link> (std::ostream &amp;stream) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_if_1af46538bc8b3ccd613d12f5a981256c95">pretty_print_at</link> (std::ostream &amp;stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp;caller_pos, bool has_paren) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_if_1a4ec7756a0ff7f4200bf058ec150a81c5"/><section>
+    <title>If()</title>
+<indexterm><primary>If</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>If</secondary></indexterm>
+<para><computeroutput>If::If (<link linkend="_class_expr">Expr</link> * condition, <link linkend="_class_expr">Expr</link> * first_branch, <link linkend="_class_expr">Expr</link> * second_branch)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_if_1af6ca55f18459dffb3590aa7f739223fc"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>bool If::equals (<link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1abf9cdb765fb84304881789d273d7594f">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_if_1acbabb88c712501e24689fe66109b2b6c"/><section>
+    <title>has_variable()</title>
+<indexterm><primary>has_variable</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>has_variable</secondary></indexterm>
+<para><computeroutput>bool If::has_variable ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a92dc26078993a4b9721ea732274a435c">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_if_1a241d12b7b9edc08f0f56032608d4a515"/><section>
+    <title>interp()</title>
+<indexterm><primary>interp</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>interp</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * If::interp ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa671ba2b665001c815588a7271735104">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_if_1a0e60c6ac879cccb40bd974cf7fbbdb36"/><section>
+    <title>pretty_print()</title>
+<indexterm><primary>pretty_print</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>pretty_print</secondary></indexterm>
+<para><computeroutput>void If::pretty_print (std::ostream &amp; stream)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_expr_1aaec6172fa839cafad124775b0a43965b">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_if_1af46538bc8b3ccd613d12f5a981256c95"/><section>
+    <title>pretty_print_at()</title>
+<indexterm><primary>pretty_print_at</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>pretty_print_at</secondary></indexterm>
+<para><computeroutput>void If::pretty_print_at (std::ostream &amp; stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp; caller_pos, bool has_paren)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_expr_1ab5b1d850f98bb650ef199bb6e90133b7">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_if_1ab7b4831b6cd1da04bc6f483f0a761509"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void If::print (std::ostream &amp; stream)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a8e34377af275f60532d1ba76e6feaceb">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_if_1a5596376cf345f210936d736d981aa03a"/><section>
+    <title>subst()</title>
+<indexterm><primary>subst</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>subst</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * If::subst (std::string str, <link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa91f56b56e078594565aeba32c520b7a">Expr</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_if_1af5bfb0ba1e76309068f6af3cfa97b7e2"/><section>
+    <title>else_m</title>
+<indexterm><primary>else_m</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>else_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* If::else_m</computeroutput></para><para>
+
+<para>Branch 2 operand of an <link linkend="_class_if">If</link> expression. </para>
+</para>
+</section>
+<anchor xml:id="_class_if_1aa431b392976fd2b4b2605df4abe41af5"/><section>
+    <title>test_m</title>
+<indexterm><primary>test_m</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>test_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* If::test_m</computeroutput></para><para>
+
+<para>The condition operand of an <link linkend="_class_if">If</link> expression. </para>
+</para>
+</section>
+<anchor xml:id="_class_if_1aae11f0c57ef5a6d5ccf7adc436f8c923"/><section>
+    <title>then_m</title>
+<indexterm><primary>then_m</primary><secondary>If</secondary></indexterm>
+<indexterm><primary>If</primary><secondary>then_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* If::then_m</computeroutput></para><para>
+
+<para>Branch 1 operand of an <link linkend="_class_if">If</link> expression. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8h">Expr.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8cpp">Expr.cpp</link></section>
+</section>

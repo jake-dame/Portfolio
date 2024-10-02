@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_non_copyable" xml:lang="en-US">
+<title>Catch::NonCopyable Class Reference</title>
+<indexterm><primary>Catch::NonCopyable</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::NonCopyable:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_non_copyable.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_non_copyable_1a4b492dd5753f9952350fb64dc6cb9fe2">NonCopyable</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_non_copyable_1a81254677280fef337eb4a676e91e3293">~NonCopyable</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_non_copyable_1a74cf3e4aa051c284941e39b436b2f693">NonCopyable</link> (<link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;)=<link linkend="_struct_catch_1_1true__given">delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_non_copyable_1a09d1d8775db8c495fa40c285b034faa3">NonCopyable</link> (<link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> &amp;&amp;)=<link linkend="_struct_catch_1_1true__given">delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> &amp; <link linkend="_class_catch_1_1_non_copyable_1ac8be822f5ed1abc8e31e17d09200c493">operator=</link> (<link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;)=<link linkend="_struct_catch_1_1true__given">delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> &amp; <link linkend="_class_catch_1_1_non_copyable_1ae70adfd1bdbaa8d2207a290ffdb70578">operator=</link> (<link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> &amp;&amp;)=<link linkend="_struct_catch_1_1true__given">delete</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_non_copyable_1a74cf3e4aa051c284941e39b436b2f693"/><section>
+    <title>NonCopyable()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>NonCopyable</primary><secondary>Catch::NonCopyable</secondary></indexterm>
+<indexterm><primary>Catch::NonCopyable</primary><secondary>NonCopyable</secondary></indexterm>
+<para><computeroutput>Catch::NonCopyable::NonCopyable (<link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; )<computeroutput>[private]</computeroutput>, <computeroutput>[delete]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_non_copyable_1a09d1d8775db8c495fa40c285b034faa3"/><section>
+    <title>NonCopyable()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>NonCopyable</primary><secondary>Catch::NonCopyable</secondary></indexterm>
+<indexterm><primary>Catch::NonCopyable</primary><secondary>NonCopyable</secondary></indexterm>
+<para><computeroutput>Catch::NonCopyable::NonCopyable (<link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> &amp;&amp; )<computeroutput>[private]</computeroutput>, <computeroutput>[delete]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_non_copyable_1a4b492dd5753f9952350fb64dc6cb9fe2"/><section>
+    <title>NonCopyable()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>NonCopyable</primary><secondary>Catch::NonCopyable</secondary></indexterm>
+<indexterm><primary>Catch::NonCopyable</primary><secondary>NonCopyable</secondary></indexterm>
+<para><computeroutput>Catch::NonCopyable::NonCopyable ( )<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_non_copyable_1a81254677280fef337eb4a676e91e3293"/><section>
+    <title>~NonCopyable()</title>
+<indexterm><primary>~NonCopyable</primary><secondary>Catch::NonCopyable</secondary></indexterm>
+<indexterm><primary>Catch::NonCopyable</primary><secondary>~NonCopyable</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::NonCopyable::~NonCopyable ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_non_copyable_1ae70adfd1bdbaa8d2207a290ffdb70578"/><section>
+    <title>operator=()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator=</primary><secondary>Catch::NonCopyable</secondary></indexterm>
+<indexterm><primary>Catch::NonCopyable</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> &amp; Catch::NonCopyable::operator= (<link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> &amp;&amp; )<computeroutput>[private]</computeroutput>, <computeroutput>[delete]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_non_copyable_1ac8be822f5ed1abc8e31e17d09200c493"/><section>
+    <title>operator=()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator=</primary><secondary>Catch::NonCopyable</secondary></indexterm>
+<indexterm><primary>Catch::NonCopyable</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> &amp; Catch::NonCopyable::operator= (<link linkend="_class_catch_1_1_non_copyable">NonCopyable</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; )<computeroutput>[private]</computeroutput>, <computeroutput>[delete]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

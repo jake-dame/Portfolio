@@ -1,0 +1,92 @@
+\doxysection{Val.\+h}
+\hypertarget{_val_8h_source}{}\label{_val_8h_source}\index{/Users/u0858882/Desktop/msdscript/msdscript/src/Val.h@{/Users/u0858882/Desktop/msdscript/msdscript/src/Val.h}}
+\mbox{\hyperlink{_val_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \(\backslash\)brief\ Val\ bass\ class\ +\ derived\ class\ declarations}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \(\backslash\)file\ Val.h}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \(\backslash\)author\ Jake\ Dame}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *****************************************************************************/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_expr}{Expr}};\ \textcolor{comment}{/*\ Expr\ class\ for\ Val::to\_expr()\ */}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \(\backslash\)class\ Val}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \(\backslash\)brief\ An\ abstract,\ base\ class\ representing\ a\ the\ value\ of\ an\ expression}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ The\ Val\ class\ is\ an\ abstract\ class\ that\ defines\ regular\ and}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ virtual\ functions\ that\ can\ be\ used\ to\ represent\ two\ mathematical}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ values\ -\/-\/\ boolean\ values\ (BoolVal\ class)\ and\ integer\ values\ (NumVal\ class)}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ -\/-\/\ of\ mathematical\ expressions\ (Expr\ class\ in\ Expr.h);\ calling\ interp()\ on}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ an\ Expr\ object\ returns\ a\ Val\ object.}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ The\ Val\ class\ \ handles\ base-\/level\ addition\ (\ add\_to()\ )and\ multiplication}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ (\ mult\_with()\ );\ it\ supports\ comparison\ between\ Val\ objects\ (\ equals()\ ),}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ and\ conversion\ to\ analogous\ Expr\ objects\ as\ well\ (\ to\_expr()\ ).}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *****************************************************************************/}}
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_val}{Val}}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ \ \ *\ Non-\/virtual\ methods}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ \mbox{\hyperlink{class_val_abcff5ad6415a7ead83933e45cc3dc9c0}{to\_string}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ \ \ \ \ *\ Pure\ virtual\ methods}}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_expr}{Expr}}\ *\ \mbox{\hyperlink{class_val_ac26c69f7a71d9c18627864f62bd83dbc}{to\_expr}}()\ =\ 0;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_val_a949ca9ba5c9a030f58126aad5bf684c5}{equals}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ v\ )\ =\ 0;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_val}{Val}}\ *\ \mbox{\hyperlink{class_val_a55dae19b209f6e1050a62d8c26d904f3}{add\_to}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ v\ )\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_val}{Val}}\ *\ \mbox{\hyperlink{class_val_ac959b56947108cda7d9feafa6e251009}{mult\_with}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ v\ )\ =\ 0;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_val_ad10185dc7531f869c7197ba89479ff95}{is\_true}}()\ =\ 0;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_val_a76adc288ffce52cd26f9355f22251c02}{print}}(\ std::ostream\ \&\ stream\ )\ =\ 0;}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00047\ \textcolor{comment}{\ *\ \(\backslash\)class\ NumVal}}
+\DoxyCodeLine{00048\ \textcolor{comment}{\ *\ \(\backslash\)brief\ A\ Val\ derived\ class\ representing\ an\ integer\ value}}
+\DoxyCodeLine{00049\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ *\ A\ NumVal\ object\ represents\ an\ integer\ value\ of\ a\ mathematical\ expression.}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ *****************************************************************************/}}
+\DoxyCodeLine{00052\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_num_val}{NumVal}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_val}{Val}}}
+\DoxyCodeLine{00053\ \{}
+\DoxyCodeLine{00054\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_num_val_a0e29bf5ec98ef568d51d5b506daaa3e7}{int\_m}};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_num_val_aec0681d0ca58970b0ccf528e382d9bb4}{NumVal}}(\ \textcolor{keywordtype}{int}\ val\ );}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_expr}{Expr}}\ *\ \mbox{\hyperlink{class_num_val_ae60543bf69d4f50bf0a1adea68f6a680}{to\_expr}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_num_val_aec5e08c5b63d5750b3cfc5afe563947d}{equals}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ v\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_val}{Val}}\ *\ \mbox{\hyperlink{class_num_val_ac37beaeded5991a03982ed2d1e7fefab}{add\_to}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ other\_val\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_val}{Val}}\ *\ \mbox{\hyperlink{class_num_val_aca2485ce085c0733d521c408007352ac}{mult\_with}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ other\_val\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_num_val_a8b0f735f85b123a4c7eb88e13b36a237}{is\_true}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_num_val_a0c2c08ff34c952b88273bc7e8f5425a4}{print}}(\ std::ostream\ \&\ ostream\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00068\ \textcolor{comment}{\ *\ \(\backslash\)class\ BoolVal}}
+\DoxyCodeLine{00069\ \textcolor{comment}{\ *\ \(\backslash\)brief\ A\ Val\ derived\ class\ representing\ a\ boolean\ value}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ *\ A\ BoolVal\ object\ represents\ a\ boolean\ value\ of\ a\ mathematical\ expression.}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ *****************************************************************************/}}
+\DoxyCodeLine{00073\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bool_val}{BoolVal}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_val}{Val}}}
+\DoxyCodeLine{00074\ \{}
+\DoxyCodeLine{00075\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bool_val_a1d6ff5912d262bfe0912b90a6128f53d}{bool\_m}};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_bool_val_a0dace7497e13d82a024bda399d22ed38}{BoolVal}}(\ \textcolor{keywordtype}{bool}\ val\ );}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_expr}{Expr}}\ *\ \mbox{\hyperlink{class_bool_val_a47f9d7553e7ad883ebf4a5b44b7e1932}{to\_expr}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bool_val_a971b3ffa2421a771aab4a99124f2ab14}{equals}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ v\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{class_val}{Val}}\ *\ \mbox{\hyperlink{class_bool_val_aa3b132054e0d38500a6400b046a84b45}{add\_to}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ other\_val\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_val}{Val}}\ *\ \mbox{\hyperlink{class_bool_val_a52ecb2ddf864f96556830ba9f1316daf}{mult\_with}}(\ \mbox{\hyperlink{class_val}{Val}}\ *\ other\_val\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bool_val_aaa2514063aaf2048b41880df72e0c14f}{is\_true}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bool_val_a32564a9b69559ae902c7534b125d333d}{print}}(\ std::ostream\ \&\ ostream\ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00086\ \};}
+
+\end{DoxyCode}

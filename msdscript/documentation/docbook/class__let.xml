@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class__let" xml:lang="en-US">
+<title>_let Class Reference</title>
+<indexterm><primary>_let</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Expr.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for _let:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class__let.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class__let_1a4984eb90dae4436c40bb1da5b08635e0">_let</link> (std::string str, <link linkend="_class_expr">Expr</link> *replacement, <link linkend="_class_expr">Expr</link> *body)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class__let_1ad4eddfcb3d0ddce0551e5ea349f3a1a9">equals</link> (<link linkend="_class_expr">Expr</link> *expr) override</para>
+</listitem>
+            <listitem><para>int <link linkend="_class__let_1a05023acadd5cdbe52fe72c5a76148607">interp</link> () override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class__let_1a39c0339e329e2d4a37d31cc67b479364">has_variable</link> () override</para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class__let_1ab9647f859cd9c9f621cfeb3e22afde0b">subst</link> (std::string str, <link linkend="_class_expr">Expr</link> *expr) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class__let_1a2c3a9ab95901e0be919bf37334ddfa9f">print</link> (std::ostream &amp;ostream) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class__let_1a5dab71b37f6c8d5497fc82557502951f">pretty_print</link> (std::ostream &amp;ostream) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class__let_1ae233f4b3429a7254d3f0a8a9dd2e2d5e">pretty_print_at</link> (std::ostream &amp;ostream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp;pos, bool paren) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_expr">Expr</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7">to_string</link> ()</para>
+
+<para>Non-virtual: Converts an Expression to a basic, human-readable string. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa">to_pretty_string</link> ()</para>
+
+<para>Non-virtual: Converts an Expression to a stylized, human-readable string. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class__let_1a888abfd60a7dc3507fc92792ebcbb9a2">lhs_m</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class__let_1ad53acbafc37c55f67a246b61ae950fee">rhs_m</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class__let_1aba2d42fcc09d04977e97df1560aa1998">body_m</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class__let_1a4984eb90dae4436c40bb1da5b08635e0"/><section>
+    <title>_let()</title>
+<indexterm><primary>_let</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>_let</secondary></indexterm>
+<para><computeroutput>_let::_let (std::string str, <link linkend="_class_expr">Expr</link> * replacement, <link linkend="_class_expr">Expr</link> * body)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class__let_1ad4eddfcb3d0ddce0551e5ea349f3a1a9"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>bool _let::equals (<link linkend="_class_expr">Expr</link> * expr)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1ab5d65cde79dd78c2e06b2d5a0f19c602">Expr</link>.</para>
+</section>
+<anchor xml:id="_class__let_1a39c0339e329e2d4a37d31cc67b479364"/><section>
+    <title>has_variable()</title>
+<indexterm><primary>has_variable</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>has_variable</secondary></indexterm>
+<para><computeroutput>bool _let::has_variable ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a92dc26078993a4b9721ea732274a435c">Expr</link>.</para>
+</section>
+<anchor xml:id="_class__let_1a05023acadd5cdbe52fe72c5a76148607"/><section>
+    <title>interp()</title>
+<indexterm><primary>interp</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>interp</secondary></indexterm>
+<para><computeroutput>int _let::interp ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aeba8585d8225419d49166371306542c1">Expr</link>.</para>
+</section>
+<anchor xml:id="_class__let_1a5dab71b37f6c8d5497fc82557502951f"/><section>
+    <title>pretty_print()</title>
+<indexterm><primary>pretty_print</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>pretty_print</secondary></indexterm>
+<para><computeroutput>void _let::pretty_print (std::ostream &amp; ostream)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a24ac16ad055d71f8f602f299e4f8a5e6">Expr</link>.</para>
+</section>
+<anchor xml:id="_class__let_1ae233f4b3429a7254d3f0a8a9dd2e2d5e"/><section>
+    <title>pretty_print_at()</title>
+<indexterm><primary>pretty_print_at</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>pretty_print_at</secondary></indexterm>
+<para><computeroutput>void _let::pretty_print_at (std::ostream &amp; ostream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp; pos, bool paren)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_expr_1a4c32ae954e1226187c7f160fe6ce1549">Expr</link>.</para>
+</section>
+<anchor xml:id="_class__let_1a2c3a9ab95901e0be919bf37334ddfa9f"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void _let::print (std::ostream &amp; ostream)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a5ee199e933971af8934037d09c1fa1db">Expr</link>.</para>
+</section>
+<anchor xml:id="_class__let_1ab9647f859cd9c9f621cfeb3e22afde0b"/><section>
+    <title>subst()</title>
+<indexterm><primary>subst</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>subst</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * _let::subst (std::string str, <link linkend="_class_expr">Expr</link> * expr)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa634df66e06bc11371f2926b8410ee74">Expr</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class__let_1aba2d42fcc09d04977e97df1560aa1998"/><section>
+    <title>body_m</title>
+<indexterm><primary>body_m</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>body_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* _let::body_m</computeroutput></para></section>
+<anchor xml:id="_class__let_1ad53acbafc37c55f67a246b61ae950fee"/><section>
+    <title>rhs_m</title>
+<indexterm><primary>rhs_m</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>rhs_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* _let::rhs_m</computeroutput></para></section>
+<anchor xml:id="_class__let_1a888abfd60a7dc3507fc92792ebcbb9a2"/><section>
+    <title>lhs_m</title>
+<indexterm><primary>lhs_m</primary><secondary>_let</secondary></indexterm>
+<indexterm><primary>_let</primary><secondary>lhs_m</secondary></indexterm>
+<para><computeroutput>std::string _let::lhs_m</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/<link linkend="__expr_8h">Expr.h</link>/Users/u0858882/Desktop/msdscript/msdscript/<link linkend="__expr_8cpp">Expr.cpp</link></section>
+</section>

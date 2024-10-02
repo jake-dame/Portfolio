@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_detail_1_1_is_stream_insertable" xml:lang="en-US">
+<title>Catch::Detail::IsStreamInsertable&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Detail::IsStreamInsertable&lt; T &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable_1a42818b09ae5851126a70ee263769e309">value</link> = <link linkend="_struct_catch_1_1true__given">decltype</link>(<link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable_1a4269761a8bcae50110c0814462fc4ef0">test</link>&lt;std::ostream, <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link>&amp;&gt;(0))::value</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Stream</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">U</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable_1a4269761a8bcae50110c0814462fc4ef0">test</link> (<link linkend="_struct_catch_1_1true__given">int</link>) -&gt; <link linkend="_struct_catch_1_1true__given">decltype</link>(std::declval&lt; <link linkend="_struct_catch_1_1true__given">Stream</link> &amp; &gt;()&lt;&lt; std::declval&lt; <link linkend="_struct_catch_1_1true__given">U</link> &gt;(), std::true_type())</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> , <link linkend="_struct_catch_1_1true__given">typename</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable_1ac5761375646929916dc5e165d44cd3d9">test</link> (...) -&gt; std::false_type</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_detail_1_1_is_stream_insertable_1ac5761375646929916dc5e165d44cd3d9"/><section>
+    <title>test()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>test</primary><secondary>Catch::Detail::IsStreamInsertable&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Detail::IsStreamInsertable&lt; T &gt;</primary><secondary>test</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> , <link linkend="_struct_catch_1_1true__given">typename</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable">Catch::Detail::IsStreamInsertable</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::test ( ...) -&gt;  std::false_type<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_is_stream_insertable_1a4269761a8bcae50110c0814462fc4ef0"/><section>
+    <title>test()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>test</primary><secondary>Catch::Detail::IsStreamInsertable&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Detail::IsStreamInsertable&lt; T &gt;</primary><secondary>test</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Stream</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">U</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable">Catch::Detail::IsStreamInsertable</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::test (<link linkend="_struct_catch_1_1true__given">int</link> ) -&gt;  <link linkend="_struct_catch_1_1true__given">decltype</link>(std::declval&lt; <link linkend="_struct_catch_1_1true__given">Stream</link> &amp; &gt;()&lt;&lt; std::declval&lt; <link linkend="_struct_catch_1_1true__given">U</link> &gt;(), std::true_type())<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_detail_1_1_is_stream_insertable_1a42818b09ae5851126a70ee263769e309"/><section>
+    <title>value</title>
+<indexterm><primary>value</primary><secondary>Catch::Detail::IsStreamInsertable&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Detail::IsStreamInsertable&lt; T &gt;</primary><secondary>value</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable">Catch::Detail::IsStreamInsertable</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value = <link linkend="_struct_catch_1_1true__given">decltype</link>(<link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable_1a4269761a8bcae50110c0814462fc4ef0">test</link>&lt;std::ostream, <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link>&amp;&gt;(0))::value<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

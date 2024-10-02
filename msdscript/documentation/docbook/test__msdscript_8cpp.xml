@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_test__msdscript_8cpp" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/test_msdscript/src/test_msdscript.cpp File Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/test_msdscript/src/test_msdscript.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;ctime&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;fstream&gt;<?linebreak?>#include &lt;sstream&gt;<?linebreak?>#include &quot;exec.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_test__msdscript_8cpp_1aacaa86b7d34d4afd365a35381bd4b257">write_report_header</link> (std::ofstream &amp;output_file, const std::string &amp;exec_name, const int &amp;error_count)</para>
+</listitem>
+            <listitem><para>void <link linkend="_test__msdscript_8cpp_1a8a80c21da54aef8cdbbb6a0f7e039330">write_results</link> (std::stringstream &amp;stream, const std::string &amp;label, const std::vector&lt; ExecResult &gt; &amp;exec_results, const std::string &amp;input, const int &amp;iteration, int &amp;error_count)</para>
+</listitem>
+            <listitem><para>void <link linkend="_test__msdscript_8cpp_1a5d94ffc4fcb2ea4fd1d80e59476d860d">compare_IO</link> (const std::string &amp;exec_name)</para>
+</listitem>
+            <listitem><para>void <link linkend="_test__msdscript_8cpp_1a920dcd5d9615d48d8ff4abe1dda79b58">compare_programs</link> (const std::string &amp;exec_name_1, const std::string &amp;exec_name_2)</para>
+</listitem>
+            <listitem><para>int <link linkend="_test__msdscript_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (int argc, char **argv)</para>
+</listitem>
+            <listitem><para>void <link linkend="_test__msdscript_8cpp_1ab41e44091df4e0e40723428d01b97ad6">write_results</link> (std::stringstream &amp;stream, const std::string &amp;label, const ExecResult &amp;er, const std::string &amp;input, int &amp;error_count)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>const std::string <link linkend="_test__msdscript_8cpp_1ac9e44aa91cf7ed8be23f5c20c4cb67bb">EXECS_DIR</link></para>
+
+<para>Directory where the executables to test are. USE ABS PATH. </para>
+</listitem>
+            <listitem><para>const std::string <link linkend="_test__msdscript_8cpp_1ae900c22de48a499ee8ebaaa6b7508c8e">OUTPUT_DIR</link></para>
+
+<para>Directory where error reports (.txt) should go. USE ABS PATH. </para>
+</listitem>
+            <listitem><para>const int <link linkend="_test__msdscript_8cpp_1a5a6a425875fd9dbbe59fba9087eafef1">TEST_ITER</link> = 30</para>
+
+<para>Number of inputs to test per executable. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_test__msdscript_8cpp_1a5d94ffc4fcb2ea4fd1d80e59476d860d"/><section>
+    <title>compare_IO()</title>
+<indexterm><primary>compare_IO</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>compare_IO</secondary></indexterm>
+<para><computeroutput>void compare_IO (const std::string &amp; exec_name)</computeroutput></para>
+<para>Testing functions </para>
+</section>
+<anchor xml:id="_test__msdscript_8cpp_1a920dcd5d9615d48d8ff4abe1dda79b58"/><section>
+    <title>compare_programs()</title>
+<indexterm><primary>compare_programs</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>compare_programs</secondary></indexterm>
+<para><computeroutput>void compare_programs (const std::string &amp; exec_name_1, const std::string &amp; exec_name_2)</computeroutput></para></section>
+<anchor xml:id="_test__msdscript_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (int argc, char ** argv)</computeroutput></para></section>
+<anchor xml:id="_test__msdscript_8cpp_1aacaa86b7d34d4afd365a35381bd4b257"/><section>
+    <title>write_report_header()</title>
+<indexterm><primary>write_report_header</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>write_report_header</secondary></indexterm>
+<para><computeroutput>void write_report_header (std::ofstream &amp; output_file, const std::string &amp; exec_name, const int &amp; error_count)</computeroutput></para>
+<para>Error-report-building functions </para>
+</section>
+<anchor xml:id="_test__msdscript_8cpp_1ab41e44091df4e0e40723428d01b97ad6"/><section>
+    <title>write_results()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>write_results</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>write_results</secondary></indexterm>
+<para><computeroutput>void write_results (std::stringstream &amp; stream, const std::string &amp; label, const ExecResult &amp; er, const std::string &amp; input, int &amp; error_count)</computeroutput></para></section>
+<anchor xml:id="_test__msdscript_8cpp_1a8a80c21da54aef8cdbbb6a0f7e039330"/><section>
+    <title>write_results()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>write_results</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>write_results</secondary></indexterm>
+<para><computeroutput>void write_results (std::stringstream &amp; stream, const std::string &amp; label, const std::vector&lt; ExecResult &gt; &amp; exec_results, const std::string &amp; input, const int &amp; iteration, int &amp; error_count)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_test__msdscript_8cpp_1ac9e44aa91cf7ed8be23f5c20c4cb67bb"/><section>
+    <title>EXECS_DIR</title>
+<indexterm><primary>EXECS_DIR</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>EXECS_DIR</secondary></indexterm>
+<para><computeroutput>const std::string EXECS_DIR</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;/Users/u0858882/Desktop/msdscript/test_msdscript/testers/&quot;</emphasis>
+</programlisting><para>
+
+<para>Directory where the executables to test are. USE ABS PATH. </para>
+</para>
+
+<para>CONSTANTS </para>
+</section>
+<anchor xml:id="_test__msdscript_8cpp_1ae900c22de48a499ee8ebaaa6b7508c8e"/><section>
+    <title>OUTPUT_DIR</title>
+<indexterm><primary>OUTPUT_DIR</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>OUTPUT_DIR</secondary></indexterm>
+<para><computeroutput>const std::string OUTPUT_DIR</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;/Users/u0858882/Desktop/msdscript/test_msdscript/reports/&quot;</emphasis>
+</programlisting><para>
+
+<para>Directory where error reports (.txt) should go. USE ABS PATH. </para>
+</para>
+</section>
+<anchor xml:id="_test__msdscript_8cpp_1a5a6a425875fd9dbbe59fba9087eafef1"/><section>
+    <title>TEST_ITER</title>
+<indexterm><primary>TEST_ITER</primary><secondary>test_msdscript.cpp</secondary></indexterm>
+<indexterm><primary>test_msdscript.cpp</primary><secondary>TEST_ITER</secondary></indexterm>
+<para><computeroutput>const int TEST_ITER = 30</computeroutput></para><para>
+
+<para>Number of inputs to test per executable. </para>
+</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,126 @@
+\doxysection{Bool\+Val Class Reference}
+\hypertarget{class_bool_val}{}\label{class_bool_val}\index{BoolVal@{BoolVal}}
+
+
+{\ttfamily \#include $<$Val.\+h$>$}
+
+Inheritance diagram for Bool\+Val\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bool_val}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bool_val_a0dace7497e13d82a024bda399d22ed38}{Bool\+Val}} (bool val)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bool_val_a47f9d7553e7ad883ebf4a5b44b7e1932}{to\+\_\+expr}} () override
+\item 
+bool \mbox{\hyperlink{class_bool_val_a971b3ffa2421a771aab4a99124f2ab14}{equals}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}v) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bool_val_aa3b132054e0d38500a6400b046a84b45}{add\+\_\+to}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}other\+\_\+val) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bool_val_a52ecb2ddf864f96556830ba9f1316daf}{mult\+\_\+with}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}other\+\_\+val) override
+\item 
+bool \mbox{\hyperlink{class_bool_val_aaa2514063aaf2048b41880df72e0c14f}{is\+\_\+true}} () override
+\item 
+void \mbox{\hyperlink{class_bool_val_a32564a9b69559ae902c7534b125d333d}{print}} (std\+::ostream \&ostream) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_val}{Val}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_val_abcff5ad6415a7ead83933e45cc3dc9c0}{to\+\_\+string}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_bool_val_a1d6ff5912d262bfe0912b90a6128f53d}{bool\+\_\+m}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_bool_val_a0dace7497e13d82a024bda399d22ed38}\label{class_bool_val_a0dace7497e13d82a024bda399d22ed38} 
+\index{BoolVal@{BoolVal}!BoolVal@{BoolVal}}
+\index{BoolVal@{BoolVal}!BoolVal@{BoolVal}}
+\doxysubsubsection{\texorpdfstring{BoolVal()}{BoolVal()}}
+{\footnotesize\ttfamily Bool\+Val\+::\+Bool\+Val (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bool_val_aa3b132054e0d38500a6400b046a84b45}\label{class_bool_val_aa3b132054e0d38500a6400b046a84b45} 
+\index{BoolVal@{BoolVal}!add\_to@{add\_to}}
+\index{add\_to@{add\_to}!BoolVal@{BoolVal}}
+\doxysubsubsection{\texorpdfstring{add\_to()}{add\_to()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Bool\+Val\+::add\+\_\+to (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{other\+\_\+val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_a55dae19b209f6e1050a62d8c26d904f3}{Val}}.
+
+\Hypertarget{class_bool_val_a971b3ffa2421a771aab4a99124f2ab14}\label{class_bool_val_a971b3ffa2421a771aab4a99124f2ab14} 
+\index{BoolVal@{BoolVal}!equals@{equals}}
+\index{equals@{equals}!BoolVal@{BoolVal}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Bool\+Val\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_a949ca9ba5c9a030f58126aad5bf684c5}{Val}}.
+
+\Hypertarget{class_bool_val_aaa2514063aaf2048b41880df72e0c14f}\label{class_bool_val_aaa2514063aaf2048b41880df72e0c14f} 
+\index{BoolVal@{BoolVal}!is\_true@{is\_true}}
+\index{is\_true@{is\_true}!BoolVal@{BoolVal}}
+\doxysubsubsection{\texorpdfstring{is\_true()}{is\_true()}}
+{\footnotesize\ttfamily bool Bool\+Val\+::is\+\_\+true (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_ad10185dc7531f869c7197ba89479ff95}{Val}}.
+
+\Hypertarget{class_bool_val_a52ecb2ddf864f96556830ba9f1316daf}\label{class_bool_val_a52ecb2ddf864f96556830ba9f1316daf} 
+\index{BoolVal@{BoolVal}!mult\_with@{mult\_with}}
+\index{mult\_with@{mult\_with}!BoolVal@{BoolVal}}
+\doxysubsubsection{\texorpdfstring{mult\_with()}{mult\_with()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Bool\+Val\+::mult\+\_\+with (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{other\+\_\+val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_ac959b56947108cda7d9feafa6e251009}{Val}}.
+
+\Hypertarget{class_bool_val_a32564a9b69559ae902c7534b125d333d}\label{class_bool_val_a32564a9b69559ae902c7534b125d333d} 
+\index{BoolVal@{BoolVal}!print@{print}}
+\index{print@{print}!BoolVal@{BoolVal}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Bool\+Val\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_a76adc288ffce52cd26f9355f22251c02}{Val}}.
+
+\Hypertarget{class_bool_val_a47f9d7553e7ad883ebf4a5b44b7e1932}\label{class_bool_val_a47f9d7553e7ad883ebf4a5b44b7e1932} 
+\index{BoolVal@{BoolVal}!to\_expr@{to\_expr}}
+\index{to\_expr@{to\_expr}!BoolVal@{BoolVal}}
+\doxysubsubsection{\texorpdfstring{to\_expr()}{to\_expr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} Bool\+Val\+::to\+\_\+expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_ac26c69f7a71d9c18627864f62bd83dbc}{Val}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_bool_val_a1d6ff5912d262bfe0912b90a6128f53d}\label{class_bool_val_a1d6ff5912d262bfe0912b90a6128f53d} 
+\index{BoolVal@{BoolVal}!bool\_m@{bool\_m}}
+\index{bool\_m@{bool\_m}!BoolVal@{BoolVal}}
+\doxysubsubsection{\texorpdfstring{bool\_m}{bool\_m}}
+{\footnotesize\ttfamily bool Bool\+Val\+::bool\+\_\+m}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_val_8h}{Val.\+h}}\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_val_8cpp}{Val.\+cpp}}\end{DoxyCompactItemize}

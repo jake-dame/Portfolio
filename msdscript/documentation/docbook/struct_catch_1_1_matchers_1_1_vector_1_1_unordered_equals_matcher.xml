@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher" xml:lang="en-US">
+<title>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt; Struct Template Reference</title>
+<indexterm><primary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher_1ab78e6bbbad05472815a695650edc062c">UnorderedEqualsMatcher</link> (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">target</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher_1abd5547585ba722cf3bb7aa3f9a8ffc0e">match</link> (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">vec</link>) <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+            <listitem><para>std::string <link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher_1a33b685a1505a0afe06ded7e0d207bc14">describe</link> () <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base">Catch::Matchers::Impl::MatcherBase&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_match_all_of">MatchAllOf</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base_1aae4a9827601f6f26a52126e193d012de">operator&amp;&amp;</link> (<link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base">MatcherBase</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">other</link>) <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_match_any_of">MatchAnyOf</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base_1a5f8542b8f1567a6f9c65d0a6da7b679b">operator||</link> (<link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base">MatcherBase</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">other</link>) <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of">MatchNotOf</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base_1a5bb94bf2ff5c7ef73b7c11eb173bdf3b">operator!</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base">Catch::Matchers::Impl::MatcherUntypedBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base_1ab65764dc245d85e2b268d3be870b650a">MatcherUntypedBase</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base_1a985fd3c3ffcc9f2e8dc7a330130040b0">MatcherUntypedBase</link> (<link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base">MatcherUntypedBase</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;)=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base">MatcherUntypedBase</link> &amp; <link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base_1a1d446c018ecedb2ef633d9426d5f7914">operator=</link> (<link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base">MatcherUntypedBase</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;)=<link linkend="_struct_catch_1_1true__given">delete</link></para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base_1a5982c7c80ca71dfe2298babadad7a453">toString</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method">Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method_1ae0920ff9e817acf08e1bb0cbcb044e30">match</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">arg</link>) <link linkend="_struct_catch_1_1true__given">const</link>=0</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher_1af80c33049e111b60cff3682f5829d3b6">m_target</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Member Functions inherited from <link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base">Catch::Matchers::Impl::MatcherUntypedBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base_1a853be93ce33f71b5abede38081c79e9d">~MatcherUntypedBase</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base">Catch::Matchers::Impl::MatcherUntypedBase</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base_1a951095c462657e7097a9a6dc4dde813f">m_cachedToString</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher_1ab78e6bbbad05472815a695650edc062c"/><section>
+    <title>UnorderedEqualsMatcher()</title>
+<indexterm><primary>UnorderedEqualsMatcher</primary><secondary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</primary><secondary>UnorderedEqualsMatcher</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher">Catch::Matchers::Vector::UnorderedEqualsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt;::UnorderedEqualsMatcher (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; target)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher_1a33b685a1505a0afe06ded7e0d207bc14"/><section>
+    <title>describe()</title>
+<indexterm><primary>describe</primary><secondary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</primary><secondary>describe</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; </computeroutput><para><computeroutput>std::string <link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher">Catch::Matchers::Vector::UnorderedEqualsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt;::describe ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base_1a91d3a907dbfcbb596077df24f6e11fe2">Catch::Matchers::Impl::MatcherUntypedBase</link>.</para>
+</section>
+<anchor xml:id="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher_1abd5547585ba722cf3bb7aa3f9a8ffc0e"/><section>
+    <title>match()</title>
+<indexterm><primary>match</primary><secondary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</primary><secondary>match</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher">Catch::Matchers::Vector::UnorderedEqualsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt;::match (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; vec) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher_1af80c33049e111b60cff3682f5829d3b6"/><section>
+    <title>m_target</title>
+<indexterm><primary>m_target</primary><secondary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Matchers::Vector::UnorderedEqualsMatcher&lt; T, AllocComp, AllocMatch &gt;</primary><secondary>m_target</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; </computeroutput><para><computeroutput>std::vector&lt;<link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>&gt; <link linkend="_struct_catch_1_1true__given">const</link>&amp; <link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher">Catch::Matchers::Vector::UnorderedEqualsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt;::m_target<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

@@ -1,0 +1,112 @@
+\doxysection{Catch\+::Generators\+::Random\+Integer\+Generator\texorpdfstring{$<$}{<} Integer \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_catch_1_1_generators_1_1_random_integer_generator}{}\label{class_catch_1_1_generators_1_1_random_integer_generator}\index{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}}
+
+
+{\ttfamily \#include $<$catch.\+h$>$}
+
+Inheritance diagram for Catch\+::Generators\+::Random\+Integer\+Generator\texorpdfstring{$<$}{<} Integer \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_catch_1_1_generators_1_1_random_integer_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator_a886d16c899ad70781b83a0e8f9d2cf96}{Random\+Integer\+Generator}} (\mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} \mbox{\hyperlink{struct_catch_1_1true__given}{a}}, \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} \mbox{\hyperlink{struct_catch_1_1true__given}{b}})
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \& \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator_af160cf856809beca4503491481a4865e}{get}} () \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \mbox{\hyperlink{struct_catch_1_1true__given}{override}}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{bool}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator_aaa3db70fbdfa3e8dcb61fb5592eba81f}{next}} () \mbox{\hyperlink{struct_catch_1_1true__given}{override}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator}{Catch\+::\+Generators\+::\+IGenerator$<$ Integer $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{virtual}} \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_afe5b6eecbbd735e69748d68574611747}{\texorpdfstring{$\sim$}{\string~}\+IGenerator}} ()=\mbox{\hyperlink{struct_catch_1_1true__given}{default}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base}{Catch\+::\+Generators\+::\+Generator\+Untyped\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_a00ff0179d739c3016756b6cf56fabbad}{Generator\+Untyped\+Base}} ()=\mbox{\hyperlink{struct_catch_1_1true__given}{default}}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{virtual}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_a6f05f8099fdc5744a7aff68aa8c09c7f}{\texorpdfstring{$\sim$}{\string~}\+Generator\+Untyped\+Base}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_catch_1_1_simple_pcg32}{Catch\+::\+Simple\+Pcg32}} \& \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator_af561ef07b93877d15a9af5e5fe19ea13}{m\+\_\+rng}}
+\item 
+std\+::uniform\+\_\+int\+\_\+distribution$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$ \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator_a0f9a8e409e291c332ebba1667cdc90fe}{m\+\_\+dist}}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator_a1b811ebf04416b6b822ce153b040f020}{m\+\_\+current\+\_\+number}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator}{Catch\+::\+Generators\+::\+IGenerator$<$ Integer $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{using}} \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_a1f8677875fe0ff31f39c60d45504b9a5}{type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_catch_1_1_generators_1_1_random_integer_generator_a886d16c899ad70781b83a0e8f9d2cf96}\label{class_catch_1_1_generators_1_1_random_integer_generator_a886d16c899ad70781b83a0e8f9d2cf96} 
+\index{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}!RandomIntegerGenerator@{RandomIntegerGenerator}}
+\index{RandomIntegerGenerator@{RandomIntegerGenerator}!Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}}
+\doxysubsubsection{\texorpdfstring{RandomIntegerGenerator()}{RandomIntegerGenerator()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$ \\
+\mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator}{Catch\+::\+Generators\+::\+Random\+Integer\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$\+::\+Random\+Integer\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{Integer}}}]{a,  }\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{Integer}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_catch_1_1_generators_1_1_random_integer_generator_af160cf856809beca4503491481a4865e}\label{class_catch_1_1_generators_1_1_random_integer_generator_af160cf856809beca4503491481a4865e} 
+\index{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}!get@{get}}
+\index{get@{get}!Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$ \\
+\mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}}  \& \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator}{Catch\+::\+Generators\+::\+Random\+Integer\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_a0fb6da789cda5b4e90f036737db82485}{Catch\+::\+Generators\+::\+IGenerator$<$ Integer $>$}}.
+
+\Hypertarget{class_catch_1_1_generators_1_1_random_integer_generator_aaa3db70fbdfa3e8dcb61fb5592eba81f}\label{class_catch_1_1_generators_1_1_random_integer_generator_aaa3db70fbdfa3e8dcb61fb5592eba81f} 
+\index{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}!next@{next}}
+\index{next@{next}!Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$ \\
+\mbox{\hyperlink{struct_catch_1_1true__given}{bool}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator}{Catch\+::\+Generators\+::\+Random\+Integer\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_aeed3c0cd6233c5f553549e453b8d6638}{Catch\+::\+Generators\+::\+Generator\+Untyped\+Base}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_catch_1_1_generators_1_1_random_integer_generator_a1b811ebf04416b6b822ce153b040f020}\label{class_catch_1_1_generators_1_1_random_integer_generator_a1b811ebf04416b6b822ce153b040f020} 
+\index{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}!m\_current\_number@{m\_current\_number}}
+\index{m\_current\_number@{m\_current\_number}!Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}}
+\doxysubsubsection{\texorpdfstring{m\_current\_number}{m\_current\_number}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$ \\
+\mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator}{Catch\+::\+Generators\+::\+Random\+Integer\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$\+::m\+\_\+current\+\_\+number\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_catch_1_1_generators_1_1_random_integer_generator_a0f9a8e409e291c332ebba1667cdc90fe}\label{class_catch_1_1_generators_1_1_random_integer_generator_a0f9a8e409e291c332ebba1667cdc90fe} 
+\index{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}!m\_dist@{m\_dist}}
+\index{m\_dist@{m\_dist}!Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}}
+\doxysubsubsection{\texorpdfstring{m\_dist}{m\_dist}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$ \\
+std\+::uniform\+\_\+int\+\_\+distribution$<$\mbox{\hyperlink{struct_catch_1_1true__given}{Integer}}$>$ \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator}{Catch\+::\+Generators\+::\+Random\+Integer\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$\+::m\+\_\+dist\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_catch_1_1_generators_1_1_random_integer_generator_af561ef07b93877d15a9af5e5fe19ea13}\label{class_catch_1_1_generators_1_1_random_integer_generator_af561ef07b93877d15a9af5e5fe19ea13} 
+\index{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}!m\_rng@{m\_rng}}
+\index{m\_rng@{m\_rng}!Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}}
+\doxysubsubsection{\texorpdfstring{m\_rng}{m\_rng}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$ \\
+\mbox{\hyperlink{class_catch_1_1_simple_pcg32}{Catch\+::\+Simple\+Pcg32}}\& \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_integer_generator}{Catch\+::\+Generators\+::\+Random\+Integer\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{Integer}} $>$\+::m\+\_\+rng\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{catch_8h}{catch.\+h}}\end{DoxyCompactItemize}

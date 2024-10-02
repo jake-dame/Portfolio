@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_num_val" xml:lang="en-US">
+<title>NumVal Class Reference</title>
+<indexterm><primary>NumVal</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Val.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for NumVal:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_num_val.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_num_val_1aec0681d0ca58970b0ccf528e382d9bb4">NumVal</link> (int val)</para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_num_val_1ae60543bf69d4f50bf0a1adea68f6a680">to_expr</link> () override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_num_val_1aec5e08c5b63d5750b3cfc5afe563947d">equals</link> (<link linkend="_class_val">Val</link> *v) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_num_val_1ac37beaeded5991a03982ed2d1e7fefab">add_to</link> (<link linkend="_class_val">Val</link> *other_val) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_num_val_1aca2485ce085c0733d521c408007352ac">mult_with</link> (<link linkend="_class_val">Val</link> *other_val) override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_num_val_1a8b0f735f85b123a4c7eb88e13b36a237">is_true</link> () override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_num_val_1a0c2c08ff34c952b88273bc7e8f5425a4">print</link> (std::ostream &amp;ostream) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_val">Val</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_val_1abcff5ad6415a7ead83933e45cc3dc9c0">to_string</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_num_val_1a0e29bf5ec98ef568d51d5b506daaa3e7">int_m</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_num_val_1aec0681d0ca58970b0ccf528e382d9bb4"/><section>
+    <title>NumVal()</title>
+<indexterm><primary>NumVal</primary><secondary>NumVal</secondary></indexterm>
+<indexterm><primary>NumVal</primary><secondary>NumVal</secondary></indexterm>
+<para><computeroutput>NumVal::NumVal (int val)<computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_num_val_1ac37beaeded5991a03982ed2d1e7fefab"/><section>
+    <title>add_to()</title>
+<indexterm><primary>add_to</primary><secondary>NumVal</secondary></indexterm>
+<indexterm><primary>NumVal</primary><secondary>add_to</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * NumVal::add_to (<link linkend="_class_val">Val</link> * other_val)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1a55dae19b209f6e1050a62d8c26d904f3">Val</link>.</para>
+</section>
+<anchor xml:id="_class_num_val_1aec5e08c5b63d5750b3cfc5afe563947d"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>NumVal</secondary></indexterm>
+<indexterm><primary>NumVal</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>bool NumVal::equals (<link linkend="_class_val">Val</link> * v)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1a949ca9ba5c9a030f58126aad5bf684c5">Val</link>.</para>
+</section>
+<anchor xml:id="_class_num_val_1a8b0f735f85b123a4c7eb88e13b36a237"/><section>
+    <title>is_true()</title>
+<indexterm><primary>is_true</primary><secondary>NumVal</secondary></indexterm>
+<indexterm><primary>NumVal</primary><secondary>is_true</secondary></indexterm>
+<para><computeroutput>bool NumVal::is_true ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1ad10185dc7531f869c7197ba89479ff95">Val</link>.</para>
+</section>
+<anchor xml:id="_class_num_val_1aca2485ce085c0733d521c408007352ac"/><section>
+    <title>mult_with()</title>
+<indexterm><primary>mult_with</primary><secondary>NumVal</secondary></indexterm>
+<indexterm><primary>NumVal</primary><secondary>mult_with</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * NumVal::mult_with (<link linkend="_class_val">Val</link> * other_val)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1ac959b56947108cda7d9feafa6e251009">Val</link>.</para>
+</section>
+<anchor xml:id="_class_num_val_1a0c2c08ff34c952b88273bc7e8f5425a4"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>NumVal</secondary></indexterm>
+<indexterm><primary>NumVal</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void NumVal::print (std::ostream &amp; ostream)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1a76adc288ffce52cd26f9355f22251c02">Val</link>.</para>
+</section>
+<anchor xml:id="_class_num_val_1ae60543bf69d4f50bf0a1adea68f6a680"/><section>
+    <title>to_expr()</title>
+<indexterm><primary>to_expr</primary><secondary>NumVal</secondary></indexterm>
+<indexterm><primary>NumVal</primary><secondary>to_expr</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * NumVal::to_expr ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1ac26c69f7a71d9c18627864f62bd83dbc">Val</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_num_val_1a0e29bf5ec98ef568d51d5b506daaa3e7"/><section>
+    <title>int_m</title>
+<indexterm><primary>int_m</primary><secondary>NumVal</secondary></indexterm>
+<indexterm><primary>NumVal</primary><secondary>int_m</secondary></indexterm>
+<para><computeroutput>int NumVal::int_m</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__val_8h">Val.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__val_8cpp">Val.cpp</link></section>
+</section>

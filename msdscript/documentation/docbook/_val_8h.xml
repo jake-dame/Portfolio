@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__val_8h" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/msdscript/src/Val.h File Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/msdscript/src/Val.h</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_val">Val</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_num_val">NumVal</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_bool_val">BoolVal</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

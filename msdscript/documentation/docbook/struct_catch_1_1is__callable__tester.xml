@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1is__callable__tester" xml:lang="en-US">
+<title>Catch::is_callable_tester Struct Reference</title>
+<indexterm><primary>Catch::is_callable_tester</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Fun</link> , typename... Args&gt; </para><para><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_struct_catch_1_1true__given">true_given</link>&lt; <link linkend="_struct_catch_1_1true__given">decltype</link>(std::declval&lt; <link linkend="_struct_catch_1_1true__given">Fun</link> &gt;()(std::declval&lt; <link linkend="_struct_catch_1_1true__given">Args</link> &gt;()...))&gt; <link linkend="_struct_catch_1_1is__callable__tester_1a9f770cae4c16dfa96d4c0299a6b4f980">test</link> (<link linkend="_struct_catch_1_1true__given">int</link>)</para>
+</listitem>
+            <listitem><para>template&lt;typename... &gt; </para><para><link linkend="_struct_catch_1_1true__given">static</link> std::false_type <link linkend="_struct_catch_1_1is__callable__tester_1adce16c4accb860bf46f6491dd70cfd63">test</link> (...)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1is__callable__tester_1adce16c4accb860bf46f6491dd70cfd63"/><section>
+    <title>test()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>test</primary><secondary>Catch::is_callable_tester</secondary></indexterm>
+<indexterm><primary>Catch::is_callable_tester</primary><secondary>test</secondary></indexterm>
+<computeroutput>template&lt;typename... &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">static</link> std::false_type Catch::is_callable_tester::test ( ...)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1is__callable__tester_1a9f770cae4c16dfa96d4c0299a6b4f980"/><section>
+    <title>test()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>test</primary><secondary>Catch::is_callable_tester</secondary></indexterm>
+<indexterm><primary>Catch::is_callable_tester</primary><secondary>test</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Fun</link> , typename... Args&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_struct_catch_1_1true__given">true_given</link>&lt; <link linkend="_struct_catch_1_1true__given">decltype</link>(std::declval&lt; <link linkend="_struct_catch_1_1true__given">Fun</link> &gt;()(std::declval&lt; <link linkend="_struct_catch_1_1true__given">Args</link> &gt;()...))&gt; Catch::is_callable_tester::test (<link linkend="_struct_catch_1_1true__given">int</link> )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

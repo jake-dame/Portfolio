@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator" xml:lang="en-US">
+<title>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</primary></indexterm>
+<para>Inheritance diagram for Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_exception_translator_registrar_1_1_exception_translator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator_1a2de4e9bcaad47996159763e69f614d7a">ExceptionTranslator</link> (std::string(*<link linkend="_struct_catch_1_1true__given">translateFunction</link>)(<link linkend="_struct_catch_1_1true__given">T</link> &amp;))</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator_1a29e85940ee9ce719f26e43550cb4ed48">translate</link> (ExceptionTranslators::const_iterator <link linkend="_struct_catch_1_1true__given">it</link>, ExceptionTranslators::const_iterator <link linkend="_struct_catch_1_1true__given">itEnd</link>) <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_i_exception_translator">Catch::IExceptionTranslator</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_exception_translator_1afa00bb6258c07591df472aadae05783f">~IExceptionTranslator</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::string(* <link linkend="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator_1a488013ff0869785c9d041443fbf9a757">m_translateFunction</link> )(<link linkend="_struct_catch_1_1true__given">T</link> &amp;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator_1a2de4e9bcaad47996159763e69f614d7a"/><section>
+    <title>ExceptionTranslator()</title>
+<indexterm><primary>ExceptionTranslator</primary><secondary>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</primary><secondary>ExceptionTranslator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator">Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::ExceptionTranslator (std::string(*)(<link linkend="_struct_catch_1_1true__given">T</link> &amp;) translateFunction)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator_1a29e85940ee9ce719f26e43550cb4ed48"/><section>
+    <title>translate()</title>
+<indexterm><primary>translate</primary><secondary>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</primary><secondary>translate</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::string <link linkend="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator">Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::translate (ExceptionTranslators::const_iterator it, ExceptionTranslators::const_iterator itEnd) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_i_exception_translator_1a2a554b96ed5ed411e7c796b6b42837a5">Catch::IExceptionTranslator</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator_1a488013ff0869785c9d041443fbf9a757"/><section>
+    <title>m_translateFunction</title>
+<indexterm><primary>m_translateFunction</primary><secondary>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</primary><secondary>m_translateFunction</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::string(* <link linkend="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator">Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_translateFunction) (<link linkend="_struct_catch_1_1true__given">T</link> &amp;)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mainpage" xml:lang="en-US">
+<title>msdscript</title>
+<indexterm><primary>msdscript</primary></indexterm>
+
+<para>A mathematical expression interpreting program.</para>
+
+<para>A mathematical expression interpreting program.   </para>
+
+<para><formalpara><title>Version</title>
+
+<para>1.0 </para>
+</formalpara>
+<formalpara><title>Author</title>
+
+<para>Jake Dame </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>02/06/24 </para>
+</formalpara>
+msdscript is a script interpretation program that supports various functionality on user-inputted mathematical expressions. If the expression entered in the console follows proper grammar, this program can simplify the expression. It supports let binding. Running the program with the &quot;--help&quot; flag will list valid arguments that encompass the programs useful functions. </para>
+</chapter>

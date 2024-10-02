@@ -1,0 +1,220 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Add Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Constructor \& Destructor Documentation}{8}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Add()}{8}{subsubsection.4.1.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Member Function Documentation}{8}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}equals()}{8}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}has\_variable()}{8}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}interp()}{8}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}pretty\_print()}{8}{subsubsection.4.1.2.4}%
+\contentsline {subsubsection}{\numberline {4.1.2.5}pretty\_print\_at()}{9}{subsubsection.4.1.2.5}%
+\contentsline {subsubsection}{\numberline {4.1.2.6}print()}{9}{subsubsection.4.1.2.6}%
+\contentsline {subsubsection}{\numberline {4.1.2.7}subst()}{9}{subsubsection.4.1.2.7}%
+\contentsline {subsection}{\numberline {4.1.3}Member Data Documentation}{9}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}lhs\_m}{9}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}rhs\_m}{9}{subsubsection.4.1.3.2}%
+\contentsline {section}{\numberline {4.2}Bool Class Reference}{10}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Constructor \& Destructor Documentation}{10}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Bool()}{10}{subsubsection.4.2.1.1}%
+\contentsline {subsection}{\numberline {4.2.2}Member Function Documentation}{11}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}equals()}{11}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}has\_variable()}{11}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}interp()}{11}{subsubsection.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.2.4}print()}{11}{subsubsection.4.2.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.2.5}subst()}{11}{subsubsection.4.2.2.5}%
+\contentsline {subsection}{\numberline {4.2.3}Member Data Documentation}{11}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}bool\_m}{11}{subsubsection.4.2.3.1}%
+\contentsline {section}{\numberline {4.3}Bool\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Val Class Reference}{12}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Constructor \& Destructor Documentation}{12}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}BoolVal()}{12}{subsubsection.4.3.1.1}%
+\contentsline {subsection}{\numberline {4.3.2}Member Function Documentation}{12}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}add\_to()}{12}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}equals()}{13}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}is\_true()}{13}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}mult\_with()}{13}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {4.3.2.5}print()}{13}{subsubsection.4.3.2.5}%
+\contentsline {subsubsection}{\numberline {4.3.2.6}to\_expr()}{13}{subsubsection.4.3.2.6}%
+\contentsline {subsection}{\numberline {4.3.3}Member Data Documentation}{13}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}bool\_m}{13}{subsubsection.4.3.3.1}%
+\contentsline {section}{\numberline {4.4}Eq Class Reference}{14}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Constructor \& Destructor Documentation}{14}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}Eq()}{14}{subsubsection.4.4.1.1}%
+\contentsline {subsection}{\numberline {4.4.2}Member Function Documentation}{15}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}equals()}{15}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}has\_variable()}{15}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}interp()}{15}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}pretty\_print()}{15}{subsubsection.4.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.4.2.5}pretty\_print\_at()}{15}{subsubsection.4.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.4.2.6}print()}{15}{subsubsection.4.4.2.6}%
+\contentsline {subsubsection}{\numberline {4.4.2.7}subst()}{16}{subsubsection.4.4.2.7}%
+\contentsline {subsection}{\numberline {4.4.3}Member Data Documentation}{16}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}lhs\_m}{16}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}rhs\_m}{16}{subsubsection.4.4.3.2}%
+\contentsline {section}{\numberline {4.5}Expr Class Reference}{16}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Member Function Documentation}{17}{subsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}equals()}{17}{subsubsection.4.5.1.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.2}has\_variable()}{17}{subsubsection.4.5.1.2}%
+\contentsline {subsubsection}{\numberline {4.5.1.3}interp()}{17}{subsubsection.4.5.1.3}%
+\contentsline {subsubsection}{\numberline {4.5.1.4}pretty\_print()}{17}{subsubsection.4.5.1.4}%
+\contentsline {subsubsection}{\numberline {4.5.1.5}pretty\_print\_at()}{17}{subsubsection.4.5.1.5}%
+\contentsline {subsubsection}{\numberline {4.5.1.6}print()}{18}{subsubsection.4.5.1.6}%
+\contentsline {subsubsection}{\numberline {4.5.1.7}subst()}{18}{subsubsection.4.5.1.7}%
+\contentsline {subsubsection}{\numberline {4.5.1.8}to\_pretty\_string()}{18}{subsubsection.4.5.1.8}%
+\contentsline {subsubsection}{\numberline {4.5.1.9}to\_string()}{18}{subsubsection.4.5.1.9}%
+\contentsline {section}{\numberline {4.6}If Class Reference}{18}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Constructor \& Destructor Documentation}{19}{subsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}If()}{19}{subsubsection.4.6.1.1}%
+\contentsline {subsection}{\numberline {4.6.2}Member Function Documentation}{19}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}equals()}{19}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}has\_variable()}{19}{subsubsection.4.6.2.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.3}interp()}{20}{subsubsection.4.6.2.3}%
+\contentsline {subsubsection}{\numberline {4.6.2.4}pretty\_print()}{20}{subsubsection.4.6.2.4}%
+\contentsline {subsubsection}{\numberline {4.6.2.5}pretty\_print\_at()}{20}{subsubsection.4.6.2.5}%
+\contentsline {subsubsection}{\numberline {4.6.2.6}print()}{20}{subsubsection.4.6.2.6}%
+\contentsline {subsubsection}{\numberline {4.6.2.7}subst()}{20}{subsubsection.4.6.2.7}%
+\contentsline {subsection}{\numberline {4.6.3}Member Data Documentation}{20}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}else\_m}{20}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}test\_m}{21}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}then\_m}{21}{subsubsection.4.6.3.3}%
+\contentsline {section}{\numberline {4.7}Let Class Reference}{21}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Constructor \& Destructor Documentation}{22}{subsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.1.1}Let()}{22}{subsubsection.4.7.1.1}%
+\contentsline {subsection}{\numberline {4.7.2}Member Function Documentation}{22}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}equals()}{22}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}has\_variable()}{22}{subsubsection.4.7.2.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.3}interp()}{22}{subsubsection.4.7.2.3}%
+\contentsline {subsubsection}{\numberline {4.7.2.4}pretty\_print()}{22}{subsubsection.4.7.2.4}%
+\contentsline {subsubsection}{\numberline {4.7.2.5}pretty\_print\_at()}{23}{subsubsection.4.7.2.5}%
+\contentsline {subsubsection}{\numberline {4.7.2.6}print()}{23}{subsubsection.4.7.2.6}%
+\contentsline {subsubsection}{\numberline {4.7.2.7}subst()}{23}{subsubsection.4.7.2.7}%
+\contentsline {subsection}{\numberline {4.7.3}Member Data Documentation}{23}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}body\_m}{23}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}lhs\_m}{23}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}rhs\_m}{23}{subsubsection.4.7.3.3}%
+\contentsline {section}{\numberline {4.8}Mult Class Reference}{24}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Constructor \& Destructor Documentation}{24}{subsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.1}Mult()}{24}{subsubsection.4.8.1.1}%
+\contentsline {subsection}{\numberline {4.8.2}Member Function Documentation}{25}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}equals()}{25}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}has\_variable()}{25}{subsubsection.4.8.2.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.3}interp()}{25}{subsubsection.4.8.2.3}%
+\contentsline {subsubsection}{\numberline {4.8.2.4}pretty\_print()}{25}{subsubsection.4.8.2.4}%
+\contentsline {subsubsection}{\numberline {4.8.2.5}pretty\_print\_at()}{25}{subsubsection.4.8.2.5}%
+\contentsline {subsubsection}{\numberline {4.8.2.6}print()}{25}{subsubsection.4.8.2.6}%
+\contentsline {subsubsection}{\numberline {4.8.2.7}subst()}{26}{subsubsection.4.8.2.7}%
+\contentsline {subsection}{\numberline {4.8.3}Member Data Documentation}{26}{subsection.4.8.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.1}lhs\_m}{26}{subsubsection.4.8.3.1}%
+\contentsline {subsubsection}{\numberline {4.8.3.2}rhs\_m}{26}{subsubsection.4.8.3.2}%
+\contentsline {section}{\numberline {4.9}Num Class Reference}{26}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Constructor \& Destructor Documentation}{27}{subsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.1.1}Num()}{27}{subsubsection.4.9.1.1}%
+\contentsline {subsection}{\numberline {4.9.2}Member Function Documentation}{27}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}equals()}{27}{subsubsection.4.9.2.1}%
+\contentsline {subsubsection}{\numberline {4.9.2.2}has\_variable()}{27}{subsubsection.4.9.2.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.3}interp()}{27}{subsubsection.4.9.2.3}%
+\contentsline {subsubsection}{\numberline {4.9.2.4}print()}{28}{subsubsection.4.9.2.4}%
+\contentsline {subsubsection}{\numberline {4.9.2.5}subst()}{28}{subsubsection.4.9.2.5}%
+\contentsline {subsection}{\numberline {4.9.3}Member Data Documentation}{28}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}int\_m}{28}{subsubsection.4.9.3.1}%
+\contentsline {section}{\numberline {4.10}Num\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Val Class Reference}{28}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Constructor \& Destructor Documentation}{29}{subsection.4.10.1}%
+\contentsline {subsubsection}{\numberline {4.10.1.1}NumVal()}{29}{subsubsection.4.10.1.1}%
+\contentsline {subsection}{\numberline {4.10.2}Member Function Documentation}{29}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}add\_to()}{29}{subsubsection.4.10.2.1}%
+\contentsline {subsubsection}{\numberline {4.10.2.2}equals()}{29}{subsubsection.4.10.2.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.3}is\_true()}{29}{subsubsection.4.10.2.3}%
+\contentsline {subsubsection}{\numberline {4.10.2.4}mult\_with()}{29}{subsubsection.4.10.2.4}%
+\contentsline {subsubsection}{\numberline {4.10.2.5}print()}{30}{subsubsection.4.10.2.5}%
+\contentsline {subsubsection}{\numberline {4.10.2.6}to\_expr()}{30}{subsubsection.4.10.2.6}%
+\contentsline {subsection}{\numberline {4.10.3}Member Data Documentation}{30}{subsection.4.10.3}%
+\contentsline {subsubsection}{\numberline {4.10.3.1}int\_m}{30}{subsubsection.4.10.3.1}%
+\contentsline {section}{\numberline {4.11}Val Class Reference}{30}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Member Function Documentation}{31}{subsection.4.11.1}%
+\contentsline {subsubsection}{\numberline {4.11.1.1}add\_to()}{31}{subsubsection.4.11.1.1}%
+\contentsline {subsubsection}{\numberline {4.11.1.2}equals()}{31}{subsubsection.4.11.1.2}%
+\contentsline {subsubsection}{\numberline {4.11.1.3}is\_true()}{31}{subsubsection.4.11.1.3}%
+\contentsline {subsubsection}{\numberline {4.11.1.4}mult\_with()}{31}{subsubsection.4.11.1.4}%
+\contentsline {subsubsection}{\numberline {4.11.1.5}print()}{31}{subsubsection.4.11.1.5}%
+\contentsline {subsubsection}{\numberline {4.11.1.6}to\_expr()}{31}{subsubsection.4.11.1.6}%
+\contentsline {subsubsection}{\numberline {4.11.1.7}to\_string()}{31}{subsubsection.4.11.1.7}%
+\contentsline {section}{\numberline {4.12}Var Class Reference}{32}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Constructor \& Destructor Documentation}{32}{subsection.4.12.1}%
+\contentsline {subsubsection}{\numberline {4.12.1.1}Var()}{32}{subsubsection.4.12.1.1}%
+\contentsline {subsection}{\numberline {4.12.2}Member Function Documentation}{33}{subsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.1}equals()}{33}{subsubsection.4.12.2.1}%
+\contentsline {subsubsection}{\numberline {4.12.2.2}has\_variable()}{33}{subsubsection.4.12.2.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.3}interp()}{33}{subsubsection.4.12.2.3}%
+\contentsline {subsubsection}{\numberline {4.12.2.4}print()}{33}{subsubsection.4.12.2.4}%
+\contentsline {subsubsection}{\numberline {4.12.2.5}subst()}{33}{subsubsection.4.12.2.5}%
+\contentsline {subsection}{\numberline {4.12.3}Member Data Documentation}{33}{subsection.4.12.3}%
+\contentsline {subsubsection}{\numberline {4.12.3.1}str\_m}{33}{subsubsection.4.12.3.1}%
+\contentsline {chapter}{\numberline {5}File Documentation}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/cmdline.cpp File Reference}{35}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Macro Definition Documentation}{35}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}CATCH\_CONFIG\_RUNNER}{35}{subsubsection.5.1.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Function Documentation}{35}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}handle\_cin()}{35}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}if\_help()}{36}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}if\_interp()}{36}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}if\_pretty\_print()}{36}{subsubsection.5.1.2.4}%
+\contentsline {subsubsection}{\numberline {5.1.2.5}if\_print()}{36}{subsubsection.5.1.2.5}%
+\contentsline {subsubsection}{\numberline {5.1.2.6}if\_test()}{36}{subsubsection.5.1.2.6}%
+\contentsline {subsubsection}{\numberline {5.1.2.7}use\_arguments()}{36}{subsubsection.5.1.2.7}%
+\contentsline {section}{\numberline {5.2}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/cmdline.h File Reference}{36}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Function Documentation}{37}{subsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.1}use\_arguments()}{37}{subsubsection.5.2.1.1}%
+\contentsline {section}{\numberline {5.3}cmdline.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{37}{section.5.3}%
+\contentsline {section}{\numberline {5.4}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr.cpp File Reference}{37}{section.5.4}%
+\contentsline {section}{\numberline {5.5}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr.h File Reference}{37}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Enumeration Type Documentation}{38}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}precedence\_t}{38}{subsubsection.5.5.1.1}%
+\contentsline {section}{\numberline {5.6}Expr.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{38}{section.5.6}%
+\contentsline {section}{\numberline {5.7}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/main.cpp File Reference}{42}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Function Documentation}{42}{subsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.1}main()}{42}{subsubsection.5.7.1.1}%
+\contentsline {section}{\numberline {5.8}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/parse.cpp File Reference}{43}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Function Documentation}{43}{subsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.1}build\_number()}{43}{subsubsection.5.8.1.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.2}consume()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{43}{subsubsection.5.8.1.2}%
+\contentsline {subsubsection}{\numberline {5.8.1.3}consume()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{43}{subsubsection.5.8.1.3}%
+\contentsline {subsubsection}{\numberline {5.8.1.4}consume\_whitespace()}{43}{subsubsection.5.8.1.4}%
+\contentsline {subsubsection}{\numberline {5.8.1.5}parse\_adds()}{44}{subsubsection.5.8.1.5}%
+\contentsline {subsubsection}{\numberline {5.8.1.6}parse\_bool()}{44}{subsubsection.5.8.1.6}%
+\contentsline {subsubsection}{\numberline {5.8.1.7}parse\_eqs()}{44}{subsubsection.5.8.1.7}%
+\contentsline {subsubsection}{\numberline {5.8.1.8}parse\_expr()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{44}{subsubsection.5.8.1.8}%
+\contentsline {subsubsection}{\numberline {5.8.1.9}parse\_expr()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{44}{subsubsection.5.8.1.9}%
+\contentsline {subsubsection}{\numberline {5.8.1.10}parse\_if()}{44}{subsubsection.5.8.1.10}%
+\contentsline {subsubsection}{\numberline {5.8.1.11}parse\_let()}{44}{subsubsection.5.8.1.11}%
+\contentsline {subsubsection}{\numberline {5.8.1.12}parse\_mults()}{44}{subsubsection.5.8.1.12}%
+\contentsline {subsubsection}{\numberline {5.8.1.13}parse\_num()}{44}{subsubsection.5.8.1.13}%
+\contentsline {subsubsection}{\numberline {5.8.1.14}parse\_paren()}{45}{subsubsection.5.8.1.14}%
+\contentsline {subsubsection}{\numberline {5.8.1.15}parse\_unary\_and\_ternary\_exprs()}{45}{subsubsection.5.8.1.15}%
+\contentsline {subsubsection}{\numberline {5.8.1.16}parse\_var()}{45}{subsubsection.5.8.1.16}%
+\contentsline {subsubsection}{\numberline {5.8.1.17}peek\_keyword()}{45}{subsubsection.5.8.1.17}%
+\contentsline {section}{\numberline {5.9}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/parse.h File Reference}{45}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Function Documentation}{45}{subsection.5.9.1}%
+\contentsline {subsubsection}{\numberline {5.9.1.1}parse\_expr()}{45}{subsubsection.5.9.1.1}%
+\contentsline {section}{\numberline {5.10}parse.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.5.10}%
+\contentsline {section}{\numberline {5.11}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Val.cpp File Reference}{46}{section.5.11}%
+\contentsline {section}{\numberline {5.12}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/msdscript/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Val.h File Reference}{46}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Val.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.5.13}%
+\contentsline {section}{\numberline {5.14}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/u0858882/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/msdscript/test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}msdscript/src/test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}msdscript.cpp File Reference}{47}{section.5.14}%
+\contentsline {subsection}{\numberline {5.14.1}Function Documentation}{48}{subsection.5.14.1}%
+\contentsline {subsubsection}{\numberline {5.14.1.1}compare\_IO()}{48}{subsubsection.5.14.1.1}%
+\contentsline {subsubsection}{\numberline {5.14.1.2}compare\_programs()}{48}{subsubsection.5.14.1.2}%
+\contentsline {subsubsection}{\numberline {5.14.1.3}main()}{48}{subsubsection.5.14.1.3}%
+\contentsline {subsubsection}{\numberline {5.14.1.4}write\_report\_header()}{48}{subsubsection.5.14.1.4}%
+\contentsline {subsubsection}{\numberline {5.14.1.5}write\_results()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{49}{subsubsection.5.14.1.5}%
+\contentsline {subsubsection}{\numberline {5.14.1.6}write\_results()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{49}{subsubsection.5.14.1.6}%
+\contentsline {subsection}{\numberline {5.14.2}Variable Documentation}{49}{subsection.5.14.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.1}EXECS\_DIR}{49}{subsubsection.5.14.2.1}%
+\contentsline {subsubsection}{\numberline {5.14.2.2}OUTPUT\_DIR}{49}{subsubsection.5.14.2.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.3}TEST\_ITER}{49}{subsubsection.5.14.2.3}%
+\contentsline {chapter}{Index}{51}{section*.64}%

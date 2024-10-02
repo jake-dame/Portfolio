@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_exec_8h_source" xml:lang="en-US">
+<title>exec.h</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/test_msdscript/src/exec.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+7 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+8 
+9 <emphasis role="preprocessor">#include&#32;&lt;unistd.h&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&lt;fcntl.h&gt;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&lt;poll.h&gt;</emphasis>
+12 
+13 <emphasis role="preprocessor">#include&#32;&lt;cerrno&gt;</emphasis>
+14 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+15 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+16 <emphasis role="preprocessor">#include&#32;&lt;cassert&gt;</emphasis>
+17 
+18 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_exec_result">ExecResult</link>
+19 {
+20 
+21 <emphasis role="keyword">public</emphasis>:
+22 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_exec_result_1a1f61842f576e09682776eba0ee86278a">exit_code</link>;
+23 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_exec_result_1af71d7f8f2f5e8beb8ebd49069f7f3a21">out</link>;
+24 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_exec_result_1a61f1ed07b86bdad3f3d48ecf8e4fdfaf">err</link>;
+25 
+26 &#32;&#32;&#32;&#32;<link linkend="_class_exec_result_1a227514f53bb4e6671cc4bfa425c37927">ExecResult</link>()
+27 &#32;&#32;&#32;&#32;{
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_exec_result_1a1f61842f576e09682776eba0ee86278a">exit_code</link>&#32;=&#32;0;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_exec_result_1af71d7f8f2f5e8beb8ebd49069f7f3a21">out</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_exec_result_1a61f1ed07b86bdad3f3d48ecf8e4fdfaf">err</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+31 &#32;&#32;&#32;&#32;}
+32 
+33 };
+34 
+35 <emphasis role="keyword">extern</emphasis>&#32;<link linkend="_class_exec_result">ExecResult</link>&#32;<link linkend="_exec_8h_1ad56af6b3c76af4d38d15f8875e02ff25">exec_program</link>(<emphasis role="keywordtype">int</emphasis>&#32;argc,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*&#32;<emphasis role="keyword">const</emphasis>&#32;*&#32;argv,&#32;std::string&#32;input);
+</programlisting></section>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_generators_1_1_random_floating_generator" xml:lang="en-US">
+<title>Catch::Generators::RandomFloatingGenerator&lt; Float &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Generators::RandomFloatingGenerator&lt; Float &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_generators_1_1_random_floating_generator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_random_floating_generator_1abce275ce88f7c3465addd7a98b6c408d">RandomFloatingGenerator</link> (<link linkend="_struct_catch_1_1true__given">Float</link> <link linkend="_struct_catch_1_1true__given">a</link>, <link linkend="_struct_catch_1_1true__given">Float</link> <link linkend="_struct_catch_1_1true__given">b</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">Float</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator_1a307eff56c58d4c6a223f35ac4d4ba710">get</link> () <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator_1a6a65e5f16abd884f58c31581b2a0d6db">next</link> () <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; Float &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1afe5b6eecbbd735e69748d68574611747">~IGenerator</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base">Catch::Generators::GeneratorUntypedBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a00ff0179d739c3016756b6cf56fabbad">GeneratorUntypedBase</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a6f05f8099fdc5744a7aff68aa8c09c7f">~GeneratorUntypedBase</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_simple_pcg32">Catch::SimplePcg32</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator_1a6142d65c14d2749ecb3dbc6949c0ca1c">m_rng</link></para>
+</listitem>
+            <listitem><para>std::uniform_real_distribution&lt; <link linkend="_struct_catch_1_1true__given">Float</link> &gt; <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator_1a6a79be0000a6c2a17e4f11dadb43c8ac">m_dist</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">Float</link> <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator_1a3591690761d8da0f4438623a453e6bc0">m_current_number</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Types inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; Float &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">using</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a1f8677875fe0ff31f39c60d45504b9a5">type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_floating_generator_1abce275ce88f7c3465addd7a98b6c408d"/><section>
+    <title>RandomFloatingGenerator()</title>
+<indexterm><primary>RandomFloatingGenerator</primary><secondary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</primary><secondary>RandomFloatingGenerator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Float</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_random_floating_generator">Catch::Generators::RandomFloatingGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Float</link> &gt;::RandomFloatingGenerator (<link linkend="_struct_catch_1_1true__given">Float</link> a, <link linkend="_struct_catch_1_1true__given">Float</link> b)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_floating_generator_1a307eff56c58d4c6a223f35ac4d4ba710"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</primary><secondary>get</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Float</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">Float</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator">Catch::Generators::RandomFloatingGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Float</link> &gt;::get ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a0fb6da789cda5b4e90f036737db82485">Catch::Generators::IGenerator&lt; Float &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_floating_generator_1a6a65e5f16abd884f58c31581b2a0d6db"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</primary><secondary>next</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Float</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator">Catch::Generators::RandomFloatingGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Float</link> &gt;::next ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1aeed3c0cd6233c5f553549e453b8d6638">Catch::Generators::GeneratorUntypedBase</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_floating_generator_1a3591690761d8da0f4438623a453e6bc0"/><section>
+    <title>m_current_number</title>
+<indexterm><primary>m_current_number</primary><secondary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</primary><secondary>m_current_number</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Float</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">Float</link> <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator">Catch::Generators::RandomFloatingGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Float</link> &gt;::m_current_number<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_floating_generator_1a6a79be0000a6c2a17e4f11dadb43c8ac"/><section>
+    <title>m_dist</title>
+<indexterm><primary>m_dist</primary><secondary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</primary><secondary>m_dist</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Float</link> &gt; </computeroutput><para><computeroutput>std::uniform_real_distribution&lt;<link linkend="_struct_catch_1_1true__given">Float</link>&gt; <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator">Catch::Generators::RandomFloatingGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Float</link> &gt;::m_dist<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_floating_generator_1a6142d65c14d2749ecb3dbc6949c0ca1c"/><section>
+    <title>m_rng</title>
+<indexterm><primary>m_rng</primary><secondary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</primary><secondary>m_rng</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Float</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_simple_pcg32">Catch::SimplePcg32</link>&amp; <link linkend="_class_catch_1_1_generators_1_1_random_floating_generator">Catch::Generators::RandomFloatingGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Float</link> &gt;::m_rng<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

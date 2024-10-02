@@ -1,0 +1,115 @@
+\doxysection{/\+Users/u0858882/\+Desktop/msdscript/test\+\_\+msdscript/src/test\+\_\+msdscript.cpp File Reference}
+\hypertarget{test__msdscript_8cpp}{}\label{test__msdscript_8cpp}\index{/Users/u0858882/Desktop/msdscript/test\_msdscript/src/test\_msdscript.cpp@{/Users/u0858882/Desktop/msdscript/test\_msdscript/src/test\_msdscript.cpp}}
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include "{}exec.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{test__msdscript_8cpp_aacaa86b7d34d4afd365a35381bd4b257}{write\+\_\+report\+\_\+header}} (std\+::ofstream \&output\+\_\+file, const std\+::string \&exec\+\_\+name, const int \&error\+\_\+count)
+\item 
+void \mbox{\hyperlink{test__msdscript_8cpp_a8a80c21da54aef8cdbbb6a0f7e039330}{write\+\_\+results}} (std\+::stringstream \&stream, const std\+::string \&label, const std\+::vector$<$ Exec\+Result $>$ \&exec\+\_\+results, const std\+::string \&input, const int \&iteration, int \&error\+\_\+count)
+\item 
+void \mbox{\hyperlink{test__msdscript_8cpp_a5d94ffc4fcb2ea4fd1d80e59476d860d}{compare\+\_\+\+IO}} (const std\+::string \&exec\+\_\+name)
+\item 
+void \mbox{\hyperlink{test__msdscript_8cpp_a920dcd5d9615d48d8ff4abe1dda79b58}{compare\+\_\+programs}} (const std\+::string \&exec\+\_\+name\+\_\+1, const std\+::string \&exec\+\_\+name\+\_\+2)
+\item 
+int \mbox{\hyperlink{test__msdscript_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\item 
+void \mbox{\hyperlink{test__msdscript_8cpp_ab41e44091df4e0e40723428d01b97ad6}{write\+\_\+results}} (std\+::stringstream \&stream, const std\+::string \&label, const Exec\+Result \&er, const std\+::string \&input, int \&error\+\_\+count)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{test__msdscript_8cpp_ac9e44aa91cf7ed8be23f5c20c4cb67bb}{EXECS\+\_\+\+DIR}}
+\begin{DoxyCompactList}\small\item\em Directory where the executables to test are. USE ABS PATH. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{test__msdscript_8cpp_ae900c22de48a499ee8ebaaa6b7508c8e}{OUTPUT\+\_\+\+DIR}}
+\begin{DoxyCompactList}\small\item\em Directory where error reports (.txt) should go. USE ABS PATH. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{test__msdscript_8cpp_a5a6a425875fd9dbbe59fba9087eafef1}{TEST\+\_\+\+ITER}} = 30
+\begin{DoxyCompactList}\small\item\em Number of inputs to test per executable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{test__msdscript_8cpp_a5d94ffc4fcb2ea4fd1d80e59476d860d}\label{test__msdscript_8cpp_a5d94ffc4fcb2ea4fd1d80e59476d860d} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!compare\_IO@{compare\_IO}}
+\index{compare\_IO@{compare\_IO}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{compare\_IO()}{compare\_IO()}}
+{\footnotesize\ttfamily void compare\+\_\+\+IO (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{exec\+\_\+name }\end{DoxyParamCaption})}
+
+Testing functions \Hypertarget{test__msdscript_8cpp_a920dcd5d9615d48d8ff4abe1dda79b58}\label{test__msdscript_8cpp_a920dcd5d9615d48d8ff4abe1dda79b58} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!compare\_programs@{compare\_programs}}
+\index{compare\_programs@{compare\_programs}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{compare\_programs()}{compare\_programs()}}
+{\footnotesize\ttfamily void compare\+\_\+programs (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{exec\+\_\+name\+\_\+1,  }\item[{const std\+::string \&}]{exec\+\_\+name\+\_\+2 }\end{DoxyParamCaption})}
+
+\Hypertarget{test__msdscript_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{test__msdscript_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!main@{main}}
+\index{main@{main}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv }\end{DoxyParamCaption})}
+
+\Hypertarget{test__msdscript_8cpp_aacaa86b7d34d4afd365a35381bd4b257}\label{test__msdscript_8cpp_aacaa86b7d34d4afd365a35381bd4b257} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!write\_report\_header@{write\_report\_header}}
+\index{write\_report\_header@{write\_report\_header}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{write\_report\_header()}{write\_report\_header()}}
+{\footnotesize\ttfamily void write\+\_\+report\+\_\+header (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{output\+\_\+file,  }\item[{const std\+::string \&}]{exec\+\_\+name,  }\item[{const int \&}]{error\+\_\+count }\end{DoxyParamCaption})}
+
+Error-\/report-\/building functions \Hypertarget{test__msdscript_8cpp_ab41e44091df4e0e40723428d01b97ad6}\label{test__msdscript_8cpp_ab41e44091df4e0e40723428d01b97ad6} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!write\_results@{write\_results}}
+\index{write\_results@{write\_results}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{write\_results()}{write\_results()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void write\+\_\+results (\begin{DoxyParamCaption}\item[{std\+::stringstream \&}]{stream,  }\item[{const std\+::string \&}]{label,  }\item[{const Exec\+Result \&}]{er,  }\item[{const std\+::string \&}]{input,  }\item[{int \&}]{error\+\_\+count }\end{DoxyParamCaption})}
+
+\Hypertarget{test__msdscript_8cpp_a8a80c21da54aef8cdbbb6a0f7e039330}\label{test__msdscript_8cpp_a8a80c21da54aef8cdbbb6a0f7e039330} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!write\_results@{write\_results}}
+\index{write\_results@{write\_results}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{write\_results()}{write\_results()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void write\+\_\+results (\begin{DoxyParamCaption}\item[{std\+::stringstream \&}]{stream,  }\item[{const std\+::string \&}]{label,  }\item[{const std\+::vector$<$ Exec\+Result $>$ \&}]{exec\+\_\+results,  }\item[{const std\+::string \&}]{input,  }\item[{const int \&}]{iteration,  }\item[{int \&}]{error\+\_\+count }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{test__msdscript_8cpp_ac9e44aa91cf7ed8be23f5c20c4cb67bb}\label{test__msdscript_8cpp_ac9e44aa91cf7ed8be23f5c20c4cb67bb} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!EXECS\_DIR@{EXECS\_DIR}}
+\index{EXECS\_DIR@{EXECS\_DIR}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{EXECS\_DIR}{EXECS\_DIR}}
+{\footnotesize\ttfamily const std\+::string EXECS\+\_\+\+DIR}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}/Users/u0858882/Desktop/msdscript/test\_msdscript/testers/"{}}}
+
+\end{DoxyCode}
+
+
+Directory where the executables to test are. USE ABS PATH. 
+
+CONSTANTS \Hypertarget{test__msdscript_8cpp_ae900c22de48a499ee8ebaaa6b7508c8e}\label{test__msdscript_8cpp_ae900c22de48a499ee8ebaaa6b7508c8e} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!OUTPUT\_DIR@{OUTPUT\_DIR}}
+\index{OUTPUT\_DIR@{OUTPUT\_DIR}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{OUTPUT\_DIR}{OUTPUT\_DIR}}
+{\footnotesize\ttfamily const std\+::string OUTPUT\+\_\+\+DIR}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}/Users/u0858882/Desktop/msdscript/test\_msdscript/reports/"{}}}
+
+\end{DoxyCode}
+
+
+Directory where error reports (.txt) should go. USE ABS PATH. 
+
+\Hypertarget{test__msdscript_8cpp_a5a6a425875fd9dbbe59fba9087eafef1}\label{test__msdscript_8cpp_a5a6a425875fd9dbbe59fba9087eafef1} 
+\index{test\_msdscript.cpp@{test\_msdscript.cpp}!TEST\_ITER@{TEST\_ITER}}
+\index{TEST\_ITER@{TEST\_ITER}!test\_msdscript.cpp@{test\_msdscript.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_ITER}{TEST\_ITER}}
+{\footnotesize\ttfamily const int TEST\+\_\+\+ITER = 30}
+
+
+
+Number of inputs to test per executable. 
+

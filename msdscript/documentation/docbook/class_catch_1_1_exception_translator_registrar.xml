@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_exception_translator_registrar" xml:lang="en-US">
+<title>Catch::ExceptionTranslatorRegistrar Class Reference</title>
+<indexterm><primary>Catch::ExceptionTranslatorRegistrar</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator">ExceptionTranslator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_class_catch_1_1_exception_translator_registrar_1aa73229de911f26b1df6c6c87c4d9e04e">ExceptionTranslatorRegistrar</link> (std::string(*<link linkend="_struct_catch_1_1true__given">translateFunction</link>)(<link linkend="_struct_catch_1_1true__given">T</link> &amp;))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_exception_translator_registrar_1aa73229de911f26b1df6c6c87c4d9e04e"/><section>
+    <title>ExceptionTranslatorRegistrar()</title>
+<indexterm><primary>ExceptionTranslatorRegistrar</primary><secondary>Catch::ExceptionTranslatorRegistrar</secondary></indexterm>
+<indexterm><primary>Catch::ExceptionTranslatorRegistrar</primary><secondary>ExceptionTranslatorRegistrar</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>Catch::ExceptionTranslatorRegistrar::ExceptionTranslatorRegistrar (std::string(*)(<link linkend="_struct_catch_1_1true__given">T</link> &amp;) translateFunction)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

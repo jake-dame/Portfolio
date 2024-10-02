@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_i_runner" xml:lang="en-US">
+<title>Catch::IRunner Struct Reference</title>
+<indexterm><primary>Catch::IRunner</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_runner_1a5f539a88a7772d68de8a2e4028774209">~IRunner</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_runner_1a03713202dd2e041e30b8030088ab0116">aborting</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_runner_1a5f539a88a7772d68de8a2e4028774209"/><section>
+    <title>~IRunner()</title>
+<indexterm><primary>~IRunner</primary><secondary>Catch::IRunner</secondary></indexterm>
+<indexterm><primary>Catch::IRunner</primary><secondary>~IRunner</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::IRunner::~IRunner ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_runner_1a03713202dd2e041e30b8030088ab0116"/><section>
+    <title>aborting()</title>
+<indexterm><primary>aborting</primary><secondary>Catch::IRunner</secondary></indexterm>
+<indexterm><primary>Catch::IRunner</primary><secondary>aborting</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">bool</link> Catch::IRunner::aborting ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

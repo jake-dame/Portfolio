@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_warn_about" xml:lang="en-US">
+<title>Catch::WarnAbout Struct Reference</title>
+<indexterm><primary>Catch::WarnAbout</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3">What</link> { <link linkend="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3a9ac33f9211280cca9082557329706d27">Nothing</link> = 0x00
+, <link linkend="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3a516a40a437d6ff29898e2fa93bca8f82">NoAssertions</link> = 0x01
+, <link linkend="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3ab449dacc48055ee886a4a7aa283db556">NoTests</link> = 0x02
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3"/><section>
+    <title>What</title>
+<indexterm><primary>What</primary><secondary>Catch::WarnAbout</secondary></indexterm>
+<indexterm><primary>Catch::WarnAbout</primary><secondary>What</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">enum</link> <link linkend="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3">Catch::WarnAbout::What</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Nothing</primary><secondary>Catch::WarnAbout</secondary></indexterm>
+<indexterm><primary>Catch::WarnAbout</primary><secondary>Nothing</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3a9ac33f9211280cca9082557329706d27"/>Nothing</entry><entry></entry></row><row><entry><indexterm><primary>NoAssertions</primary><secondary>Catch::WarnAbout</secondary></indexterm>
+<indexterm><primary>Catch::WarnAbout</primary><secondary>NoAssertions</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3a516a40a437d6ff29898e2fa93bca8f82"/>NoAssertions</entry><entry></entry></row><row><entry><indexterm><primary>NoTests</primary><secondary>Catch::WarnAbout</secondary></indexterm>
+<indexterm><primary>Catch::WarnAbout</primary><secondary>NoTests</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_warn_about_1ae3dde70ef78d700ea896eb29314e0fa3ab449dacc48055ee886a4a7aa283db556"/>NoTests</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

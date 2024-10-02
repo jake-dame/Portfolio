@@ -1,0 +1,159 @@
+\doxysection{Eq Class Reference}
+\hypertarget{class_eq}{}\label{class_eq}\index{Eq@{Eq}}
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Eq\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_eq}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_eq_af391532bed49cb5ec8d69a2c0ceb8bc4}{Eq}} (\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}lhs, \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}rhs)
+\item 
+bool \mbox{\hyperlink{class_eq_a9919c97580777aa2564186fff19b4825}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_eq_a4e22b12552283b3923029fa5b1b2e976}{interp}} () override
+\item 
+bool \mbox{\hyperlink{class_eq_aec762006f4d34ace9f181ce41926e672}{has\+\_\+variable}} () override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_eq_a8aba9535430eda30809671314b01edc7}{subst}} (std\+::string str, \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}e) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_expr}{Expr}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_expr_abe130f37bd185ec13c5113de16fc7bf7}{to\+\_\+string}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_expr_a6ad7c18234f22d96d6917089b5bd7caa}{to\+\_\+pretty\+\_\+string}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_eq_a9726bb556adb165485de50d0ece9e58f}{lhs\+\_\+m}}
+\begin{DoxyCompactList}\small\item\em The lhs operand of an equality operation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_eq_a94beb3267608e27bc278f3385966b457}{rhs\+\_\+m}}
+\begin{DoxyCompactList}\small\item\em The rhs operand of an equality operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_eq_a87257c3730aeced39934efbd8c613a2c}{print}} (std\+::ostream \&stream) override
+\item 
+void \mbox{\hyperlink{class_eq_a88ca6380e01ef2d73bc3a607aa309273}{pretty\+\_\+print}} (std\+::ostream \&stream) override
+\item 
+void \mbox{\hyperlink{class_eq_a61c4c2df2dc95559b8ca3117391142db}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&stream, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} p, std\+::streampos \&pos, bool paren) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_eq_af391532bed49cb5ec8d69a2c0ceb8bc4}\label{class_eq_af391532bed49cb5ec8d69a2c0ceb8bc4} 
+\index{Eq@{Eq}!Eq@{Eq}}
+\index{Eq@{Eq}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{Eq()}{Eq()}}
+{\footnotesize\ttfamily Eq\+::\+Eq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{lhs,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{rhs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_eq_a9919c97580777aa2564186fff19b4825}\label{class_eq_a9919c97580777aa2564186fff19b4825} 
+\index{Eq@{Eq}!equals@{equals}}
+\index{equals@{equals}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Eq\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{Expr}}.
+
+\Hypertarget{class_eq_aec762006f4d34ace9f181ce41926e672}\label{class_eq_aec762006f4d34ace9f181ce41926e672} 
+\index{Eq@{Eq}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool Eq\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{Expr}}.
+
+\Hypertarget{class_eq_a4e22b12552283b3923029fa5b1b2e976}\label{class_eq_a4e22b12552283b3923029fa5b1b2e976} 
+\index{Eq@{Eq}!interp@{interp}}
+\index{interp@{interp}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Eq\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{Expr}}.
+
+\Hypertarget{class_eq_a88ca6380e01ef2d73bc3a607aa309273}\label{class_eq_a88ca6380e01ef2d73bc3a607aa309273} 
+\index{Eq@{Eq}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily void Eq\+::pretty\+\_\+print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_expr_aaec6172fa839cafad124775b0a43965b}{Expr}}.
+
+\Hypertarget{class_eq_a61c4c2df2dc95559b8ca3117391142db}\label{class_eq_a61c4c2df2dc95559b8ca3117391142db} 
+\index{Eq@{Eq}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Eq\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{p,  }\item[{std\+::streampos \&}]{pos,  }\item[{bool}]{paren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_expr_ab5b1d850f98bb650ef199bb6e90133b7}{Expr}}.
+
+\Hypertarget{class_eq_a87257c3730aeced39934efbd8c613a2c}\label{class_eq_a87257c3730aeced39934efbd8c613a2c} 
+\index{Eq@{Eq}!print@{print}}
+\index{print@{print}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Eq\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a8e34377af275f60532d1ba76e6feaceb}{Expr}}.
+
+\Hypertarget{class_eq_a8aba9535430eda30809671314b01edc7}\label{class_eq_a8aba9535430eda30809671314b01edc7} 
+\index{Eq@{Eq}!subst@{subst}}
+\index{subst@{subst}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} Eq\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_aa91f56b56e078594565aeba32c520b7a}{Expr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_eq_a9726bb556adb165485de50d0ece9e58f}\label{class_eq_a9726bb556adb165485de50d0ece9e58f} 
+\index{Eq@{Eq}!lhs\_m@{lhs\_m}}
+\index{lhs\_m@{lhs\_m}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{lhs\_m}{lhs\_m}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}\texorpdfstring{$\ast$}{*} Eq\+::lhs\+\_\+m}
+
+
+
+The lhs operand of an equality operation. 
+
+\Hypertarget{class_eq_a94beb3267608e27bc278f3385966b457}\label{class_eq_a94beb3267608e27bc278f3385966b457} 
+\index{Eq@{Eq}!rhs\_m@{rhs\_m}}
+\index{rhs\_m@{rhs\_m}!Eq@{Eq}}
+\doxysubsubsection{\texorpdfstring{rhs\_m}{rhs\_m}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}\texorpdfstring{$\ast$}{*} Eq\+::rhs\+\_\+m}
+
+
+
+The rhs operand of an equality operation. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

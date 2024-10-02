@@ -1,0 +1,104 @@
+\doxysection{Val Class Reference}
+\hypertarget{class_val}{}\label{class_val}\index{Val@{Val}}
+
+
+{\ttfamily \#include $<$Val.\+h$>$}
+
+Inheritance diagram for Val\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_val}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_val_abcff5ad6415a7ead83933e45cc3dc9c0}{to\+\_\+string}} ()
+\item 
+virtual \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_val_ac26c69f7a71d9c18627864f62bd83dbc}{to\+\_\+expr}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_val_a949ca9ba5c9a030f58126aad5bf684c5}{equals}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}v)=0
+\item 
+virtual \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_val_a55dae19b209f6e1050a62d8c26d904f3}{add\+\_\+to}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}v)=0
+\item 
+virtual \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_val_ac959b56947108cda7d9feafa6e251009}{mult\+\_\+with}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}v)=0
+\item 
+virtual bool \mbox{\hyperlink{class_val_ad10185dc7531f869c7197ba89479ff95}{is\+\_\+true}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_val_a76adc288ffce52cd26f9355f22251c02}{print}} (std\+::ostream \&stream)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_val_a55dae19b209f6e1050a62d8c26d904f3}\label{class_val_a55dae19b209f6e1050a62d8c26d904f3} 
+\index{Val@{Val}!add\_to@{add\_to}}
+\index{add\_to@{add\_to}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{add\_to()}{add\_to()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Val\+::add\+\_\+to (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_num_val_ac37beaeded5991a03982ed2d1e7fefab}{Num\+Val}}, and \mbox{\hyperlink{class_bool_val_aa3b132054e0d38500a6400b046a84b45}{Bool\+Val}}.
+
+\Hypertarget{class_val_a949ca9ba5c9a030f58126aad5bf684c5}\label{class_val_a949ca9ba5c9a030f58126aad5bf684c5} 
+\index{Val@{Val}!equals@{equals}}
+\index{equals@{equals}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily virtual bool Val\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_num_val_aec5e08c5b63d5750b3cfc5afe563947d}{Num\+Val}}, and \mbox{\hyperlink{class_bool_val_a971b3ffa2421a771aab4a99124f2ab14}{Bool\+Val}}.
+
+\Hypertarget{class_val_ad10185dc7531f869c7197ba89479ff95}\label{class_val_ad10185dc7531f869c7197ba89479ff95} 
+\index{Val@{Val}!is\_true@{is\_true}}
+\index{is\_true@{is\_true}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{is\_true()}{is\_true()}}
+{\footnotesize\ttfamily virtual bool Val\+::is\+\_\+true (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_num_val_a8b0f735f85b123a4c7eb88e13b36a237}{Num\+Val}}, and \mbox{\hyperlink{class_bool_val_aaa2514063aaf2048b41880df72e0c14f}{Bool\+Val}}.
+
+\Hypertarget{class_val_ac959b56947108cda7d9feafa6e251009}\label{class_val_ac959b56947108cda7d9feafa6e251009} 
+\index{Val@{Val}!mult\_with@{mult\_with}}
+\index{mult\_with@{mult\_with}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{mult\_with()}{mult\_with()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Val\+::mult\+\_\+with (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_num_val_aca2485ce085c0733d521c408007352ac}{Num\+Val}}, and \mbox{\hyperlink{class_bool_val_a52ecb2ddf864f96556830ba9f1316daf}{Bool\+Val}}.
+
+\Hypertarget{class_val_a76adc288ffce52cd26f9355f22251c02}\label{class_val_a76adc288ffce52cd26f9355f22251c02} 
+\index{Val@{Val}!print@{print}}
+\index{print@{print}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Val\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_num_val_a0c2c08ff34c952b88273bc7e8f5425a4}{Num\+Val}}, and \mbox{\hyperlink{class_bool_val_a32564a9b69559ae902c7534b125d333d}{Bool\+Val}}.
+
+\Hypertarget{class_val_ac26c69f7a71d9c18627864f62bd83dbc}\label{class_val_ac26c69f7a71d9c18627864f62bd83dbc} 
+\index{Val@{Val}!to\_expr@{to\_expr}}
+\index{to\_expr@{to\_expr}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{to\_expr()}{to\_expr()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} Val\+::to\+\_\+expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_num_val_ae60543bf69d4f50bf0a1adea68f6a680}{Num\+Val}}, and \mbox{\hyperlink{class_bool_val_a47f9d7553e7ad883ebf4a5b44b7e1932}{Bool\+Val}}.
+
+\Hypertarget{class_val_abcff5ad6415a7ead83933e45cc3dc9c0}\label{class_val_abcff5ad6415a7ead83933e45cc3dc9c0} 
+\index{Val@{Val}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string Val\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_val_8h}{Val.\+h}}\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_val_8cpp}{Val.\+cpp}}\end{DoxyCompactItemize}

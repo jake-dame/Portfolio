@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__expr_8h_source" xml:lang="en-US">
+<title>Expr.h</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/msdscript/src/Expr.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="comment">/******************************************************************************</emphasis>
+2 <emphasis role="comment">&#32;*&#32;\brief&#32;Expr&#32;bass&#32;class&#32;+&#32;derived&#32;class&#32;declarations</emphasis>
+3 <emphasis role="comment">&#32;*</emphasis>
+4 <emphasis role="comment">&#32;*&#32;\file&#32;Expr.h</emphasis>
+5 <emphasis role="comment">&#32;*&#32;\author&#32;Jake&#32;Dame</emphasis>
+6 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+7 
+8 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+9 
+10 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Console&#32;I/O&#32;*/</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&lt;stdexcept&gt;</emphasis>&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;exceptions&#32;handling&#32;*/</emphasis>
+12 <emphasis role="preprocessor">#include&#32;&lt;sstream&gt;</emphasis>&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;std::stringstream&#32;*/</emphasis>
+13 <emphasis role="preprocessor">#include&#32;&lt;utility&gt;</emphasis>&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;std::move&#32;(for&#32;Var&#32;constructor)&#32;*/</emphasis>
+14 
+15 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_val">Val</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Val&#32;class&#32;for&#32;Expr::interp()&#32;*/</emphasis>
+16 
+17 <emphasis role="comment">/******************************************************************************</emphasis>
+18 <emphasis role="comment">&#32;*&#32;\typedef&#32;prec_t</emphasis>
+19 <emphasis role="comment">&#32;*&#32;\brief&#32;Assists&#32;in&#32;nested/parenthetical&#32;expression&#32;precedence&#32;typing</emphasis>
+20 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+21 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">enum</emphasis>
+22 {
+23 &#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913">NONE</link>&#32;=&#32;0,&#32;&#32;
+24 &#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfacfb0c876aa8571ac76d9fbc711a38753">ADD</link>&#32;=&#32;1,&#32;&#32;&#32;&#32;&#32;
+25 &#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfa4b4cae8faa0a4540c785141e43c01677">MULT</link>&#32;=&#32;2&#32;&#32;&#32;&#32;&#32;&#32;
+26 }&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link>;
+27 
+28 <emphasis role="comment">/******************************************************************************</emphasis>
+29 <emphasis role="comment">&#32;*&#32;\class&#32;Expr</emphasis>
+30 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;abstract,&#32;base&#32;class&#32;representing&#32;a&#32;mathematical&#32;expression.</emphasis>
+31 <emphasis role="comment">&#32;*</emphasis>
+32 <emphasis role="comment">&#32;*&#32;The&#32;Expression&#32;class&#32;is&#32;an&#32;abstract&#32;class&#32;that&#32;defines&#32;regular&#32;and</emphasis>
+33 <emphasis role="comment">&#32;*&#32;virtual&#32;functions&#32;used&#32;to&#32;perform&#32;various&#32;mathematical&#32;operations.&#32;These</emphasis>
+34 <emphasis role="comment">&#32;*&#32;include&#32;basic&#32;number&#32;and&#32;variable&#32;expressions,&#32;as&#32;well&#32;as&#32;operational</emphasis>
+35 <emphasis role="comment">&#32;*&#32;expressions&#32;such&#32;as&#32;addition,&#32;multiplication,&#32;and&#32;let&#32;substitution.&#32;All</emphasis>
+36 <emphasis role="comment">&#32;*&#32;classes&#32;that&#32;inherit&#32;from&#32;the&#32;Expression&#32;class&#32;are&#32;also&#32;able&#32;to&#32;print&#32;as&#32;a</emphasis>
+37 <emphasis role="comment">&#32;*&#32;string&#32;in&#32;two&#32;different&#32;styles.</emphasis>
+38 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+39 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_expr">Expr</link>
+40 {
+41 <emphasis role="keyword">public</emphasis>:
+42 
+43 &#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+44 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Non-virtual&#32;methods</emphasis>
+45 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+46 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7">to_string</link>();
+47 
+48 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa">to_pretty_string</link>();
+49 
+50 &#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+51 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Pure&#32;virtual&#32;methods</emphasis>
+52 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+53 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_expr_1abf9cdb765fb84304881789d273d7594f">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;=&#32;0;
+54 
+55 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_expr_1aa671ba2b665001c815588a7271735104">interp</link>()&#32;=&#32;0;
+56 
+57 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_expr_1a92dc26078993a4b9721ea732274a435c">has_variable</link>()&#32;=&#32;0;
+58 
+59 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_expr_1aa91f56b56e078594565aeba32c520b7a">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;=&#32;0;
+60 
+61 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_expr_1a8e34377af275f60532d1ba76e6feaceb">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;=&#32;0;
+62 
+63 &#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+64 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Regular&#32;virtual&#32;methods</emphasis>
+65 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+66 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_expr_1aaec6172fa839cafad124775b0a43965b">pretty_print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)
+67 &#32;&#32;&#32;&#32;{
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_expr_1a8e34377af275f60532d1ba76e6feaceb">print</link>(&#32;stream&#32;);
+69 &#32;&#32;&#32;&#32;}
+70 
+71 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_expr_1ab5b1d850f98bb650ef199bb6e90133b7">pretty_print_at</link>(&#32;std::ostream&#32;&amp;&#32;stream,
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link>&#32;p,
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::streampos&#32;&amp;&#32;pos,
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;paren&#32;)
+75 &#32;&#32;&#32;&#32;{
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_expr_1aaec6172fa839cafad124775b0a43965b">pretty_print</link>(&#32;stream&#32;);
+77 &#32;&#32;&#32;&#32;}
+78 };
+79 
+80 <emphasis role="comment">/******************************************************************************</emphasis>
+81 <emphasis role="comment">&#32;*&#32;\class&#32;Num</emphasis>
+82 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;Expr&#32;derived&#32;class&#32;representing&#32;a&#32;basic&#32;integer</emphasis>
+83 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+84 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_num">Num</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_expr">Expr</link>
+85 {
+86 
+87 <emphasis role="keyword">public</emphasis>:
+88 
+89 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_num_1a25174eade1d3dad04a7883d1f1895941">int_m</link>;&#32;&#32;&#32;&#32;&#32;
+90 
+91 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_num_1a9fce58e650a99ae50f4140ed9c87ec9f">Num</link>(&#32;<emphasis role="keywordtype">int</emphasis>&#32;val&#32;);
+92 
+93 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_num_1a07316c2897aadb9257b8de74dbfdcc03">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+94 
+95 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_num_1a4ba35020050277a80e2acbe3352c6b9f">interp</link>()&#32;<emphasis role="keyword">override</emphasis>;
+96 
+97 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_num_1a24a51278e76d4b01b457fb5f521bcc38">has_variable</link>()&#32;<emphasis role="keyword">override</emphasis>;
+98 
+99 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_num_1a5738b6218bd63ac81985bcd8a2748cfa">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+100 
+101 <emphasis role="keyword">private</emphasis>:
+102 
+103 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_num_1ad82f60521546672862f44c2dc42ab5a8">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+104 };
+105 
+106 <emphasis role="comment">/******************************************************************************</emphasis>
+107 <emphasis role="comment">&#32;*&#32;\class&#32;Bool</emphasis>
+108 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;Expr&#32;derived&#32;class&#32;representing&#32;a&#32;basic&#32;boolean&#32;value</emphasis>
+109 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+110 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_bool">Bool</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_expr">Expr</link>
+111 {
+112 
+113 <emphasis role="keyword">public</emphasis>:
+114 
+115 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_bool_1ad2b98d4a41c1a6779269d3cc9d15214e">bool_m</link>;&#32;&#32;&#32;&#32;&#32;
+116 
+117 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_bool_1a73573ed4f7afa9bf034a5a2693a98340">Bool</link>(&#32;<emphasis role="keywordtype">bool</emphasis>&#32;val&#32;);
+118 
+119 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_bool_1a7c274a00cd23466262ed5dd53db50fdf">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+120 
+121 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_bool_1a224ccb0f737803d152c1b68aa93fb0a3">interp</link>()&#32;<emphasis role="keyword">override</emphasis>;
+122 
+123 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_bool_1a1d96f8e991401a7becd0d2c1d9dfc992">has_variable</link>()&#32;<emphasis role="keyword">override</emphasis>;
+124 
+125 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_bool_1af3c4342df758b1ffbf4deaf7fe1c118d">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+126 
+127 <emphasis role="keyword">private</emphasis>:
+128 
+129 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_bool_1af4c233f391ed1b40624ff53ace1fae31">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+130 };
+131 
+132 <emphasis role="comment">/******************************************************************************</emphasis>
+133 <emphasis role="comment">&#32;*&#32;\class&#32;Eq</emphasis>
+134 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;Expr&#32;derived&#32;class&#32;representing&#32;an&#32;equality&#32;operation/comparison</emphasis>
+135 <emphasis role="comment">&#32;*</emphasis>
+136 <emphasis role="comment">&#32;*&#32;The&#32;Eq&#32;class&#32;compares&#32;two&#32;other&#32;Expr&#32;objects,&#32;and&#32;checks&#32;for&#32;equality.&#32;Its</emphasis>
+137 <emphasis role="comment">&#32;*&#32;value&#32;is&#32;defined&#32;by&#32;a&#32;BoolVal&#32;object.&#32;E.g.&#32;&quot;Expr&#32;==&#32;Expr&quot;.&#32;If&#32;the&#32;Expr</emphasis>
+138 <emphasis role="comment">&#32;*&#32;objects&#32;are&#32;equal,&#32;an&#32;Eq&#32;object&#32;will&#32;have&#32;a&#32;BoolVal&#32;of&#32;&quot;_true&quot;.&#32;If&#32;they&#32;are</emphasis>
+139 <emphasis role="comment">&#32;*&#32;not,&#32;it&#32;will&#32;be&#32;&quot;_false.&quot;</emphasis>
+140 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+141 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_eq">Eq</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_expr">Expr</link>
+142 {
+143 
+144 <emphasis role="keyword">public</emphasis>:
+145 
+146 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_eq_1a9726bb556adb165485de50d0ece9e58f">lhs_m</link>;&#32;&#32;&#32;&#32;&#32;
+147 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_eq_1a94beb3267608e27bc278f3385966b457">rhs_m</link>;&#32;&#32;&#32;&#32;&#32;
+148 
+149 &#32;&#32;&#32;&#32;<link linkend="_class_eq_1af391532bed49cb5ec8d69a2c0ceb8bc4">Eq</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;lhs,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;rhs&#32;);
+150 
+151 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_eq_1a9919c97580777aa2564186fff19b4825">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+152 
+153 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_eq_1a4e22b12552283b3923029fa5b1b2e976">interp</link>()&#32;<emphasis role="keyword">override</emphasis>;
+154 
+155 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_eq_1aec762006f4d34ace9f181ce41926e672">has_variable</link>()&#32;<emphasis role="keyword">override</emphasis>;
+156 
+157 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_eq_1a8aba9535430eda30809671314b01edc7">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+158 
+159 <emphasis role="keyword">private</emphasis>:
+160 
+161 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_eq_1a87257c3730aeced39934efbd8c613a2c">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+162 
+163 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_eq_1a88ca6380e01ef2d73bc3a607aa309273">pretty_print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+164 
+165 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_eq_1a61c4c2df2dc95559b8ca3117391142db">pretty_print_at</link>(&#32;std::ostream&#32;&amp;&#32;stream,
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link>&#32;p,
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::streampos&#32;&amp;&#32;pos,
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;paren&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+169 };
+170 
+171 <emphasis role="comment">/******************************************************************************</emphasis>
+172 <emphasis role="comment">&#32;*&#32;\class&#32;Add</emphasis>
+173 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;Expr&#32;derived&#32;class&#32;representing&#32;an&#32;addition&#32;operation</emphasis>
+174 <emphasis role="comment">&#32;*</emphasis>
+175 <emphasis role="comment">&#32;*&#32;The&#32;Add&#32;class&#32;is&#32;constructed&#32;with&#32;two&#32;values:&#32;a&#32;left-hand&#32;side&#32;(lhs)&#32;value,</emphasis>
+176 <emphasis role="comment">&#32;*&#32;and&#32;a&#32;right-hand&#32;side&#32;(rhs)&#32;value.&#32;These&#32;values&#32;can&#32;be&#32;either&#32;a&#32;Number</emphasis>
+177 <emphasis role="comment">&#32;*&#32;(object),&#32;or&#32;a&#32;Variable&#32;(object),&#32;or&#32;another&#32;Add&#32;or&#32;Multiplication&#32;object</emphasis>
+178 <emphasis role="comment">&#32;*&#32;(nested).&#32;If&#32;both&#32;values&#32;are&#32;Numbers,&#32;they&#32;can&#32;be&#32;interpreted&#32;to&#32;be&#32;their</emphasis>
+179 <emphasis role="comment">&#32;*&#32;sum.&#32;The&#32;Add&#32;object&#32;supports&#32;Variable&#32;substitution,&#32;and&#32;precedence-based</emphasis>
+180 <emphasis role="comment">&#32;*&#32;printing&#32;of&#32;parentheses.</emphasis>
+181 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+182 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_add">Add</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_expr">Expr</link>
+183 {
+184 
+185 <emphasis role="keyword">public</emphasis>:
+186 
+187 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_add_1aa9b41065f7c095c6ae10ebc78bb7e490">lhs_m</link>;&#32;&#32;&#32;&#32;&#32;
+188 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_add_1a152dfd91da34c73e14cfc88cb93a2c6d">rhs_m</link>;&#32;&#32;&#32;&#32;&#32;
+189 
+190 &#32;&#32;&#32;&#32;<link linkend="_class_add_1a6b2c4c7be3fada06bedad4e4e4688a60">Add</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;lhs,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;rhs&#32;);
+191 
+192 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_add_1a78f321a6b8799113d3fbcb7d975cc44b">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+193 
+194 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_add_1a7f7206946209b8d79146fc6ed18ac584">interp</link>()&#32;<emphasis role="keyword">override</emphasis>;
+195 
+196 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_add_1a1a829a6c1e949a57cd810e8a6e3c52d5">has_variable</link>()&#32;<emphasis role="keyword">override</emphasis>;
+197 
+198 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_add_1a7b520ea27fff063ea2601f95ad560490">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+199 
+200 <emphasis role="keyword">private</emphasis>:
+201 
+202 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_add_1a75927d67b287f5efd585d377f94af1a4">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+203 
+204 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_add_1a1e3aa81c17cfd74315b5b4d4d10f9d25">pretty_print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+205 
+206 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_add_1adf2278deeff3066325a81647860573c9">pretty_print_at</link>(&#32;std::ostream&#32;&amp;&#32;stream,
+207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link>&#32;p,
+208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::streampos&#32;&amp;&#32;pos,
+209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;paren&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+210 };
+211 
+212 <emphasis role="comment">/******************************************************************************</emphasis>
+213 <emphasis role="comment">&#32;*&#32;\class&#32;Mult</emphasis>
+214 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;Expr&#32;derived&#32;class&#32;representing&#32;a&#32;multiplication&#32;operation</emphasis>
+215 <emphasis role="comment">&#32;*</emphasis>
+216 <emphasis role="comment">&#32;*&#32;The&#32;Multiplication&#32;class&#32;is&#32;constructed&#32;with&#32;two&#32;values:&#32;a&#32;left-hand&#32;side</emphasis>
+217 <emphasis role="comment">&#32;*&#32;(lhs)&#32;value,&#32;and&#32;a&#32;right-hand&#32;side&#32;(rhs)&#32;value.&#32;These&#32;values&#32;can&#32;be&#32;either</emphasis>
+218 <emphasis role="comment">&#32;*&#32;a&#32;Number&#32;(object),&#32;or&#32;a&#32;Variable&#32;(object),&#32;or&#32;another&#32;Add&#32;or&#32;Multiplication</emphasis>
+219 <emphasis role="comment">&#32;*&#32;object&#32;(nested).&#32;If&#32;both&#32;values&#32;are&#32;Numbers,&#32;they&#32;can&#32;be&#32;interpreted&#32;to&#32;be</emphasis>
+220 <emphasis role="comment">&#32;*&#32;their&#32;product.&#32;The&#32;Multiplication&#32;object&#32;supports&#32;Variable&#32;substitution,</emphasis>
+221 <emphasis role="comment">&#32;*&#32;and&#32;precedence-based&#32;printing&#32;of&#32;parentheses.</emphasis>
+222 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+223 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_mult">Mult</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_expr">Expr</link>
+224 {
+225 
+226 <emphasis role="keyword">public</emphasis>:
+227 
+228 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_mult_1a3653b8cda171d6b1dc9051c2c3e6c3d7">lhs_m</link>;&#32;&#32;&#32;&#32;&#32;
+229 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_mult_1a92f9f099f39bfc5490b3e6dda7c6eb6f">rhs_m</link>;&#32;&#32;&#32;&#32;&#32;
+230 
+231 &#32;&#32;&#32;&#32;<link linkend="_class_mult_1ace9998f1dc023823e04c15bb359ea79c">Mult</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;lhs,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;rhs&#32;);
+232 
+233 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_mult_1aa64da9a8fc6b019f8a2db6f813d9a4e6">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+234 
+235 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_mult_1aa09b9a90e7157c3525e9a13f2080c5cc">interp</link>()&#32;<emphasis role="keyword">override</emphasis>;
+236 
+237 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_mult_1a214c39d71da10d21bdbd7fbc70032357">has_variable</link>()&#32;<emphasis role="keyword">override</emphasis>;
+238 
+239 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_mult_1a883d3fed96b83a96469d98da20cd6bdc">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+240 
+241 <emphasis role="keyword">private</emphasis>:
+242 
+243 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_mult_1a551533c867f54958b4b782331cc69270">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+244 
+245 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_mult_1a3eba746088e84dc93eea8a70da1a76eb">pretty_print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+246 
+247 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_mult_1a4ddbbb07eaa2667cfb1a9cba82e79a2e">pretty_print_at</link>(&#32;std::ostream&#32;&amp;&#32;stream,
+248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link>&#32;p,
+249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::streampos&#32;&amp;&#32;pos,
+250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;paren&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+251 };
+252 
+253 <emphasis role="comment">/******************************************************************************</emphasis>
+254 <emphasis role="comment">&#32;*&#32;\class&#32;Var</emphasis>
+255 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;Expr&#32;derived&#32;class&#32;representing&#32;a&#32;string&#32;placeholder&#32;(variable)</emphasis>
+256 <emphasis role="comment">&#32;*</emphasis>
+257 <emphasis role="comment">&#32;*&#32;The&#32;Variable&#32;class&#32;is&#32;ultimately&#32;a&#32;representation&#32;of&#32;the&#32;value</emphasis>
+258 <emphasis role="comment">&#32;*&#32;of&#32;it&apos;s&#32;int_m&#32;member&#32;variable.&#32;It&#32;can&#32;be&#32;wrapped&#32;in&#32;other&#32;Expression</emphasis>
+259 <emphasis role="comment">&#32;*&#32;classes&#32;when&#32;performing&#32;operations&#32;such&#32;as&#32;addition&#32;and&#32;multiplication,</emphasis>
+260 <emphasis role="comment">&#32;*&#32;but&#32;cannot&#32;be&#32;interpreted&#32;to&#32;an&#32;integer&#32;value&#32;--&#32;unless&#32;it&#32;is&#32;substituted.</emphasis>
+261 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+262 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_var">Var</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_expr">Expr</link>
+263 {
+264 
+265 <emphasis role="keyword">public</emphasis>:
+266 
+267 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_var_1aef2b96f0b4587bed5290ea7d03aa06ca">str_m</link>;&#32;&#32;&#32;&#32;&#32;
+268 
+269 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_var_1afab4e8a4c51caf066de99168b9f6d96e">Var</link>(&#32;std::string&#32;str&#32;);
+270 
+271 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_var_1af0889cd60f10a3b3c7712f53023e7f5b">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+272 
+273 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_var_1a812952c640782878dfcf345641ac50fe">interp</link>()&#32;<emphasis role="keyword">override</emphasis>;
+274 
+275 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_var_1a8fdfa306660b048eff151d156b923dd6">has_variable</link>()&#32;<emphasis role="keyword">override</emphasis>;
+276 
+277 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_var_1a677c74db8fa8830d821aa665ec351bbb">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+278 
+279 <emphasis role="keyword">private</emphasis>:
+280 
+281 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_var_1a2650f2c1b3d57cfec9eb8903ce1dee7f">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+282 };
+283 
+284 <emphasis role="comment">/******************************************************************************</emphasis>
+285 <emphasis role="comment">&#32;*&#32;\class&#32;Let</emphasis>
+286 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;Expr&#32;derived&#32;class&#32;supporting&#32;let&#32;binding</emphasis>
+287 <emphasis role="comment">&#32;*</emphasis>
+288 <emphasis role="comment">&#32;*&#32;The&#32;Let&#32;class&#32;allows&#32;for&#32;let&#32;binding,&#32;which&#32;allows&#32;for&#32;the&#32;declaration</emphasis>
+289 <emphasis role="comment">&#32;*&#32;of&#32;a&#32;variable&#32;and&#32;its&#32;definition&#32;with&#32;an&#32;Expression,&#32;within&#32;the&#32;scope&#32;of</emphasis>
+290 <emphasis role="comment">&#32;*&#32;Let&apos;s&#32;&quot;body&quot;&#32;Expression.&#32;This&#32;can&#32;be&#32;utilized&#32;in&#32;Expressions&#32;that&#32;have</emphasis>
+291 <emphasis role="comment">&#32;*&#32;variables&#32;to&#32;declare/define&#32;a&#32;variable,&#32;without&#32;calling&#32;any&#32;other&#32;functions</emphasis>
+292 <emphasis role="comment">&#32;*&#32;for&#32;substitution,&#32;etc.&#32;Example:&#32;_let&#32;x&#32;=&#32;5&#32;_in&#32;3&#32;*&#32;x</emphasis>
+293 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+294 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_let">Let</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_expr">Expr</link>
+295 {
+296 
+297 <emphasis role="keyword">public</emphasis>:
+298 
+299 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_let_1af70d7b738039534855ce24de6760e06f">lhs_m</link>;&#32;&#32;&#32;&#32;
+300 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_let_1a33d7bbe2ccce8bebe368bdae93e5da64">rhs_m</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+301 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_let_1ab0a50714d9e5e273fbe27a44d98da5dc">body_m</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+303 
+304 &#32;&#32;&#32;&#32;<link linkend="_class_let_1ae328a35e232e97c26d4bb77d7f4309ee">Let</link>(&#32;std::string&#32;lhs,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;rhs,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;body&#32;);
+305 
+306 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_let_1aa0defef255c02323cf36929a67bbe95e">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+307 
+308 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_let_1a497897b0e97322f01c5d6605d6ec3bd7">interp</link>()&#32;<emphasis role="keyword">override</emphasis>;
+309 
+310 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_let_1a9ecf8ca9ef5b8b7843fc5386381ca147">has_variable</link>()&#32;<emphasis role="keyword">override</emphasis>;
+311 
+312 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_let_1a64f2108ae264929fdebd34c66415de72">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+313 
+314 <emphasis role="keyword">private</emphasis>:
+315 
+316 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_let_1a57bcfd3190ebaf84e8adb0e64cdef2d8">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+317 
+318 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_let_1a0288f5ca2a9d18fc5cd5dfef276fda04">pretty_print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+319 
+320 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_let_1ae9837b23534fe6739ea117041643ae59">pretty_print_at</link>(&#32;std::ostream&#32;&amp;&#32;stream,
+321 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link>&#32;p,
+322 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::streampos&#32;&amp;&#32;caller_pos,
+323 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;has_paren&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+324 };
+325 
+326 <emphasis role="comment">/******************************************************************************</emphasis>
+327 <emphasis role="comment">&#32;*&#32;\class&#32;If</emphasis>
+328 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;Expr&#32;derived&#32;class&#32;representing&#32;a&#32;conditional&#32;operation&#32;expression</emphasis>
+329 <emphasis role="comment">&#32;*</emphasis>
+330 <emphasis role="comment">&#32;*&#32;An&#32;If&#32;object&#32;has&#32;a&#32;condition&#32;operand,&#32;and&#32;two&#32;branch&#32;operands&#32;(i.e.&#32;&quot;then&quot;</emphasis>
+331 <emphasis role="comment">&#32;*&#32;and&#32;&quot;else&quot;).&#32;It&#32;can&#32;&quot;evaluate&quot;&#32;the&#32;condition&#32;operand,&#32;and&#32;then&#32;embody&#32;a</emphasis>
+332 <emphasis role="comment">&#32;*&#32;value&#32;based&#32;on&#32;the&#32;result&#32;of&#32;that&#32;evaluation.&#32;If&#32;the&#32;condition&#32;has&#32;a&#32;BoolVal</emphasis>
+333 <emphasis role="comment">&#32;*&#32;of&#32;&quot;_true&quot;,&#32;the&#32;If&#32;object&#32;will&#32;come&#32;to&#32;have&#32;a&#32;value&#32;equal&#32;to&#32;its&#32;then_m</emphasis>
+334 <emphasis role="comment">&#32;*&#32;operand;&#32;the&#32;opposite&#32;is&#32;true&#32;for&#32;the&#32;else_m&#32;operand.</emphasis>
+335 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+336 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_if">If</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_expr">Expr</link>
+337 {
+338 
+339 <emphasis role="keyword">public</emphasis>:
+340 
+341 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_if_1aa431b392976fd2b4b2605df4abe41af5">test_m</link>;&#32;&#32;&#32;&#32;&#32;
+342 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_if_1aae11f0c57ef5a6d5ccf7adc436f8c923">then_m</link>;&#32;&#32;&#32;&#32;&#32;
+343 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_if_1af5bfb0ba1e76309068f6af3cfa97b7e2">else_m</link>;&#32;&#32;&#32;&#32;&#32;
+344 
+345 &#32;&#32;&#32;&#32;<link linkend="_class_if_1a4ec7756a0ff7f4200bf058ec150a81c5">If</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;condition,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;first_branch,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;second_branch&#32;);
+346 
+347 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_if_1af6ca55f18459dffb3590aa7f739223fc">equals</link>(&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+348 
+349 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_if_1a241d12b7b9edc08f0f56032608d4a515">interp</link>()&#32;<emphasis role="keyword">override</emphasis>;
+350 
+351 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_if_1acbabb88c712501e24689fe66109b2b6c">has_variable</link>()&#32;<emphasis role="keyword">override</emphasis>;
+352 
+353 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_if_1a5596376cf345f210936d736d981aa03a">subst</link>(&#32;std::string&#32;str,&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;e&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+354 
+355 <emphasis role="keyword">private</emphasis>:
+356 
+357 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_if_1ab7b4831b6cd1da04bc6f483f0a761509">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+358 
+359 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_if_1a0e60c6ac879cccb40bd974cf7fbbdb36">pretty_print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+360 
+361 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_if_1af46538bc8b3ccd613d12f5a981256c95">pretty_print_at</link>(&#32;std::ostream&#32;&amp;&#32;stream,
+362 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link>&#32;p,
+363 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::streampos&#32;&amp;&#32;caller_pos,
+364 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;has_paren&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+365 };
+</programlisting></section>

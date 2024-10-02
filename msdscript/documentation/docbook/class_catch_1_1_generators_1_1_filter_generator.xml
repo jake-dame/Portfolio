@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_generators_1_1_filter_generator" xml:lang="en-US">
+<title>Catch::Generators::FilterGenerator&lt; T, Predicate &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Generators::FilterGenerator&lt; T, Predicate &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_generators_1_1_filter_generator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">P</link>  = Predicate&gt; </para><para><link linkend="_class_catch_1_1_generators_1_1_filter_generator_1aa16886a5e41cbd3b6ffa3dd52388a3a1">FilterGenerator</link> (<link linkend="_struct_catch_1_1true__given">P</link> &amp;&amp;<link linkend="_struct_catch_1_1true__given">pred</link>, <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; &amp;&amp;<link linkend="_struct_catch_1_1true__given">generator</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_filter_generator_1a903396f7cf5f1a04379b7c917351e6da">get</link> () <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_filter_generator_1a02ce0839dcaa7545c55d0fe70cc50e84">next</link> () <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1afe5b6eecbbd735e69748d68574611747">~IGenerator</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base">Catch::Generators::GeneratorUntypedBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a00ff0179d739c3016756b6cf56fabbad">GeneratorUntypedBase</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a6f05f8099fdc5744a7aff68aa8c09c7f">~GeneratorUntypedBase</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_filter_generator_1a412ef28c6fa263fca71d3b0bb618af09">nextImpl</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_class_catch_1_1_generators_1_1_filter_generator_1a6fb6975b1401cf7bd7e76e3a542a45cf">m_generator</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> <link linkend="_class_catch_1_1_generators_1_1_filter_generator_1a51cda8aafad62eba1d26618f3ca8cff1">m_predicate</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Types inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">using</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a1f8677875fe0ff31f39c60d45504b9a5">type</link> = <link linkend="_struct_catch_1_1true__given">T</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_filter_generator_1aa16886a5e41cbd3b6ffa3dd52388a3a1"/><section>
+    <title>FilterGenerator()</title>
+<indexterm><primary>FilterGenerator</primary><secondary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</primary><secondary>FilterGenerator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">P</link>  = Predicate&gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_filter_generator">Catch::Generators::FilterGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt;::FilterGenerator (<link linkend="_struct_catch_1_1true__given">P</link> &amp;&amp; pred, <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; &amp;&amp; generator)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_filter_generator_1a903396f7cf5f1a04379b7c917351e6da"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</primary><secondary>get</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_generators_1_1_filter_generator">Catch::Generators::FilterGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt;::get ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a0fb6da789cda5b4e90f036737db82485">Catch::Generators::IGenerator&lt; T &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_filter_generator_1a02ce0839dcaa7545c55d0fe70cc50e84"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</primary><secondary>next</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_filter_generator">Catch::Generators::FilterGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt;::next ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1aeed3c0cd6233c5f553549e453b8d6638">Catch::Generators::GeneratorUntypedBase</link>.</para>
+</section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_filter_generator_1a412ef28c6fa263fca71d3b0bb618af09"/><section>
+    <title>nextImpl()</title>
+<indexterm><primary>nextImpl</primary><secondary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</primary><secondary>nextImpl</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_filter_generator">Catch::Generators::FilterGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt;::nextImpl ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_filter_generator_1a6fb6975b1401cf7bd7e76e3a542a45cf"/><section>
+    <title>m_generator</title>
+<indexterm><primary>m_generator</primary><secondary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</primary><secondary>m_generator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt;<link linkend="_struct_catch_1_1true__given">T</link>&gt; <link linkend="_class_catch_1_1_generators_1_1_filter_generator">Catch::Generators::FilterGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt;::m_generator<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_filter_generator_1a51cda8aafad62eba1d26618f3ca8cff1"/><section>
+    <title>m_predicate</title>
+<indexterm><primary>m_predicate</primary><secondary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</primary><secondary>m_predicate</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt; </computeroutput><para><computeroutput><link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> <link linkend="_class_catch_1_1_generators_1_1_filter_generator">Catch::Generators::FilterGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> &gt;::m_predicate<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_parse_8h" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/msdscript/src/parse.h File Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/msdscript/src/parse.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;<?linebreak?>#include &quot;Expr.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_parse_8h_1af41700330914d1aae491afd9007233dc">parse_expr</link> (const std::string &amp;str)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_parse_8h_1af41700330914d1aae491afd9007233dc"/><section>
+    <title>parse_expr()</title>
+<indexterm><primary>parse_expr</primary><secondary>parse.h</secondary></indexterm>
+<indexterm><primary>parse.h</primary><secondary>parse_expr</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * parse_expr (const std::string &amp; str)</computeroutput></para></section>
+</section>
+</section>

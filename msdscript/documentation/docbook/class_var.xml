@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_var" xml:lang="en-US">
+<title>Var Class Reference</title>
+<indexterm><primary>Var</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Expr.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Var:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_var.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_var_1afab4e8a4c51caf066de99168b9f6d96e">Var</link> (std::string str)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_var_1af0889cd60f10a3b3c7712f53023e7f5b">equals</link> (<link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_var_1a812952c640782878dfcf345641ac50fe">interp</link> () override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_var_1a8fdfa306660b048eff151d156b923dd6">has_variable</link> () override</para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_var_1a677c74db8fa8830d821aa665ec351bbb">subst</link> (std::string str, <link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_expr">Expr</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7">to_string</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa">to_pretty_string</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_expr_1aaec6172fa839cafad124775b0a43965b">pretty_print</link> (std::ostream &amp;stream)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_expr_1ab5b1d850f98bb650ef199bb6e90133b7">pretty_print_at</link> (std::ostream &amp;stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp;pos, bool paren)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_var_1aef2b96f0b4587bed5290ea7d03aa06ca">str_m</link></para>
+
+<para>The string value of the <link linkend="_class_var">Var</link> object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_var_1a2650f2c1b3d57cfec9eb8903ce1dee7f">print</link> (std::ostream &amp;stream) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_var_1afab4e8a4c51caf066de99168b9f6d96e"/><section>
+    <title>Var()</title>
+<indexterm><primary>Var</primary><secondary>Var</secondary></indexterm>
+<indexterm><primary>Var</primary><secondary>Var</secondary></indexterm>
+<para><computeroutput>Var::Var (std::string str)<computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_var_1af0889cd60f10a3b3c7712f53023e7f5b"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>Var</secondary></indexterm>
+<indexterm><primary>Var</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>bool Var::equals (<link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1abf9cdb765fb84304881789d273d7594f">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_var_1a8fdfa306660b048eff151d156b923dd6"/><section>
+    <title>has_variable()</title>
+<indexterm><primary>has_variable</primary><secondary>Var</secondary></indexterm>
+<indexterm><primary>Var</primary><secondary>has_variable</secondary></indexterm>
+<para><computeroutput>bool Var::has_variable ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a92dc26078993a4b9721ea732274a435c">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_var_1a812952c640782878dfcf345641ac50fe"/><section>
+    <title>interp()</title>
+<indexterm><primary>interp</primary><secondary>Var</secondary></indexterm>
+<indexterm><primary>Var</primary><secondary>interp</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * Var::interp ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa671ba2b665001c815588a7271735104">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_var_1a2650f2c1b3d57cfec9eb8903ce1dee7f"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>Var</secondary></indexterm>
+<indexterm><primary>Var</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void Var::print (std::ostream &amp; stream)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a8e34377af275f60532d1ba76e6feaceb">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_var_1a677c74db8fa8830d821aa665ec351bbb"/><section>
+    <title>subst()</title>
+<indexterm><primary>subst</primary><secondary>Var</secondary></indexterm>
+<indexterm><primary>Var</primary><secondary>subst</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * Var::subst (std::string str, <link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa91f56b56e078594565aeba32c520b7a">Expr</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_var_1aef2b96f0b4587bed5290ea7d03aa06ca"/><section>
+    <title>str_m</title>
+<indexterm><primary>str_m</primary><secondary>Var</secondary></indexterm>
+<indexterm><primary>Var</primary><secondary>str_m</secondary></indexterm>
+<para><computeroutput>std::string Var::str_m</computeroutput></para><para>
+
+<para>The string value of the <link linkend="_class_var">Var</link> object. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8h">Expr.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8cpp">Expr.cpp</link></section>
+</section>

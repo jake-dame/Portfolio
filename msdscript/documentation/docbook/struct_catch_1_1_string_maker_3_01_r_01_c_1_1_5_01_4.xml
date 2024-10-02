@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_string_maker_3_01_r_01_c_1_1_5_01_4" xml:lang="en-US">
+<title>Catch::StringMaker&lt; R C::* &gt; Struct Template Reference</title>
+<indexterm><primary>Catch::StringMaker&lt; R C::* &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">static</link> std::string <link linkend="_struct_catch_1_1_string_maker_3_01_r_01_c_1_1_5_01_4_1af69c15e0b406e945777137fe4a333731">convert</link> (<link linkend="_struct_catch_1_1true__given">R</link> C::*<link linkend="_struct_catch_1_1true__given">p</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_string_maker_3_01_r_01_c_1_1_5_01_4_1af69c15e0b406e945777137fe4a333731"/><section>
+    <title>convert()</title>
+<indexterm><primary>convert</primary><secondary>Catch::StringMaker&lt; R C::* &gt;</secondary></indexterm>
+<indexterm><primary>Catch::StringMaker&lt; R C::* &gt;</primary><secondary>convert</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">R</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">C</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">static</link> std::string <link linkend="_struct_catch_1_1_string_maker">Catch::StringMaker</link>&lt; <link linkend="_struct_catch_1_1true__given">R</link> C::* &gt;::convert (<link linkend="_struct_catch_1_1true__given">R</link> C::* p)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

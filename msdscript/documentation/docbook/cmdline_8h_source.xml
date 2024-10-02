@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cmdline_8h_source" xml:lang="en-US">
+<title>cmdline.h</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/msdscript/src/cmdline.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="comment">/******************************************************************************</emphasis>
+2 <emphasis role="comment">&#32;*&#32;\brief&#32;Command&#32;line&#32;argument-handling&#32;functions&#32;declarations</emphasis>
+3 <emphasis role="comment">&#32;*</emphasis>
+4 <emphasis role="comment">&#32;*&#32;\file&#32;cmdline.h</emphasis>
+5 <emphasis role="comment">&#32;*&#32;\author&#32;Jake&#32;Dame</emphasis>
+6 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+7 
+8 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+9 
+10 <emphasis role="preprocessor">#include&lt;iostream&gt;</emphasis>&#32;<emphasis role="comment">/*&#32;Console&#32;I/O&#32;*/</emphasis>
+11 
+12 <emphasis role="preprocessor">#include&#32;&quot;catch.h&quot;</emphasis>&#32;<emphasis role="comment">/*&#32;Catch2&#32;testing&#32;framework&#32;*/</emphasis>
+13 
+14 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__expr_8h">Expr.h</link>&quot;</emphasis>
+15 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_parse_8h">parse.h</link>&quot;</emphasis>
+16 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__val_8h">Val.h</link>&quot;</emphasis>
+17 
+18 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_cmdline_8h_1a41c2755aeb110a9bd6f63d6beea7545d">use_arguments</link>(&#32;<emphasis role="keywordtype">int</emphasis>&#32;argc,&#32;<emphasis role="keywordtype">char</emphasis>&#32;**&#32;argv&#32;);
+</programlisting></section>

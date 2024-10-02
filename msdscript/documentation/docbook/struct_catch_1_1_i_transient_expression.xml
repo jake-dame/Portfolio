@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_i_transient_expression" xml:lang="en-US">
+<title>Catch::ITransientExpression Struct Reference</title>
+<indexterm><primary>Catch::ITransientExpression</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::ITransientExpression:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_catch_1_1_i_transient_expression.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22">isBinaryExpression</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a101c7db86c87eff93a8ff496720e6320">getResult</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_struct_catch_1_1_i_transient_expression_1aabe1889df9c6e639a24afb08d8a0fe9e">streamReconstructedExpression</link> (std::ostream &amp;<link linkend="_struct_catch_1_1true__given">os</link>) <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_i_transient_expression_1aafe69572b7ed884e63ec81f58d4afd8c">ITransientExpression</link> (<link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22">isBinaryExpression</link>, <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">result</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_transient_expression_1aeadf426de589938c4964fe4068eeee77">~ITransientExpression</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a75ce48da824d514d08152d396abb28d8">m_isBinaryExpression</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a4646e2b5e0156e913653ec3b9b60c942">m_result</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_transient_expression_1aafe69572b7ed884e63ec81f58d4afd8c"/><section>
+    <title>ITransientExpression()</title>
+<indexterm><primary>ITransientExpression</primary><secondary>Catch::ITransientExpression</secondary></indexterm>
+<indexterm><primary>Catch::ITransientExpression</primary><secondary>ITransientExpression</secondary></indexterm>
+<para><computeroutput>Catch::ITransientExpression::ITransientExpression (<link linkend="_struct_catch_1_1true__given">bool</link> isBinaryExpression, <link linkend="_struct_catch_1_1true__given">bool</link> result)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_transient_expression_1aeadf426de589938c4964fe4068eeee77"/><section>
+    <title>~ITransientExpression()</title>
+<indexterm><primary>~ITransientExpression</primary><secondary>Catch::ITransientExpression</secondary></indexterm>
+<indexterm><primary>Catch::ITransientExpression</primary><secondary>~ITransientExpression</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::ITransientExpression::~ITransientExpression ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_transient_expression_1a101c7db86c87eff93a8ff496720e6320"/><section>
+    <title>getResult()</title>
+<indexterm><primary>getResult</primary><secondary>Catch::ITransientExpression</secondary></indexterm>
+<indexterm><primary>Catch::ITransientExpression</primary><secondary>getResult</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> Catch::ITransientExpression::getResult ( ) const -&gt; <link linkend="_struct_catch_1_1true__given">bool</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22"/><section>
+    <title>isBinaryExpression()</title>
+<indexterm><primary>isBinaryExpression</primary><secondary>Catch::ITransientExpression</secondary></indexterm>
+<indexterm><primary>Catch::ITransientExpression</primary><secondary>isBinaryExpression</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> Catch::ITransientExpression::isBinaryExpression ( ) const -&gt; <link linkend="_struct_catch_1_1true__given">bool</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_transient_expression_1aabe1889df9c6e639a24afb08d8a0fe9e"/><section>
+    <title>streamReconstructedExpression()</title>
+<indexterm><primary>streamReconstructedExpression</primary><secondary>Catch::ITransientExpression</secondary></indexterm>
+<indexterm><primary>Catch::ITransientExpression</primary><secondary>streamReconstructedExpression</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> Catch::ITransientExpression::streamReconstructedExpression (std::ostream &amp; os) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_catch_1_1_binary_expr_1af998022712d4bd3e4fc7ab9b8a38b445">Catch::BinaryExpr&lt; LhsT, RhsT &gt;</link>, <link linkend="_class_catch_1_1_unary_expr_1aaabf30455a996c80675c0f388a6e4110">Catch::UnaryExpr&lt; LhsT &gt;</link>, and <link linkend="_class_catch_1_1_match_expr_1ad3e41adb597750b2219bb37e51185629">Catch::MatchExpr&lt; ArgT, MatcherT &gt;</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_transient_expression_1a75ce48da824d514d08152d396abb28d8"/><section>
+    <title>m_isBinaryExpression</title>
+<indexterm><primary>m_isBinaryExpression</primary><secondary>Catch::ITransientExpression</secondary></indexterm>
+<indexterm><primary>Catch::ITransientExpression</primary><secondary>m_isBinaryExpression</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> Catch::ITransientExpression::m_isBinaryExpression</computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_transient_expression_1a4646e2b5e0156e913653ec3b9b60c942"/><section>
+    <title>m_result</title>
+<indexterm><primary>m_result</primary><secondary>Catch::ITransientExpression</secondary></indexterm>
+<indexterm><primary>Catch::ITransientExpression</primary><secondary>m_result</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> Catch::ITransientExpression::m_result</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

@@ -1,0 +1,58 @@
+\doxysection{/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\+Expr.h File Reference}
+\hypertarget{_expr_8h}{}\label{_expr_8h}\index{/Users/u0858882/Desktop/msdscript/msdscript/src/Expr.h@{/Users/u0858882/Desktop/msdscript/msdscript/src/Expr.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_expr}{Expr}}
+\item 
+class \mbox{\hyperlink{class_num}{Num}}
+\item 
+class \mbox{\hyperlink{class_bool}{Bool}}
+\item 
+class \mbox{\hyperlink{class_eq}{Eq}}
+\item 
+class \mbox{\hyperlink{class_add}{Add}}
+\item 
+class \mbox{\hyperlink{class_mult}{Mult}}
+\item 
+class \mbox{\hyperlink{class_var}{Var}}
+\item 
+class \mbox{\hyperlink{class_let}{Let}}
+\item 
+class \mbox{\hyperlink{class_if}{If}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} \{ \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913}{prec\+\_\+none}} = 0
+, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfacfb0c876aa8571ac76d9fbc711a38753}{prec\+\_\+A}} = 1
+, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfa4b4cae8faa0a4540c785141e43c01677}{prec\+\_\+M}} = 2
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf} 
+\index{Expr.h@{Expr.h}!precedence\_t@{precedence\_t}}
+\index{precedence\_t@{precedence\_t}!Expr.h@{Expr.h}}
+\doxysubsubsection{\texorpdfstring{precedence\_t}{precedence\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_none@{prec\_none}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_none@{prec\_none}}}\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913} 
+prec\+\_\+none&default precedence for \doxylink{class_num}{Num} and \doxylink{class_var}{Var} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_A@{prec\_A}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_A@{prec\_A}}}\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfacfb0c876aa8571ac76d9fbc711a38753}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfacfb0c876aa8571ac76d9fbc711a38753} 
+prec\+\_\+A&default precedence for \doxylink{class_add}{Add} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_M@{prec\_M}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_M@{prec\_M}}}\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfa4b4cae8faa0a4540c785141e43c01677}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfa4b4cae8faa0a4540c785141e43c01677} 
+prec\+\_\+M&default precedence for \doxylink{class_mult}{Mult} \\
+\hline
+
+\end{DoxyEnumFields}

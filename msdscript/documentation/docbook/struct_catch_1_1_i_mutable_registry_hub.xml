@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_i_mutable_registry_hub" xml:lang="en-US">
+<title>Catch::IMutableRegistryHub Struct Reference</title>
+<indexterm><primary>Catch::IMutableRegistryHub</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_mutable_registry_hub_1a759ca1e044e19f905fb4d306f1367193">~IMutableRegistryHub</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_struct_catch_1_1_i_mutable_registry_hub_1a1c0ac202ac31ee9f88e8ff5cbac4b243">registerReporter</link> (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;name, <link linkend="_namespace_catch_1a4e6617700df10519be17cc0e62ab427e">IReporterFactoryPtr</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">factory</link>)=0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_struct_catch_1_1_i_mutable_registry_hub_1abd892a133f85581fd00ee75bb379ca56">registerListener</link> (<link linkend="_namespace_catch_1a4e6617700df10519be17cc0e62ab427e">IReporterFactoryPtr</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">factory</link>)=0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_struct_catch_1_1_i_mutable_registry_hub_1a11b85c6744d88c9f83fe16ad4a8dd451">registerTest</link> (<link linkend="_class_catch_1_1_test_case">TestCase</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">testInfo</link>)=0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_struct_catch_1_1_i_mutable_registry_hub_1ae6825365102693cf7707db022a2c2b49">registerTranslator</link> (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1_i_exception_translator">IExceptionTranslator</link> *<link linkend="_struct_catch_1_1true__given">translator</link>)=0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_struct_catch_1_1_i_mutable_registry_hub_1abf2e386b6f94f615719ada711adbf822">registerTagAlias</link> (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">alias</link>, std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">tag</link>, <link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;lineInfo)=0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_struct_catch_1_1_i_mutable_registry_hub_1a72a7d5386851ac3200f8da794a009c86">registerStartupException</link> () <link linkend="_struct_catch_1_1true__given">noexcept</link>=0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_mutable_enum_values_registry">IMutableEnumValuesRegistry</link> &amp; <link linkend="_struct_catch_1_1_i_mutable_registry_hub_1ab1f0013630047f8295e5969b624ad632">getMutableEnumValuesRegistry</link> ()=0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_mutable_registry_hub_1a759ca1e044e19f905fb4d306f1367193"/><section>
+    <title>~IMutableRegistryHub()</title>
+<indexterm><primary>~IMutableRegistryHub</primary><secondary>Catch::IMutableRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IMutableRegistryHub</primary><secondary>~IMutableRegistryHub</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::IMutableRegistryHub::~IMutableRegistryHub ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_mutable_registry_hub_1ab1f0013630047f8295e5969b624ad632"/><section>
+    <title>getMutableEnumValuesRegistry()</title>
+<indexterm><primary>getMutableEnumValuesRegistry</primary><secondary>Catch::IMutableRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IMutableRegistryHub</primary><secondary>getMutableEnumValuesRegistry</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_mutable_enum_values_registry">IMutableEnumValuesRegistry</link> &amp; Catch::IMutableRegistryHub::getMutableEnumValuesRegistry ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_mutable_registry_hub_1abd892a133f85581fd00ee75bb379ca56"/><section>
+    <title>registerListener()</title>
+<indexterm><primary>registerListener</primary><secondary>Catch::IMutableRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IMutableRegistryHub</primary><secondary>registerListener</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> Catch::IMutableRegistryHub::registerListener (<link linkend="_namespace_catch_1a4e6617700df10519be17cc0e62ab427e">IReporterFactoryPtr</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; factory)<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_mutable_registry_hub_1a1c0ac202ac31ee9f88e8ff5cbac4b243"/><section>
+    <title>registerReporter()</title>
+<indexterm><primary>registerReporter</primary><secondary>Catch::IMutableRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IMutableRegistryHub</primary><secondary>registerReporter</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> Catch::IMutableRegistryHub::registerReporter (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; name, <link linkend="_namespace_catch_1a4e6617700df10519be17cc0e62ab427e">IReporterFactoryPtr</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; factory)<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_mutable_registry_hub_1a72a7d5386851ac3200f8da794a009c86"/><section>
+    <title>registerStartupException()</title>
+<indexterm><primary>registerStartupException</primary><secondary>Catch::IMutableRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IMutableRegistryHub</primary><secondary>registerStartupException</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> Catch::IMutableRegistryHub::registerStartupException ( )<computeroutput>[pure virtual]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_mutable_registry_hub_1abf2e386b6f94f615719ada711adbf822"/><section>
+    <title>registerTagAlias()</title>
+<indexterm><primary>registerTagAlias</primary><secondary>Catch::IMutableRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IMutableRegistryHub</primary><secondary>registerTagAlias</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> Catch::IMutableRegistryHub::registerTagAlias (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; alias, std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; tag, <link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lineInfo)<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_mutable_registry_hub_1a11b85c6744d88c9f83fe16ad4a8dd451"/><section>
+    <title>registerTest()</title>
+<indexterm><primary>registerTest</primary><secondary>Catch::IMutableRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IMutableRegistryHub</primary><secondary>registerTest</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> Catch::IMutableRegistryHub::registerTest (<link linkend="_class_catch_1_1_test_case">TestCase</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; testInfo)<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_mutable_registry_hub_1ae6825365102693cf7707db022a2c2b49"/><section>
+    <title>registerTranslator()</title>
+<indexterm><primary>registerTranslator</primary><secondary>Catch::IMutableRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IMutableRegistryHub</primary><secondary>registerTranslator</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> Catch::IMutableRegistryHub::registerTranslator (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1_i_exception_translator">IExceptionTranslator</link> * translator)<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_catch_1_1_matchers" xml:lang="en-US">
+<title>Catch::Matchers Namespace Reference</title>
+<indexterm><primary>Catch::Matchers</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_catch_1_1_matchers_1_1_exception">Exception</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_catch_1_1_matchers_1_1_floating">Floating</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_catch_1_1_matchers_1_1_generic">Generic</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_catch_1_1_matchers_1_1_impl">Impl</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_catch_1_1_matchers_1_1_std_string">StdString</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_catch_1_1_matchers_1_1_vector">Vector</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_matchers_1_1_exception_1_1_exception_message_matcher">Exception::ExceptionMessageMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a0fcd8bd126bb510a6bb99e6360aa270a">Message</link> (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;message)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_ulps_matcher">Floating::WithinUlpsMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1ae77e233c3ed735ea12b7c726153798d1">WithinULP</link> (<link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1true__given">target</link>, <link linkend="_struct_catch_1_1true__given">uint64_t</link> <link linkend="_struct_catch_1_1true__given">maxUlpDiff</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_ulps_matcher">Floating::WithinUlpsMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a5d108ff6aaeac40f20f4978dfb3f51fc">WithinULP</link> (<link linkend="_struct_catch_1_1true__given">float</link> <link linkend="_struct_catch_1_1true__given">target</link>, <link linkend="_struct_catch_1_1true__given">uint64_t</link> <link linkend="_struct_catch_1_1true__given">maxUlpDiff</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_abs_matcher">Floating::WithinAbsMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a4c9ea76d47d02de0cf2d354c87c26e95">WithinAbs</link> (<link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1true__given">target</link>, <link linkend="_struct_catch_1_1true__given">double</link> margin)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_rel_matcher">Floating::WithinRelMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a0c559d9cfda02a81941ad6933f4ca450">WithinRel</link> (<link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1true__given">target</link>, <link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1true__given">eps</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_rel_matcher">Floating::WithinRelMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a46e2f1efab13b85e2cbe36958a27d518">WithinRel</link> (<link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1true__given">target</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_rel_matcher">Floating::WithinRelMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a494b4c8c68ac883e29dc35da71a4cd72">WithinRel</link> (<link linkend="_struct_catch_1_1true__given">float</link> <link linkend="_struct_catch_1_1true__given">target</link>, <link linkend="_struct_catch_1_1true__given">float</link> <link linkend="_struct_catch_1_1true__given">eps</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_rel_matcher">Floating::WithinRelMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a18cfb571dd191377674bad0cbb50078e">WithinRel</link> (<link linkend="_struct_catch_1_1true__given">float</link> <link linkend="_struct_catch_1_1true__given">target</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_class_catch_1_1_matchers_1_1_generic_1_1_predicate_matcher">Generic::PredicateMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657">Predicate</link> (std::function&lt; <link linkend="_struct_catch_1_1true__given">bool</link>(<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;)&gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">predicate</link>, std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;description=&quot;&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher">StdString::EqualsMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1af8af7dfc338335ed4c788cb1b37fc59f">Equals</link> (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;str, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> <link linkend="_struct_catch_1_1true__given">caseSensitivity</link>=<link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_contains_matcher">StdString::ContainsMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a1f6c2accdc6cd75a84d7112dcad647b4">Contains</link> (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;str, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> <link linkend="_struct_catch_1_1true__given">caseSensitivity</link>=<link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_ends_with_matcher">StdString::EndsWithMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1ae5a45efb4538c57c43e04f3f9043ad6e">EndsWith</link> (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;str, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> <link linkend="_struct_catch_1_1true__given">caseSensitivity</link>=<link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_starts_with_matcher">StdString::StartsWithMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a97c9ee09a70378ca7e8c6f9f01b0d6d1">StartsWith</link> (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;str, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> <link linkend="_struct_catch_1_1true__given">caseSensitivity</link>=<link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_regex_matcher">StdString::RegexMatcher</link> <link linkend="_namespace_catch_1_1_matchers_1a82f1893cf50ae4c14b9b3e0980bf22b8">Matches</link> (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">regex</link>, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> <link linkend="_struct_catch_1_1true__given">caseSensitivity</link>=<link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link>  = std::allocator&lt;T&gt;, <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link>  = AllocComp&gt; </para><para><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_contains_matcher">Vector::ContainsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; <link linkend="_namespace_catch_1_1_matchers_1a0eacc3d8729e9a1dcf76387ec60195ce">Contains</link> (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">comparator</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Alloc</link>  = std::allocator&lt;T&gt;&gt; </para><para><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_contains_element_matcher">Vector::ContainsElementMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">Alloc</link> &gt; <link linkend="_namespace_catch_1_1_matchers_1ad8092d8b34128390dbff20b87f2f6f99">VectorContains</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">comparator</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link>  = std::allocator&lt;T&gt;, <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link>  = AllocComp&gt; </para><para><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_equals_matcher">Vector::EqualsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; <link linkend="_namespace_catch_1_1_matchers_1a5b76944eeb2b65329fabbac487a31d66">Equals</link> (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">comparator</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link>  = std::allocator&lt;T&gt;, <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link>  = AllocComp&gt; </para><para><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_approx_matcher">Vector::ApproxMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; <link linkend="_namespace_catch_1_1_matchers_1a02bf172177011d09780a98635dc5a124">Approx</link> (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">comparator</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link>  = std::allocator&lt;T&gt;, <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link>  = AllocComp&gt; </para><para><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher">Vector::UnorderedEqualsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; <link linkend="_namespace_catch_1_1_matchers_1a3b1784cd26bd7e3fea38505eb138b186">UnorderedEquals</link> (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">target</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a02bf172177011d09780a98635dc5a124"/><section>
+    <title>Approx()</title>
+<indexterm><primary>Approx</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>Approx</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link>  = std::allocator&lt;T&gt;, <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link>  = AllocComp&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_approx_matcher">Vector::ApproxMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; Catch::Matchers::Approx (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; comparator)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a1f6c2accdc6cd75a84d7112dcad647b4"/><section>
+    <title>Contains()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Contains</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>Contains</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_contains_matcher">StdString::ContainsMatcher</link> Catch::Matchers::Contains (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; str, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> caseSensitivity = <computeroutput><link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link></computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a0eacc3d8729e9a1dcf76387ec60195ce"/><section>
+    <title>Contains()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Contains</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>Contains</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link>  = std::allocator&lt;T&gt;, <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link>  = AllocComp&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_contains_matcher">Vector::ContainsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; Catch::Matchers::Contains (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; comparator)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1ae5a45efb4538c57c43e04f3f9043ad6e"/><section>
+    <title>EndsWith()</title>
+<indexterm><primary>EndsWith</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>EndsWith</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_ends_with_matcher">StdString::EndsWithMatcher</link> Catch::Matchers::EndsWith (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; str, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> caseSensitivity = <computeroutput><link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link></computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1af8af7dfc338335ed4c788cb1b37fc59f"/><section>
+    <title>Equals()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Equals</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>Equals</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher">StdString::EqualsMatcher</link> Catch::Matchers::Equals (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; str, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> caseSensitivity = <computeroutput><link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link></computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a5b76944eeb2b65329fabbac487a31d66"/><section>
+    <title>Equals()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Equals</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>Equals</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link>  = std::allocator&lt;T&gt;, <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link>  = AllocComp&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_equals_matcher">Vector::EqualsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; Catch::Matchers::Equals (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; comparator)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a82f1893cf50ae4c14b9b3e0980bf22b8"/><section>
+    <title>Matches()</title>
+<indexterm><primary>Matches</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>Matches</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_regex_matcher">StdString::RegexMatcher</link> Catch::Matchers::Matches (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; regex, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> caseSensitivity = <computeroutput><link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link></computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a0fcd8bd126bb510a6bb99e6360aa270a"/><section>
+    <title>Message()</title>
+<indexterm><primary>Message</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>Message</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catch_1_1_matchers_1_1_exception_1_1_exception_message_matcher">Exception::ExceptionMessageMatcher</link> Catch::Matchers::Message (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; message)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a70a7c65c44f6ea7f739402c0b6f28657"/><section>
+    <title>Predicate()</title>
+<indexterm><primary>Predicate</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>Predicate</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_matchers_1_1_generic_1_1_predicate_matcher">Generic::PredicateMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; Catch::Matchers::Predicate (std::function&lt; <link linkend="_struct_catch_1_1true__given">bool</link>(<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;)&gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; predicate, std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; description = <computeroutput>&quot;&quot;</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a97c9ee09a70378ca7e8c6f9f01b0d6d1"/><section>
+    <title>StartsWith()</title>
+<indexterm><primary>StartsWith</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>StartsWith</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_std_string_1_1_starts_with_matcher">StdString::StartsWithMatcher</link> Catch::Matchers::StartsWith (std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; str, <link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6a">CaseSensitive::Choice</link> caseSensitivity = <computeroutput><link linkend="_struct_catch_1_1_case_sensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6">CaseSensitive::Yes</link></computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a3b1784cd26bd7e3fea38505eb138b186"/><section>
+    <title>UnorderedEquals()</title>
+<indexterm><primary>UnorderedEquals</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>UnorderedEquals</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocComp</link>  = std::allocator&lt;T&gt;, <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">AllocMatch</link>  = AllocComp&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_unordered_equals_matcher">Vector::UnorderedEqualsMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link>, <link linkend="_struct_catch_1_1true__given">AllocMatch</link> &gt; Catch::Matchers::UnorderedEquals (std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">AllocComp</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; target)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1ad8092d8b34128390dbff20b87f2f6f99"/><section>
+    <title>VectorContains()</title>
+<indexterm><primary>VectorContains</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>VectorContains</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Alloc</link>  = std::allocator&lt;T&gt;&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_vector_1_1_contains_element_matcher">Vector::ContainsElementMatcher</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">Alloc</link> &gt; Catch::Matchers::VectorContains (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; comparator)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a4c9ea76d47d02de0cf2d354c87c26e95"/><section>
+    <title>WithinAbs()</title>
+<indexterm><primary>WithinAbs</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>WithinAbs</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_abs_matcher">Floating::WithinAbsMatcher</link> Catch::Matchers::WithinAbs (<link linkend="_struct_catch_1_1true__given">double</link> target, <link linkend="_struct_catch_1_1true__given">double</link> margin)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a46e2f1efab13b85e2cbe36958a27d518"/><section>
+    <title>WithinRel()<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>WithinRel</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>WithinRel</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_rel_matcher">Floating::WithinRelMatcher</link> Catch::Matchers::WithinRel (<link linkend="_struct_catch_1_1true__given">double</link> target)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a0c559d9cfda02a81941ad6933f4ca450"/><section>
+    <title>WithinRel()<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>WithinRel</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>WithinRel</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_rel_matcher">Floating::WithinRelMatcher</link> Catch::Matchers::WithinRel (<link linkend="_struct_catch_1_1true__given">double</link> target, <link linkend="_struct_catch_1_1true__given">double</link> eps)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a18cfb571dd191377674bad0cbb50078e"/><section>
+    <title>WithinRel()<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>WithinRel</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>WithinRel</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_rel_matcher">Floating::WithinRelMatcher</link> Catch::Matchers::WithinRel (<link linkend="_struct_catch_1_1true__given">float</link> target)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a494b4c8c68ac883e29dc35da71a4cd72"/><section>
+    <title>WithinRel()<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>WithinRel</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>WithinRel</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_rel_matcher">Floating::WithinRelMatcher</link> Catch::Matchers::WithinRel (<link linkend="_struct_catch_1_1true__given">float</link> target, <link linkend="_struct_catch_1_1true__given">float</link> eps)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1ae77e233c3ed735ea12b7c726153798d1"/><section>
+    <title>WithinULP()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>WithinULP</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>WithinULP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_ulps_matcher">Floating::WithinUlpsMatcher</link> Catch::Matchers::WithinULP (<link linkend="_struct_catch_1_1true__given">double</link> target, <link linkend="_struct_catch_1_1true__given">uint64_t</link> maxUlpDiff)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_matchers_1a5d108ff6aaeac40f20f4978dfb3f51fc"/><section>
+    <title>WithinULP()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>WithinULP</primary><secondary>Catch::Matchers</secondary></indexterm>
+<indexterm><primary>Catch::Matchers</primary><secondary>WithinULP</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_matchers_1_1_floating_1_1_within_ulps_matcher">Floating::WithinUlpsMatcher</link> Catch::Matchers::WithinULP (<link linkend="_struct_catch_1_1true__given">float</link> target, <link linkend="_struct_catch_1_1true__given">uint64_t</link> maxUlpDiff)</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_option" xml:lang="en-US">
+<title>Catch::Option&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_option_1a8efb01b593d798decc80cbbdf311f2a3">Option</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_option_1a5aeb9c22d48a6882bdf5fb4730b06c86">Option</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">_value</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_option_1af02f2e4559f06384baec0def8c68c5fd">Option</link> (<link linkend="_class_catch_1_1_option">Option</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">_other</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_option_1a37fe90bb47bb909f150a5ad6be25581a">~Option</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_option">Option</link> &amp; <link linkend="_class_catch_1_1_option_1a960fd629f3048995038d58fcf9c018b0">operator=</link> (<link linkend="_class_catch_1_1_option">Option</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">_other</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_option">Option</link> &amp; <link linkend="_class_catch_1_1_option_1a32af4018dd8aaf071944f79fc1af520a">operator=</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">_value</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_option_1a37b4e0e5d4d56296adacd267a616f4e0">reset</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> &amp; <link linkend="_class_catch_1_1_option_1ac250ca96c9af3bf5f94f253f4c0ec336">operator*</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_class_catch_1_1_option_1a873a00ed8844b137287f25c811cfd330">operator*</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> * <link linkend="_class_catch_1_1_option_1a04da75b6b0946cc38b4bbd51c8d407e0">operator-&gt;</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> * <link linkend="_class_catch_1_1_option_1acb3ec06778a8761e5f0014543d8f898e">operator-&gt;</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_class_catch_1_1_option_1a8d9ae2e30b0eb76fe134a6fbc8423124">valueOr</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">defaultValue</link>) <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_option_1a97c95829afbe92f2bcc5fd75b32c0825">some</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_option_1a821753afdc3fac947a13a01fbe0d248e">none</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_option_1a96dccb86bdf45ee0c08e122b6133bef3">operator!</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_option_1aba0def0bd9cd45d4e00fe47a604b0270">operator bool</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> * <link linkend="_class_catch_1_1_option_1aa6643e8dc409f4fc86cc8c80f9c3266b">nullableValue</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">char</link> <link linkend="_class_catch_1_1_option_1acdebca1b18bb8542c3f676b8dd805f23">storage</link> [<link linkend="_struct_catch_1_1true__given">sizeof</link>(<link linkend="_struct_catch_1_1true__given">T</link>)]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_option_1a8efb01b593d798decc80cbbdf311f2a3"/><section>
+    <title>Option()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>Option</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>Option</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::Option ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a5aeb9c22d48a6882bdf5fb4730b06c86"/><section>
+    <title>Option()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>Option</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>Option</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::Option (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; _value)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1af02f2e4559f06384baec0def8c68c5fd"/><section>
+    <title>Option()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>Option</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>Option</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::Option (<link linkend="_class_catch_1_1_option">Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; _other)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a37fe90bb47bb909f150a5ad6be25581a"/><section>
+    <title>~Option()</title>
+<indexterm><primary>~Option</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>~Option</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::~<link linkend="_class_catch_1_1_option">Option</link> ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_option_1a821753afdc3fac947a13a01fbe0d248e"/><section>
+    <title>none()</title>
+<indexterm><primary>none</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>none</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::none ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1aba0def0bd9cd45d4e00fe47a604b0270"/><section>
+    <title>operator bool()</title>
+<indexterm><primary>operator bool</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>operator bool</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::operator <link linkend="_struct_catch_1_1true__given">bool</link> ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a96dccb86bdf45ee0c08e122b6133bef3"/><section>
+    <title>operator!()</title>
+<indexterm><primary>operator!</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>operator!</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::operator! ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1ac250ca96c9af3bf5f94f253f4c0ec336"/><section>
+    <title>operator*()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator*</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>operator*</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> &amp; <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::operator* ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a873a00ed8844b137287f25c811cfd330"/><section>
+    <title>operator*()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator*</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>operator*</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::operator* ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a04da75b6b0946cc38b4bbd51c8d407e0"/><section>
+    <title>operator-&gt;()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator-&gt;</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>operator-&gt;</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> * <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::operator-&gt; ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1acb3ec06778a8761e5f0014543d8f898e"/><section>
+    <title>operator-&gt;()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator-&gt;</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>operator-&gt;</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> * <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::operator-&gt; ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a960fd629f3048995038d58fcf9c018b0"/><section>
+    <title>operator=()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator=</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>operator=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_option">Option</link> &amp; <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::operator= (<link linkend="_class_catch_1_1_option">Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; _other)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a32af4018dd8aaf071944f79fc1af520a"/><section>
+    <title>operator=()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator=</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>operator=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_option">Option</link> &amp; <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::operator= (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; _value)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a37b4e0e5d4d56296adacd267a616f4e0"/><section>
+    <title>reset()</title>
+<indexterm><primary>reset</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>reset</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::reset ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a97c95829afbe92f2bcc5fd75b32c0825"/><section>
+    <title>some()</title>
+<indexterm><primary>some</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>some</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::some ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1a8d9ae2e30b0eb76fe134a6fbc8423124"/><section>
+    <title>valueOr()</title>
+<indexterm><primary>valueOr</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>valueOr</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::valueOr (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; defaultValue) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_option_1aa6643e8dc409f4fc86cc8c80f9c3266b"/><section>
+    <title>nullableValue</title>
+<indexterm><primary>nullableValue</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>nullableValue</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link>* <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::nullableValue<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_option_1acdebca1b18bb8542c3f676b8dd805f23"/><section>
+    <title>storage</title>
+<indexterm><primary>storage</primary><secondary>Catch::Option&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Option&lt; T &gt;</primary><secondary>storage</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">char</link> <link linkend="_class_catch_1_1_option">Catch::Option</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::storage[<link linkend="_struct_catch_1_1true__given">sizeof</link>(<link linkend="_struct_catch_1_1true__given">T</link>)]<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

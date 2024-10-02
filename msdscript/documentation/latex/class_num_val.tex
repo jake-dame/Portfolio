@@ -1,0 +1,126 @@
+\doxysection{Num\+Val Class Reference}
+\hypertarget{class_num_val}{}\label{class_num_val}\index{NumVal@{NumVal}}
+
+
+{\ttfamily \#include $<$Val.\+h$>$}
+
+Inheritance diagram for Num\+Val\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_num_val}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_num_val_aec0681d0ca58970b0ccf528e382d9bb4}{Num\+Val}} (int val)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_num_val_ae60543bf69d4f50bf0a1adea68f6a680}{to\+\_\+expr}} () override
+\item 
+bool \mbox{\hyperlink{class_num_val_aec5e08c5b63d5750b3cfc5afe563947d}{equals}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}v) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_num_val_ac37beaeded5991a03982ed2d1e7fefab}{add\+\_\+to}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}other\+\_\+val) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_num_val_aca2485ce085c0733d521c408007352ac}{mult\+\_\+with}} (\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}other\+\_\+val) override
+\item 
+bool \mbox{\hyperlink{class_num_val_a8b0f735f85b123a4c7eb88e13b36a237}{is\+\_\+true}} () override
+\item 
+void \mbox{\hyperlink{class_num_val_a0c2c08ff34c952b88273bc7e8f5425a4}{print}} (std\+::ostream \&ostream) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_val}{Val}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_val_abcff5ad6415a7ead83933e45cc3dc9c0}{to\+\_\+string}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_num_val_a0e29bf5ec98ef568d51d5b506daaa3e7}{int\+\_\+m}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_num_val_aec0681d0ca58970b0ccf528e382d9bb4}\label{class_num_val_aec0681d0ca58970b0ccf528e382d9bb4} 
+\index{NumVal@{NumVal}!NumVal@{NumVal}}
+\index{NumVal@{NumVal}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{NumVal()}{NumVal()}}
+{\footnotesize\ttfamily Num\+Val\+::\+Num\+Val (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_num_val_ac37beaeded5991a03982ed2d1e7fefab}\label{class_num_val_ac37beaeded5991a03982ed2d1e7fefab} 
+\index{NumVal@{NumVal}!add\_to@{add\_to}}
+\index{add\_to@{add\_to}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{add\_to()}{add\_to()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Num\+Val\+::add\+\_\+to (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{other\+\_\+val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_a55dae19b209f6e1050a62d8c26d904f3}{Val}}.
+
+\Hypertarget{class_num_val_aec5e08c5b63d5750b3cfc5afe563947d}\label{class_num_val_aec5e08c5b63d5750b3cfc5afe563947d} 
+\index{NumVal@{NumVal}!equals@{equals}}
+\index{equals@{equals}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Num\+Val\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_a949ca9ba5c9a030f58126aad5bf684c5}{Val}}.
+
+\Hypertarget{class_num_val_a8b0f735f85b123a4c7eb88e13b36a237}\label{class_num_val_a8b0f735f85b123a4c7eb88e13b36a237} 
+\index{NumVal@{NumVal}!is\_true@{is\_true}}
+\index{is\_true@{is\_true}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{is\_true()}{is\_true()}}
+{\footnotesize\ttfamily bool Num\+Val\+::is\+\_\+true (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_ad10185dc7531f869c7197ba89479ff95}{Val}}.
+
+\Hypertarget{class_num_val_aca2485ce085c0733d521c408007352ac}\label{class_num_val_aca2485ce085c0733d521c408007352ac} 
+\index{NumVal@{NumVal}!mult\_with@{mult\_with}}
+\index{mult\_with@{mult\_with}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{mult\_with()}{mult\_with()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Num\+Val\+::mult\+\_\+with (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*}}]{other\+\_\+val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_ac959b56947108cda7d9feafa6e251009}{Val}}.
+
+\Hypertarget{class_num_val_a0c2c08ff34c952b88273bc7e8f5425a4}\label{class_num_val_a0c2c08ff34c952b88273bc7e8f5425a4} 
+\index{NumVal@{NumVal}!print@{print}}
+\index{print@{print}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Num\+Val\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_a76adc288ffce52cd26f9355f22251c02}{Val}}.
+
+\Hypertarget{class_num_val_ae60543bf69d4f50bf0a1adea68f6a680}\label{class_num_val_ae60543bf69d4f50bf0a1adea68f6a680} 
+\index{NumVal@{NumVal}!to\_expr@{to\_expr}}
+\index{to\_expr@{to\_expr}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{to\_expr()}{to\_expr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} Num\+Val\+::to\+\_\+expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_val_ac26c69f7a71d9c18627864f62bd83dbc}{Val}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_num_val_a0e29bf5ec98ef568d51d5b506daaa3e7}\label{class_num_val_a0e29bf5ec98ef568d51d5b506daaa3e7} 
+\index{NumVal@{NumVal}!int\_m@{int\_m}}
+\index{int\_m@{int\_m}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{int\_m}{int\_m}}
+{\footnotesize\ttfamily int Num\+Val\+::int\+\_\+m}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_val_8h}{Val.\+h}}\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_val_8cpp}{Val.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__expr_8h" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/msdscript/src/Expr.h File Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/msdscript/src/Expr.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;<?linebreak?>#include &lt;stdexcept&gt;<?linebreak?>#include &lt;sstream&gt;<?linebreak?>#include &lt;utility&gt;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_expr">Expr</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_num">Num</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_bool">Bool</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_eq">Eq</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_add">Add</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mult">Mult</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_var">Var</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_let">Let</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_if">If</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> { <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913">NONE</link> = 0
+, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfacfb0c876aa8571ac76d9fbc711a38753">ADD</link> = 1
+, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfa4b4cae8faa0a4540c785141e43c01677">MULT</link> = 2
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf"/><section>
+    <title>prec_t</title>
+<indexterm><primary>prec_t</primary><secondary>Expr.h</secondary></indexterm>
+<indexterm><primary>Expr.h</primary><secondary>prec_t</secondary></indexterm>
+<para><computeroutput>enum <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>NONE</primary><secondary>Expr.h</secondary></indexterm>
+<indexterm><primary>Expr.h</primary><secondary>NONE</secondary></indexterm>
+<anchor xml:id="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913"/>NONE</entry><entry>
+<para>default precedence for <link linkend="_class_num">Num</link> and <link linkend="_class_var">Var</link> </para>
+</entry></row><row><entry><indexterm><primary>ADD</primary><secondary>Expr.h</secondary></indexterm>
+<indexterm><primary>Expr.h</primary><secondary>ADD</secondary></indexterm>
+<anchor xml:id="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfacfb0c876aa8571ac76d9fbc711a38753"/>ADD</entry><entry>
+<para>default precedence for <link linkend="_class_add">Add</link> </para>
+</entry></row><row><entry><indexterm><primary>MULT</primary><secondary>Expr.h</secondary></indexterm>
+<indexterm><primary>Expr.h</primary><secondary>MULT</secondary></indexterm>
+<anchor xml:id="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdfa4b4cae8faa0a4540c785141e43c01677"/>MULT</entry><entry>
+<para>default precedence for <link linkend="_class_mult">Mult</link> </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+</section>

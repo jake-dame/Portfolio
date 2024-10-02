@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1detail_1_1void__type" xml:lang="en-US">
+<title>Catch::detail::void_type&lt;... &gt; Struct Template Reference</title>
+<indexterm><primary>Catch::detail::void_type&lt;... &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">using</link> <link linkend="_struct_catch_1_1detail_1_1void__type_1ae7ab54169b5452caa24063fef95adf02">type</link> = <link linkend="_struct_catch_1_1true__given">void</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Typedef Documentation</title>
+<anchor xml:id="_struct_catch_1_1detail_1_1void__type_1ae7ab54169b5452caa24063fef95adf02"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>Catch::detail::void_type&lt;... &gt;</secondary></indexterm>
+<indexterm><primary>Catch::detail::void_type&lt;... &gt;</primary><secondary>type</secondary></indexterm>
+<computeroutput>template&lt;typename... &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">using</link> <link linkend="_struct_catch_1_1detail_1_1void__type">Catch::detail::void_type</link>&lt;... &gt;::type = <link linkend="_struct_catch_1_1true__given">void</link></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

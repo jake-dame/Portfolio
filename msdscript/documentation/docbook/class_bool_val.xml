@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_bool_val" xml:lang="en-US">
+<title>BoolVal Class Reference</title>
+<indexterm><primary>BoolVal</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Val.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for BoolVal:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_bool_val.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_bool_val_1a0dace7497e13d82a024bda399d22ed38">BoolVal</link> (bool val)</para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_bool_val_1a47f9d7553e7ad883ebf4a5b44b7e1932">to_expr</link> () override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_bool_val_1a971b3ffa2421a771aab4a99124f2ab14">equals</link> (<link linkend="_class_val">Val</link> *v) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_bool_val_1aa3b132054e0d38500a6400b046a84b45">add_to</link> (<link linkend="_class_val">Val</link> *other_val) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_bool_val_1a52ecb2ddf864f96556830ba9f1316daf">mult_with</link> (<link linkend="_class_val">Val</link> *other_val) override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_bool_val_1aaa2514063aaf2048b41880df72e0c14f">is_true</link> () override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_bool_val_1a32564a9b69559ae902c7534b125d333d">print</link> (std::ostream &amp;ostream) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_val">Val</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_val_1abcff5ad6415a7ead83933e45cc3dc9c0">to_string</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_bool_val_1a1d6ff5912d262bfe0912b90a6128f53d">bool_m</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_bool_val_1a0dace7497e13d82a024bda399d22ed38"/><section>
+    <title>BoolVal()</title>
+<indexterm><primary>BoolVal</primary><secondary>BoolVal</secondary></indexterm>
+<indexterm><primary>BoolVal</primary><secondary>BoolVal</secondary></indexterm>
+<para><computeroutput>BoolVal::BoolVal (bool val)<computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_bool_val_1aa3b132054e0d38500a6400b046a84b45"/><section>
+    <title>add_to()</title>
+<indexterm><primary>add_to</primary><secondary>BoolVal</secondary></indexterm>
+<indexterm><primary>BoolVal</primary><secondary>add_to</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * BoolVal::add_to (<link linkend="_class_val">Val</link> * other_val)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1a55dae19b209f6e1050a62d8c26d904f3">Val</link>.</para>
+</section>
+<anchor xml:id="_class_bool_val_1a971b3ffa2421a771aab4a99124f2ab14"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>BoolVal</secondary></indexterm>
+<indexterm><primary>BoolVal</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>bool BoolVal::equals (<link linkend="_class_val">Val</link> * v)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1a949ca9ba5c9a030f58126aad5bf684c5">Val</link>.</para>
+</section>
+<anchor xml:id="_class_bool_val_1aaa2514063aaf2048b41880df72e0c14f"/><section>
+    <title>is_true()</title>
+<indexterm><primary>is_true</primary><secondary>BoolVal</secondary></indexterm>
+<indexterm><primary>BoolVal</primary><secondary>is_true</secondary></indexterm>
+<para><computeroutput>bool BoolVal::is_true ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1ad10185dc7531f869c7197ba89479ff95">Val</link>.</para>
+</section>
+<anchor xml:id="_class_bool_val_1a52ecb2ddf864f96556830ba9f1316daf"/><section>
+    <title>mult_with()</title>
+<indexterm><primary>mult_with</primary><secondary>BoolVal</secondary></indexterm>
+<indexterm><primary>BoolVal</primary><secondary>mult_with</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * BoolVal::mult_with (<link linkend="_class_val">Val</link> * other_val)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1ac959b56947108cda7d9feafa6e251009">Val</link>.</para>
+</section>
+<anchor xml:id="_class_bool_val_1a32564a9b69559ae902c7534b125d333d"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>BoolVal</secondary></indexterm>
+<indexterm><primary>BoolVal</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void BoolVal::print (std::ostream &amp; ostream)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1a76adc288ffce52cd26f9355f22251c02">Val</link>.</para>
+</section>
+<anchor xml:id="_class_bool_val_1a47f9d7553e7ad883ebf4a5b44b7e1932"/><section>
+    <title>to_expr()</title>
+<indexterm><primary>to_expr</primary><secondary>BoolVal</secondary></indexterm>
+<indexterm><primary>BoolVal</primary><secondary>to_expr</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * BoolVal::to_expr ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_val_1ac26c69f7a71d9c18627864f62bd83dbc">Val</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_bool_val_1a1d6ff5912d262bfe0912b90a6128f53d"/><section>
+    <title>bool_m</title>
+<indexterm><primary>bool_m</primary><secondary>BoolVal</secondary></indexterm>
+<indexterm><primary>BoolVal</primary><secondary>bool_m</secondary></indexterm>
+<para><computeroutput>bool BoolVal::bool_m</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__val_8h">Val.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__val_8cpp">Val.cpp</link></section>
+</section>

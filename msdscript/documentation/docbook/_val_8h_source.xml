@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__val_8h_source" xml:lang="en-US">
+<title>Val.h</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/msdscript/src/Val.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="comment">/******************************************************************************</emphasis>
+2 <emphasis role="comment">&#32;*&#32;\brief&#32;Val&#32;bass&#32;class&#32;+&#32;derived&#32;class&#32;declarations</emphasis>
+3 <emphasis role="comment">&#32;*</emphasis>
+4 <emphasis role="comment">&#32;*&#32;\file&#32;Val.h</emphasis>
+5 <emphasis role="comment">&#32;*&#32;\author&#32;Jake&#32;Dame</emphasis>
+6 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+7 
+8 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+9 
+10 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_expr">Expr</link>;&#32;<emphasis role="comment">/*&#32;Expr&#32;class&#32;for&#32;Val::to_expr()&#32;*/</emphasis>
+11 
+12 <emphasis role="comment">/******************************************************************************</emphasis>
+13 <emphasis role="comment">&#32;*&#32;\class&#32;Val</emphasis>
+14 <emphasis role="comment">&#32;*&#32;\brief&#32;An&#32;abstract,&#32;base&#32;class&#32;representing&#32;a&#32;the&#32;value&#32;of&#32;an&#32;expression</emphasis>
+15 <emphasis role="comment">&#32;*</emphasis>
+16 <emphasis role="comment">&#32;*&#32;The&#32;Val&#32;class&#32;is&#32;an&#32;abstract&#32;class&#32;that&#32;defines&#32;regular&#32;and</emphasis>
+17 <emphasis role="comment">&#32;*&#32;virtual&#32;functions&#32;that&#32;can&#32;be&#32;used&#32;to&#32;represent&#32;two&#32;mathematical</emphasis>
+18 <emphasis role="comment">&#32;*&#32;values&#32;--&#32;boolean&#32;values&#32;(BoolVal&#32;class)&#32;and&#32;integer&#32;values&#32;(NumVal&#32;class)</emphasis>
+19 <emphasis role="comment">&#32;*&#32;--&#32;of&#32;mathematical&#32;expressions&#32;(Expr&#32;class&#32;in&#32;Expr.h);&#32;calling&#32;interp()&#32;on</emphasis>
+20 <emphasis role="comment">&#32;*&#32;an&#32;Expr&#32;object&#32;returns&#32;a&#32;Val&#32;object.</emphasis>
+21 <emphasis role="comment">&#32;*</emphasis>
+22 <emphasis role="comment">&#32;*&#32;The&#32;Val&#32;class&#32;&#32;handles&#32;base-level&#32;addition&#32;(&#32;add_to()&#32;)and&#32;multiplication</emphasis>
+23 <emphasis role="comment">&#32;*&#32;(&#32;mult_with()&#32;);&#32;it&#32;supports&#32;comparison&#32;between&#32;Val&#32;objects&#32;(&#32;equals()&#32;),</emphasis>
+24 <emphasis role="comment">&#32;*&#32;and&#32;conversion&#32;to&#32;analogous&#32;Expr&#32;objects&#32;as&#32;well&#32;(&#32;to_expr()&#32;).</emphasis>
+25 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+26 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_val">Val</link>
+27 {
+28 <emphasis role="keyword">public</emphasis>:
+29 
+30 &#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+31 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Non-virtual&#32;methods</emphasis>
+32 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+33 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_val_1abcff5ad6415a7ead83933e45cc3dc9c0">to_string</link>();
+34 
+35 &#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+36 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Pure&#32;virtual&#32;methods</emphasis>
+37 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+38 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_val_1ac26c69f7a71d9c18627864f62bd83dbc">to_expr</link>()&#32;=&#32;0;
+39 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_val_1a949ca9ba5c9a030f58126aad5bf684c5">equals</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;v&#32;)&#32;=&#32;0;
+40 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_val_1a55dae19b209f6e1050a62d8c26d904f3">add_to</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;v&#32;)&#32;=&#32;0;
+41 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_val_1ac959b56947108cda7d9feafa6e251009">mult_with</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;v&#32;)&#32;=&#32;0;
+42 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_val_1ad10185dc7531f869c7197ba89479ff95">is_true</link>()&#32;=&#32;0;
+43 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_val_1a76adc288ffce52cd26f9355f22251c02">print</link>(&#32;std::ostream&#32;&amp;&#32;stream&#32;)&#32;=&#32;0;
+44 };
+45 
+46 <emphasis role="comment">/******************************************************************************</emphasis>
+47 <emphasis role="comment">&#32;*&#32;\class&#32;NumVal</emphasis>
+48 <emphasis role="comment">&#32;*&#32;\brief&#32;A&#32;Val&#32;derived&#32;class&#32;representing&#32;an&#32;integer&#32;value</emphasis>
+49 <emphasis role="comment">&#32;*</emphasis>
+50 <emphasis role="comment">&#32;*&#32;A&#32;NumVal&#32;object&#32;represents&#32;an&#32;integer&#32;value&#32;of&#32;a&#32;mathematical&#32;expression.</emphasis>
+51 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+52 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_num_val">NumVal</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_val">Val</link>
+53 {
+54 <emphasis role="keyword">public</emphasis>:
+55 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_num_val_1a0e29bf5ec98ef568d51d5b506daaa3e7">int_m</link>;
+56 
+57 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_num_val_1aec0681d0ca58970b0ccf528e382d9bb4">NumVal</link>(&#32;<emphasis role="keywordtype">int</emphasis>&#32;val&#32;);
+58 
+59 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_num_val_1ae60543bf69d4f50bf0a1adea68f6a680">to_expr</link>()&#32;<emphasis role="keyword">override</emphasis>;
+60 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_num_val_1aec5e08c5b63d5750b3cfc5afe563947d">equals</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;v&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+61 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_num_val_1ac37beaeded5991a03982ed2d1e7fefab">add_to</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;other_val&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+62 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_num_val_1aca2485ce085c0733d521c408007352ac">mult_with</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;other_val&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+63 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_num_val_1a8b0f735f85b123a4c7eb88e13b36a237">is_true</link>()&#32;<emphasis role="keyword">override</emphasis>;
+64 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_num_val_1a0c2c08ff34c952b88273bc7e8f5425a4">print</link>(&#32;std::ostream&#32;&amp;&#32;ostream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+65 };
+66 
+67 <emphasis role="comment">/******************************************************************************</emphasis>
+68 <emphasis role="comment">&#32;*&#32;\class&#32;BoolVal</emphasis>
+69 <emphasis role="comment">&#32;*&#32;\brief&#32;A&#32;Val&#32;derived&#32;class&#32;representing&#32;a&#32;boolean&#32;value</emphasis>
+70 <emphasis role="comment">&#32;*</emphasis>
+71 <emphasis role="comment">&#32;*&#32;A&#32;BoolVal&#32;object&#32;represents&#32;a&#32;boolean&#32;value&#32;of&#32;a&#32;mathematical&#32;expression.</emphasis>
+72 <emphasis role="comment">&#32;*****************************************************************************/</emphasis>
+73 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_bool_val">BoolVal</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_val">Val</link>
+74 {
+75 <emphasis role="keyword">public</emphasis>:
+76 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_bool_val_1a1d6ff5912d262bfe0912b90a6128f53d">bool_m</link>;
+77 
+78 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_bool_val_1a0dace7497e13d82a024bda399d22ed38">BoolVal</link>(&#32;<emphasis role="keywordtype">bool</emphasis>&#32;val&#32;);
+79 
+80 &#32;&#32;&#32;&#32;<link linkend="_class_expr">Expr</link>&#32;*&#32;<link linkend="_class_bool_val_1a47f9d7553e7ad883ebf4a5b44b7e1932">to_expr</link>()&#32;<emphasis role="keyword">override</emphasis>;
+81 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_bool_val_1a971b3ffa2421a771aab4a99124f2ab14">equals</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;v&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+82 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_bool_val_1aa3b132054e0d38500a6400b046a84b45">add_to</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;other_val&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+83 &#32;&#32;&#32;&#32;<link linkend="_class_val">Val</link>&#32;*&#32;<link linkend="_class_bool_val_1a52ecb2ddf864f96556830ba9f1316daf">mult_with</link>(&#32;<link linkend="_class_val">Val</link>&#32;*&#32;other_val&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+84 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_bool_val_1aaa2514063aaf2048b41880df72e0c14f">is_true</link>()&#32;<emphasis role="keyword">override</emphasis>;
+85 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_bool_val_1a32564a9b69559ae902c7534b125d333d">print</link>(&#32;std::ostream&#32;&amp;&#32;ostream&#32;)&#32;<emphasis role="keyword">override</emphasis>;
+86 };
+</programlisting></section>

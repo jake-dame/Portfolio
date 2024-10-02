@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_unary_expr" xml:lang="en-US">
+<title>Catch::UnaryExpr&lt; LhsT &gt; Class Template Reference</title>
+<indexterm><primary>Catch::UnaryExpr&lt; LhsT &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::UnaryExpr&lt; LhsT &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_unary_expr.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_unary_expr_1ae02f666a1e64da728628aa2033e1d6e7">UnaryExpr</link> (<link linkend="_struct_catch_1_1true__given">LhsT</link> <link linkend="_struct_catch_1_1true__given">lhs</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_i_transient_expression">Catch::ITransientExpression</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22">isBinaryExpression</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a101c7db86c87eff93a8ff496720e6320">getResult</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_i_transient_expression_1aafe69572b7ed884e63ec81f58d4afd8c">ITransientExpression</link> (<link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22">isBinaryExpression</link>, <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">result</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_transient_expression_1aeadf426de589938c4964fe4068eeee77">~ITransientExpression</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_unary_expr_1aaabf30455a996c80675c0f388a6e4110">streamReconstructedExpression</link> (std::ostream &amp;<link linkend="_struct_catch_1_1true__given">os</link>) <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">LhsT</link> <link linkend="_class_catch_1_1_unary_expr_1a7b6e97e576377dd60c77ab551a180325">m_lhs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Attributes inherited from <link linkend="_struct_catch_1_1_i_transient_expression">Catch::ITransientExpression</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a75ce48da824d514d08152d396abb28d8">m_isBinaryExpression</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a4646e2b5e0156e913653ec3b9b60c942">m_result</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_unary_expr_1ae02f666a1e64da728628aa2033e1d6e7"/><section>
+    <title>UnaryExpr()</title>
+<indexterm><primary>UnaryExpr</primary><secondary>Catch::UnaryExpr&lt; LhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::UnaryExpr&lt; LhsT &gt;</primary><secondary>UnaryExpr</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_unary_expr">Catch::UnaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link> &gt;::UnaryExpr (<link linkend="_struct_catch_1_1true__given">LhsT</link> lhs)<computeroutput>[inline]</computeroutput>, <computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_unary_expr_1aaabf30455a996c80675c0f388a6e4110"/><section>
+    <title>streamReconstructedExpression()</title>
+<indexterm><primary>streamReconstructedExpression</primary><secondary>Catch::UnaryExpr&lt; LhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::UnaryExpr&lt; LhsT &gt;</primary><secondary>streamReconstructedExpression</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_unary_expr">Catch::UnaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link> &gt;::streamReconstructedExpression (std::ostream &amp; os) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_i_transient_expression_1aabe1889df9c6e639a24afb08d8a0fe9e">Catch::ITransientExpression</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_unary_expr_1a7b6e97e576377dd60c77ab551a180325"/><section>
+    <title>m_lhs</title>
+<indexterm><primary>m_lhs</primary><secondary>Catch::UnaryExpr&lt; LhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::UnaryExpr&lt; LhsT &gt;</primary><secondary>m_lhs</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">LhsT</link> <link linkend="_class_catch_1_1_unary_expr">Catch::UnaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link> &gt;::m_lhs<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

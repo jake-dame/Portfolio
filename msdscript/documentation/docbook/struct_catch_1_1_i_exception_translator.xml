@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_i_exception_translator" xml:lang="en-US">
+<title>Catch::IExceptionTranslator Struct Reference</title>
+<indexterm><primary>Catch::IExceptionTranslator</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::IExceptionTranslator:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_catch_1_1_i_exception_translator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_exception_translator_1afa00bb6258c07591df472aadae05783f">~IExceptionTranslator</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> std::string <link linkend="_struct_catch_1_1_i_exception_translator_1a2a554b96ed5ed411e7c796b6b42837a5">translate</link> (ExceptionTranslators::const_iterator <link linkend="_struct_catch_1_1true__given">it</link>, ExceptionTranslators::const_iterator <link linkend="_struct_catch_1_1true__given">itEnd</link>) <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_exception_translator_1afa00bb6258c07591df472aadae05783f"/><section>
+    <title>~IExceptionTranslator()</title>
+<indexterm><primary>~IExceptionTranslator</primary><secondary>Catch::IExceptionTranslator</secondary></indexterm>
+<indexterm><primary>Catch::IExceptionTranslator</primary><secondary>~IExceptionTranslator</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::IExceptionTranslator::~IExceptionTranslator ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_exception_translator_1a2a554b96ed5ed411e7c796b6b42837a5"/><section>
+    <title>translate()</title>
+<indexterm><primary>translate</primary><secondary>Catch::IExceptionTranslator</secondary></indexterm>
+<indexterm><primary>Catch::IExceptionTranslator</primary><secondary>translate</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> std::string Catch::IExceptionTranslator::translate (ExceptionTranslators::const_iterator it, ExceptionTranslators::const_iterator itEnd) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_catch_1_1_exception_translator_registrar_1_1_exception_translator_1a29e85940ee9ce719f26e43550cb4ed48">Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

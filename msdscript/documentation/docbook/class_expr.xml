@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_expr" xml:lang="en-US">
+<title>Expr Class Reference</title>
+<indexterm><primary>Expr</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Expr.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Expr:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_expr.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7">to_string</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa">to_pretty_string</link> ()</para>
+</listitem>
+            <listitem><para>virtual bool <link linkend="_class_expr_1abf9cdb765fb84304881789d273d7594f">equals</link> (<link linkend="_class_expr">Expr</link> *e)=0</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_val">Val</link> * <link linkend="_class_expr_1aa671ba2b665001c815588a7271735104">interp</link> ()=0</para>
+</listitem>
+            <listitem><para>virtual bool <link linkend="_class_expr_1a92dc26078993a4b9721ea732274a435c">has_variable</link> ()=0</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_expr">Expr</link> * <link linkend="_class_expr_1aa91f56b56e078594565aeba32c520b7a">subst</link> (std::string str, <link linkend="_class_expr">Expr</link> *e)=0</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_expr_1a8e34377af275f60532d1ba76e6feaceb">print</link> (std::ostream &amp;stream)=0</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_expr_1aaec6172fa839cafad124775b0a43965b">pretty_print</link> (std::ostream &amp;stream)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_expr_1ab5b1d850f98bb650ef199bb6e90133b7">pretty_print_at</link> (std::ostream &amp;stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp;pos, bool paren)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_expr_1abf9cdb765fb84304881789d273d7594f"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>virtual bool Expr::equals (<link linkend="_class_expr">Expr</link> * e)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_1a07316c2897aadb9257b8de74dbfdcc03">Num</link>, <link linkend="_class_bool_1a7c274a00cd23466262ed5dd53db50fdf">Bool</link>, <link linkend="_class_eq_1a9919c97580777aa2564186fff19b4825">Eq</link>, <link linkend="_class_add_1a78f321a6b8799113d3fbcb7d975cc44b">Add</link>, <link linkend="_class_mult_1aa64da9a8fc6b019f8a2db6f813d9a4e6">Mult</link>, <link linkend="_class_var_1af0889cd60f10a3b3c7712f53023e7f5b">Var</link>, <link linkend="_class_let_1aa0defef255c02323cf36929a67bbe95e">Let</link>, and <link linkend="_class_if_1af6ca55f18459dffb3590aa7f739223fc">If</link>.</para>
+</section>
+<anchor xml:id="_class_expr_1a92dc26078993a4b9721ea732274a435c"/><section>
+    <title>has_variable()</title>
+<indexterm><primary>has_variable</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>has_variable</secondary></indexterm>
+<para><computeroutput>virtual bool Expr::has_variable ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_1a24a51278e76d4b01b457fb5f521bcc38">Num</link>, <link linkend="_class_bool_1a1d96f8e991401a7becd0d2c1d9dfc992">Bool</link>, <link linkend="_class_eq_1aec762006f4d34ace9f181ce41926e672">Eq</link>, <link linkend="_class_add_1a1a829a6c1e949a57cd810e8a6e3c52d5">Add</link>, <link linkend="_class_mult_1a214c39d71da10d21bdbd7fbc70032357">Mult</link>, <link linkend="_class_var_1a8fdfa306660b048eff151d156b923dd6">Var</link>, <link linkend="_class_let_1a9ecf8ca9ef5b8b7843fc5386381ca147">Let</link>, and <link linkend="_class_if_1acbabb88c712501e24689fe66109b2b6c">If</link>.</para>
+</section>
+<anchor xml:id="_class_expr_1aa671ba2b665001c815588a7271735104"/><section>
+    <title>interp()</title>
+<indexterm><primary>interp</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>interp</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_val">Val</link> * Expr::interp ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_1a4ba35020050277a80e2acbe3352c6b9f">Num</link>, <link linkend="_class_bool_1a224ccb0f737803d152c1b68aa93fb0a3">Bool</link>, <link linkend="_class_eq_1a4e22b12552283b3923029fa5b1b2e976">Eq</link>, <link linkend="_class_add_1a7f7206946209b8d79146fc6ed18ac584">Add</link>, <link linkend="_class_mult_1aa09b9a90e7157c3525e9a13f2080c5cc">Mult</link>, <link linkend="_class_var_1a812952c640782878dfcf345641ac50fe">Var</link>, <link linkend="_class_let_1a497897b0e97322f01c5d6605d6ec3bd7">Let</link>, and <link linkend="_class_if_1a241d12b7b9edc08f0f56032608d4a515">If</link>.</para>
+</section>
+<anchor xml:id="_class_expr_1aaec6172fa839cafad124775b0a43965b"/><section>
+    <title>pretty_print()</title>
+<indexterm><primary>pretty_print</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>pretty_print</secondary></indexterm>
+<para><computeroutput>virtual void Expr::pretty_print (std::ostream &amp; stream)<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_eq_1a88ca6380e01ef2d73bc3a607aa309273">Eq</link>, <link linkend="_class_add_1a1e3aa81c17cfd74315b5b4d4d10f9d25">Add</link>, <link linkend="_class_mult_1a3eba746088e84dc93eea8a70da1a76eb">Mult</link>, <link linkend="_class_let_1a0288f5ca2a9d18fc5cd5dfef276fda04">Let</link>, and <link linkend="_class_if_1a0e60c6ac879cccb40bd974cf7fbbdb36">If</link>.</para>
+</section>
+<anchor xml:id="_class_expr_1ab5b1d850f98bb650ef199bb6e90133b7"/><section>
+    <title>pretty_print_at()</title>
+<indexterm><primary>pretty_print_at</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>pretty_print_at</secondary></indexterm>
+<para><computeroutput>virtual void Expr::pretty_print_at (std::ostream &amp; stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp; pos, bool paren)<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_let_1ae9837b23534fe6739ea117041643ae59">Let</link>, <link linkend="_class_if_1af46538bc8b3ccd613d12f5a981256c95">If</link>, <link linkend="_class_eq_1a61c4c2df2dc95559b8ca3117391142db">Eq</link>, <link linkend="_class_add_1adf2278deeff3066325a81647860573c9">Add</link>, and <link linkend="_class_mult_1a4ddbbb07eaa2667cfb1a9cba82e79a2e">Mult</link>.</para>
+</section>
+<anchor xml:id="_class_expr_1a8e34377af275f60532d1ba76e6feaceb"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>virtual void Expr::print (std::ostream &amp; stream)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_1ad82f60521546672862f44c2dc42ab5a8">Num</link>, <link linkend="_class_bool_1af4c233f391ed1b40624ff53ace1fae31">Bool</link>, <link linkend="_class_eq_1a87257c3730aeced39934efbd8c613a2c">Eq</link>, <link linkend="_class_add_1a75927d67b287f5efd585d377f94af1a4">Add</link>, <link linkend="_class_mult_1a551533c867f54958b4b782331cc69270">Mult</link>, <link linkend="_class_var_1a2650f2c1b3d57cfec9eb8903ce1dee7f">Var</link>, <link linkend="_class_let_1a57bcfd3190ebaf84e8adb0e64cdef2d8">Let</link>, and <link linkend="_class_if_1ab7b4831b6cd1da04bc6f483f0a761509">If</link>.</para>
+</section>
+<anchor xml:id="_class_expr_1aa91f56b56e078594565aeba32c520b7a"/><section>
+    <title>subst()</title>
+<indexterm><primary>subst</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>subst</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_expr">Expr</link> * Expr::subst (std::string str, <link linkend="_class_expr">Expr</link> * e)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_num_1a5738b6218bd63ac81985bcd8a2748cfa">Num</link>, <link linkend="_class_bool_1af3c4342df758b1ffbf4deaf7fe1c118d">Bool</link>, <link linkend="_class_eq_1a8aba9535430eda30809671314b01edc7">Eq</link>, <link linkend="_class_add_1a7b520ea27fff063ea2601f95ad560490">Add</link>, <link linkend="_class_mult_1a883d3fed96b83a96469d98da20cd6bdc">Mult</link>, <link linkend="_class_var_1a677c74db8fa8830d821aa665ec351bbb">Var</link>, <link linkend="_class_let_1a64f2108ae264929fdebd34c66415de72">Let</link>, and <link linkend="_class_if_1a5596376cf345f210936d736d981aa03a">If</link>.</para>
+</section>
+<anchor xml:id="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa"/><section>
+    <title>to_pretty_string()</title>
+<indexterm><primary>to_pretty_string</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>to_pretty_string</secondary></indexterm>
+<para><computeroutput>std::string Expr::to_pretty_string ( )</computeroutput></para></section>
+<anchor xml:id="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7"/><section>
+    <title>to_string()</title>
+<indexterm><primary>to_string</primary><secondary>Expr</secondary></indexterm>
+<indexterm><primary>Expr</primary><secondary>to_string</secondary></indexterm>
+<para><computeroutput>std::string Expr::to_string ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8h">Expr.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8cpp">Expr.cpp</link></section>
+</section>

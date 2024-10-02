@@ -1,0 +1,104 @@
+\doxysection{Catch\+::Generators\+::Iterator\+Generator\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_catch_1_1_generators_1_1_iterator_generator}{}\label{class_catch_1_1_generators_1_1_iterator_generator}\index{Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}}
+
+
+{\ttfamily \#include $<$catch.\+h$>$}
+
+Inheritance diagram for Catch\+::Generators\+::Iterator\+Generator\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_catch_1_1_generators_1_1_iterator_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Iterator}} , \mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Sentinel}} $>$ }\\\mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator_a1f795b1bbd515274673115c0a9fc2e54}{Iterator\+Generator}} (\mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Iterator}} \mbox{\hyperlink{struct_catch_1_1true__given}{first}}, \mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Sentinel}} \mbox{\hyperlink{struct_catch_1_1true__given}{last}})
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{T}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \& \mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator_a21783f931147e4ba2300070c5c417db5}{get}} () \mbox{\hyperlink{struct_catch_1_1true__given}{const}} \mbox{\hyperlink{struct_catch_1_1true__given}{override}}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{bool}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator_acafb4fa1eebe5e1db571621a35a3f137}{next}} () \mbox{\hyperlink{struct_catch_1_1true__given}{override}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator}{Catch\+::\+Generators\+::\+IGenerator$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{virtual}} \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_afe5b6eecbbd735e69748d68574611747}{\texorpdfstring{$\sim$}{\string~}\+IGenerator}} ()=\mbox{\hyperlink{struct_catch_1_1true__given}{default}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base}{Catch\+::\+Generators\+::\+Generator\+Untyped\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_a00ff0179d739c3016756b6cf56fabbad}{Generator\+Untyped\+Base}} ()=\mbox{\hyperlink{struct_catch_1_1true__given}{default}}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{virtual}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_a6f05f8099fdc5744a7aff68aa8c09c7f}{\texorpdfstring{$\sim$}{\string~}\+Generator\+Untyped\+Base}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator_a74eb1a6990cf0e3b548e8654bd6e99ef}{m\+\_\+elems}}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{size\+\_\+t}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator_a43b70e3cf312294219bd2485eaa75ba1}{m\+\_\+current}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator}{Catch\+::\+Generators\+::\+IGenerator$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_catch_1_1true__given}{using}} \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_a1f8677875fe0ff31f39c60d45504b9a5}{type}} = \mbox{\hyperlink{struct_catch_1_1true__given}{T}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_catch_1_1_generators_1_1_iterator_generator_a1f795b1bbd515274673115c0a9fc2e54}\label{class_catch_1_1_generators_1_1_iterator_generator_a1f795b1bbd515274673115c0a9fc2e54} 
+\index{Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}!IteratorGenerator@{IteratorGenerator}}
+\index{IteratorGenerator@{IteratorGenerator}!Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IteratorGenerator()}{IteratorGenerator()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Iterator}} , \mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Sentinel}} $>$ \\
+\mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator}{Catch\+::\+Generators\+::\+Iterator\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::\+Iterator\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Iterator}}}]{first,  }\item[{\mbox{\hyperlink{struct_catch_1_1true__given}{Input\+Sentinel}}}]{last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_catch_1_1_generators_1_1_iterator_generator_a21783f931147e4ba2300070c5c417db5}\label{class_catch_1_1_generators_1_1_iterator_generator_a21783f931147e4ba2300070c5c417db5} 
+\index{Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}!get@{get}}
+\index{get@{get}!Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+\mbox{\hyperlink{struct_catch_1_1true__given}{T}} \mbox{\hyperlink{struct_catch_1_1true__given}{const}}  \& \mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator}{Catch\+::\+Generators\+::\+Iterator\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_a0fb6da789cda5b4e90f036737db82485}{Catch\+::\+Generators\+::\+IGenerator$<$ T $>$}}.
+
+\Hypertarget{class_catch_1_1_generators_1_1_iterator_generator_acafb4fa1eebe5e1db571621a35a3f137}\label{class_catch_1_1_generators_1_1_iterator_generator_acafb4fa1eebe5e1db571621a35a3f137} 
+\index{Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}!next@{next}}
+\index{next@{next}!Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+\mbox{\hyperlink{struct_catch_1_1true__given}{bool}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator}{Catch\+::\+Generators\+::\+Iterator\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_aeed3c0cd6233c5f553549e453b8d6638}{Catch\+::\+Generators\+::\+Generator\+Untyped\+Base}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_catch_1_1_generators_1_1_iterator_generator_a43b70e3cf312294219bd2485eaa75ba1}\label{class_catch_1_1_generators_1_1_iterator_generator_a43b70e3cf312294219bd2485eaa75ba1} 
+\index{Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}!m\_current@{m\_current}}
+\index{m\_current@{m\_current}!Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_current}{m\_current}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+\mbox{\hyperlink{struct_catch_1_1true__given}{size\+\_\+t}} \mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator}{Catch\+::\+Generators\+::\+Iterator\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::m\+\_\+current = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_catch_1_1_generators_1_1_iterator_generator_a74eb1a6990cf0e3b548e8654bd6e99ef}\label{class_catch_1_1_generators_1_1_iterator_generator_a74eb1a6990cf0e3b548e8654bd6e99ef} 
+\index{Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}!m\_elems@{m\_elems}}
+\index{m\_elems@{m\_elems}!Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_elems}{m\_elems}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{struct_catch_1_1true__given}{typename}} \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$ \\
+std\+::vector$<$\mbox{\hyperlink{struct_catch_1_1true__given}{T}}$>$ \mbox{\hyperlink{class_catch_1_1_generators_1_1_iterator_generator}{Catch\+::\+Generators\+::\+Iterator\+Generator}}$<$ \mbox{\hyperlink{struct_catch_1_1true__given}{T}} $>$\+::m\+\_\+elems\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{catch_8h}{catch.\+h}}\end{DoxyCompactItemize}

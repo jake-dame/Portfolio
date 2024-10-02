@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_eq" xml:lang="en-US">
+<title>Eq Class Reference</title>
+<indexterm><primary>Eq</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Expr.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Eq:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_eq.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_eq_1af391532bed49cb5ec8d69a2c0ceb8bc4">Eq</link> (<link linkend="_class_expr">Expr</link> *lhs, <link linkend="_class_expr">Expr</link> *rhs)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_eq_1a9919c97580777aa2564186fff19b4825">equals</link> (<link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_eq_1a4e22b12552283b3923029fa5b1b2e976">interp</link> () override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_eq_1aec762006f4d34ace9f181ce41926e672">has_variable</link> () override</para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_eq_1a8aba9535430eda30809671314b01edc7">subst</link> (std::string str, <link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_expr">Expr</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7">to_string</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa">to_pretty_string</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_eq_1a9726bb556adb165485de50d0ece9e58f">lhs_m</link></para>
+
+<para>The lhs operand of an equality operation. </para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_eq_1a94beb3267608e27bc278f3385966b457">rhs_m</link></para>
+
+<para>The rhs operand of an equality operation. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_eq_1a87257c3730aeced39934efbd8c613a2c">print</link> (std::ostream &amp;stream) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_eq_1a88ca6380e01ef2d73bc3a607aa309273">pretty_print</link> (std::ostream &amp;stream) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_eq_1a61c4c2df2dc95559b8ca3117391142db">pretty_print_at</link> (std::ostream &amp;stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp;pos, bool paren) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_eq_1af391532bed49cb5ec8d69a2c0ceb8bc4"/><section>
+    <title>Eq()</title>
+<indexterm><primary>Eq</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>Eq</secondary></indexterm>
+<para><computeroutput>Eq::Eq (<link linkend="_class_expr">Expr</link> * lhs, <link linkend="_class_expr">Expr</link> * rhs)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_eq_1a9919c97580777aa2564186fff19b4825"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>bool Eq::equals (<link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1abf9cdb765fb84304881789d273d7594f">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_eq_1aec762006f4d34ace9f181ce41926e672"/><section>
+    <title>has_variable()</title>
+<indexterm><primary>has_variable</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>has_variable</secondary></indexterm>
+<para><computeroutput>bool Eq::has_variable ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a92dc26078993a4b9721ea732274a435c">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_eq_1a4e22b12552283b3923029fa5b1b2e976"/><section>
+    <title>interp()</title>
+<indexterm><primary>interp</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>interp</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * Eq::interp ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa671ba2b665001c815588a7271735104">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_eq_1a88ca6380e01ef2d73bc3a607aa309273"/><section>
+    <title>pretty_print()</title>
+<indexterm><primary>pretty_print</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>pretty_print</secondary></indexterm>
+<para><computeroutput>void Eq::pretty_print (std::ostream &amp; stream)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_expr_1aaec6172fa839cafad124775b0a43965b">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_eq_1a61c4c2df2dc95559b8ca3117391142db"/><section>
+    <title>pretty_print_at()</title>
+<indexterm><primary>pretty_print_at</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>pretty_print_at</secondary></indexterm>
+<para><computeroutput>void Eq::pretty_print_at (std::ostream &amp; stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp; pos, bool paren)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_expr_1ab5b1d850f98bb650ef199bb6e90133b7">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_eq_1a87257c3730aeced39934efbd8c613a2c"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void Eq::print (std::ostream &amp; stream)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a8e34377af275f60532d1ba76e6feaceb">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_eq_1a8aba9535430eda30809671314b01edc7"/><section>
+    <title>subst()</title>
+<indexterm><primary>subst</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>subst</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * Eq::subst (std::string str, <link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa91f56b56e078594565aeba32c520b7a">Expr</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_eq_1a9726bb556adb165485de50d0ece9e58f"/><section>
+    <title>lhs_m</title>
+<indexterm><primary>lhs_m</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>lhs_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* Eq::lhs_m</computeroutput></para><para>
+
+<para>The lhs operand of an equality operation. </para>
+</para>
+</section>
+<anchor xml:id="_class_eq_1a94beb3267608e27bc278f3385966b457"/><section>
+    <title>rhs_m</title>
+<indexterm><primary>rhs_m</primary><secondary>Eq</secondary></indexterm>
+<indexterm><primary>Eq</primary><secondary>rhs_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* Eq::rhs_m</computeroutput></para><para>
+
+<para>The rhs operand of an equality operation. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8h">Expr.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8cpp">Expr.cpp</link></section>
+</section>

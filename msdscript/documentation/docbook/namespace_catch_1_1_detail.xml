@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_catch_1_1_detail" xml:lang="en-US">
+<title>Catch::Detail Namespace Reference</title>
+<indexterm><primary>Catch::Detail</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_catch_1_1_detail_1_1_enum_info">EnumInfo</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_catch_1_1_detail_1_1_is_stream_insertable">IsStreamInsertable</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_namespace_catch_1_1_detail_1ac5d6c510e565ee5bddcc2236194ce29e">rawMemoryToString</link> (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">void</link> *<link linkend="_struct_catch_1_1true__given">object</link>, std::size_t size)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para>std::string <link linkend="_namespace_catch_1_1_detail_1a371620ed524abfcae5c3772bf49b563a">rawMemoryToString</link> (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> &amp;<link linkend="_struct_catch_1_1true__given">object</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">E</link> &gt; </para><para>std::string <link linkend="_namespace_catch_1_1_detail_1a242396de537c5176710d680cc9ca6b93">convertUnknownEnumToString</link> (<link linkend="_struct_catch_1_1true__given">E</link> <link linkend="_struct_catch_1_1true__given">e</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para>std::enable_if&lt;!std::is_enum&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value &amp;&amp;!std::is_base_of&lt; std::exception, <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value, std::string &gt;::type <link linkend="_namespace_catch_1_1_detail_1aa4fbd846029625d08378606ffe9ebc3b">convertUnstreamable</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para>std::enable_if&lt;!std::is_enum&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value &amp;&amp;std::is_base_of&lt; std::exception, <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value, std::string &gt;::type <link linkend="_namespace_catch_1_1_detail_1a669969ab020f5a314d6fa97749a99f56">convertUnstreamable</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">ex</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para>std::enable_if&lt; std::is_enum&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value, std::string &gt;::type <link linkend="_namespace_catch_1_1_detail_1af5310e4687d8c000e7911b91164756e6">convertUnstreamable</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;value)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para>std::string <link linkend="_namespace_catch_1_1_detail_1af0ad48344ffd3f92f3568465248a9880">stringify</link> (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> &amp;<link linkend="_struct_catch_1_1true__given">e</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">InputIterator</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Sentinel</link>  = InputIterator&gt; </para><para>std::string <link linkend="_namespace_catch_1_1_detail_1ac954cf158347a76a5b0c3f4fa9a9fa52">rangeToString</link> (<link linkend="_struct_catch_1_1true__given">InputIterator</link> <link linkend="_struct_catch_1_1true__given">first</link>, <link linkend="_struct_catch_1_1true__given">Sentinel</link> <link linkend="_struct_catch_1_1true__given">last</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">const</link> std::string <link linkend="_namespace_catch_1_1_detail_1a466775f4eec29ffef29ab334cd885136">unprintableString</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_catch_1_1_detail_1a242396de537c5176710d680cc9ca6b93"/><section>
+    <title>convertUnknownEnumToString()</title>
+<indexterm><primary>convertUnknownEnumToString</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>convertUnknownEnumToString</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">E</link> &gt; </computeroutput><para><computeroutput>std::string Catch::Detail::convertUnknownEnumToString (<link linkend="_struct_catch_1_1true__given">E</link> e)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_detail_1aa4fbd846029625d08378606ffe9ebc3b"/><section>
+    <title>convertUnstreamable()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>convertUnstreamable</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>convertUnstreamable</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::enable_if&lt;!std::is_enum&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value &amp;&amp;!std::is_base_of&lt; std::exception, <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value, std::string &gt;::type Catch::Detail::convertUnstreamable (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; )</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_detail_1a669969ab020f5a314d6fa97749a99f56"/><section>
+    <title>convertUnstreamable()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>convertUnstreamable</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>convertUnstreamable</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::enable_if&lt;!std::is_enum&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value &amp;&amp;std::is_base_of&lt; std::exception, <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value, std::string &gt;::type Catch::Detail::convertUnstreamable (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; ex)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_detail_1af5310e4687d8c000e7911b91164756e6"/><section>
+    <title>convertUnstreamable()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>convertUnstreamable</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>convertUnstreamable</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::enable_if&lt; std::is_enum&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::value, std::string &gt;::type Catch::Detail::convertUnstreamable (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; value)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_detail_1ac954cf158347a76a5b0c3f4fa9a9fa52"/><section>
+    <title>rangeToString()</title>
+<indexterm><primary>rangeToString</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>rangeToString</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">InputIterator</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Sentinel</link>  = InputIterator&gt; </computeroutput><para><computeroutput>std::string Catch::Detail::rangeToString (<link linkend="_struct_catch_1_1true__given">InputIterator</link> first, <link linkend="_struct_catch_1_1true__given">Sentinel</link> last)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_detail_1a371620ed524abfcae5c3772bf49b563a"/><section>
+    <title>rawMemoryToString()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>rawMemoryToString</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>rawMemoryToString</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::string Catch::Detail::rawMemoryToString (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> &amp; object)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_detail_1ac5d6c510e565ee5bddcc2236194ce29e"/><section>
+    <title>rawMemoryToString()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>rawMemoryToString</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>rawMemoryToString</secondary></indexterm>
+<para><computeroutput>std::string Catch::Detail::rawMemoryToString (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">void</link> * object, std::size_t size)</computeroutput></para></section>
+<anchor xml:id="_namespace_catch_1_1_detail_1af0ad48344ffd3f92f3568465248a9880"/><section>
+    <title>stringify()</title>
+<indexterm><primary>stringify</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>stringify</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::string Catch::Detail::stringify (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> &amp; e)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespace_catch_1_1_detail_1a466775f4eec29ffef29ab334cd885136"/><section>
+    <title>unprintableString</title>
+<indexterm><primary>unprintableString</primary><secondary>Catch::Detail</secondary></indexterm>
+<indexterm><primary>Catch::Detail</primary><secondary>unprintableString</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">const</link> std::string Catch::Detail::unprintableString<computeroutput>[extern]</computeroutput></computeroutput></para></section>
+</section>
+</section>

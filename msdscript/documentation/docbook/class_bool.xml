@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_bool" xml:lang="en-US">
+<title>Bool Class Reference</title>
+<indexterm><primary>Bool</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Expr.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Bool:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_bool.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_bool_1a73573ed4f7afa9bf034a5a2693a98340">Bool</link> (bool val)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_bool_1a7c274a00cd23466262ed5dd53db50fdf">equals</link> (<link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_bool_1a224ccb0f737803d152c1b68aa93fb0a3">interp</link> () override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_bool_1a1d96f8e991401a7becd0d2c1d9dfc992">has_variable</link> () override</para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_bool_1af3c4342df758b1ffbf4deaf7fe1c118d">subst</link> (std::string str, <link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_expr">Expr</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7">to_string</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa">to_pretty_string</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_expr_1aaec6172fa839cafad124775b0a43965b">pretty_print</link> (std::ostream &amp;stream)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_expr_1ab5b1d850f98bb650ef199bb6e90133b7">pretty_print_at</link> (std::ostream &amp;stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp;pos, bool paren)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_bool_1ad2b98d4a41c1a6779269d3cc9d15214e">bool_m</link></para>
+
+<para>The boolean value of the <link linkend="_class_bool">Bool</link> object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_bool_1af4c233f391ed1b40624ff53ace1fae31">print</link> (std::ostream &amp;stream) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_bool_1a73573ed4f7afa9bf034a5a2693a98340"/><section>
+    <title>Bool()</title>
+<indexterm><primary>Bool</primary><secondary>Bool</secondary></indexterm>
+<indexterm><primary>Bool</primary><secondary>Bool</secondary></indexterm>
+<para><computeroutput>Bool::Bool (bool val)<computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_bool_1a7c274a00cd23466262ed5dd53db50fdf"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>Bool</secondary></indexterm>
+<indexterm><primary>Bool</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>bool Bool::equals (<link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1abf9cdb765fb84304881789d273d7594f">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_bool_1a1d96f8e991401a7becd0d2c1d9dfc992"/><section>
+    <title>has_variable()</title>
+<indexterm><primary>has_variable</primary><secondary>Bool</secondary></indexterm>
+<indexterm><primary>Bool</primary><secondary>has_variable</secondary></indexterm>
+<para><computeroutput>bool Bool::has_variable ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a92dc26078993a4b9721ea732274a435c">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_bool_1a224ccb0f737803d152c1b68aa93fb0a3"/><section>
+    <title>interp()</title>
+<indexterm><primary>interp</primary><secondary>Bool</secondary></indexterm>
+<indexterm><primary>Bool</primary><secondary>interp</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * Bool::interp ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa671ba2b665001c815588a7271735104">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_bool_1af4c233f391ed1b40624ff53ace1fae31"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>Bool</secondary></indexterm>
+<indexterm><primary>Bool</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void Bool::print (std::ostream &amp; stream)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a8e34377af275f60532d1ba76e6feaceb">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_bool_1af3c4342df758b1ffbf4deaf7fe1c118d"/><section>
+    <title>subst()</title>
+<indexterm><primary>subst</primary><secondary>Bool</secondary></indexterm>
+<indexterm><primary>Bool</primary><secondary>subst</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * Bool::subst (std::string str, <link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa91f56b56e078594565aeba32c520b7a">Expr</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_bool_1ad2b98d4a41c1a6779269d3cc9d15214e"/><section>
+    <title>bool_m</title>
+<indexterm><primary>bool_m</primary><secondary>Bool</secondary></indexterm>
+<indexterm><primary>Bool</primary><secondary>bool_m</secondary></indexterm>
+<para><computeroutput>bool Bool::bool_m</computeroutput></para><para>
+
+<para>The boolean value of the <link linkend="_class_bool">Bool</link> object. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8h">Expr.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8cpp">Expr.cpp</link></section>
+</section>

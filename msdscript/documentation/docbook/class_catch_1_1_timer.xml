@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_timer" xml:lang="en-US">
+<title>Catch::Timer Class Reference</title>
+<indexterm><primary>Catch::Timer</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_timer_1a0a56e879e43f36c102bf9ea8b5fc8b72">start</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_timer_1a57be5d17ca868a2d6fb1eea84de665cf">getElapsedNanoseconds</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">uint64_t</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_timer_1a545de17a61a6fee1dbe3de5b0723e5fa">getElapsedMicroseconds</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">uint64_t</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_timer_1a30aaf458dbb59dd8ac8971c9c62e0eac">getElapsedMilliseconds</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_timer_1a065e37e3c9eb16bd4dcf41971d8deedc">getElapsedSeconds</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">double</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">uint64_t</link> <link linkend="_class_catch_1_1_timer_1ac13c1ef867cc3b9f942032d5ed79c2a7">m_nanoseconds</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_timer_1a545de17a61a6fee1dbe3de5b0723e5fa"/><section>
+    <title>getElapsedMicroseconds()</title>
+<indexterm><primary>getElapsedMicroseconds</primary><secondary>Catch::Timer</secondary></indexterm>
+<indexterm><primary>Catch::Timer</primary><secondary>getElapsedMicroseconds</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> Catch::Timer::getElapsedMicroseconds ( ) const -&gt;  <link linkend="_struct_catch_1_1true__given">uint64_t</link></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_timer_1a30aaf458dbb59dd8ac8971c9c62e0eac"/><section>
+    <title>getElapsedMilliseconds()</title>
+<indexterm><primary>getElapsedMilliseconds</primary><secondary>Catch::Timer</secondary></indexterm>
+<indexterm><primary>Catch::Timer</primary><secondary>getElapsedMilliseconds</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> Catch::Timer::getElapsedMilliseconds ( ) const -&gt;  <link linkend="_struct_catch_1_1true__given">unsigned</link> <link linkend="_struct_catch_1_1true__given">int</link></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_timer_1a57be5d17ca868a2d6fb1eea84de665cf"/><section>
+    <title>getElapsedNanoseconds()</title>
+<indexterm><primary>getElapsedNanoseconds</primary><secondary>Catch::Timer</secondary></indexterm>
+<indexterm><primary>Catch::Timer</primary><secondary>getElapsedNanoseconds</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> Catch::Timer::getElapsedNanoseconds ( ) const -&gt;  <link linkend="_struct_catch_1_1true__given">uint64_t</link></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_timer_1a065e37e3c9eb16bd4dcf41971d8deedc"/><section>
+    <title>getElapsedSeconds()</title>
+<indexterm><primary>getElapsedSeconds</primary><secondary>Catch::Timer</secondary></indexterm>
+<indexterm><primary>Catch::Timer</primary><secondary>getElapsedSeconds</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> Catch::Timer::getElapsedSeconds ( ) const -&gt;  <link linkend="_struct_catch_1_1true__given">double</link></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_timer_1a0a56e879e43f36c102bf9ea8b5fc8b72"/><section>
+    <title>start()</title>
+<indexterm><primary>start</primary><secondary>Catch::Timer</secondary></indexterm>
+<indexterm><primary>Catch::Timer</primary><secondary>start</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::Timer::start ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_timer_1ac13c1ef867cc3b9f942032d5ed79c2a7"/><section>
+    <title>m_nanoseconds</title>
+<indexterm><primary>m_nanoseconds</primary><secondary>Catch::Timer</secondary></indexterm>
+<indexterm><primary>Catch::Timer</primary><secondary>m_nanoseconds</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">uint64_t</link> Catch::Timer::m_nanoseconds = 0<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

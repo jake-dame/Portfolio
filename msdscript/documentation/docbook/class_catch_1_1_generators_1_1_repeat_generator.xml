@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_generators_1_1_repeat_generator" xml:lang="en-US">
+<title>Catch::Generators::RepeatGenerator&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Generators::RepeatGenerator&lt; T &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_generators_1_1_repeat_generator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_repeat_generator_1a3aee12c4f9c2c04823ca3c75a20f234f">RepeatGenerator</link> (<link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_struct_catch_1_1true__given">repeats</link>, <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; &amp;&amp;<link linkend="_struct_catch_1_1true__given">generator</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_repeat_generator_1a1b5a4018df276b05dc48e5fa0bcd3d28">get</link> () <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_repeat_generator_1a24d5c2b1c09d6d220d4bd4c83f222dcb">next</link> () <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1afe5b6eecbbd735e69748d68574611747">~IGenerator</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base">Catch::Generators::GeneratorUntypedBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a00ff0179d739c3016756b6cf56fabbad">GeneratorUntypedBase</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a6f05f8099fdc5744a7aff68aa8c09c7f">~GeneratorUntypedBase</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_class_catch_1_1_generators_1_1_repeat_generator_1ae4eeba772ffba6d928f959835e8db154">m_generator</link></para>
+</listitem>
+            <listitem><para>std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_class_catch_1_1_generators_1_1_repeat_generator_1aee4c7a8c54c739f2fea75c01b02ccc6e">m_returned</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_generators_1_1_repeat_generator_1af73981a50e1e1438d0159ac0b55a84bf">m_target_repeats</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_generators_1_1_repeat_generator_1ad834535fe3a2aec44bf53632c43f68cf">m_current_repeat</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_generators_1_1_repeat_generator_1ab311143cc38451a21de61f444fbc7cf6">m_repeat_index</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Types inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">using</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a1f8677875fe0ff31f39c60d45504b9a5">type</link> = <link linkend="_struct_catch_1_1true__given">T</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_repeat_generator_1a3aee12c4f9c2c04823ca3c75a20f234f"/><section>
+    <title>RepeatGenerator()</title>
+<indexterm><primary>RepeatGenerator</primary><secondary>Catch::Generators::RepeatGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary><secondary>RepeatGenerator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_repeat_generator">Catch::Generators::RepeatGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::RepeatGenerator (<link linkend="_struct_catch_1_1true__given">size_t</link> repeats, <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; &amp;&amp; generator)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_repeat_generator_1a1b5a4018df276b05dc48e5fa0bcd3d28"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>Catch::Generators::RepeatGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary><secondary>get</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_generators_1_1_repeat_generator">Catch::Generators::RepeatGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::get ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a0fb6da789cda5b4e90f036737db82485">Catch::Generators::IGenerator&lt; T &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_repeat_generator_1a24d5c2b1c09d6d220d4bd4c83f222dcb"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>Catch::Generators::RepeatGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary><secondary>next</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_repeat_generator">Catch::Generators::RepeatGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::next ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1aeed3c0cd6233c5f553549e453b8d6638">Catch::Generators::GeneratorUntypedBase</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_repeat_generator_1ad834535fe3a2aec44bf53632c43f68cf"/><section>
+    <title>m_current_repeat</title>
+<indexterm><primary>m_current_repeat</primary><secondary>Catch::Generators::RepeatGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary><secondary>m_current_repeat</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_generators_1_1_repeat_generator">Catch::Generators::RepeatGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_current_repeat = 0<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_repeat_generator_1ae4eeba772ffba6d928f959835e8db154"/><section>
+    <title>m_generator</title>
+<indexterm><primary>m_generator</primary><secondary>Catch::Generators::RepeatGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary><secondary>m_generator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt;<link linkend="_struct_catch_1_1true__given">T</link>&gt; <link linkend="_class_catch_1_1_generators_1_1_repeat_generator">Catch::Generators::RepeatGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_generator<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_repeat_generator_1ab311143cc38451a21de61f444fbc7cf6"/><section>
+    <title>m_repeat_index</title>
+<indexterm><primary>m_repeat_index</primary><secondary>Catch::Generators::RepeatGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary><secondary>m_repeat_index</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_generators_1_1_repeat_generator">Catch::Generators::RepeatGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_repeat_index = 0<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_repeat_generator_1aee4c7a8c54c739f2fea75c01b02ccc6e"/><section>
+    <title>m_returned</title>
+<indexterm><primary>m_returned</primary><secondary>Catch::Generators::RepeatGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary><secondary>m_returned</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::vector&lt;<link linkend="_struct_catch_1_1true__given">T</link>&gt; <link linkend="_class_catch_1_1_generators_1_1_repeat_generator">Catch::Generators::RepeatGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_returned<computeroutput>[mutable]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_repeat_generator_1af73981a50e1e1438d0159ac0b55a84bf"/><section>
+    <title>m_target_repeats</title>
+<indexterm><primary>m_target_repeats</primary><secondary>Catch::Generators::RepeatGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RepeatGenerator&lt; T &gt;</primary><secondary>m_target_repeats</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_generators_1_1_repeat_generator">Catch::Generators::RepeatGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_target_repeats<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

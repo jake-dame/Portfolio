@@ -1,0 +1,159 @@
+\doxysection{Mult Class Reference}
+\hypertarget{class_mult}{}\label{class_mult}\index{Mult@{Mult}}
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Mult\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mult}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mult_ace9998f1dc023823e04c15bb359ea79c}{Mult}} (\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}lhs, \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}rhs)
+\item 
+bool \mbox{\hyperlink{class_mult_aa64da9a8fc6b019f8a2db6f813d9a4e6}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mult_aa09b9a90e7157c3525e9a13f2080c5cc}{interp}} () override
+\item 
+bool \mbox{\hyperlink{class_mult_a214c39d71da10d21bdbd7fbc70032357}{has\+\_\+variable}} () override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mult_a883d3fed96b83a96469d98da20cd6bdc}{subst}} (std\+::string str, \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}e) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_expr}{Expr}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_expr_abe130f37bd185ec13c5113de16fc7bf7}{to\+\_\+string}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_expr_a6ad7c18234f22d96d6917089b5bd7caa}{to\+\_\+pretty\+\_\+string}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mult_a3653b8cda171d6b1dc9051c2c3e6c3d7}{lhs\+\_\+m}}
+\begin{DoxyCompactList}\small\item\em The lhs operand of a multiplication operation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mult_a92f9f099f39bfc5490b3e6dda7c6eb6f}{rhs\+\_\+m}}
+\begin{DoxyCompactList}\small\item\em The rhs operand of an multiplication operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mult_a551533c867f54958b4b782331cc69270}{print}} (std\+::ostream \&stream) override
+\item 
+void \mbox{\hyperlink{class_mult_a3eba746088e84dc93eea8a70da1a76eb}{pretty\+\_\+print}} (std\+::ostream \&stream) override
+\item 
+void \mbox{\hyperlink{class_mult_a4ddbbb07eaa2667cfb1a9cba82e79a2e}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&stream, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} p, std\+::streampos \&pos, bool paren) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mult_ace9998f1dc023823e04c15bb359ea79c}\label{class_mult_ace9998f1dc023823e04c15bb359ea79c} 
+\index{Mult@{Mult}!Mult@{Mult}}
+\index{Mult@{Mult}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{Mult()}{Mult()}}
+{\footnotesize\ttfamily Mult\+::\+Mult (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{lhs,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{rhs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mult_aa64da9a8fc6b019f8a2db6f813d9a4e6}\label{class_mult_aa64da9a8fc6b019f8a2db6f813d9a4e6} 
+\index{Mult@{Mult}!equals@{equals}}
+\index{equals@{equals}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Mult\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{Expr}}.
+
+\Hypertarget{class_mult_a214c39d71da10d21bdbd7fbc70032357}\label{class_mult_a214c39d71da10d21bdbd7fbc70032357} 
+\index{Mult@{Mult}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool Mult\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{Expr}}.
+
+\Hypertarget{class_mult_aa09b9a90e7157c3525e9a13f2080c5cc}\label{class_mult_aa09b9a90e7157c3525e9a13f2080c5cc} 
+\index{Mult@{Mult}!interp@{interp}}
+\index{interp@{interp}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} \texorpdfstring{$\ast$}{*} Mult\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{Expr}}.
+
+\Hypertarget{class_mult_a3eba746088e84dc93eea8a70da1a76eb}\label{class_mult_a3eba746088e84dc93eea8a70da1a76eb} 
+\index{Mult@{Mult}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily void Mult\+::pretty\+\_\+print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_expr_aaec6172fa839cafad124775b0a43965b}{Expr}}.
+
+\Hypertarget{class_mult_a4ddbbb07eaa2667cfb1a9cba82e79a2e}\label{class_mult_a4ddbbb07eaa2667cfb1a9cba82e79a2e} 
+\index{Mult@{Mult}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Mult\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{p,  }\item[{std\+::streampos \&}]{pos,  }\item[{bool}]{paren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_expr_ab5b1d850f98bb650ef199bb6e90133b7}{Expr}}.
+
+\Hypertarget{class_mult_a551533c867f54958b4b782331cc69270}\label{class_mult_a551533c867f54958b4b782331cc69270} 
+\index{Mult@{Mult}!print@{print}}
+\index{print@{print}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Mult\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a8e34377af275f60532d1ba76e6feaceb}{Expr}}.
+
+\Hypertarget{class_mult_a883d3fed96b83a96469d98da20cd6bdc}\label{class_mult_a883d3fed96b83a96469d98da20cd6bdc} 
+\index{Mult@{Mult}!subst@{subst}}
+\index{subst@{subst}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} Mult\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_aa91f56b56e078594565aeba32c520b7a}{Expr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_mult_a3653b8cda171d6b1dc9051c2c3e6c3d7}\label{class_mult_a3653b8cda171d6b1dc9051c2c3e6c3d7} 
+\index{Mult@{Mult}!lhs\_m@{lhs\_m}}
+\index{lhs\_m@{lhs\_m}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{lhs\_m}{lhs\_m}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}\texorpdfstring{$\ast$}{*} Mult\+::lhs\+\_\+m}
+
+
+
+The lhs operand of a multiplication operation. 
+
+\Hypertarget{class_mult_a92f9f099f39bfc5490b3e6dda7c6eb6f}\label{class_mult_a92f9f099f39bfc5490b3e6dda7c6eb6f} 
+\index{Mult@{Mult}!rhs\_m@{rhs\_m}}
+\index{rhs\_m@{rhs\_m}!Mult@{Mult}}
+\doxysubsubsection{\texorpdfstring{rhs\_m}{rhs\_m}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}\texorpdfstring{$\ast$}{*} Mult\+::rhs\+\_\+m}
+
+
+
+The rhs operand of an multiplication operation. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/src/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_wait_for_keypress" xml:lang="en-US">
+<title>Catch::WaitForKeypress Struct Reference</title>
+<indexterm><primary>Catch::WaitForKeypress</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399ba">When</link> { <link linkend="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399baa3a78e4f64675e7ce54ffd29e6109f1ce">Never</link>
+, <link linkend="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399baaba7f6d9b2377122a118b371ab7ae3185">BeforeStart</link> = 1
+, <link linkend="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399baad6c3e4a5797b7ee0a812e4fc88128983">BeforeExit</link> = 2
+, <link linkend="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399baae8beb496b712aef908028a7cbfdd0c46">BeforeStartAndExit</link> = BeforeStart | BeforeExit
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399ba"/><section>
+    <title>When</title>
+<indexterm><primary>When</primary><secondary>Catch::WaitForKeypress</secondary></indexterm>
+<indexterm><primary>Catch::WaitForKeypress</primary><secondary>When</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">enum</link> <link linkend="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399ba">Catch::WaitForKeypress::When</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Never</primary><secondary>Catch::WaitForKeypress</secondary></indexterm>
+<indexterm><primary>Catch::WaitForKeypress</primary><secondary>Never</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399baa3a78e4f64675e7ce54ffd29e6109f1ce"/>Never</entry><entry></entry></row><row><entry><indexterm><primary>BeforeStart</primary><secondary>Catch::WaitForKeypress</secondary></indexterm>
+<indexterm><primary>Catch::WaitForKeypress</primary><secondary>BeforeStart</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399baaba7f6d9b2377122a118b371ab7ae3185"/>BeforeStart</entry><entry></entry></row><row><entry><indexterm><primary>BeforeExit</primary><secondary>Catch::WaitForKeypress</secondary></indexterm>
+<indexterm><primary>Catch::WaitForKeypress</primary><secondary>BeforeExit</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399baad6c3e4a5797b7ee0a812e4fc88128983"/>BeforeExit</entry><entry></entry></row><row><entry><indexterm><primary>BeforeStartAndExit</primary><secondary>Catch::WaitForKeypress</secondary></indexterm>
+<indexterm><primary>Catch::WaitForKeypress</primary><secondary>BeforeStartAndExit</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_wait_for_keypress_1a2e8c4369d0a605d64e3e83b5af3399baae8beb496b712aef908028a7cbfdd0c46"/>BeforeStartAndExit</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

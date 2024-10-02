@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_generators_1_1_generator_wrapper" xml:lang="en-US">
+<title>Catch::Generators::GeneratorWrapper&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Generators::GeneratorWrapper&lt; T &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper_1ad65b09392d8b3a7472a8b5375048748d">GeneratorWrapper</link> (std::unique_ptr&lt; <link linkend="_struct_catch_1_1_generators_1_1_i_generator">IGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; &gt; <link linkend="_struct_catch_1_1true__given">generator</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper_1a4a461a591d0bd5360a2745cb2b5011cc">get</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper_1acbfdca94811ae02461bd2cf5f60b666e">next</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::unique_ptr&lt; <link linkend="_struct_catch_1_1_generators_1_1_i_generator">IGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; &gt; <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper_1a8f35291599183b36e4c5af78e17d3a8c">m_generator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_generator_wrapper_1ad65b09392d8b3a7472a8b5375048748d"/><section>
+    <title>GeneratorWrapper()</title>
+<indexterm><primary>GeneratorWrapper</primary><secondary>Catch::Generators::GeneratorWrapper&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::GeneratorWrapper&lt; T &gt;</primary><secondary>GeneratorWrapper</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">Catch::Generators::GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::GeneratorWrapper (std::unique_ptr&lt; <link linkend="_struct_catch_1_1_generators_1_1_i_generator">IGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; &gt; generator)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_generator_wrapper_1a4a461a591d0bd5360a2745cb2b5011cc"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>Catch::Generators::GeneratorWrapper&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::GeneratorWrapper&lt; T &gt;</primary><secondary>get</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">Catch::Generators::GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::get ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_generator_wrapper_1acbfdca94811ae02461bd2cf5f60b666e"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>Catch::Generators::GeneratorWrapper&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::GeneratorWrapper&lt; T &gt;</primary><secondary>next</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">Catch::Generators::GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::next ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_generator_wrapper_1a8f35291599183b36e4c5af78e17d3a8c"/><section>
+    <title>m_generator</title>
+<indexterm><primary>m_generator</primary><secondary>Catch::Generators::GeneratorWrapper&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::GeneratorWrapper&lt; T &gt;</primary><secondary>m_generator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::unique_ptr&lt;<link linkend="_struct_catch_1_1_generators_1_1_i_generator">IGenerator</link>&lt;<link linkend="_struct_catch_1_1true__given">T</link>&gt; &gt; <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">Catch::Generators::GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_generator<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

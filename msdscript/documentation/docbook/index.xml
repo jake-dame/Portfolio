@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>msdscript</title>
+    </info>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_add.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_bool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_bool_val.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_eq.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_expr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_if.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_let.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_mult.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_num.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_num_val.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_val.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_var.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="cmdline_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cmdline_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cmdline_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_expr_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_expr_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_expr_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="parse_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="parse_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="parse_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_val_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_val_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_val_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="test__msdscript_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

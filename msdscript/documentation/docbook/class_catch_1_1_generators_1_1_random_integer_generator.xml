@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_generators_1_1_random_integer_generator" xml:lang="en-US">
+<title>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_generators_1_1_random_integer_generator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_random_integer_generator_1a886d16c899ad70781b83a0e8f9d2cf96">RandomIntegerGenerator</link> (<link linkend="_struct_catch_1_1true__given">Integer</link> <link linkend="_struct_catch_1_1true__given">a</link>, <link linkend="_struct_catch_1_1true__given">Integer</link> <link linkend="_struct_catch_1_1true__given">b</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">Integer</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator_1af160cf856809beca4503491481a4865e">get</link> () <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator_1aaa3db70fbdfa3e8dcb61fb5592eba81f">next</link> () <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; Integer &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1afe5b6eecbbd735e69748d68574611747">~IGenerator</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base">Catch::Generators::GeneratorUntypedBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a00ff0179d739c3016756b6cf56fabbad">GeneratorUntypedBase</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a6f05f8099fdc5744a7aff68aa8c09c7f">~GeneratorUntypedBase</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_simple_pcg32">Catch::SimplePcg32</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator_1af561ef07b93877d15a9af5e5fe19ea13">m_rng</link></para>
+</listitem>
+            <listitem><para>std::uniform_int_distribution&lt; <link linkend="_struct_catch_1_1true__given">Integer</link> &gt; <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator_1a0f9a8e409e291c332ebba1667cdc90fe">m_dist</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">Integer</link> <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator_1a1b811ebf04416b6b822ce153b040f020">m_current_number</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Types inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; Integer &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">using</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a1f8677875fe0ff31f39c60d45504b9a5">type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_integer_generator_1a886d16c899ad70781b83a0e8f9d2cf96"/><section>
+    <title>RandomIntegerGenerator()</title>
+<indexterm><primary>RandomIntegerGenerator</primary><secondary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</primary><secondary>RandomIntegerGenerator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Integer</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_random_integer_generator">Catch::Generators::RandomIntegerGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Integer</link> &gt;::RandomIntegerGenerator (<link linkend="_struct_catch_1_1true__given">Integer</link> a, <link linkend="_struct_catch_1_1true__given">Integer</link> b)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_integer_generator_1af160cf856809beca4503491481a4865e"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</primary><secondary>get</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Integer</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">Integer</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator">Catch::Generators::RandomIntegerGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Integer</link> &gt;::get ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a0fb6da789cda5b4e90f036737db82485">Catch::Generators::IGenerator&lt; Integer &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_integer_generator_1aaa3db70fbdfa3e8dcb61fb5592eba81f"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</primary><secondary>next</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Integer</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator">Catch::Generators::RandomIntegerGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Integer</link> &gt;::next ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1aeed3c0cd6233c5f553549e453b8d6638">Catch::Generators::GeneratorUntypedBase</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_integer_generator_1a1b811ebf04416b6b822ce153b040f020"/><section>
+    <title>m_current_number</title>
+<indexterm><primary>m_current_number</primary><secondary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</primary><secondary>m_current_number</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Integer</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">Integer</link> <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator">Catch::Generators::RandomIntegerGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Integer</link> &gt;::m_current_number<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_integer_generator_1a0f9a8e409e291c332ebba1667cdc90fe"/><section>
+    <title>m_dist</title>
+<indexterm><primary>m_dist</primary><secondary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</primary><secondary>m_dist</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Integer</link> &gt; </computeroutput><para><computeroutput>std::uniform_int_distribution&lt;<link linkend="_struct_catch_1_1true__given">Integer</link>&gt; <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator">Catch::Generators::RandomIntegerGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Integer</link> &gt;::m_dist<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_random_integer_generator_1af561ef07b93877d15a9af5e5fe19ea13"/><section>
+    <title>m_rng</title>
+<indexterm><primary>m_rng</primary><secondary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</primary><secondary>m_rng</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Integer</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_simple_pcg32">Catch::SimplePcg32</link>&amp; <link linkend="_class_catch_1_1_generators_1_1_random_integer_generator">Catch::Generators::RandomIntegerGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">Integer</link> &gt;::m_rng<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

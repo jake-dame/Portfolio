@@ -1,0 +1,2192 @@
+################################################################################
+	ERROR REPORT FOR:
+
+		/Users/u0858882/Desktop/msdscript/test_msdscript/testers/msdscript
+		 and 
+		/Users/u0858882/Desktop/msdscript/test_msdscript/testers/msdscript2
+
+	FAILED CHECKS: exception thrown in test_msdscript
+
+	Tue Feb 27 22:14:05 2024
+################################################################################
+################################################################################
+	CHECK 0/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eJaGlvJjPW = -7192 * _let Nz = 8472 + 3074 + 3770 _in Nz + 3767 _in eJaGlvJjPW + 9886
+
+[OUTPUT]
+-137235050
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eJaGlvJjPW = -7192 * _let Nz = 8472 + 3074 + 3770 _in Nz + 3767 _in eJaGlvJjPW + 9886
+
+[OUTPUT]
+21777
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eJaGlvJjPW = -7192 * _let Nz = 8472 + 3074 + 3770 _in Nz + 3767 _in eJaGlvJjPW + 9886
+
+[OUTPUT]
+(_let eJaGlvJjPW=(-7192*(_let Nz=(8472+(3074+3770)) _in (Nz+3767))) _in (eJaGlvJjPW+9886))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eJaGlvJjPW = -7192 * _let Nz = 8472 + 3074 + 3770 _in Nz + 3767 _in eJaGlvJjPW + 9886
+
+[OUTPUT]
+(_let eJaGlvJjPW=(-7192*(_let Nz=(8472+(3074+3770)) _in (Nz+3767))) _in (eJaGlvJjPW+9886))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eJaGlvJjPW = -7192 * _let Nz = 8472 + 3074 + 3770 _in Nz + 3767 _in eJaGlvJjPW + 9886
+
+[OUTPUT]
+_let eJaGlvJjPW = -7192 * (_let Nz = 8472 + 3074 + 3770
+                            _in  Nz + 3767)
+ _in  eJaGlvJjPW + 9886
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eJaGlvJjPW = -7192 * _let Nz = 8472 + 3074 + 3770 _in Nz + 3767 _in eJaGlvJjPW + 9886
+
+[OUTPUT]
+_let eJaGlvJjPW = -7192 * _let Nz = 8472 + 3074 + 3770
+                          _in  Nz + 3767
+_in  eJaGlvJjPW + 9886
+
+
+ERR: ~
+################################################################################
+	CHECK 1/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+-7785 * _let YJjqDITT = 2910 _in YJjqDITT + 6150 + 7554 * 6686 * 5663
+
+[OUTPUT]
+-1201235432
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+-7785 * _let YJjqDITT = 2910 _in YJjqDITT + 6150 + 7554 * 6686 * 5663
+
+[OUTPUT]
+21178
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7785 * _let YJjqDITT = 2910 _in YJjqDITT + 6150 + 7554 * 6686 * 5663
+
+[OUTPUT]
+(-7785*(_let YJjqDITT=2910 _in (YJjqDITT+(6150+(7554*(6686*5663))))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7785 * _let YJjqDITT = 2910 _in YJjqDITT + 6150 + 7554 * 6686 * 5663
+
+[OUTPUT]
+(-7785*(_let YJjqDITT=2910 _in (YJjqDITT+(6150+(7554*(6686*5663))))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7785 * _let YJjqDITT = 2910 _in YJjqDITT + 6150 + 7554 * 6686 * 5663
+
+[OUTPUT]
+-7785 * (_let YJjqDITT = 2910
+          _in  YJjqDITT + 6150 + 7554 * 6686 * 5663)
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7785 * _let YJjqDITT = 2910 _in YJjqDITT + 6150 + 7554 * 6686 * 5663
+
+[OUTPUT]
+-7785 * _let YJjqDITT = 2910
+        _in  YJjqDITT + 6150 + 7554 * 6686 * 5663
+
+
+ERR: ~
+################################################################################
+	CHECK 2/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+-6441 + _let gUH = -8699 + _let leSnfHNG = 4769 _in leSnfHNG + 333 _in gUH + 933
+
+[OUTPUT]
+-9105
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+-6441 + _let gUH = -8699 + _let leSnfHNG = 4769 _in leSnfHNG + 333 _in gUH + 933
+
+[OUTPUT]
+-9105
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+-6441 + _let gUH = -8699 + _let leSnfHNG = 4769 _in leSnfHNG + 333 _in gUH + 933
+
+[OUTPUT]
+(-6441+(_let gUH=(-8699+(_let leSnfHNG=4769 _in (leSnfHNG+333))) _in (gUH+933)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+-6441 + _let gUH = -8699 + _let leSnfHNG = 4769 _in leSnfHNG + 333 _in gUH + 933
+
+[OUTPUT]
+(-6441+(_let gUH=(-8699+(_let leSnfHNG=4769 _in (leSnfHNG+333))) _in (gUH+933)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+-6441 + _let gUH = -8699 + _let leSnfHNG = 4769 _in leSnfHNG + 333 _in gUH + 933
+
+[OUTPUT]
+-6441 + _let gUH = -8699 + _let leSnfHNG = 4769
+                    _in  leSnfHNG + 333
+         _in  gUH + 933
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+-6441 + _let gUH = -8699 + _let leSnfHNG = 4769 _in leSnfHNG + 333 _in gUH + 933
+
+[OUTPUT]
+-6441 + _let gUH = -8699 + _let leSnfHNG = 4769
+                           _in  leSnfHNG + 333
+        _in  gUH + 933
+
+
+ERR: ~
+################################################################################
+	CHECK 3/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let NhkhrQ = 4094 _in NhkhrQ + -763 + _let O = _let GaPWDM = 5692 _in GaPWDM + 8211 _in O + 7660
+
+[OUTPUT]
+24894
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let NhkhrQ = 4094 _in NhkhrQ + -763 + _let O = _let GaPWDM = 5692 _in GaPWDM + 8211 _in O + 7660
+
+[OUTPUT]
+24894
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let NhkhrQ = 4094 _in NhkhrQ + -763 + _let O = _let GaPWDM = 5692 _in GaPWDM + 8211 _in O + 7660
+
+[OUTPUT]
+(_let NhkhrQ=4094 _in (NhkhrQ+(-763+(_let O=(_let GaPWDM=5692 _in (GaPWDM+8211)) _in (O+7660)))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let NhkhrQ = 4094 _in NhkhrQ + -763 + _let O = _let GaPWDM = 5692 _in GaPWDM + 8211 _in O + 7660
+
+[OUTPUT]
+(_let NhkhrQ=4094 _in (NhkhrQ+(-763+(_let O=(_let GaPWDM=5692 _in (GaPWDM+8211)) _in (O+7660)))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let NhkhrQ = 4094 _in NhkhrQ + -763 + _let O = _let GaPWDM = 5692 _in GaPWDM + 8211 _in O + 7660
+
+[OUTPUT]
+_let NhkhrQ = 4094
+ _in  NhkhrQ + -763 + _let O = _let GaPWDM = 5692
+                              _in  GaPWDM + 8211
+                      _in  O + 7660
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let NhkhrQ = 4094 _in NhkhrQ + -763 + _let O = _let GaPWDM = 5692 _in GaPWDM + 8211 _in O + 7660
+
+[OUTPUT]
+_let NhkhrQ = 4094
+_in  NhkhrQ + -763 + _let O = _let GaPWDM = 5692
+                              _in  GaPWDM + 8211
+                     _in  O + 7660
+
+
+ERR: ~
+################################################################################
+	CHECK 4/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let W = 1508 * 1075 + 837 * 8395 + 5610 _in W + 506 + 1390
+
+[OUTPUT]
+8655221
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let W = 1508 * 1075 + 837 * 8395 + 5610 _in W + 506 + 1390
+
+[OUTPUT]
+19321
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let W = 1508 * 1075 + 837 * 8395 + 5610 _in W + 506 + 1390
+
+[OUTPUT]
+(_let W=((1508*1075)+((837*8395)+5610)) _in (W+(506+1390)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let W = 1508 * 1075 + 837 * 8395 + 5610 _in W + 506 + 1390
+
+[OUTPUT]
+(_let W=((1508*1075)+((837*8395)+5610)) _in (W+(506+1390)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let W = 1508 * 1075 + 837 * 8395 + 5610 _in W + 506 + 1390
+
+[OUTPUT]
+_let W = 1508 * 1075 + 837 * 8395 + 5610
+ _in  W + 506 + 1390
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let W = 1508 * 1075 + 837 * 8395 + 5610 _in W + 506 + 1390
+
+[OUTPUT]
+_let W = 1508 * 1075 + 837 * 8395 + 5610
+_in  W + 506 + 1390
+
+
+ERR: ~
+################################################################################
+	CHECK 5/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+4386
+
+[OUTPUT]
+4386
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+4386
+
+[OUTPUT]
+4386
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+4386
+
+[OUTPUT]
+4386
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+4386
+
+[OUTPUT]
+4386
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+4386
+
+[OUTPUT]
+4386
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+4386
+
+[OUTPUT]
+4386
+
+
+ERR: ~
+################################################################################
+	CHECK 6/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let xIB = _let gjJfLBLG = _let ufu = _let xFWOS = 2944 _in xFWOS + 2047 _in ufu + 2075 + 1375 _in gjJfLBLG + 9457 _in xIB + 2137 + 5016
+
+[OUTPUT]
+25051
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let xIB = _let gjJfLBLG = _let ufu = _let xFWOS = 2944 _in xFWOS + 2047 _in ufu + 2075 + 1375 _in gjJfLBLG + 9457 _in xIB + 2137 + 5016
+
+[OUTPUT]
+25051
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let xIB = _let gjJfLBLG = _let ufu = _let xFWOS = 2944 _in xFWOS + 2047 _in ufu + 2075 + 1375 _in gjJfLBLG + 9457 _in xIB + 2137 + 5016
+
+[OUTPUT]
+(_let xIB=(_let gjJfLBLG=(_let ufu=(_let xFWOS=2944 _in (xFWOS+2047)) _in (ufu+(2075+1375))) _in (gjJfLBLG+9457)) _in (xIB+(2137+5016)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let xIB = _let gjJfLBLG = _let ufu = _let xFWOS = 2944 _in xFWOS + 2047 _in ufu + 2075 + 1375 _in gjJfLBLG + 9457 _in xIB + 2137 + 5016
+
+[OUTPUT]
+(_let xIB=(_let gjJfLBLG=(_let ufu=(_let xFWOS=2944 _in (xFWOS+2047)) _in (ufu+(2075+1375))) _in (gjJfLBLG+9457)) _in (xIB+(2137+5016)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let xIB = _let gjJfLBLG = _let ufu = _let xFWOS = 2944 _in xFWOS + 2047 _in ufu + 2075 + 1375 _in gjJfLBLG + 9457 _in xIB + 2137 + 5016
+
+[OUTPUT]
+_let xIB = _let gjJfLBLG = _let ufu = _let xFWOS = 2944
+                       _in  xFWOS + 2047
+                 _in  ufu + 2075 + 1375
+            _in  gjJfLBLG + 9457
+ _in  xIB + 2137 + 5016
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let xIB = _let gjJfLBLG = _let ufu = _let xFWOS = 2944 _in xFWOS + 2047 _in ufu + 2075 + 1375 _in gjJfLBLG + 9457 _in xIB + 2137 + 5016
+
+[OUTPUT]
+_let xIB = _let gjJfLBLG = _let ufu = _let xFWOS = 2944
+                                      _in  xFWOS + 2047
+                           _in  ufu + 2075 + 1375
+           _in  gjJfLBLG + 9457
+_in  xIB + 2137 + 5016
+
+
+ERR: ~
+################################################################################
+	CHECK 7/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+3366
+
+[OUTPUT]
+3366
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+3366
+
+[OUTPUT]
+3366
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+3366
+
+[OUTPUT]
+3366
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+3366
+
+[OUTPUT]
+3366
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+3366
+
+[OUTPUT]
+3366
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+3366
+
+[OUTPUT]
+3366
+
+
+ERR: ~
+################################################################################
+	CHECK 8/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+2199 + -5099
+
+[OUTPUT]
+-2900
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+2199 + -5099
+
+[OUTPUT]
+-2900
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+2199 + -5099
+
+[OUTPUT]
+(2199+-5099)
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+2199 + -5099
+
+[OUTPUT]
+(2199+-5099)
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+2199 + -5099
+
+[OUTPUT]
+2199 + -5099
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+2199 + -5099
+
+[OUTPUT]
+2199 + -5099
+
+
+ERR: ~
+################################################################################
+	CHECK 9/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+-7185 * _let vfLTI = 8244 + 3810 * 7048 _in vfLTI + 2581 * 4111
+
+[OUTPUT]
+1349385873
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+-7185 * _let vfLTI = 8244 + 3810 * 7048 _in vfLTI + 2581 * 4111
+
+[OUTPUT]
+18609
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7185 * _let vfLTI = 8244 + 3810 * 7048 _in vfLTI + 2581 * 4111
+
+[OUTPUT]
+(-7185*(_let vfLTI=(8244+(3810*7048)) _in (vfLTI+(2581*4111))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7185 * _let vfLTI = 8244 + 3810 * 7048 _in vfLTI + 2581 * 4111
+
+[OUTPUT]
+(-7185*(_let vfLTI=(8244+(3810*7048)) _in (vfLTI+(2581*4111))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7185 * _let vfLTI = 8244 + 3810 * 7048 _in vfLTI + 2581 * 4111
+
+[OUTPUT]
+-7185 * (_let vfLTI = 8244 + 3810 * 7048
+          _in  vfLTI + 2581 * 4111)
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7185 * _let vfLTI = 8244 + 3810 * 7048 _in vfLTI + 2581 * 4111
+
+[OUTPUT]
+-7185 * _let vfLTI = 8244 + 3810 * 7048
+        _in  vfLTI + 2581 * 4111
+
+
+ERR: ~
+################################################################################
+	CHECK 10/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ESeV = _let z = 4886 * 7468 + 1142 _in z + 1741 + 3514 * 776 _in ESeV + 8041
+
+[OUTPUT]
+39226436
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ESeV = _let z = 4886 * 7468 + 1142 _in z + 1741 + 3514 * 776 _in ESeV + 8041
+
+[OUTPUT]
+27568
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ESeV = _let z = 4886 * 7468 + 1142 _in z + 1741 + 3514 * 776 _in ESeV + 8041
+
+[OUTPUT]
+(_let ESeV=(_let z=((4886*7468)+1142) _in (z+(1741+(3514*776)))) _in (ESeV+8041))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ESeV = _let z = 4886 * 7468 + 1142 _in z + 1741 + 3514 * 776 _in ESeV + 8041
+
+[OUTPUT]
+(_let ESeV=(_let z=((4886*7468)+1142) _in (z+(1741+(3514*776)))) _in (ESeV+8041))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ESeV = _let z = 4886 * 7468 + 1142 _in z + 1741 + 3514 * 776 _in ESeV + 8041
+
+[OUTPUT]
+_let ESeV = _let z = 4886 * 7468 + 1142
+             _in  z + 1741 + 3514 * 776
+ _in  ESeV + 8041
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ESeV = _let z = 4886 * 7468 + 1142 _in z + 1741 + 3514 * 776 _in ESeV + 8041
+
+[OUTPUT]
+_let ESeV = _let z = 4886 * 7468 + 1142
+            _in  z + 1741 + 3514 * 776
+_in  ESeV + 8041
+
+
+ERR: ~
+################################################################################
+	CHECK 11/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let z = _let HVB = 4510 + _let xpkKjQofxG = 4054 _in xpkKjQofxG + 687 + 4805 _in HVB + 7242 _in z + 780
+
+[OUTPUT]
+22078
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let z = _let HVB = 4510 + _let xpkKjQofxG = 4054 _in xpkKjQofxG + 687 + 4805 _in HVB + 7242 _in z + 780
+
+[OUTPUT]
+22078
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let z = _let HVB = 4510 + _let xpkKjQofxG = 4054 _in xpkKjQofxG + 687 + 4805 _in HVB + 7242 _in z + 780
+
+[OUTPUT]
+(_let z=(_let HVB=(4510+(_let xpkKjQofxG=4054 _in (xpkKjQofxG+(687+4805)))) _in (HVB+7242)) _in (z+780))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let z = _let HVB = 4510 + _let xpkKjQofxG = 4054 _in xpkKjQofxG + 687 + 4805 _in HVB + 7242 _in z + 780
+
+[OUTPUT]
+(_let z=(_let HVB=(4510+(_let xpkKjQofxG=4054 _in (xpkKjQofxG+(687+4805)))) _in (HVB+7242)) _in (z+780))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let z = _let HVB = 4510 + _let xpkKjQofxG = 4054 _in xpkKjQofxG + 687 + 4805 _in HVB + 7242 _in z + 780
+
+[OUTPUT]
+_let z = _let HVB = 4510 + _let xpkKjQofxG = 4054
+                   _in  xpkKjQofxG + 687 + 4805
+          _in  HVB + 7242
+ _in  z + 780
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let z = _let HVB = 4510 + _let xpkKjQofxG = 4054 _in xpkKjQofxG + 687 + 4805 _in HVB + 7242 _in z + 780
+
+[OUTPUT]
+_let z = _let HVB = 4510 + _let xpkKjQofxG = 4054
+                           _in  xpkKjQofxG + 687 + 4805
+         _in  HVB + 7242
+_in  z + 780
+
+
+ERR: ~
+################################################################################
+	CHECK 12/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+-7816
+
+[OUTPUT]
+-7816
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+-7816
+
+[OUTPUT]
+-7816
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7816
+
+[OUTPUT]
+-7816
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7816
+
+[OUTPUT]
+-7816
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7816
+
+[OUTPUT]
+-7816
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+-7816
+
+[OUTPUT]
+-7816
+
+
+ERR: ~
+################################################################################
+	CHECK 13/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eHGVD = 9439 _in eHGVD + _let gPYrfzksEY = -3742 * 7134 + 3883 _in gPYrfzksEY + 1768
+
+[OUTPUT]
+-26680338
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eHGVD = 9439 _in eHGVD + _let gPYrfzksEY = -3742 * 7134 + 3883 _in gPYrfzksEY + 1768
+
+[OUTPUT]
+18482
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eHGVD = 9439 _in eHGVD + _let gPYrfzksEY = -3742 * 7134 + 3883 _in gPYrfzksEY + 1768
+
+[OUTPUT]
+(_let eHGVD=9439 _in (eHGVD+(_let gPYrfzksEY=((-3742*7134)+3883) _in (gPYrfzksEY+1768))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eHGVD = 9439 _in eHGVD + _let gPYrfzksEY = -3742 * 7134 + 3883 _in gPYrfzksEY + 1768
+
+[OUTPUT]
+(_let eHGVD=9439 _in (eHGVD+(_let gPYrfzksEY=((-3742*7134)+3883) _in (gPYrfzksEY+1768))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eHGVD = 9439 _in eHGVD + _let gPYrfzksEY = -3742 * 7134 + 3883 _in gPYrfzksEY + 1768
+
+[OUTPUT]
+_let eHGVD = 9439
+ _in  eHGVD + _let gPYrfzksEY = -3742 * 7134 + 3883
+              _in  gPYrfzksEY + 1768
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let eHGVD = 9439 _in eHGVD + _let gPYrfzksEY = -3742 * 7134 + 3883 _in gPYrfzksEY + 1768
+
+[OUTPUT]
+_let eHGVD = 9439
+_in  eHGVD + _let gPYrfzksEY = -3742 * 7134 + 3883
+             _in  gPYrfzksEY + 1768
+
+
+ERR: ~
+################################################################################
+	CHECK 14/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let AAfgnctY = _let nxsomrq = _let DQFZ = _let iEPgALLhW = 5274 + 7550 * 3505 _in iEPgALLhW + 8809 _in DQFZ + 5714 _in nxsomrq + 9012 _in AAfgnctY + 5731
+
+[OUTPUT]
+26497290
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let AAfgnctY = _let nxsomrq = _let DQFZ = _let iEPgALLhW = 5274 + 7550 * 3505 _in iEPgALLhW + 8809 _in DQFZ + 5714 _in nxsomrq + 9012 _in AAfgnctY + 5731
+
+[OUTPUT]
+45595
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let AAfgnctY = _let nxsomrq = _let DQFZ = _let iEPgALLhW = 5274 + 7550 * 3505 _in iEPgALLhW + 8809 _in DQFZ + 5714 _in nxsomrq + 9012 _in AAfgnctY + 5731
+
+[OUTPUT]
+(_let AAfgnctY=(_let nxsomrq=(_let DQFZ=(_let iEPgALLhW=(5274+(7550*3505)) _in (iEPgALLhW+8809)) _in (DQFZ+5714)) _in (nxsomrq+9012)) _in (AAfgnctY+5731))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let AAfgnctY = _let nxsomrq = _let DQFZ = _let iEPgALLhW = 5274 + 7550 * 3505 _in iEPgALLhW + 8809 _in DQFZ + 5714 _in nxsomrq + 9012 _in AAfgnctY + 5731
+
+[OUTPUT]
+(_let AAfgnctY=(_let nxsomrq=(_let DQFZ=(_let iEPgALLhW=(5274+(7550*3505)) _in (iEPgALLhW+8809)) _in (DQFZ+5714)) _in (nxsomrq+9012)) _in (AAfgnctY+5731))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let AAfgnctY = _let nxsomrq = _let DQFZ = _let iEPgALLhW = 5274 + 7550 * 3505 _in iEPgALLhW + 8809 _in DQFZ + 5714 _in nxsomrq + 9012 _in AAfgnctY + 5731
+
+[OUTPUT]
+_let AAfgnctY = _let nxsomrq = _let DQFZ = _let iEPgALLhW = 5274 + 7550 * 3505
+                             _in  iEPgALLhW + 8809
+                _in  DQFZ + 5714
+                 _in  nxsomrq + 9012
+ _in  AAfgnctY + 5731
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let AAfgnctY = _let nxsomrq = _let DQFZ = _let iEPgALLhW = 5274 + 7550 * 3505 _in iEPgALLhW + 8809 _in DQFZ + 5714 _in nxsomrq + 9012 _in AAfgnctY + 5731
+
+[OUTPUT]
+_let AAfgnctY = _let nxsomrq = _let DQFZ = _let iEPgALLhW = 5274 + 7550 * 3505
+                                           _in  iEPgALLhW + 8809
+                               _in  DQFZ + 5714
+                _in  nxsomrq + 9012
+_in  AAfgnctY + 5731
+
+
+ERR: ~
+################################################################################
+	CHECK 15/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let s = _let rQECVD = _let TZoc = 4863 * 5677 _in TZoc + 5669 _in rQECVD + 3266 _in s + 2582 * 5180 + 9601
+
+[OUTPUT]
+41000547
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let s = _let rQECVD = _let TZoc = 4863 * 5677 _in TZoc + 5669 _in rQECVD + 3266 _in s + 2582 * 5180 + 9601
+
+[OUTPUT]
+36838
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let s = _let rQECVD = _let TZoc = 4863 * 5677 _in TZoc + 5669 _in rQECVD + 3266 _in s + 2582 * 5180 + 9601
+
+[OUTPUT]
+(_let s=(_let rQECVD=(_let TZoc=(4863*5677) _in (TZoc+5669)) _in (rQECVD+3266)) _in (s+((2582*5180)+9601)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let s = _let rQECVD = _let TZoc = 4863 * 5677 _in TZoc + 5669 _in rQECVD + 3266 _in s + 2582 * 5180 + 9601
+
+[OUTPUT]
+(_let s=(_let rQECVD=(_let TZoc=(4863*5677) _in (TZoc+5669)) _in (rQECVD+3266)) _in (s+((2582*5180)+9601)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let s = _let rQECVD = _let TZoc = 4863 * 5677 _in TZoc + 5669 _in rQECVD + 3266 _in s + 2582 * 5180 + 9601
+
+[OUTPUT]
+_let s = _let rQECVD = _let TZoc = 4863 * 5677
+               _in  TZoc + 5669
+          _in  rQECVD + 3266
+ _in  s + 2582 * 5180 + 9601
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let s = _let rQECVD = _let TZoc = 4863 * 5677 _in TZoc + 5669 _in rQECVD + 3266 _in s + 2582 * 5180 + 9601
+
+[OUTPUT]
+_let s = _let rQECVD = _let TZoc = 4863 * 5677
+                       _in  TZoc + 5669
+         _in  rQECVD + 3266
+_in  s + 2582 * 5180 + 9601
+
+
+ERR: ~
+################################################################################
+	CHECK 16/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let XuLPX = _let Lt = 8634 * 955 _in Lt + 9857 + 3631 + 9541 _in XuLPX + 9919 + 2032
+
+[OUTPUT]
+8280450
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let XuLPX = _let Lt = 8634 * 955 _in Lt + 9857 + 3631 + 9541 _in XuLPX + 9919 + 2032
+
+[OUTPUT]
+44569
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let XuLPX = _let Lt = 8634 * 955 _in Lt + 9857 + 3631 + 9541 _in XuLPX + 9919 + 2032
+
+[OUTPUT]
+(_let XuLPX=(_let Lt=(8634*955) _in (Lt+(9857+(3631+9541)))) _in (XuLPX+(9919+2032)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let XuLPX = _let Lt = 8634 * 955 _in Lt + 9857 + 3631 + 9541 _in XuLPX + 9919 + 2032
+
+[OUTPUT]
+(_let XuLPX=(_let Lt=(8634*955) _in (Lt+(9857+(3631+9541)))) _in (XuLPX+(9919+2032)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let XuLPX = _let Lt = 8634 * 955 _in Lt + 9857 + 3631 + 9541 _in XuLPX + 9919 + 2032
+
+[OUTPUT]
+_let XuLPX = _let Lt = 8634 * 955
+              _in  Lt + 9857 + 3631 + 9541
+ _in  XuLPX + 9919 + 2032
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let XuLPX = _let Lt = 8634 * 955 _in Lt + 9857 + 3631 + 9541 _in XuLPX + 9919 + 2032
+
+[OUTPUT]
+_let XuLPX = _let Lt = 8634 * 955
+             _in  Lt + 9857 + 3631 + 9541
+_in  XuLPX + 9919 + 2032
+
+
+ERR: ~
+################################################################################
+	CHECK 17/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JKrNnMFERn = _let TGNeRyYz = _let bpeq = 3188 _in bpeq + 9441 _in TGNeRyYz + 5128 + 1470 _in JKrNnMFERn + 8393 + 7046 + 8719
+
+[OUTPUT]
+43385
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JKrNnMFERn = _let TGNeRyYz = _let bpeq = 3188 _in bpeq + 9441 _in TGNeRyYz + 5128 + 1470 _in JKrNnMFERn + 8393 + 7046 + 8719
+
+[OUTPUT]
+43385
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JKrNnMFERn = _let TGNeRyYz = _let bpeq = 3188 _in bpeq + 9441 _in TGNeRyYz + 5128 + 1470 _in JKrNnMFERn + 8393 + 7046 + 8719
+
+[OUTPUT]
+(_let JKrNnMFERn=(_let TGNeRyYz=(_let bpeq=3188 _in (bpeq+9441)) _in (TGNeRyYz+(5128+1470))) _in (JKrNnMFERn+(8393+(7046+8719))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JKrNnMFERn = _let TGNeRyYz = _let bpeq = 3188 _in bpeq + 9441 _in TGNeRyYz + 5128 + 1470 _in JKrNnMFERn + 8393 + 7046 + 8719
+
+[OUTPUT]
+(_let JKrNnMFERn=(_let TGNeRyYz=(_let bpeq=3188 _in (bpeq+9441)) _in (TGNeRyYz+(5128+1470))) _in (JKrNnMFERn+(8393+(7046+8719))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JKrNnMFERn = _let TGNeRyYz = _let bpeq = 3188 _in bpeq + 9441 _in TGNeRyYz + 5128 + 1470 _in JKrNnMFERn + 8393 + 7046 + 8719
+
+[OUTPUT]
+_let JKrNnMFERn = _let TGNeRyYz = _let bpeq = 3188
+                 _in  bpeq + 9441
+                   _in  TGNeRyYz + 5128 + 1470
+ _in  JKrNnMFERn + 8393 + 7046 + 8719
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JKrNnMFERn = _let TGNeRyYz = _let bpeq = 3188 _in bpeq + 9441 _in TGNeRyYz + 5128 + 1470 _in JKrNnMFERn + 8393 + 7046 + 8719
+
+[OUTPUT]
+_let JKrNnMFERn = _let TGNeRyYz = _let bpeq = 3188
+                                  _in  bpeq + 9441
+                  _in  TGNeRyYz + 5128 + 1470
+_in  JKrNnMFERn + 8393 + 7046 + 8719
+
+
+ERR: ~
+################################################################################
+	CHECK 18/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JrrRnxD = 3717 * -9142 _in JrrRnxD + _let XhyCasFU = 5622 _in XhyCasFU + 9572 * 8517
+
+[OUTPUT]
+47549532
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JrrRnxD = 3717 * -9142 _in JrrRnxD + _let XhyCasFU = 5622 _in XhyCasFU + 9572 * 8517
+
+[OUTPUT]
+18286
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JrrRnxD = 3717 * -9142 _in JrrRnxD + _let XhyCasFU = 5622 _in XhyCasFU + 9572 * 8517
+
+[OUTPUT]
+(_let JrrRnxD=(3717*-9142) _in (JrrRnxD+(_let XhyCasFU=5622 _in (XhyCasFU+(9572*8517)))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JrrRnxD = 3717 * -9142 _in JrrRnxD + _let XhyCasFU = 5622 _in XhyCasFU + 9572 * 8517
+
+[OUTPUT]
+(_let JrrRnxD=(3717*-9142) _in (JrrRnxD+(_let XhyCasFU=5622 _in (XhyCasFU+(9572*8517)))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JrrRnxD = 3717 * -9142 _in JrrRnxD + _let XhyCasFU = 5622 _in XhyCasFU + 9572 * 8517
+
+[OUTPUT]
+_let JrrRnxD = 3717 * -9142
+ _in  JrrRnxD + _let XhyCasFU = 5622
+                _in  XhyCasFU + 9572 * 8517
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JrrRnxD = 3717 * -9142 _in JrrRnxD + _let XhyCasFU = 5622 _in XhyCasFU + 9572 * 8517
+
+[OUTPUT]
+_let JrrRnxD = 3717 * -9142
+_in  JrrRnxD + _let XhyCasFU = 5622
+               _in  XhyCasFU + 9572 * 8517
+
+
+ERR: ~
+################################################################################
+	CHECK 19/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+4797
+
+[OUTPUT]
+4797
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+4797
+
+[OUTPUT]
+4797
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+4797
+
+[OUTPUT]
+4797
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+4797
+
+[OUTPUT]
+4797
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+4797
+
+[OUTPUT]
+4797
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+4797
+
+[OUTPUT]
+4797
+
+
+ERR: ~
+################################################################################
+	CHECK 20/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+5203
+
+[OUTPUT]
+5203
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+5203
+
+[OUTPUT]
+5203
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+5203
+
+[OUTPUT]
+5203
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+5203
+
+[OUTPUT]
+5203
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+5203
+
+[OUTPUT]
+5203
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+5203
+
+[OUTPUT]
+5203
+
+
+ERR: ~
+################################################################################
+	CHECK 21/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+5248 * _let qwWf = 8389 _in qwWf + _let U = 6710 _in U + 2964 + 4397
+
+[OUTPUT]
+117870080
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+5248 * _let qwWf = 8389 _in qwWf + _let U = 6710 _in U + 2964 + 4397
+
+[OUTPUT]
+27708
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+5248 * _let qwWf = 8389 _in qwWf + _let U = 6710 _in U + 2964 + 4397
+
+[OUTPUT]
+(5248*(_let qwWf=8389 _in (qwWf+(_let U=6710 _in (U+(2964+4397))))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+5248 * _let qwWf = 8389 _in qwWf + _let U = 6710 _in U + 2964 + 4397
+
+[OUTPUT]
+(5248*(_let qwWf=8389 _in (qwWf+(_let U=6710 _in (U+(2964+4397))))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+5248 * _let qwWf = 8389 _in qwWf + _let U = 6710 _in U + 2964 + 4397
+
+[OUTPUT]
+5248 * (_let qwWf = 8389
+         _in  qwWf + _let U = 6710
+                     _in  U + 2964 + 4397)
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+5248 * _let qwWf = 8389 _in qwWf + _let U = 6710 _in U + 2964 + 4397
+
+[OUTPUT]
+5248 * _let qwWf = 8389
+       _in  qwWf + _let U = 6710
+                   _in  U + 2964 + 4397
+
+
+ERR: ~
+################################################################################
+	CHECK 22/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let Yg = -9371 _in Yg + _let nPIEeivZ = 9144 + 5350 * 6846 _in nPIEeivZ + 563 * 4014
+
+[OUTPUT]
+38885755
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let Yg = -9371 _in Yg + _let nPIEeivZ = 9144 + 5350 * 6846 _in nPIEeivZ + 563 * 4014
+
+[OUTPUT]
+16546
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let Yg = -9371 _in Yg + _let nPIEeivZ = 9144 + 5350 * 6846 _in nPIEeivZ + 563 * 4014
+
+[OUTPUT]
+(_let Yg=-9371 _in (Yg+(_let nPIEeivZ=(9144+(5350*6846)) _in (nPIEeivZ+(563*4014)))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let Yg = -9371 _in Yg + _let nPIEeivZ = 9144 + 5350 * 6846 _in nPIEeivZ + 563 * 4014
+
+[OUTPUT]
+(_let Yg=-9371 _in (Yg+(_let nPIEeivZ=(9144+(5350*6846)) _in (nPIEeivZ+(563*4014)))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let Yg = -9371 _in Yg + _let nPIEeivZ = 9144 + 5350 * 6846 _in nPIEeivZ + 563 * 4014
+
+[OUTPUT]
+_let Yg = -9371
+ _in  Yg + _let nPIEeivZ = 9144 + 5350 * 6846
+           _in  nPIEeivZ + 563 * 4014
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let Yg = -9371 _in Yg + _let nPIEeivZ = 9144 + 5350 * 6846 _in nPIEeivZ + 563 * 4014
+
+[OUTPUT]
+_let Yg = -9371
+_in  Yg + _let nPIEeivZ = 9144 + 5350 * 6846
+          _in  nPIEeivZ + 563 * 4014
+
+
+ERR: ~
+################################################################################
+	CHECK 23/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JPYTGTZLMl = _let TinUOt = 1484 + 9117 + 601 _in TinUOt + 325 _in JPYTGTZLMl + 1562 * 9019 + 5128
+
+[OUTPUT]
+14104333
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JPYTGTZLMl = _let TinUOt = 1484 + 9117 + 601 _in TinUOt + 325 _in JPYTGTZLMl + 1562 * 9019 + 5128
+
+[OUTPUT]
+27236
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JPYTGTZLMl = _let TinUOt = 1484 + 9117 + 601 _in TinUOt + 325 _in JPYTGTZLMl + 1562 * 9019 + 5128
+
+[OUTPUT]
+(_let JPYTGTZLMl=(_let TinUOt=(1484+(9117+601)) _in (TinUOt+325)) _in (JPYTGTZLMl+((1562*9019)+5128)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JPYTGTZLMl = _let TinUOt = 1484 + 9117 + 601 _in TinUOt + 325 _in JPYTGTZLMl + 1562 * 9019 + 5128
+
+[OUTPUT]
+(_let JPYTGTZLMl=(_let TinUOt=(1484+(9117+601)) _in (TinUOt+325)) _in (JPYTGTZLMl+((1562*9019)+5128)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JPYTGTZLMl = _let TinUOt = 1484 + 9117 + 601 _in TinUOt + 325 _in JPYTGTZLMl + 1562 * 9019 + 5128
+
+[OUTPUT]
+_let JPYTGTZLMl = _let TinUOt = 1484 + 9117 + 601
+                   _in  TinUOt + 325
+ _in  JPYTGTZLMl + 1562 * 9019 + 5128
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JPYTGTZLMl = _let TinUOt = 1484 + 9117 + 601 _in TinUOt + 325 _in JPYTGTZLMl + 1562 * 9019 + 5128
+
+[OUTPUT]
+_let JPYTGTZLMl = _let TinUOt = 1484 + 9117 + 601
+                  _in  TinUOt + 325
+_in  JPYTGTZLMl + 1562 * 9019 + 5128
+
+
+ERR: ~
+################################################################################
+	CHECK 24/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let aYWb = _let XZunXC = _let j = _let SIf = 8779 _in SIf + 7447 * 440 _in j + 7327 _in XZunXC + 9490 _in aYWb + 6016 * 7139
+
+[OUTPUT]
+46250500
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let aYWb = _let XZunXC = _let j = _let SIf = 8779 _in SIf + 7447 * 440 _in j + 7327 _in XZunXC + 9490 _in aYWb + 6016 * 7139
+
+[OUTPUT]
+46638
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let aYWb = _let XZunXC = _let j = _let SIf = 8779 _in SIf + 7447 * 440 _in j + 7327 _in XZunXC + 9490 _in aYWb + 6016 * 7139
+
+[OUTPUT]
+(_let aYWb=(_let XZunXC=(_let j=(_let SIf=8779 _in (SIf+(7447*440))) _in (j+7327)) _in (XZunXC+9490)) _in (aYWb+(6016*7139)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let aYWb = _let XZunXC = _let j = _let SIf = 8779 _in SIf + 7447 * 440 _in j + 7327 _in XZunXC + 9490 _in aYWb + 6016 * 7139
+
+[OUTPUT]
+(_let aYWb=(_let XZunXC=(_let j=(_let SIf=8779 _in (SIf+(7447*440))) _in (j+7327)) _in (XZunXC+9490)) _in (aYWb+(6016*7139)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let aYWb = _let XZunXC = _let j = _let SIf = 8779 _in SIf + 7447 * 440 _in j + 7327 _in XZunXC + 9490 _in aYWb + 6016 * 7139
+
+[OUTPUT]
+_let aYWb = _let XZunXC = _let j = _let SIf = 8779
+                      _in  SIf + 7447 * 440
+               _in  j + 7327
+             _in  XZunXC + 9490
+ _in  aYWb + 6016 * 7139
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let aYWb = _let XZunXC = _let j = _let SIf = 8779 _in SIf + 7447 * 440 _in j + 7327 _in XZunXC + 9490 _in aYWb + 6016 * 7139
+
+[OUTPUT]
+_let aYWb = _let XZunXC = _let j = _let SIf = 8779
+                                   _in  SIf + 7447 * 440
+                          _in  j + 7327
+            _in  XZunXC + 9490
+_in  aYWb + 6016 * 7139
+
+
+ERR: ~
+################################################################################
+	CHECK 25/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ITpFral = _let XyIxz = _let H = 7653 _in H + 7211 * 9412 _in XyIxz + 9382 + 3960 _in ITpFral + 7757 + 2142
+
+[OUTPUT]
+67900826
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ITpFral = _let XyIxz = _let H = 7653 _in H + 7211 * 9412 _in XyIxz + 9382 + 3960 _in ITpFral + 7757 + 2142
+
+[OUTPUT]
+47517
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ITpFral = _let XyIxz = _let H = 7653 _in H + 7211 * 9412 _in XyIxz + 9382 + 3960 _in ITpFral + 7757 + 2142
+
+[OUTPUT]
+(_let ITpFral=(_let XyIxz=(_let H=7653 _in (H+(7211*9412))) _in (XyIxz+(9382+3960))) _in (ITpFral+(7757+2142)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ITpFral = _let XyIxz = _let H = 7653 _in H + 7211 * 9412 _in XyIxz + 9382 + 3960 _in ITpFral + 7757 + 2142
+
+[OUTPUT]
+(_let ITpFral=(_let XyIxz=(_let H=7653 _in (H+(7211*9412))) _in (XyIxz+(9382+3960))) _in (ITpFral+(7757+2142)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ITpFral = _let XyIxz = _let H = 7653 _in H + 7211 * 9412 _in XyIxz + 9382 + 3960 _in ITpFral + 7757 + 2142
+
+[OUTPUT]
+_let ITpFral = _let XyIxz = _let H = 7653
+              _in  H + 7211 * 9412
+                _in  XyIxz + 9382 + 3960
+ _in  ITpFral + 7757 + 2142
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let ITpFral = _let XyIxz = _let H = 7653 _in H + 7211 * 9412 _in XyIxz + 9382 + 3960 _in ITpFral + 7757 + 2142
+
+[OUTPUT]
+_let ITpFral = _let XyIxz = _let H = 7653
+                            _in  H + 7211 * 9412
+               _in  XyIxz + 9382 + 3960
+_in  ITpFral + 7757 + 2142
+
+
+ERR: ~
+################################################################################
+	CHECK 26/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+3068 + _let O = _let TMCK = 9823 * 800 _in TMCK + 4785 _in O + 5404
+
+[OUTPUT]
+7871657
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+3068 + _let O = _let TMCK = 9823 * 800 _in TMCK + 4785 _in O + 5404
+
+[OUTPUT]
+23880
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+3068 + _let O = _let TMCK = 9823 * 800 _in TMCK + 4785 _in O + 5404
+
+[OUTPUT]
+(3068+(_let O=(_let TMCK=(9823*800) _in (TMCK+4785)) _in (O+5404)))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+3068 + _let O = _let TMCK = 9823 * 800 _in TMCK + 4785 _in O + 5404
+
+[OUTPUT]
+(3068+(_let O=(_let TMCK=(9823*800) _in (TMCK+4785)) _in (O+5404)))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+3068 + _let O = _let TMCK = 9823 * 800 _in TMCK + 4785 _in O + 5404
+
+[OUTPUT]
+3068 + _let O = _let TMCK = 9823 * 800
+          _in  TMCK + 4785
+        _in  O + 5404
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+3068 + _let O = _let TMCK = 9823 * 800 _in TMCK + 4785 _in O + 5404
+
+[OUTPUT]
+3068 + _let O = _let TMCK = 9823 * 800
+                _in  TMCK + 4785
+       _in  O + 5404
+
+
+ERR: ~
+################################################################################
+	CHECK 27/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JeT = _let n = _let w = 6157 _in w + 4618 _in n + 8217 * 3489 * 4519 _in JeT + 9631
+
+[OUTPUT]
+706723173
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JeT = _let n = _let w = 6157 _in w + 4618 _in n + 8217 * 3489 * 4519 _in JeT + 9631
+
+[OUTPUT]
+36631
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JeT = _let n = _let w = 6157 _in w + 4618 _in n + 8217 * 3489 * 4519 _in JeT + 9631
+
+[OUTPUT]
+(_let JeT=(_let n=(_let w=6157 _in (w+4618)) _in (n+(8217*(3489*4519)))) _in (JeT+9631))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JeT = _let n = _let w = 6157 _in w + 4618 _in n + 8217 * 3489 * 4519 _in JeT + 9631
+
+[OUTPUT]
+(_let JeT=(_let n=(_let w=6157 _in (w+4618)) _in (n+(8217*(3489*4519)))) _in (JeT+9631))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JeT = _let n = _let w = 6157 _in w + 4618 _in n + 8217 * 3489 * 4519 _in JeT + 9631
+
+[OUTPUT]
+_let JeT = _let n = _let w = 6157
+          _in  w + 4618
+            _in  n + 8217 * 3489 * 4519
+ _in  JeT + 9631
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let JeT = _let n = _let w = 6157 _in w + 4618 _in n + 8217 * 3489 * 4519 _in JeT + 9631
+
+[OUTPUT]
+_let JeT = _let n = _let w = 6157
+                    _in  w + 4618
+           _in  n + 8217 * 3489 * 4519
+_in  JeT + 9631
+
+
+ERR: ~
+################################################################################
+	CHECK 28/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+5439
+
+[OUTPUT]
+5439
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+5439
+
+[OUTPUT]
+5439
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+5439
+
+[OUTPUT]
+5439
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+5439
+
+[OUTPUT]
+5439
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+5439
+
+[OUTPUT]
+5439
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+5439
+
+[OUTPUT]
+5439
+
+
+ERR: ~
+################################################################################
+	CHECK 29/30
+################################################################################
+
+/*****    "msdscript --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let zhCcKJoGC = -3645 _in zhCcKJoGC + 229 * _let QkqHBsS = 9500 _in QkqHBsS + 5263 + 5917
+
+[OUTPUT]
+4732075
+
+
+ERR: ~
+
+/*****    "msdscript2 --interp"    *****/
+EXIT CODE: 0
+[INPUT]
+_let zhCcKJoGC = -3645 _in zhCcKJoGC + 229 * _let QkqHBsS = 9500 _in QkqHBsS + 5263 + 5917
+
+[OUTPUT]
+17264
+
+
+ERR: ~
+
+/*****    "msdscript --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let zhCcKJoGC = -3645 _in zhCcKJoGC + 229 * _let QkqHBsS = 9500 _in QkqHBsS + 5263 + 5917
+
+[OUTPUT]
+(_let zhCcKJoGC=-3645 _in (zhCcKJoGC+(229*(_let QkqHBsS=9500 _in (QkqHBsS+(5263+5917))))))
+
+
+ERR: ~
+
+/*****    "msdscript2 --print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let zhCcKJoGC = -3645 _in zhCcKJoGC + 229 * _let QkqHBsS = 9500 _in QkqHBsS + 5263 + 5917
+
+[OUTPUT]
+(_let zhCcKJoGC=-3645 _in (zhCcKJoGC+(229*(_let QkqHBsS=9500 _in (QkqHBsS+(5263+5917))))))
+
+
+ERR: ~
+
+/*****    "msdscript --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let zhCcKJoGC = -3645 _in zhCcKJoGC + 229 * _let QkqHBsS = 9500 _in QkqHBsS + 5263 + 5917
+
+[OUTPUT]
+_let zhCcKJoGC = -3645
+ _in  zhCcKJoGC + 229 * (_let QkqHBsS = 9500
+                         _in  QkqHBsS + 5263 + 5917)
+
+
+ERR: ~
+
+/*****    "msdscript2 --pretty-print"    *****/
+EXIT CODE: 0
+[INPUT]
+_let zhCcKJoGC = -3645 _in zhCcKJoGC + 229 * _let QkqHBsS = 9500 _in QkqHBsS + 5263 + 5917
+
+[OUTPUT]
+_let zhCcKJoGC = -3645
+_in  zhCcKJoGC + 229 * _let QkqHBsS = 9500
+                       _in  QkqHBsS + 5263 + 5917
+
+
+ERR: ~
+################################################################################

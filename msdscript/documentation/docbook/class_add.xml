@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_add" xml:lang="en-US">
+<title>Add Class Reference</title>
+<indexterm><primary>Add</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Expr.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Add:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_add.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_add_1a6b2c4c7be3fada06bedad4e4e4688a60">Add</link> (<link linkend="_class_expr">Expr</link> *lhs, <link linkend="_class_expr">Expr</link> *rhs)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_add_1a78f321a6b8799113d3fbcb7d975cc44b">equals</link> (<link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+            <listitem><para><link linkend="_class_val">Val</link> * <link linkend="_class_add_1a7f7206946209b8d79146fc6ed18ac584">interp</link> () override</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_add_1a1a829a6c1e949a57cd810e8a6e3c52d5">has_variable</link> () override</para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_add_1a7b520ea27fff063ea2601f95ad560490">subst</link> (std::string str, <link linkend="_class_expr">Expr</link> *e) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_expr">Expr</link>        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_expr_1abe130f37bd185ec13c5113de16fc7bf7">to_string</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_expr_1a6ad7c18234f22d96d6917089b5bd7caa">to_pretty_string</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_add_1aa9b41065f7c095c6ae10ebc78bb7e490">lhs_m</link></para>
+
+<para>The lhs operand of an addition operation. </para>
+</listitem>
+            <listitem><para><link linkend="_class_expr">Expr</link> * <link linkend="_class_add_1a152dfd91da34c73e14cfc88cb93a2c6d">rhs_m</link></para>
+
+<para>The rhs operand of an addition operation. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_add_1a75927d67b287f5efd585d377f94af1a4">print</link> (std::ostream &amp;stream) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_add_1a1e3aa81c17cfd74315b5b4d4d10f9d25">pretty_print</link> (std::ostream &amp;stream) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_add_1adf2278deeff3066325a81647860573c9">pretty_print_at</link> (std::ostream &amp;stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp;pos, bool paren) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_add_1a6b2c4c7be3fada06bedad4e4e4688a60"/><section>
+    <title>Add()</title>
+<indexterm><primary>Add</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>Add</secondary></indexterm>
+<para><computeroutput>Add::Add (<link linkend="_class_expr">Expr</link> * lhs, <link linkend="_class_expr">Expr</link> * rhs)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_add_1a78f321a6b8799113d3fbcb7d975cc44b"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>bool Add::equals (<link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1abf9cdb765fb84304881789d273d7594f">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_add_1a1a829a6c1e949a57cd810e8a6e3c52d5"/><section>
+    <title>has_variable()</title>
+<indexterm><primary>has_variable</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>has_variable</secondary></indexterm>
+<para><computeroutput>bool Add::has_variable ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a92dc26078993a4b9721ea732274a435c">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_add_1a7f7206946209b8d79146fc6ed18ac584"/><section>
+    <title>interp()</title>
+<indexterm><primary>interp</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>interp</secondary></indexterm>
+<para><computeroutput><link linkend="_class_val">Val</link> * Add::interp ( )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa671ba2b665001c815588a7271735104">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_add_1a1e3aa81c17cfd74315b5b4d4d10f9d25"/><section>
+    <title>pretty_print()</title>
+<indexterm><primary>pretty_print</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>pretty_print</secondary></indexterm>
+<para><computeroutput>void Add::pretty_print (std::ostream &amp; stream)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_expr_1aaec6172fa839cafad124775b0a43965b">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_add_1adf2278deeff3066325a81647860573c9"/><section>
+    <title>pretty_print_at()</title>
+<indexterm><primary>pretty_print_at</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>pretty_print_at</secondary></indexterm>
+<para><computeroutput>void Add::pretty_print_at (std::ostream &amp; stream, <link linkend="__expr_8h_1a9e5fdf365cd8dc7be4d972daf07f8bdf">prec_t</link> p, std::streampos &amp; pos, bool paren)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_expr_1ab5b1d850f98bb650ef199bb6e90133b7">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_add_1a75927d67b287f5efd585d377f94af1a4"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void Add::print (std::ostream &amp; stream)<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1a8e34377af275f60532d1ba76e6feaceb">Expr</link>.</para>
+</section>
+<anchor xml:id="_class_add_1a7b520ea27fff063ea2601f95ad560490"/><section>
+    <title>subst()</title>
+<indexterm><primary>subst</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>subst</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link> * Add::subst (std::string str, <link linkend="_class_expr">Expr</link> * e)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_expr_1aa91f56b56e078594565aeba32c520b7a">Expr</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_add_1aa9b41065f7c095c6ae10ebc78bb7e490"/><section>
+    <title>lhs_m</title>
+<indexterm><primary>lhs_m</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>lhs_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* Add::lhs_m</computeroutput></para><para>
+
+<para>The lhs operand of an addition operation. </para>
+</para>
+</section>
+<anchor xml:id="_class_add_1a152dfd91da34c73e14cfc88cb93a2c6d"/><section>
+    <title>rhs_m</title>
+<indexterm><primary>rhs_m</primary><secondary>Add</secondary></indexterm>
+<indexterm><primary>Add</primary><secondary>rhs_m</secondary></indexterm>
+<para><computeroutput><link linkend="_class_expr">Expr</link>* Add::rhs_m</computeroutput></para><para>
+
+<para>The rhs operand of an addition operation. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8h">Expr.h</link>/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="__expr_8cpp">Expr.cpp</link></section>
+</section>

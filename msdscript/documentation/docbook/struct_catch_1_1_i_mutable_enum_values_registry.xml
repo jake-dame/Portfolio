@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_i_mutable_enum_values_registry" xml:lang="en-US">
+<title>Catch::IMutableEnumValuesRegistry Struct Reference</title>
+<indexterm><primary>Catch::IMutableEnumValuesRegistry</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_mutable_enum_values_registry_1aebd423693128987c89ac732478d74673">~IMutableEnumValuesRegistry</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_detail_1_1_enum_info">Detail::EnumInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_mutable_enum_values_registry_1a56e9726c383ed48731621c7183730310">registerEnum</link> (<link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">enumName</link>, <link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">allEnums</link>, std::vector&lt; <link linkend="_struct_catch_1_1true__given">int</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp;values)=0</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">E</link> &gt; </para><para><link linkend="_struct_catch_1_1_detail_1_1_enum_info">Detail::EnumInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_mutable_enum_values_registry_1ac1f8c7d3d97100ec30e09a3866f69904">registerEnum</link> (<link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">enumName</link>, <link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">allEnums</link>, std::initializer_list&lt; <link linkend="_struct_catch_1_1true__given">E</link> &gt; values)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_mutable_enum_values_registry_1aebd423693128987c89ac732478d74673"/><section>
+    <title>~IMutableEnumValuesRegistry()</title>
+<indexterm><primary>~IMutableEnumValuesRegistry</primary><secondary>Catch::IMutableEnumValuesRegistry</secondary></indexterm>
+<indexterm><primary>Catch::IMutableEnumValuesRegistry</primary><secondary>~IMutableEnumValuesRegistry</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::IMutableEnumValuesRegistry::~IMutableEnumValuesRegistry ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_mutable_enum_values_registry_1ac1f8c7d3d97100ec30e09a3866f69904"/><section>
+    <title>registerEnum()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>registerEnum</primary><secondary>Catch::IMutableEnumValuesRegistry</secondary></indexterm>
+<indexterm><primary>Catch::IMutableEnumValuesRegistry</primary><secondary>registerEnum</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">E</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1_detail_1_1_enum_info">Detail::EnumInfo</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IMutableEnumValuesRegistry::registerEnum (<link linkend="_class_catch_1_1_string_ref">StringRef</link> enumName, <link linkend="_class_catch_1_1_string_ref">StringRef</link> allEnums, std::initializer_list&lt; <link linkend="_struct_catch_1_1true__given">E</link> &gt; values)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_mutable_enum_values_registry_1a56e9726c383ed48731621c7183730310"/><section>
+    <title>registerEnum()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>registerEnum</primary><secondary>Catch::IMutableEnumValuesRegistry</secondary></indexterm>
+<indexterm><primary>Catch::IMutableEnumValuesRegistry</primary><secondary>registerEnum</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_detail_1_1_enum_info">Detail::EnumInfo</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IMutableEnumValuesRegistry::registerEnum (<link linkend="_class_catch_1_1_string_ref">StringRef</link> enumName, <link linkend="_class_catch_1_1_string_ref">StringRef</link> allEnums, std::vector&lt; <link linkend="_struct_catch_1_1true__given">int</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; values)<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

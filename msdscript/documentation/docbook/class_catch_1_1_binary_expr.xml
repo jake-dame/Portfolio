@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_binary_expr" xml:lang="en-US">
+<title>Catch::BinaryExpr&lt; LhsT, RhsT &gt; Class Template Reference</title>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::BinaryExpr&lt; LhsT, RhsT &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_binary_expr.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_binary_expr_1a657d66346aef97a760c22776fe6008b6">BinaryExpr</link> (<link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">comparisonResult</link>, <link linkend="_struct_catch_1_1true__given">LhsT</link> <link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">op</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr_1ae4fba62be6063010bc33d0988ff7d8d5">operator&amp;&amp;</link> (<link linkend="_struct_catch_1_1true__given">T</link>) <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; &gt; <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr_1a331e53968b1a2f92827c35721cc7eded">operator||</link> (<link linkend="_struct_catch_1_1true__given">T</link>) <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; &gt; <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr_1a245bffd2aab2f560814739986710aaf1">operator==</link> (<link linkend="_struct_catch_1_1true__given">T</link>) <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; &gt; <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr_1ad06dd2c9fc1dd77fe8d8e51440c14ff6">operator!=</link> (<link linkend="_struct_catch_1_1true__given">T</link>) <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; &gt; <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr_1acff324c7d285cbee7efa9fbe83955638">operator&gt;</link> (<link linkend="_struct_catch_1_1true__given">T</link>) <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; &gt; <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr_1a7e6c3dcf59b3cd51e7c82355da3ef451">operator&lt;</link> (<link linkend="_struct_catch_1_1true__given">T</link>) <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; &gt; <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr_1a67901ddb9afd83961fb4e65ea3d75050">operator&gt;=</link> (<link linkend="_struct_catch_1_1true__given">T</link>) <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; &gt; <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr_1a5590a2c5f5074ca2509c09b92bfcdf57">operator&lt;=</link> (<link linkend="_struct_catch_1_1true__given">T</link>) <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; &gt; <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_i_transient_expression">Catch::ITransientExpression</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22">isBinaryExpression</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a101c7db86c87eff93a8ff496720e6320">getResult</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_i_transient_expression_1aafe69572b7ed884e63ec81f58d4afd8c">ITransientExpression</link> (<link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a3b436e13a0a6d3522bbf70d4e31deb22">isBinaryExpression</link>, <link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">result</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_transient_expression_1aeadf426de589938c4964fe4068eeee77">~ITransientExpression</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_binary_expr_1af998022712d4bd3e4fc7ab9b8a38b445">streamReconstructedExpression</link> (std::ostream &amp;<link linkend="_struct_catch_1_1true__given">os</link>) <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">LhsT</link> <link linkend="_class_catch_1_1_binary_expr_1a306b29e77b48f9c538c5031a59adc4ce">m_lhs</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_class_catch_1_1_binary_expr_1ab21dea40c53fd64d4f7a073dbe93ec95">m_op</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_class_catch_1_1_binary_expr_1a54cb1629bf304ebe0c1560f4cc2bc186">m_rhs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Attributes inherited from <link linkend="_struct_catch_1_1_i_transient_expression">Catch::ITransientExpression</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a75ce48da824d514d08152d396abb28d8">m_isBinaryExpression</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1_i_transient_expression_1a4646e2b5e0156e913653ec3b9b60c942">m_result</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_binary_expr_1a657d66346aef97a760c22776fe6008b6"/><section>
+    <title>BinaryExpr()</title>
+<indexterm><primary>BinaryExpr</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>BinaryExpr</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::BinaryExpr (<link linkend="_struct_catch_1_1true__given">bool</link> comparisonResult, <link linkend="_struct_catch_1_1true__given">LhsT</link> lhs, <link linkend="_class_catch_1_1_string_ref">StringRef</link> op, <link linkend="_struct_catch_1_1true__given">RhsT</link> rhs)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_binary_expr_1ad06dd2c9fc1dd77fe8d8e51440c14ff6"/><section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>operator!=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::operator!= (<link linkend="_struct_catch_1_1true__given">T</link> ) const -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt;<link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp;&gt; <link linkend="_struct_catch_1_1true__given">const</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1ae4fba62be6063010bc33d0988ff7d8d5"/><section>
+    <title>operator&amp;&amp;()</title>
+<indexterm><primary>operator&amp;&amp;</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>operator&amp;&amp;</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::operator&amp;&amp; (<link linkend="_struct_catch_1_1true__given">T</link> ) const -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt;<link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp;&gt; <link linkend="_struct_catch_1_1true__given">const</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1a7e6c3dcf59b3cd51e7c82355da3ef451"/><section>
+    <title>operator&lt;()</title>
+<indexterm><primary>operator&lt;</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>operator&lt;</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::operator&lt; (<link linkend="_struct_catch_1_1true__given">T</link> ) const -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt;<link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp;&gt; <link linkend="_struct_catch_1_1true__given">const</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1a5590a2c5f5074ca2509c09b92bfcdf57"/><section>
+    <title>operator&lt;=()</title>
+<indexterm><primary>operator&lt;=</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>operator&lt;=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::operator&lt;= (<link linkend="_struct_catch_1_1true__given">T</link> ) const -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt;<link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp;&gt; <link linkend="_struct_catch_1_1true__given">const</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1a245bffd2aab2f560814739986710aaf1"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>operator==</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::operator== (<link linkend="_struct_catch_1_1true__given">T</link> ) const -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt;<link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp;&gt; <link linkend="_struct_catch_1_1true__given">const</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1acff324c7d285cbee7efa9fbe83955638"/><section>
+    <title>operator&gt;()</title>
+<indexterm><primary>operator&gt;</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>operator&gt;</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::operator&gt; (<link linkend="_struct_catch_1_1true__given">T</link> ) const -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt;<link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp;&gt; <link linkend="_struct_catch_1_1true__given">const</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1a67901ddb9afd83961fb4e65ea3d75050"/><section>
+    <title>operator&gt;=()</title>
+<indexterm><primary>operator&gt;=</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>operator&gt;=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::operator&gt;= (<link linkend="_struct_catch_1_1true__given">T</link> ) const -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt;<link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp;&gt; <link linkend="_struct_catch_1_1true__given">const</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1a331e53968b1a2f92827c35721cc7eded"/><section>
+    <title>operator||()</title>
+<indexterm><primary>operator||</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>operator||</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::operator|| (<link linkend="_struct_catch_1_1true__given">T</link> ) const -&gt; <link linkend="_class_catch_1_1_binary_expr">BinaryExpr</link>&lt;<link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_struct_catch_1_1true__given">const</link>&amp;&gt; <link linkend="_struct_catch_1_1true__given">const</link> <computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1af998022712d4bd3e4fc7ab9b8a38b445"/><section>
+    <title>streamReconstructedExpression()</title>
+<indexterm><primary>streamReconstructedExpression</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>streamReconstructedExpression</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::streamReconstructedExpression (std::ostream &amp; os) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_i_transient_expression_1aabe1889df9c6e639a24afb08d8a0fe9e">Catch::ITransientExpression</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_binary_expr_1a306b29e77b48f9c538c5031a59adc4ce"/><section>
+    <title>m_lhs</title>
+<indexterm><primary>m_lhs</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>m_lhs</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">LhsT</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::m_lhs<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1ab21dea40c53fd64d4f7a073dbe93ec95"/><section>
+    <title>m_op</title>
+<indexterm><primary>m_op</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>m_op</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::m_op<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_binary_expr_1a54cb1629bf304ebe0c1560f4cc2bc186"/><section>
+    <title>m_rhs</title>
+<indexterm><primary>m_rhs</primary><secondary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</secondary></indexterm>
+<indexterm><primary>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</primary><secondary>m_rhs</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">LhsT</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">RhsT</link> <link linkend="_class_catch_1_1_binary_expr">Catch::BinaryExpr</link>&lt; <link linkend="_struct_catch_1_1true__given">LhsT</link>, <link linkend="_struct_catch_1_1true__given">RhsT</link> &gt;::m_rhs<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

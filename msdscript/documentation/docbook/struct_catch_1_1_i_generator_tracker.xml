@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_i_generator_tracker" xml:lang="en-US">
+<title>Catch::IGeneratorTracker Struct Reference</title>
+<indexterm><primary>Catch::IGeneratorTracker</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_generator_tracker_1a20b3c82baa68f821c180d6dac1234eb1">~IGeneratorTracker</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_generator_tracker_1ae88084f9af27c8b9a5d5775b9c148498">hasGenerator</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_struct_catch_1_1true__given">bool</link>=0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">auto</link> <link linkend="_struct_catch_1_1_i_generator_tracker_1a23be942fc51672598bfa02c678c3078a">getGenerator</link> () <link linkend="_struct_catch_1_1true__given">const</link> -&gt; <link linkend="_namespace_catch_1_1_generators_1a9578dfa233a0ab3fb14f58203161b6b8">Generators::GeneratorBasePtr</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;=0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_struct_catch_1_1_i_generator_tracker_1a9945eff42219edc5a7071eebd8b0419e">setGenerator</link> (<link linkend="_namespace_catch_1_1_generators_1a9578dfa233a0ab3fb14f58203161b6b8">Generators::GeneratorBasePtr</link> &amp;&amp;<link linkend="_struct_catch_1_1true__given">generator</link>)=0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_generator_tracker_1a20b3c82baa68f821c180d6dac1234eb1"/><section>
+    <title>~IGeneratorTracker()</title>
+<indexterm><primary>~IGeneratorTracker</primary><secondary>Catch::IGeneratorTracker</secondary></indexterm>
+<indexterm><primary>Catch::IGeneratorTracker</primary><secondary>~IGeneratorTracker</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::IGeneratorTracker::~IGeneratorTracker ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_generator_tracker_1a23be942fc51672598bfa02c678c3078a"/><section>
+    <title>getGenerator()</title>
+<indexterm><primary>getGenerator</primary><secondary>Catch::IGeneratorTracker</secondary></indexterm>
+<indexterm><primary>Catch::IGeneratorTracker</primary><secondary>getGenerator</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">auto</link> Catch::IGeneratorTracker::getGenerator ( ) const -&gt;  <link linkend="_namespace_catch_1_1_generators_1a9578dfa233a0ab3fb14f58203161b6b8">Generators::GeneratorBasePtr</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_generator_tracker_1ae88084f9af27c8b9a5d5775b9c148498"/><section>
+    <title>hasGenerator()</title>
+<indexterm><primary>hasGenerator</primary><secondary>Catch::IGeneratorTracker</secondary></indexterm>
+<indexterm><primary>Catch::IGeneratorTracker</primary><secondary>hasGenerator</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">auto</link> Catch::IGeneratorTracker::hasGenerator ( ) const -&gt;  <link linkend="_struct_catch_1_1true__given">bool</link><computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_generator_tracker_1a9945eff42219edc5a7071eebd8b0419e"/><section>
+    <title>setGenerator()</title>
+<indexterm><primary>setGenerator</primary><secondary>Catch::IGeneratorTracker</secondary></indexterm>
+<indexterm><primary>Catch::IGeneratorTracker</primary><secondary>setGenerator</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">void</link> Catch::IGeneratorTracker::setGenerator (<link linkend="_namespace_catch_1_1_generators_1a9578dfa233a0ab3fb14f58203161b6b8">Generators::GeneratorBasePtr</link> &amp;&amp; generator)<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_i_registry_hub" xml:lang="en-US">
+<title>Catch::IRegistryHub Struct Reference</title>
+<indexterm><primary>Catch::IRegistryHub</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_registry_hub_1a050de0f27f96888c8b410992146c9a09">~IRegistryHub</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">IReporterRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_registry_hub_1abbb3aafb58916d633ef959d724d4b82c">getReporterRegistry</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_test_case_registry">ITestCaseRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_registry_hub_1a3016c8766e42bae7b021f02d1cbd356b">getTestCaseRegistry</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">ITagAliasRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_registry_hub_1a3fb24564dba3f679dfa58792f1e21708">getTagAliasRegistry</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_exception_translator_registry">IExceptionTranslatorRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_registry_hub_1aa97defa756fe28dd6249b19c12bbbec1">getExceptionTranslatorRegistry</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">StartupExceptionRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_struct_catch_1_1_i_registry_hub_1a6a1810bb78ba99c3be091958bcc12f29">getStartupExceptionRegistry</link> () <link linkend="_struct_catch_1_1true__given">const</link> =0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_registry_hub_1a050de0f27f96888c8b410992146c9a09"/><section>
+    <title>~IRegistryHub()</title>
+<indexterm><primary>~IRegistryHub</primary><secondary>Catch::IRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IRegistryHub</primary><secondary>~IRegistryHub</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> Catch::IRegistryHub::~IRegistryHub ( )<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_catch_1_1_i_registry_hub_1aa97defa756fe28dd6249b19c12bbbec1"/><section>
+    <title>getExceptionTranslatorRegistry()</title>
+<indexterm><primary>getExceptionTranslatorRegistry</primary><secondary>Catch::IRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IRegistryHub</primary><secondary>getExceptionTranslatorRegistry</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_exception_translator_registry">IExceptionTranslatorRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IRegistryHub::getExceptionTranslatorRegistry ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_registry_hub_1abbb3aafb58916d633ef959d724d4b82c"/><section>
+    <title>getReporterRegistry()</title>
+<indexterm><primary>getReporterRegistry</primary><secondary>Catch::IRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IRegistryHub</primary><secondary>getReporterRegistry</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">IReporterRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IRegistryHub::getReporterRegistry ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_registry_hub_1a6a1810bb78ba99c3be091958bcc12f29"/><section>
+    <title>getStartupExceptionRegistry()</title>
+<indexterm><primary>getStartupExceptionRegistry</primary><secondary>Catch::IRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IRegistryHub</primary><secondary>getStartupExceptionRegistry</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">StartupExceptionRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IRegistryHub::getStartupExceptionRegistry ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_registry_hub_1a3fb24564dba3f679dfa58792f1e21708"/><section>
+    <title>getTagAliasRegistry()</title>
+<indexterm><primary>getTagAliasRegistry</primary><secondary>Catch::IRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IRegistryHub</primary><secondary>getTagAliasRegistry</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1true__given">ITagAliasRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IRegistryHub::getTagAliasRegistry ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_catch_1_1_i_registry_hub_1a3016c8766e42bae7b021f02d1cbd356b"/><section>
+    <title>getTestCaseRegistry()</title>
+<indexterm><primary>getTestCaseRegistry</primary><secondary>Catch::IRegistryHub</secondary></indexterm>
+<indexterm><primary>Catch::IRegistryHub</primary><secondary>getTestCaseRegistry</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_i_test_case_registry">ITestCaseRegistry</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; Catch::IRegistryHub::getTestCaseRegistry ( ) const<computeroutput>[pure virtual]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

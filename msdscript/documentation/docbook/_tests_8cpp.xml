@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__tests_8cpp" xml:lang="en-US">
+<title>/Users/u0858882/Desktop/msdscript/msdscript/src/Tests.cpp File Reference</title>
+<indexterm><primary>/Users/u0858882/Desktop/msdscript/msdscript/src/Tests.cpp</primary></indexterm>
+<para>
+
+<para>Catch2 tests for msdscript (<link linkend="_class_expr">Expr</link> classes; parsing functions). </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;catch.h&quot;<?linebreak?>#include &quot;Expr.h&quot;<?linebreak?>#include &quot;parse_expr.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__tests_8cpp_1a347d60e6da8848f09f2661a9eaaee2f1">TEST_CASE</link> (&quot;Properties of Addition/Multiplication&quot;)</para>
+
+<para>Catch2 testing framework. </para>
+</listitem>
+            <listitem><para><link linkend="__tests_8cpp_1a69ba826a6a718dc114a485555ff17135">TEST_CASE</link> (&quot;Num class&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="__tests_8cpp_1ae3ffe4744c04ca36cc08a3ff06a42dd6">TEST_CASE</link> (&quot;Var class&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="__tests_8cpp_1a46d7969f86f7f6b498e1db7d4da96c6d">TEST_CASE</link> (&quot;Add class&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="__tests_8cpp_1af559917d4366f4efd79c7b3b4bb0df38">TEST_CASE</link> (&quot;Mult class&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="__tests_8cpp_1a9837ad89ff39f68bf72c7712f0a95f60">TEST_CASE</link> (&quot;Let class&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="__tests_8cpp_1a722da582bcb57fedc50157339e5c543a">TEST_CASE</link> (&quot;All classes&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="__tests_8cpp_1ab8690cc11afce682da949264e314764f">TEST_CASE</link> (&quot;Parsing functions&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Catch2 tests for msdscript (<link linkend="_class_expr">Expr</link> classes; parsing functions). </para>
+
+<para><formalpara><title>Author</title>
+
+<para>Jake Dame </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__tests_8cpp_1a46d7969f86f7f6b498e1db7d4da96c6d"/><section>
+    <title>TEST_CASE()<computeroutput>[1/8]</computeroutput></title>
+<indexterm><primary>TEST_CASE</primary><secondary>Tests.cpp</secondary></indexterm>
+<indexterm><primary>Tests.cpp</primary><secondary>TEST_CASE</secondary></indexterm>
+<para><computeroutput>TEST_CASE (&quot;Add class&quot; )</computeroutput></para></section>
+<anchor xml:id="__tests_8cpp_1a722da582bcb57fedc50157339e5c543a"/><section>
+    <title>TEST_CASE()<computeroutput>[2/8]</computeroutput></title>
+<indexterm><primary>TEST_CASE</primary><secondary>Tests.cpp</secondary></indexterm>
+<indexterm><primary>Tests.cpp</primary><secondary>TEST_CASE</secondary></indexterm>
+<para><computeroutput>TEST_CASE (&quot;All classes&quot; )</computeroutput></para></section>
+<anchor xml:id="__tests_8cpp_1a9837ad89ff39f68bf72c7712f0a95f60"/><section>
+    <title>TEST_CASE()<computeroutput>[3/8]</computeroutput></title>
+<indexterm><primary>TEST_CASE</primary><secondary>Tests.cpp</secondary></indexterm>
+<indexterm><primary>Tests.cpp</primary><secondary>TEST_CASE</secondary></indexterm>
+<para><computeroutput>TEST_CASE (&quot;Let class&quot; )</computeroutput></para></section>
+<anchor xml:id="__tests_8cpp_1af559917d4366f4efd79c7b3b4bb0df38"/><section>
+    <title>TEST_CASE()<computeroutput>[4/8]</computeroutput></title>
+<indexterm><primary>TEST_CASE</primary><secondary>Tests.cpp</secondary></indexterm>
+<indexterm><primary>Tests.cpp</primary><secondary>TEST_CASE</secondary></indexterm>
+<para><computeroutput>TEST_CASE (&quot;Mult class&quot; )</computeroutput></para></section>
+<anchor xml:id="__tests_8cpp_1a69ba826a6a718dc114a485555ff17135"/><section>
+    <title>TEST_CASE()<computeroutput>[5/8]</computeroutput></title>
+<indexterm><primary>TEST_CASE</primary><secondary>Tests.cpp</secondary></indexterm>
+<indexterm><primary>Tests.cpp</primary><secondary>TEST_CASE</secondary></indexterm>
+<para><computeroutput>TEST_CASE (&quot;Num class&quot; )</computeroutput></para></section>
+<anchor xml:id="__tests_8cpp_1ab8690cc11afce682da949264e314764f"/><section>
+    <title>TEST_CASE()<computeroutput>[6/8]</computeroutput></title>
+<indexterm><primary>TEST_CASE</primary><secondary>Tests.cpp</secondary></indexterm>
+<indexterm><primary>Tests.cpp</primary><secondary>TEST_CASE</secondary></indexterm>
+<para><computeroutput>TEST_CASE (&quot;Parsing functions&quot; )</computeroutput></para></section>
+<anchor xml:id="__tests_8cpp_1a347d60e6da8848f09f2661a9eaaee2f1"/><section>
+    <title>TEST_CASE()<computeroutput>[7/8]</computeroutput></title>
+<indexterm><primary>TEST_CASE</primary><secondary>Tests.cpp</secondary></indexterm>
+<indexterm><primary>Tests.cpp</primary><secondary>TEST_CASE</secondary></indexterm>
+<para><computeroutput>TEST_CASE (&quot;Properties of Addition/Multiplication&quot; )</computeroutput></para><para>
+
+<para>Catch2 testing framework. </para>
+</para>
+</section>
+<anchor xml:id="__tests_8cpp_1ae3ffe4744c04ca36cc08a3ff06a42dd6"/><section>
+    <title>TEST_CASE()<computeroutput>[8/8]</computeroutput></title>
+<indexterm><primary>TEST_CASE</primary><secondary>Tests.cpp</secondary></indexterm>
+<indexterm><primary>Tests.cpp</primary><secondary>TEST_CASE</secondary></indexterm>
+<para><computeroutput>TEST_CASE (&quot;Var class&quot; )</computeroutput></para></section>
+</section>
+</section>

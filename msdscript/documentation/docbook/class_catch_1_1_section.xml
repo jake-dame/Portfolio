@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_section" xml:lang="en-US">
+<title>Catch::Section Class Reference</title>
+<indexterm><primary>Catch::Section</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Section:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_section.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_section_1a68fd4e51e8981aaa7ddb00d8a6abd099">Section</link> (<link linkend="_struct_catch_1_1_section_info">SectionInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">info</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_section_1aa1422edd68a77aa578b5cc6b8b69f86f">~Section</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_section_1a0632b804dcea1417a2970620a9742eb3">operator bool</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1_section_info">SectionInfo</link> <link linkend="_class_catch_1_1_section_1a22f54832b33b341ae5a78807a6219af6">m_info</link></para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_catch_1_1_section_1a29a372077fda582bbd79fb192067f277">m_name</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_counts">Counts</link> <link linkend="_class_catch_1_1_section_1ae0a2acc394d4bd1bc7a51a1445d25034">m_assertions</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_section_1a038bb0d5d2718df6e3ae1ece4b3d695d">m_sectionIncluded</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_timer">Timer</link> <link linkend="_class_catch_1_1_section_1a1548993afa64305a1b093391c6884b7e">m_timer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Private Member Functions inherited from <link linkend="_class_catch_1_1_non_copyable">Catch::NonCopyable</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_non_copyable_1a4b492dd5753f9952350fb64dc6cb9fe2">NonCopyable</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_non_copyable_1a81254677280fef337eb4a676e91e3293">~NonCopyable</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_section_1a68fd4e51e8981aaa7ddb00d8a6abd099"/><section>
+    <title>Section()</title>
+<indexterm><primary>Section</primary><secondary>Catch::Section</secondary></indexterm>
+<indexterm><primary>Catch::Section</primary><secondary>Section</secondary></indexterm>
+<para><computeroutput>Catch::Section::Section (<link linkend="_struct_catch_1_1_section_info">SectionInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; info)</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_section_1aa1422edd68a77aa578b5cc6b8b69f86f"/><section>
+    <title>~Section()</title>
+<indexterm><primary>~Section</primary><secondary>Catch::Section</secondary></indexterm>
+<indexterm><primary>Catch::Section</primary><secondary>~Section</secondary></indexterm>
+<para><computeroutput>Catch::Section::~Section ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_section_1a0632b804dcea1417a2970620a9742eb3"/><section>
+    <title>operator bool()</title>
+<indexterm><primary>operator bool</primary><secondary>Catch::Section</secondary></indexterm>
+<indexterm><primary>Catch::Section</primary><secondary>operator bool</secondary></indexterm>
+<para><computeroutput>Catch::Section::operator <link linkend="_struct_catch_1_1true__given">bool</link> ( ) const<computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_section_1ae0a2acc394d4bd1bc7a51a1445d25034"/><section>
+    <title>m_assertions</title>
+<indexterm><primary>m_assertions</primary><secondary>Catch::Section</secondary></indexterm>
+<indexterm><primary>Catch::Section</primary><secondary>m_assertions</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_counts">Counts</link> Catch::Section::m_assertions<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_section_1a22f54832b33b341ae5a78807a6219af6"/><section>
+    <title>m_info</title>
+<indexterm><primary>m_info</primary><secondary>Catch::Section</secondary></indexterm>
+<indexterm><primary>Catch::Section</primary><secondary>m_info</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_section_info">SectionInfo</link> Catch::Section::m_info<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_section_1a29a372077fda582bbd79fb192067f277"/><section>
+    <title>m_name</title>
+<indexterm><primary>m_name</primary><secondary>Catch::Section</secondary></indexterm>
+<indexterm><primary>Catch::Section</primary><secondary>m_name</secondary></indexterm>
+<para><computeroutput>std::string Catch::Section::m_name<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_section_1a038bb0d5d2718df6e3ae1ece4b3d695d"/><section>
+    <title>m_sectionIncluded</title>
+<indexterm><primary>m_sectionIncluded</primary><secondary>Catch::Section</secondary></indexterm>
+<indexterm><primary>Catch::Section</primary><secondary>m_sectionIncluded</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> Catch::Section::m_sectionIncluded<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_section_1a1548993afa64305a1b093391c6884b7e"/><section>
+    <title>m_timer</title>
+<indexterm><primary>m_timer</primary><secondary>Catch::Section</secondary></indexterm>
+<indexterm><primary>Catch::Section</primary><secondary>m_timer</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catch_1_1_timer">Timer</link> Catch::Section::m_timer<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

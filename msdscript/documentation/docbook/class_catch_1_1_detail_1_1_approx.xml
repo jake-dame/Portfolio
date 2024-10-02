@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_detail_1_1_approx" xml:lang="en-US">
+<title>Catch::Detail::Approx Class Reference</title>
+<indexterm><primary>Catch::Detail::Approx</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_detail_1_1_approx_1a1a8618ea8db08c66bd3d9fe8f74b957a">Approx</link> (<link linkend="_struct_catch_1_1true__given">double</link> value)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1aa9adf5f05e641df770039543d5067d30">operator-</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a006f6f92cecf2b2e7d2c70329709f6e4">operator()</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;value) <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_class_catch_1_1_detail_1_1_approx_1ab14b979fa8a37f21d037157fabed4072">Approx</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;value)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> &amp; <link linkend="_class_catch_1_1_detail_1_1_approx_1a1feb255ab2b116e126c1994ab6c250fd">epsilon</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">newEpsilon</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> &amp; <link linkend="_class_catch_1_1_detail_1_1_approx_1a617c79e67f8a52df3918293a3a8066ef">margin</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">newMargin</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> &amp; <link linkend="_class_catch_1_1_detail_1_1_approx_1a9504645876aabe1fe4a807b84e445bc2">scale</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">newScale</link>)</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_catch_1_1_detail_1_1_approx_1a972fd9ac60607483263f1b0f0f9955e6">toString</link> () <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1aaf86dc0ee92272ac2d9839197a07951d">custom</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1af53c48227a7b654da58adeb1d360b715">equalityComparisonImpl</link> (<link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_struct_catch_1_1true__given">other</link>) <link linkend="_struct_catch_1_1true__given">const</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1aff04b8b32edc707138eb395ed45ec576">setMargin</link> (<link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a617c79e67f8a52df3918293a3a8066ef">margin</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a28fd65e069b698bc7ae8f060bfbcd6b6">setEpsilon</link> (<link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a1feb255ab2b116e126c1994ab6c250fd">epsilon</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1af17c8e869ae7a55d14b99eb18e178114">m_epsilon</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a4262a7e821eec507b424c335121ea0d8">m_margin</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a65e9bdab9113ff3300b45f0a4e048dd7">m_scale</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">double</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1af7aeef703bd591f5ec85407b1dac053c">m_value</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1ab38782a37d09b527ca5e126dbf433dda">operator==</link> (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> &amp;<link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a0e5ef1957d4c38d7857005909c613743">operator==</link> (<link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> &amp;<link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a29696f14ebd51887c8c88e771d12ef54">operator!=</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a31d62e3c35abb86cf25e02601966ca5d">operator!=</link> (<link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a0369de03e81bc2ceaf6c9d830476bd49">operator&lt;=</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a6040b908588745570847d7ae8483b091">operator&lt;=</link> (<link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1affd27efc62be386daeecb7a09e828d44">operator&gt;=</link> (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </para><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_detail_1_1_approx_1a5899b8a36725406701e2ebded2971ee6">operator&gt;=</link> (<link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">lhs</link>, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;<link linkend="_struct_catch_1_1true__given">rhs</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a1a8618ea8db08c66bd3d9fe8f74b957a"/><section>
+    <title>Approx()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Approx</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>Approx</secondary></indexterm>
+<para><computeroutput>Catch::Detail::Approx::Approx (<link linkend="_struct_catch_1_1true__given">double</link> value)<computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1ab14b979fa8a37f21d037157fabed4072"/><section>
+    <title>Approx()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Approx</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>Approx</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput>Catch::Detail::Approx::Approx (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; value)<computeroutput>[inline]</computeroutput>, <computeroutput>[explicit]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1aaf86dc0ee92272ac2d9839197a07951d"/><section>
+    <title>custom()</title>
+<indexterm><primary>custom</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>custom</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">static</link> <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> Catch::Detail::Approx::custom ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a1feb255ab2b116e126c1994ab6c250fd"/><section>
+    <title>epsilon()</title>
+<indexterm><primary>epsilon</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>epsilon</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> &amp; Catch::Detail::Approx::epsilon (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; newEpsilon)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1af53c48227a7b654da58adeb1d360b715"/><section>
+    <title>equalityComparisonImpl()</title>
+<indexterm><primary>equalityComparisonImpl</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>equalityComparisonImpl</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> Catch::Detail::Approx::equalityComparisonImpl (<link linkend="_struct_catch_1_1true__given">double</link> other) const<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a617c79e67f8a52df3918293a3a8066ef"/><section>
+    <title>margin()</title>
+<indexterm><primary>margin</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>margin</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> &amp; Catch::Detail::Approx::margin (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; newMargin)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a006f6f92cecf2b2e7d2c70329709f6e4"/><section>
+    <title>operator()()</title>
+<indexterm><primary>operator()</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator()</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> Catch::Detail::Approx::operator() (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; value) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1aa9adf5f05e641df770039543d5067d30"/><section>
+    <title>operator-()</title>
+<indexterm><primary>operator-</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator-</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> Catch::Detail::Approx::operator- ( ) const</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a9504645876aabe1fe4a807b84e445bc2"/><section>
+    <title>scale()</title>
+<indexterm><primary>scale</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>scale</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> &amp; Catch::Detail::Approx::scale (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; newScale)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a28fd65e069b698bc7ae8f060bfbcd6b6"/><section>
+    <title>setEpsilon()</title>
+<indexterm><primary>setEpsilon</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>setEpsilon</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::Detail::Approx::setEpsilon (<link linkend="_struct_catch_1_1true__given">double</link> epsilon)<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1aff04b8b32edc707138eb395ed45ec576"/><section>
+    <title>setMargin()</title>
+<indexterm><primary>setMargin</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>setMargin</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::Detail::Approx::setMargin (<link linkend="_struct_catch_1_1true__given">double</link> margin)<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a972fd9ac60607483263f1b0f0f9955e6"/><section>
+    <title>toString()</title>
+<indexterm><primary>toString</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>toString</secondary></indexterm>
+<para><computeroutput>std::string Catch::Detail::Approx::toString ( ) const</computeroutput></para></section>
+</section>
+<section>
+<title>Friends And Related Symbol Documentation</title>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a31d62e3c35abb86cf25e02601966ca5d"/><section>
+    <title>operator!=<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator!=</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator!=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> operator!= (<link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lhs, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a29696f14ebd51887c8c88e771d12ef54"/><section>
+    <title>operator!=<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator!=</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator!=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> operator!= (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lhs, <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a6040b908588745570847d7ae8483b091"/><section>
+    <title>operator&lt;=<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator&lt;=</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator&lt;=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">operator</link>&lt;= (<link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lhs, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a0369de03e81bc2ceaf6c9d830476bd49"/><section>
+    <title>operator&lt;=<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator&lt;=</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator&lt;=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">operator</link>&lt;= (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lhs, <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a0e5ef1957d4c38d7857005909c613743"/><section>
+    <title>operator==<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator==</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator==</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">operator</link>== (<link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lhs, <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1ab38782a37d09b527ca5e126dbf433dda"/><section>
+    <title>operator==<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator==</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator==</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">operator</link>== (<link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">T</link> &amp; lhs, <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a5899b8a36725406701e2ebded2971ee6"/><section>
+    <title>operator&gt;=<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator&gt;=</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator&gt;=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">operator</link>&gt;= (<link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lhs, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1affd27efc62be386daeecb7a09e828d44"/><section>
+    <title>operator&gt;=<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator&gt;=</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>operator&gt;=</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link>  = typename std::enable_if&lt;std::is_constructible&lt;double, T&gt;::value&gt;::type&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_struct_catch_1_1true__given">operator</link>&gt;= (<link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lhs, <link linkend="_class_catch_1_1_detail_1_1_approx">Approx</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1af17c8e869ae7a55d14b99eb18e178114"/><section>
+    <title>m_epsilon</title>
+<indexterm><primary>m_epsilon</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>m_epsilon</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">double</link> Catch::Detail::Approx::m_epsilon<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a4262a7e821eec507b424c335121ea0d8"/><section>
+    <title>m_margin</title>
+<indexterm><primary>m_margin</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>m_margin</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">double</link> Catch::Detail::Approx::m_margin<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1a65e9bdab9113ff3300b45f0a4e048dd7"/><section>
+    <title>m_scale</title>
+<indexterm><primary>m_scale</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>m_scale</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">double</link> Catch::Detail::Approx::m_scale<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_detail_1_1_approx_1af7aeef703bd591f5ec85407b1dac053c"/><section>
+    <title>m_value</title>
+<indexterm><primary>m_value</primary><secondary>Catch::Detail::Approx</secondary></indexterm>
+<indexterm><primary>Catch::Detail::Approx</primary><secondary>m_value</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">double</link> Catch::Detail::Approx::m_value<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

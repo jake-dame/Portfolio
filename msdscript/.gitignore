@@ -1,0 +1,34 @@
+## gcc patch
+**/*.gcno
+
+## obnoxious file that has thumbnails and stuff
+.DS_Store
+
+# object files
+*.o
+*.obj
+*.tlo
+*.tli
+*.tlh
+*.bsc
+
+# executables
+*.exe
+*.out
+*.app
+
+# JetBrains files and folders
+.idea/
+
+# my clion custom folder for clion files
+clion/
+
+# compiled c/c++ binaries
+out/
+
+# weird .pdf hidden file
+documentation/.pdf
+
+# misc
+notebook.txt
+profiling_notes.txt

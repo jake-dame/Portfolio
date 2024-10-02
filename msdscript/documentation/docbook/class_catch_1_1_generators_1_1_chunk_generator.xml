@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_generators_1_1_chunk_generator" xml:lang="en-US">
+<title>Catch::Generators::ChunkGenerator&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Generators::ChunkGenerator&lt; T &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Generators::ChunkGenerator&lt; T &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_generators_1_1_chunk_generator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_chunk_generator_1a50c334d00cde3166d71e9b90ebc2d2e3">ChunkGenerator</link> (<link linkend="_struct_catch_1_1true__given">size_t</link> size, <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1true__given">generator</link>)</para>
+</listitem>
+            <listitem><para>std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_chunk_generator_1afab9d06c84aa469b3af60eb3e8f10597">get</link> () <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_chunk_generator_1a545e89f80eb1e3c953491541ea083f86">next</link> () <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; std::vector&lt; T &gt; &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1afe5b6eecbbd735e69748d68574611747">~IGenerator</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base">Catch::Generators::GeneratorUntypedBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a00ff0179d739c3016756b6cf56fabbad">GeneratorUntypedBase</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a6f05f8099fdc5744a7aff68aa8c09c7f">~GeneratorUntypedBase</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_class_catch_1_1_generators_1_1_chunk_generator_1ab5e382bc5be2e327331bd694a40fa827">m_chunk</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_generators_1_1_chunk_generator_1a222b9cd460e6d48b12f939833b1b0beb">m_chunk_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_class_catch_1_1_generators_1_1_chunk_generator_1aa12b90ee9d029c44528fdba6b9de17bb">m_generator</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_chunk_generator_1a4a5f14d8f6c7a94e5771eb999c1ffe5a">m_used_up</link> = <link linkend="_struct_catch_1_1true__given">false</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Types inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; std::vector&lt; T &gt; &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">using</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a1f8677875fe0ff31f39c60d45504b9a5">type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_chunk_generator_1a50c334d00cde3166d71e9b90ebc2d2e3"/><section>
+    <title>ChunkGenerator()</title>
+<indexterm><primary>ChunkGenerator</primary><secondary>Catch::Generators::ChunkGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::ChunkGenerator&lt; T &gt;</primary><secondary>ChunkGenerator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_chunk_generator">Catch::Generators::ChunkGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::ChunkGenerator (<link linkend="_struct_catch_1_1true__given">size_t</link> size, <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; generator)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_chunk_generator_1afab9d06c84aa469b3af60eb3e8f10597"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>Catch::Generators::ChunkGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::ChunkGenerator&lt; T &gt;</primary><secondary>get</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::vector&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt; <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_generators_1_1_chunk_generator">Catch::Generators::ChunkGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::get ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a0fb6da789cda5b4e90f036737db82485">Catch::Generators::IGenerator&lt; std::vector&lt; T &gt; &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_chunk_generator_1a545e89f80eb1e3c953491541ea083f86"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>Catch::Generators::ChunkGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::ChunkGenerator&lt; T &gt;</primary><secondary>next</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_chunk_generator">Catch::Generators::ChunkGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::next ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1aeed3c0cd6233c5f553549e453b8d6638">Catch::Generators::GeneratorUntypedBase</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_chunk_generator_1ab5e382bc5be2e327331bd694a40fa827"/><section>
+    <title>m_chunk</title>
+<indexterm><primary>m_chunk</primary><secondary>Catch::Generators::ChunkGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::ChunkGenerator&lt; T &gt;</primary><secondary>m_chunk</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput>std::vector&lt;<link linkend="_struct_catch_1_1true__given">T</link>&gt; <link linkend="_class_catch_1_1_generators_1_1_chunk_generator">Catch::Generators::ChunkGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_chunk<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_chunk_generator_1a222b9cd460e6d48b12f939833b1b0beb"/><section>
+    <title>m_chunk_size</title>
+<indexterm><primary>m_chunk_size</primary><secondary>Catch::Generators::ChunkGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::ChunkGenerator&lt; T &gt;</primary><secondary>m_chunk_size</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_generators_1_1_chunk_generator">Catch::Generators::ChunkGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_chunk_size<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_chunk_generator_1aa12b90ee9d029c44528fdba6b9de17bb"/><section>
+    <title>m_generator</title>
+<indexterm><primary>m_generator</primary><secondary>Catch::Generators::ChunkGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::ChunkGenerator&lt; T &gt;</primary><secondary>m_generator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt;<link linkend="_struct_catch_1_1true__given">T</link>&gt; <link linkend="_class_catch_1_1_generators_1_1_chunk_generator">Catch::Generators::ChunkGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_generator<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_chunk_generator_1a4a5f14d8f6c7a94e5771eb999c1ffe5a"/><section>
+    <title>m_used_up</title>
+<indexterm><primary>m_used_up</primary><secondary>Catch::Generators::ChunkGenerator&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::ChunkGenerator&lt; T &gt;</primary><secondary>m_used_up</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_chunk_generator">Catch::Generators::ChunkGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link> &gt;::m_used_up = <link linkend="_struct_catch_1_1true__given">false</link><computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

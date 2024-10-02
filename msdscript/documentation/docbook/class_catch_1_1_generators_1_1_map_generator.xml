@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_generators_1_1_map_generator" xml:lang="en-US">
+<title>Catch::Generators::MapGenerator&lt; T, U, Func &gt; Class Template Reference</title>
+<indexterm><primary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for Catch::Generators::MapGenerator&lt; T, U, Func &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catch_1_1_generators_1_1_map_generator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">F2</link>  = Func&gt; </para><para><link linkend="_class_catch_1_1_generators_1_1_map_generator_1a525c7eaf53ad220ee7add534aff2522c">MapGenerator</link> (<link linkend="_struct_catch_1_1true__given">F2</link> &amp;&amp;<link linkend="_struct_catch_1_1true__given">function</link>, <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">U</link> &gt; &amp;&amp;<link linkend="_struct_catch_1_1true__given">generator</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; <link linkend="_class_catch_1_1_generators_1_1_map_generator_1abd7ffdef7f7c8575331146c4a95141ad">get</link> () <link linkend="_struct_catch_1_1true__given">const</link> <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_map_generator_1aa07e2f12d38ae060c30cc30d9dc236c5">next</link> () <link linkend="_struct_catch_1_1true__given">override</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1afe5b6eecbbd735e69748d68574611747">~IGenerator</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base">Catch::Generators::GeneratorUntypedBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a00ff0179d739c3016756b6cf56fabbad">GeneratorUntypedBase</link> ()=<link linkend="_struct_catch_1_1true__given">default</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">virtual</link> <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1a6f05f8099fdc5744a7aff68aa8c09c7f">~GeneratorUntypedBase</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">U</link> &gt; <link linkend="_class_catch_1_1_generators_1_1_map_generator_1a7a4c986b7721df82559d5c3cbb3bdb66">m_generator</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">Func</link> <link linkend="_class_catch_1_1_generators_1_1_map_generator_1add8fa24bfa56705c798fe70f4c6235ff">m_function</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_class_catch_1_1_generators_1_1_map_generator_1a970d45e8dccf903d3539daada255da42">m_cache</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Types inherited from <link linkend="_struct_catch_1_1_generators_1_1_i_generator">Catch::Generators::IGenerator&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">using</link> <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a1f8677875fe0ff31f39c60d45504b9a5">type</link> = <link linkend="_struct_catch_1_1true__given">T</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_map_generator_1a525c7eaf53ad220ee7add534aff2522c"/><section>
+    <title>MapGenerator()</title>
+<indexterm><primary>MapGenerator</primary><secondary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</primary><secondary>MapGenerator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">U</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Func</link> &gt; </computeroutput><computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">F2</link>  = Func&gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_map_generator">Catch::Generators::MapGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">U</link>, <link linkend="_struct_catch_1_1true__given">Func</link> &gt;::MapGenerator (<link linkend="_struct_catch_1_1true__given">F2</link> &amp;&amp; function, <link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt; <link linkend="_struct_catch_1_1true__given">U</link> &gt; &amp;&amp; generator)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_map_generator_1abd7ffdef7f7c8575331146c4a95141ad"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</primary><secondary>get</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">U</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Func</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link>  &amp; <link linkend="_class_catch_1_1_generators_1_1_map_generator">Catch::Generators::MapGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">U</link>, <link linkend="_struct_catch_1_1true__given">Func</link> &gt;::get ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_struct_catch_1_1_generators_1_1_i_generator_1a0fb6da789cda5b4e90f036737db82485">Catch::Generators::IGenerator&lt; T &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_map_generator_1aa07e2f12d38ae060c30cc30d9dc236c5"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</primary><secondary>next</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">U</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Func</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">bool</link> <link linkend="_class_catch_1_1_generators_1_1_map_generator">Catch::Generators::MapGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">U</link>, <link linkend="_struct_catch_1_1true__given">Func</link> &gt;::next ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_catch_1_1_generators_1_1_generator_untyped_base_1aeed3c0cd6233c5f553549e453b8d6638">Catch::Generators::GeneratorUntypedBase</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_generators_1_1_map_generator_1a970d45e8dccf903d3539daada255da42"/><section>
+    <title>m_cache</title>
+<indexterm><primary>m_cache</primary><secondary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</primary><secondary>m_cache</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">U</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Func</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_class_catch_1_1_generators_1_1_map_generator">Catch::Generators::MapGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">U</link>, <link linkend="_struct_catch_1_1true__given">Func</link> &gt;::m_cache<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_map_generator_1add8fa24bfa56705c798fe70f4c6235ff"/><section>
+    <title>m_function</title>
+<indexterm><primary>m_function</primary><secondary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</primary><secondary>m_function</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">U</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Func</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">Func</link> <link linkend="_class_catch_1_1_generators_1_1_map_generator">Catch::Generators::MapGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">U</link>, <link linkend="_struct_catch_1_1true__given">Func</link> &gt;::m_function<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_generators_1_1_map_generator_1a7a4c986b7721df82559d5c3cbb3bdb66"/><section>
+    <title>m_generator</title>
+<indexterm><primary>m_generator</primary><secondary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</secondary></indexterm>
+<indexterm><primary>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</primary><secondary>m_generator</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">U</link> , <link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">Func</link> &gt; </computeroutput><para><computeroutput><link linkend="_class_catch_1_1_generators_1_1_generator_wrapper">GeneratorWrapper</link>&lt;<link linkend="_struct_catch_1_1true__given">U</link>&gt; <link linkend="_class_catch_1_1_generators_1_1_map_generator">Catch::Generators::MapGenerator</link>&lt; <link linkend="_struct_catch_1_1true__given">T</link>, <link linkend="_struct_catch_1_1true__given">U</link>, <link linkend="_struct_catch_1_1true__given">Func</link> &gt;::m_generator<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

@@ -1,0 +1,156 @@
+\doxysection{\+\_\+let Class Reference}
+\hypertarget{class__let}{}\label{class__let}\index{\_let@{\_let}}
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for \+\_\+let\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class__let}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__let_a4984eb90dae4436c40bb1da5b08635e0}{\+\_\+let}} (std\+::string str, \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}replacement, \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}body)
+\item 
+bool \mbox{\hyperlink{class__let_ad4eddfcb3d0ddce0551e5ea349f3a1a9}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}expr) override
+\item 
+int \mbox{\hyperlink{class__let_a05023acadd5cdbe52fe72c5a76148607}{interp}} () override
+\item 
+bool \mbox{\hyperlink{class__let_a39c0339e329e2d4a37d31cc67b479364}{has\+\_\+variable}} () override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class__let_ab9647f859cd9c9f621cfeb3e22afde0b}{subst}} (std\+::string str, \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}expr) override
+\item 
+void \mbox{\hyperlink{class__let_a2c3a9ab95901e0be919bf37334ddfa9f}{print}} (std\+::ostream \&ostream) override
+\item 
+void \mbox{\hyperlink{class__let_a5dab71b37f6c8d5497fc82557502951f}{pretty\+\_\+print}} (std\+::ostream \&ostream) override
+\item 
+void \mbox{\hyperlink{class__let_ae233f4b3429a7254d3f0a8a9dd2e2d5e}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ostream, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} p, std\+::streampos \&pos, bool paren) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_expr}{Expr}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_expr_abe130f37bd185ec13c5113de16fc7bf7}{to\+\_\+string}} ()
+\begin{DoxyCompactList}\small\item\em Non-\/virtual\+: Converts an Expression to a basic, human-\/readable string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_expr_a6ad7c18234f22d96d6917089b5bd7caa}{to\+\_\+pretty\+\_\+string}} ()
+\begin{DoxyCompactList}\small\item\em Non-\/virtual\+: Converts an Expression to a stylized, human-\/readable string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class__let_a888abfd60a7dc3507fc92792ebcbb9a2}{variable\+\_\+}}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class__let_ad53acbafc37c55f67a246b61ae950fee}{rhs\+\_\+}}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class__let_aba2d42fcc09d04977e97df1560aa1998}{body\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__let_a4984eb90dae4436c40bb1da5b08635e0}\label{class__let_a4984eb90dae4436c40bb1da5b08635e0} 
+\index{\_let@{\_let}!\_let@{\_let}}
+\index{\_let@{\_let}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{\_let()}{\_let()}}
+{\footnotesize\ttfamily \+\_\+let\+::\+\_\+let (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{replacement,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{body }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__let_ad4eddfcb3d0ddce0551e5ea349f3a1a9}\label{class__let_ad4eddfcb3d0ddce0551e5ea349f3a1a9} 
+\index{\_let@{\_let}!equals@{equals}}
+\index{equals@{equals}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool \+\_\+let\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{expr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_ab5d65cde79dd78c2e06b2d5a0f19c602}{Expr}}.
+
+\Hypertarget{class__let_a39c0339e329e2d4a37d31cc67b479364}\label{class__let_a39c0339e329e2d4a37d31cc67b479364} 
+\index{\_let@{\_let}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool \+\_\+let\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{Expr}}.
+
+\Hypertarget{class__let_a05023acadd5cdbe52fe72c5a76148607}\label{class__let_a05023acadd5cdbe52fe72c5a76148607} 
+\index{\_let@{\_let}!interp@{interp}}
+\index{interp@{interp}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily int \+\_\+let\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_aeba8585d8225419d49166371306542c1}{Expr}}.
+
+\Hypertarget{class__let_a5dab71b37f6c8d5497fc82557502951f}\label{class__let_a5dab71b37f6c8d5497fc82557502951f} 
+\index{\_let@{\_let}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily void \+\_\+let\+::pretty\+\_\+print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a24ac16ad055d71f8f602f299e4f8a5e6}{Expr}}.
+
+\Hypertarget{class__let_ae233f4b3429a7254d3f0a8a9dd2e2d5e}\label{class__let_ae233f4b3429a7254d3f0a8a9dd2e2d5e} 
+\index{\_let@{\_let}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void \+\_\+let\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostream,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{p,  }\item[{std\+::streampos \&}]{pos,  }\item[{bool}]{paren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_expr_a4c32ae954e1226187c7f160fe6ce1549}{Expr}}.
+
+\Hypertarget{class__let_a2c3a9ab95901e0be919bf37334ddfa9f}\label{class__let_a2c3a9ab95901e0be919bf37334ddfa9f} 
+\index{\_let@{\_let}!print@{print}}
+\index{print@{print}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void \+\_\+let\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a5ee199e933971af8934037d09c1fa1db}{Expr}}.
+
+\Hypertarget{class__let_ab9647f859cd9c9f621cfeb3e22afde0b}\label{class__let_ab9647f859cd9c9f621cfeb3e22afde0b} 
+\index{\_let@{\_let}!subst@{subst}}
+\index{subst@{subst}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*} \+\_\+let\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} \texorpdfstring{$\ast$}{*}}]{expr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_aa634df66e06bc11371f2926b8410ee74}{Expr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__let_aba2d42fcc09d04977e97df1560aa1998}\label{class__let_aba2d42fcc09d04977e97df1560aa1998} 
+\index{\_let@{\_let}!body\_@{body\_}}
+\index{body\_@{body\_}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{body\_}{body\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}\texorpdfstring{$\ast$}{*} \+\_\+let\+::body\+\_\+}
+
+\Hypertarget{class__let_ad53acbafc37c55f67a246b61ae950fee}\label{class__let_ad53acbafc37c55f67a246b61ae950fee} 
+\index{\_let@{\_let}!rhs\_@{rhs\_}}
+\index{rhs\_@{rhs\_}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{rhs\_}{rhs\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}\texorpdfstring{$\ast$}{*} \+\_\+let\+::rhs\+\_\+}
+
+\Hypertarget{class__let_a888abfd60a7dc3507fc92792ebcbb9a2}\label{class__let_a888abfd60a7dc3507fc92792ebcbb9a2} 
+\index{\_let@{\_let}!variable\_@{variable\_}}
+\index{variable\_@{variable\_}!\_let@{\_let}}
+\doxysubsubsection{\texorpdfstring{variable\_}{variable\_}}
+{\footnotesize\ttfamily std\+::string \+\_\+let\+::variable\+\_\+}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/u0858882/\+Desktop/msdscript/msdscript/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

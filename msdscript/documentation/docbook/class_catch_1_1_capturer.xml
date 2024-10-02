@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catch_1_1_capturer" xml:lang="en-US">
+<title>Catch::Capturer Class Reference</title>
+<indexterm><primary>Catch::Capturer</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catch_1_1_capturer_1a86b0b27acc803a4e1310c10820f3038f">Capturer</link> (<link linkend="_class_catch_1_1_string_ref">StringRef</link> macroName, <link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;lineInfo, <link linkend="_struct_catch_1_1_result_was_1a624e1ee3661fcf6094ceef1f654601ef">ResultWas::OfType</link> <link linkend="_struct_catch_1_1true__given">resultType</link>, <link linkend="_class_catch_1_1_string_ref">StringRef</link> <link linkend="_struct_catch_1_1true__given">names</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catch_1_1_capturer_1aecde85cf69e65565cec91e325a657b82">~Capturer</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_capturer_1a0695ebf77f7cdcb344c73bcb3d9131e4">captureValue</link> (<link linkend="_struct_catch_1_1true__given">size_t</link> index, std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp;value)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </para><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_capturer_1a60d08e6db2e54740bb2298bbbec3bc0b">captureValues</link> (<link linkend="_struct_catch_1_1true__given">size_t</link> index, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;value)</para>
+</listitem>
+            <listitem><para>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , typename... Ts&gt; </para><para><link linkend="_struct_catch_1_1true__given">void</link> <link linkend="_class_catch_1_1_capturer_1a76f2a097cfeb3042688300b81eb9bcbc">captureValues</link> (<link linkend="_struct_catch_1_1true__given">size_t</link> index, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;value, <link linkend="_struct_catch_1_1true__given">Ts</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;... values)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::vector&lt; <link linkend="_struct_catch_1_1_message_info">MessageInfo</link> &gt; <link linkend="_class_catch_1_1_capturer_1aefa14693d28906e5e7b06975af38aaed">m_messages</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1_i_result_capture">IResultCapture</link> &amp; <link linkend="_class_catch_1_1_capturer_1a29edecce81d56837945ba2585c0ff941">m_resultCapture</link> = <link linkend="_namespace_catch_1af718eeab870712f292ed8dc6ee3f6488">getResultCapture</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_catch_1_1true__given">size_t</link> <link linkend="_class_catch_1_1_capturer_1a1c3bea0fde97a7663ece4b81187fa9ed">m_captured</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catch_1_1_capturer_1a86b0b27acc803a4e1310c10820f3038f"/><section>
+    <title>Capturer()</title>
+<indexterm><primary>Capturer</primary><secondary>Catch::Capturer</secondary></indexterm>
+<indexterm><primary>Catch::Capturer</primary><secondary>Capturer</secondary></indexterm>
+<para><computeroutput>Catch::Capturer::Capturer (<link linkend="_class_catch_1_1_string_ref">StringRef</link> macroName, <link linkend="_struct_catch_1_1_source_line_info">SourceLineInfo</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; lineInfo, <link linkend="_struct_catch_1_1_result_was_1a624e1ee3661fcf6094ceef1f654601ef">ResultWas::OfType</link> resultType, <link linkend="_class_catch_1_1_string_ref">StringRef</link> names)</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_capturer_1aecde85cf69e65565cec91e325a657b82"/><section>
+    <title>~Capturer()</title>
+<indexterm><primary>~Capturer</primary><secondary>Catch::Capturer</secondary></indexterm>
+<indexterm><primary>Catch::Capturer</primary><secondary>~Capturer</secondary></indexterm>
+<para><computeroutput>Catch::Capturer::~Capturer ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catch_1_1_capturer_1a0695ebf77f7cdcb344c73bcb3d9131e4"/><section>
+    <title>captureValue()</title>
+<indexterm><primary>captureValue</primary><secondary>Catch::Capturer</secondary></indexterm>
+<indexterm><primary>Catch::Capturer</primary><secondary>captureValue</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::Capturer::captureValue (<link linkend="_struct_catch_1_1true__given">size_t</link> index, std::string <link linkend="_struct_catch_1_1true__given">const</link> &amp; value)</computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_capturer_1a60d08e6db2e54740bb2298bbbec3bc0b"/><section>
+    <title>captureValues()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>captureValues</primary><secondary>Catch::Capturer</secondary></indexterm>
+<indexterm><primary>Catch::Capturer</primary><secondary>captureValues</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> &gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::Capturer::captureValues (<link linkend="_struct_catch_1_1true__given">size_t</link> index, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; value)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_capturer_1a76f2a097cfeb3042688300b81eb9bcbc"/><section>
+    <title>captureValues()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>captureValues</primary><secondary>Catch::Capturer</secondary></indexterm>
+<indexterm><primary>Catch::Capturer</primary><secondary>captureValues</secondary></indexterm>
+<computeroutput>template&lt;<link linkend="_struct_catch_1_1true__given">typename</link> <link linkend="_struct_catch_1_1true__given">T</link> , typename... Ts&gt; </computeroutput><para><computeroutput><link linkend="_struct_catch_1_1true__given">void</link> Catch::Capturer::captureValues (<link linkend="_struct_catch_1_1true__given">size_t</link> index, <link linkend="_struct_catch_1_1true__given">T</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp; value, <link linkend="_struct_catch_1_1true__given">Ts</link> <link linkend="_struct_catch_1_1true__given">const</link> &amp;... values)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catch_1_1_capturer_1a1c3bea0fde97a7663ece4b81187fa9ed"/><section>
+    <title>m_captured</title>
+<indexterm><primary>m_captured</primary><secondary>Catch::Capturer</secondary></indexterm>
+<indexterm><primary>Catch::Capturer</primary><secondary>m_captured</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">size_t</link> Catch::Capturer::m_captured = 0<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_capturer_1aefa14693d28906e5e7b06975af38aaed"/><section>
+    <title>m_messages</title>
+<indexterm><primary>m_messages</primary><secondary>Catch::Capturer</secondary></indexterm>
+<indexterm><primary>Catch::Capturer</primary><secondary>m_messages</secondary></indexterm>
+<para><computeroutput>std::vector&lt;<link linkend="_struct_catch_1_1_message_info">MessageInfo</link>&gt; Catch::Capturer::m_messages<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_catch_1_1_capturer_1a29edecce81d56837945ba2585c0ff941"/><section>
+    <title>m_resultCapture</title>
+<indexterm><primary>m_resultCapture</primary><secondary>Catch::Capturer</secondary></indexterm>
+<indexterm><primary>Catch::Capturer</primary><secondary>m_resultCapture</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1_i_result_capture">IResultCapture</link>&amp; Catch::Capturer::m_resultCapture = <link linkend="_namespace_catch_1af718eeab870712f292ed8dc6ee3f6488">getResultCapture</link>()<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>

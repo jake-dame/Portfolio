@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_catch_1_1_show_durations" xml:lang="en-US">
+<title>Catch::ShowDurations Struct Reference</title>
+<indexterm><primary>Catch::ShowDurations</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catch.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1">OrNot</link> { <link linkend="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1aba1710583107b0736c1f5f0f8dfd23c8">DefaultForReporter</link>
+, <link linkend="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1ab49682ccb55f2d6b4dfcdb027c09da9a">Always</link>
+, <link linkend="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1af1a716bc46185f561382a12a0dede9f3">Never</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1"/><section>
+    <title>OrNot</title>
+<indexterm><primary>OrNot</primary><secondary>Catch::ShowDurations</secondary></indexterm>
+<indexterm><primary>Catch::ShowDurations</primary><secondary>OrNot</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_catch_1_1true__given">enum</link> <link linkend="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1">Catch::ShowDurations::OrNot</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>DefaultForReporter</primary><secondary>Catch::ShowDurations</secondary></indexterm>
+<indexterm><primary>Catch::ShowDurations</primary><secondary>DefaultForReporter</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1aba1710583107b0736c1f5f0f8dfd23c8"/>DefaultForReporter</entry><entry></entry></row><row><entry><indexterm><primary>Always</primary><secondary>Catch::ShowDurations</secondary></indexterm>
+<indexterm><primary>Catch::ShowDurations</primary><secondary>Always</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1ab49682ccb55f2d6b4dfcdb027c09da9a"/>Always</entry><entry></entry></row><row><entry><indexterm><primary>Never</primary><secondary>Catch::ShowDurations</secondary></indexterm>
+<indexterm><primary>Catch::ShowDurations</primary><secondary>Never</secondary></indexterm>
+<anchor xml:id="_struct_catch_1_1_show_durations_1a82fa0174554187220c1eda175f122ee1af1a716bc46185f561382a12a0dede9f3"/>Never</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+/Users/u0858882/Desktop/msdscript/msdscript/src/<link linkend="_catch_8h">catch.h</link></section>
+</section>
